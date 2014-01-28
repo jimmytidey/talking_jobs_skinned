@@ -151,7 +151,14 @@ job_player.triggerModal = function(player_instance) {
     });
 }
 
-
+job_player.detectWidth = function(){ 
+    if($(window).width() > 1200) { 
+        return 'big'; 
+    }
+    else { 
+        return 'medium';
+    }
+}
 
 job_player.testQuestionVisibility = function(id, player_instance) { 
     var top = $('.question_selector[data-id="'+id+'"]' ).position().top -490;

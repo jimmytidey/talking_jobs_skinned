@@ -67,9 +67,13 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     }
     
 
-
-    var target_no = parseInt(current_item.interviewee_id) -3; 
-    console.log("tager", target_no);
+    if (job_player.detectWidth() === 'big') { 
+        var target_no = parseInt(current_item.interviewee_id) -3; 
+    }
+    else { 
+        var target_no = parseInt(current_item.interviewee_id) -2; 
+    }
+    
     $(".interviewee_scroller").trigger("slideTo", target_no );
 
     

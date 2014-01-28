@@ -89,7 +89,7 @@ job_player.attachEvents = function(player_instance) {
     
     
     //set the player to zero for init
-    //job_player.playlistChange(0, local_player_instance, false);
+    job_player.playlistChange(0, local_player_instance, false);
     
     job_player.attachTransportEvents(local_player_instance);
     
