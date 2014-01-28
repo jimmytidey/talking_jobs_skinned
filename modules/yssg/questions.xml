@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<talking_jobs>
+	<dropdown>
+		<select_title><![CDATA[Select a contributor]]></select_title>
+	</dropdown>
+	<intro_copy>
+		<heading><![CDATA[The Gloucestershire Module]]></heading>
+		<copy><![CDATA[This module holds 14 interviews with people living and working in Gloucestershire all asked the same questions about work, learning and life.<br><Br>The Gloucestershire Module is part of a pilot project between Youth Services Team Gloucester and the producer of the Talking Jobs resource.]]></copy>
+		<welcome_image><![CDATA[GYSS_Front_2.jpg]]></welcome_image>
+	</intro_copy>
+	<question_types>
+		<type id="0" label="WORK" colour="0xd5e9ce" style="WorkButton_skin">
+			<tip><![CDATA[Jump to questions about work]]></tip>
+		</type>
+		<type id="1" label="LEARNING" colour="0xfcfbe6" style="LearningButton_skin">
+			<tip><![CDATA[Jump to questions about learning]]></tip>
+		</type>
+		<type id="2" label="LIFE" colour="0xe2eaf5" style="LifeButton_skin">
+			<tip><![CDATA[Jump to questions about life]]></tip>
+		</type>
+	</question_types>
+	<questions>
+		<question id="0" type="0"><![CDATA[Who are you and what do you do for a living?]]></question>
+		<question id="1" type="0"><![CDATA[Can you describe a normal working day?]]></question>		
+		<question id="2" type="0"><![CDATA[What made you want to do this kind of work?]]></question>
+		<question id="3" type="0"><![CDATA[what's the hardest thing about your work?]]></question>
+		<question id="4" type="0"><![CDATA[How does your job impact in your life outside of work?]]></question>
+		<question id="5" type="0"><![CDATA[What are your next steps?]]></question>
+		<question id="6" type="0"><![CDATA[What do you think employers are looking for?]]></question>
+		<question id="7" type="1"><![CDATA[As a child, what did you want to be when you grew up?]]></question>
+		<question id="8" type="1"><![CDATA[Can you tell us about your time at school?]]></question>
+		<question id="9" type="1"><![CDATA[After school what kind of training have you been through?]]></question>
+		<question id="10" type="1"><![CDATA[What didn't they tell you during your training? ]]></question>		
+		<question id="11" type="2"><![CDATA[Can you tell us something about your family background? ]]></question>
+		<question id="12" type="2"><![CDATA[Tell us something about your current life outside of work? ]]></question>
+		<question id="13" type="2"><![CDATA[Have you experienced any difficulties in your past?]]></question>
+    <question id="14" type="2"><![CDATA[what have been your most significant turning points?]]></question>
+</questions>
+</talking_jobs>

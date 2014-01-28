@@ -1,0 +1,122 @@
+.fav_wrapper {
+	position: relative;
+	margin-bottom: 30px;
+	border-bottom: 1px solid $player-edging-colour;
+	padding-bottom: 20px;
+}
+
+
+.fav_wrapper .question_holder {
+	padding: 10px;
+	background: white;
+	border: 1px solid $tab-edging-colour;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.fav_wrapper .fav_play,
+.fav_wrapper .fav_delete {
+	position: absolute;
+}
+
+.fav_wrapper .fav_question_number, 
+.fav_wrapper .fav_question {
+	/*position: absolute;
+	font-size: 18px;
+	width: 50px;
+	text-align: center;
+	top: 0px;*/
+	float: left;
+}
+
+.fav_wrapper .fav_question {
+	width: 80%;
+	margin-left: 10px;
+}
+
+.fav_wrapper .fav_play {
+	background-image: url("../img/skin/btn_play.png");
+	background-repeat: no-repeat;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	border: none;
+	box-shadow: none
+}
+
+.fav_wrapper .fav_play:hover{
+	background-position: 0 0;
+}
+
+.fav_wrapper .fav_delete {
+	right: 10px;
+	background-image: url("../img/skin/btn_delete.png");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	border: none;
+	box-shadow: none
+}
+
+.fav_wrapper .content {
+	margin-left: 47px;
+	width: 75%;
+}
+
+.fav_wrapper .fav_job_title {
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.fav_wrapper .content textarea{
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	background: #e7e5e7;
+}
+
+.fav_wrapper .content .view_transcript {
+	margin-top: 20px;
+	background-image: url("../img/skin/transcript_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+	text-indent: 35px;
+	margin-left: -35px;
+	/*margin-bottom: 10px;*/
+}
+
+.fav_wrapper .content .fav_transcript {
+	margin-bottom: 10px;
+	border-bottom: 1px solid $tab-edging-colour;
+	padding-bottom: 20px;
+	background: #e7e5e7;
+	border: 1px solid $tab-edging-colour;
+	padding: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-style: italic;
+}
+
+.fav_wrapper .content .fav_transcript p {
+	margin-bottom: 10px;
+}
+
+.notes_and_transcript .notes_title {
+	margin-top: 20px;
+}
+.notes_and_transcript button {
+	font-size: 12px;
+	margin-bottom: 20px;
+}

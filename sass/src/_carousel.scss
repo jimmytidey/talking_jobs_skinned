@@ -1,0 +1,102 @@
+ .carousel .carousel_prev,
+.carousel_container,
+.carousel .carousel_next {
+	/*float: left;*/
+}
+
+
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+.carousel,
+.interviewee_scroller,
+.caroufredsel_wrapper,
+.carousel_container  {
+	height: 44px !important;
+}
+	.carousel_container {
+		overflow: hidden;
+		width: 346px;
+		position: absolute;
+		left: 34px;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+	
+
+	
+.interviewee_selector {
+	margin-right: 1px!important;
+	width: 69px;
+	/*height: 52px;*/
+	display:inline-block;
+	vertical-align: top;
+}
+
+.carousel .selected {
+	border-bottom: 5px solid $talking-jobs-red;
+}
+
+.carousel .carousel_next,
+.carousel .carousel_prev {
+	display: block !important;
+	overflow: hidden;
+	text-indent: -500px;
+	width: 33px;
+	height: 39px;
+	position: absolute;
+	top: 0;
+	visibility: visible;
+}
+
+.carousel .carousel_prev{
+	left: 0;
+	background-image: url( $skin + "btn_carousel_left_arrow.png");
+	background-repeat: no-repeat;
+	margin-right:1px;
+}
+
+.carousel .carousel_next{
+	background-image: url( $skin + "btn_carousel_right_arrow.png");
+	background-repeat: no-repeat;
+	right: 0;
+}
+
+@media only screen  and (max-width: 480px) {
+	.carousel {
+		display : none;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.carousel .carousel_next,
+	.carousel .carousel_prev {
+		margin-top: -2px;
+	}
+	
+	.interviewee_selector {
+		width: 65px;
+	}
+}
+
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.carousel_container {
+		width: 346px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.carousel_container {
+		width: 472px;
+	}
+	
+
+	
+	.interviewee_selector {
+		width: 67px;
+		height: 39px;
+	}
+}

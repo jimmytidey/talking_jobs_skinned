@@ -1,0 +1,233 @@
+/* --------------------------------------
+Manages the core design for most of the player.
+Only focuses on top level containers and makes sure
+they play nicely together
+-----------------------------------------*/
+/* --------------------------------------
+Vars
+-----------------------------------------*/
+$tab-on-colour: #F8F6F9;
+$tab-off-colour: #E7E5E7;
+$player-edging-colour: #E7E5E7;
+$tab-edging-colour: #DAD8DB;
+$standard-text-colour: #4A4A4A;
+$talking-jobs-red: #D0021B;
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+
+body {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* --------------------------------------
+Remove any margins and padding applied by
+twitter bootstrap keep adding if more are found
+-----------------------------------------*/
+
+div,
+[class*="span"],
+.row,
+#branding,
+#player,
+#player .top_nav,
+#tabs,
+p
+ {
+	margin: 0;
+	margin: 0;
+}
+
+/* --------------------------------------
+Gives us the abiloity to have 100% throughout
+the app
+-----------------------------------------*/
+html, body, 
+.jobs_player,
+#app,
+#player,
+#tabs {
+	height: 100%;
+}
+
+
+.jobs_player {
+	width: 598px;
+	/*position: relative;*/
+	
+	position: absolute;
+	height: auto;
+	bottom: 0;
+	top: 0;
+	left: 50%;
+	margin-left: -299px;
+}
+
+#branding{
+	width: 596px;
+}
+
+.jobs_player .span9 {
+	width: 414px;
+}
+
+.jobs_player .span3 {
+	width: 166px;
+}
+
+.player .span7 {
+	width: 414px;
+}
+
+.question_container .span2 {
+	width: 104px;
+}
+.question_container .span5 {
+	width: 303px;
+}
+
+#branding{
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	border-right: 1px solid $tab-edging-colour;
+	border-left: 1px solid $player-edging-colour;
+}
+#branding img{
+	float: right;
+	height: 31px;
+}
+/* --------------------------------------
+Player. Left column
+-----------------------------------------*/
+
+#player {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#player .info_open .player,
+#player .info_open .modes,
+#player .info_open .carousel,
+#player .info_open .question_container{
+	display: none;
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.jobs_player {
+		width: 724px;
+		margin-left: -362px;
+	}
+	
+	#branding{
+		width: 722px;
+	}
+	.jobs_player .span9 {
+		width: 540px;
+	}
+	.player .span7 {
+		width: 540px;
+	}
+}
+@media only screen  and (max-width: 480px) {
+
+
+	#app {
+		height: auto;
+	}
+	
+	.jobs_player {
+		width: 100%;
+		position: static;
+		margin-left: 0;
+	}
+	
+	#branding{
+		border-right: none;
+		border-left: none;
+		position:static;
+	}
+	
+	#branding{
+		width: 100%;
+	}
+	
+	.player .span7 {
+		width: 100%;
+	}
+	.jobs_player .span9 {
+		width: 100%;
+	}
+}
+
+
+
+@media only screen  and (min-width: 978px) {
+
+}
+
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	
+	.jobs_player {
+		width: 580px;
+		margin-left: -290px;
+	}
+	
+	#branding{
+		width: 578px;
+	}
+	
+	.jobs_player .span7 {
+		width: 397px;
+	}
+}
+
+@media only screen  and (max-width: 979px) and (min-width: 768px) {
+
+	.jobs_player {
+		width: 598px;
+		margin-left: -299px;
+	}
+	
+	#branding{
+		width: 596px;
+	}
+	
+	.jobs_player .span9 {
+		width: 414px;
+	}
+		
+}
+
+

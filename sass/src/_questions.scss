@@ -1,0 +1,191 @@
+.question_container {
+	margin-top: 6px;
+}
+
+.question_type {
+	height: 67px;
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+	.question_type span {
+		display: block;
+		padding-top: 25px;
+		
+	}
+	
+.question_container .span5 {
+	float: right;
+}
+
+.iScrollVerticalScrollbar  { 
+    z-index:20;
+}
+
+.question_selector {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	margin-bottom: 1px;
+	position: relative;
+}
+	.question_selector a,
+	.question_selector span{
+		display: block;
+		float: left;
+	}
+	
+	.question_selector .number {
+		font-size: 18px;
+		padding: 10px;
+		position: absolute;
+		left: 10px;
+		top: 7px;
+	}
+	
+	.question_selector .question {
+		padding: 10px;
+
+		width: 70%;
+		margin-left: 50px;
+	}
+	
+	.question_selector .play-mode-questions {
+		float: left;
+		display: none;
+		margin-left: 50px;
+		font-size: 12px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	.question_selector .play-mode-questions .tj-label {
+		display: block;
+		float: left;
+		padding-top: 0.4em;
+		margin-right: 10px;
+	}
+	
+	.question_selector .play-mode-questions .tj-icon {
+		margin-top: 0.3em;
+		background-image: url("../img/skin/icon_play.png");
+		background-repeat: no-repeat;
+		width: 26px;
+		height: 26px;
+		display: inline-block;
+		overflow: hidden;
+		text-indent: 40px;
+		float: right;
+	}
+	
+	.question_scroller {
+		min-height: 219px;
+		overflow: auto;
+		overflow-x: hidden;
+		position: absolute;
+		bottom: 32px;
+		/* Jimmy changed top */ 
+		top: 0px; 
+		width: 303px;
+		height: 180px;
+        position: relative;
+        overflow: hidden;
+
+        /* Prevent native touch events on Windows */
+        -ms-touch-action: none;
+
+        /* Prevent the callout on tap-hold and text selection */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        /* Prevent text resize on orientation change, useful for web-apps */
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        -o-text-size-adjust: none;
+        text-size-adjust: none;
+	}
+	
+    .question_scroller ul {
+
+        list-style-type:none;
+        margin-left:0px;
+        padding-left:0px;
+        /* Prevent elements to be highlighted on tap */
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        /* Put the scroller into the HW Compositing layer right from the start */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);   
+
+    }
+	
+	.question_scroller .selected {
+		background-color: white !important;
+	}
+	
+	.question_scroller .selected .number{
+		color: $talking-jobs-red;
+	}
+	
+	.question_scroller .selected .question{
+		color: $talking-jobs-red;
+	}
+
+	.question_scroller .selected .play-mode-questions {
+		display: block;
+	}
+
+@media only screen  and (max-width: 480px) {
+	.question_scroller {
+		height: auto;
+		overflow: auto;
+		position: static;
+		width: 100%;
+	}
+	
+	.question_container .span5 {
+		width: 100%;
+		float: none;
+	}
+
+	.question_type {
+		display: none;
+	}
+		
+}
+
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	.question_scroller {
+		width: 286px;
+		top: 380px;
+	}
+	
+	.question_selector .question {
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.question_scroller {
+		/* top: 460px; */
+		width: 427px;
+	}
+	.question_container .span5 {
+		width: 426px;
+	}
+}
+
+@media only screen and (max-width: 979px) and (min-width: 768px) {
+	.question_scroller {
+		width: 303px;
+	}
+}

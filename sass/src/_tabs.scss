@@ -1,0 +1,162 @@
+/* --------------------------------------
+Vars
+-----------------------------------------*/
+$tab-padding: 20px;
+$tab-alert-padding: 5px;
+$tab-alert-margin-bottom: $tab-padding - $tab-alert-padding;
+/* --------------------------------------
+Tabs. Right column.
+First clear the syles applied by twiiter
+bootstrap, as they're not needed for these tabs
+-----------------------------------------*/
+#tabs * {
+	margin: 0;
+	padding: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+#tabs {
+	border-right: 1px solid $tab-edging-colour;
+	background-color: $tab-off-colour; 
+	position: relative;
+}
+
+
+	#tabs .tab_buttons a {
+		border-bottom: 1px solid $tab-edging-colour;
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display:block;
+		position: relative;
+	}
+	
+	#tabs .tab_buttons .active a{
+		background-color: $tab-on-colour;
+		color: $talking-jobs-red;
+		font-weight: bold;	
+	}
+	
+	#tabs .tab_buttons a,
+	#tabs .tab_buttons a:link {
+		color: $standard-text-colour;
+	}
+	
+	#tabs .tab_buttons a:visited {
+		
+	}
+	
+	#tabs .tab_buttons a:hover {
+		background-color: $tab-on-colour;
+		color: $talking-jobs-red;
+		/*border-left: 1px solid $tab-off-colour;*/
+	}
+	
+	#tabs .tab_buttons a:active {
+		
+	}
+
+	#tabs .favourites_tab_alert {
+		bottom: 0;
+		color: #ffffff;
+		display: none;
+		position: absolute;
+		background-color: $talking-jobs-red;
+		padding: $tab-alert-padding;
+		right: 0;
+		margin-bottom: $tab-alert-margin-bottom;
+	}
+	
+	
+	.tab_activities,
+	.tab_about,
+	.tab_reflections,
+	.tab_favourites {
+		display: none;
+	}
+	
+	
+	.tab_reflections textarea {
+		width: 90%;
+		padding: 10px;
+		min-height: 160px;
+		max-width: 95%;
+		margin-bottom: 40px;
+		margin-top: 10px;
+	}
+	
+.tab .content-container {
+	position: absolute;
+	top: 60px;
+	bottom: 30px;
+	overflow: auto;
+	width: 422px;
+}
+.tab.tab_reflections .content-container,
+.tab.tab_favourites .content-container {
+	top: 180px;
+}
+
+.tab fieldset {
+	float :left;
+	width: 50%;
+}
+
+.tab fieldset input {
+	width: 90%;
+}
+
+.tab .export {
+	border-bottom: 1px solid $tab-edging-colour;
+}
+
+.tab .export button {
+	clear: left;
+}
+
+.tab h1 {
+	font-size: 20px;
+	color: #4A4A4A;
+	font-weight: lighter;
+}
+
+	@media only screen  and (max-width: 480px) {
+		.tab .content-container {
+			position: relative;
+		}
+		
+		#tabs {
+			display:none;
+		}
+	}
+	
+	@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+		#player,
+		#tabs{
+			float: left;
+		}
+		
+		.question_container .span5 {
+			width: 286px;
+		}
+		
+		.question_container .span2{
+			float: left;
+		}
+		
+		.question_container .span5 {
+			float: right;
+		}
+		
+		.tab .content-container {
+			width: 405px;
+		}
+	}
+	
+	@media only screen and (min-width: 1200px) {
+		.tab .content-container {
+			width: 548px;
+		}
+	}

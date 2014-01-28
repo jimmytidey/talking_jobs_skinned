@@ -1,0 +1,65 @@
+           <div class='row'>
+                <div class="btn-group span2" >
+                     <button type="button" class="btn">Work</button>
+                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                       <span class="caret"></span>
+                     </button>
+                       <ul class='dropdown-menu'>
+                           <li><a href="#">Please tell us your name, and what you do for a living</a></li>
+                           <li><a href="#">Please describe a normal day</a></li> 
+                           <li><a href="#">What made you want to become a mechanic </a></li>
+                           <li><a href="#">What do you most enjoy about your job? </a></li>
+                           <li><a href="#">Describe the importance of teamwork in your job </a></li>
+                           <li><a href="#">What is the hardest thing about your job?</a></li>
+                           <li><a href="#">What working hours do you keep?</a></li>
+                           <li><a href="#">If you had not chosen your job what else might you have done?</a></li>
+                           <li><a href="#">Before doing your current job did you have any other careers?</a></li>
+                           <li><a href="#">How does your job affect your life outside work?</a></li>
+                       </ul>
+                   </div>    
+            </div>   
+              
+            <div class='row'>
+                   <div class="btn-group span2" >
+                       <button type="button" class="btn">Learning</button>
+                       <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                           <span class="caret"></span>
+                       </button>
+                       <ul class='dropdown-menu'>
+                           <li><a href="#">As a child what did you want to be when you grew up?</a></li>
+                           <li><a href="#">Tell us about your time at school, what did you think of it? </a></li>
+                           <li><a href="#">What did you enjoy the most and least about school? </a></li>
+                           <li><a href="#">What qualifications did you have when you left school and how old were you at the time? </a></li>
+                           <li><a href="#">What kind of training did you do to get your job? </a></li>
+                           <li><a href="#">How long did it take you to get your job? </a></li>
+                           <li><a href="#">What did you enjoy most about your training? </a></li>
+                           <li><a href="#">What was the hardest thing about your training? </a></li>
+                           <li><a href="#">What didn't they tell you about your job during your training?</a></li>
+
+                       </ul>
+                   </div>    
+
+               </div>     
+               <div class='row'>
+
+                   <div class="btn-group span2" >
+                       <button type="button" class="btn">Life</button>
+                       <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                       <span class="caret"></span>
+                       </button>
+                       <ul class='dropdown-menu'>
+                           <li><a href="#">Tell us something about your family background?  </a></li>
+                           <li><a href="#">What did you parents or carers do? </a></li>
+                           <li><a href="#">How important were education or getting qualifications considered to be at home?  </a></li>
+                           <li><a href="#">Who gave you the most encouragement with your schoolwork? </a></li>
+                           <li><a href="#">Please tell us something about your life situation </a></li>
+                           <li><a href="#">What do you do in your spare time? </a></li>
+                           <li><a href="#">Do you have any personal goals you are working towards? </a></li>
+                           <li><a href="#">What would you say to young people, still at school, just starting to explore the world of work? </a></li> 
+                           <li><a href="#">What do you think makes for a happy working life?  </a></li>
+                           <li><a href="#">If you had one piece of advice to offer young people watching this, what would it be? </a></li>
+
+                       </ul>
+                   </div>
+                </div>
+            </div>

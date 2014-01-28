@@ -1,0 +1,353 @@
+/* --------------------------------------
+Player. Left column
+-----------------------------------------*/
+
+
+#player {
+	border-left: 1px solid $player-edging-colour;
+	background-color: $tab-on-colour; 
+}
+
+
+/* --------------------------------------
+Header area: info button, interview select
+and full interview mode button
+-----------------------------------------*/
+#player .top_nav {
+	padding-bottom: 10px;
+	position: relative;
+	min-height: 20px;
+}
+
+	.interviewee_select {
+		float: right;
+		margin-top: -5px;
+	}
+	
+	#player .contributor {
+		border-bottom: 1px solid #e7e5e7;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		font-size: 20px;
+		color: #4A4A4A;
+	}
+	
+	#player .contributor .interviewee_name,
+	#player .contributor .previous_button,
+	#player .contributor .next_button {
+		float: left;
+		display: block;
+	}
+	
+	#player .contributor .interviewee_name {
+		border-right: 1px solid #e7e5e7;
+		padding-right: 10px;
+	}
+	
+	#player .contributor .camera_button {
+		background-image: url($skin + "btn_camera.png");
+		background-repeat: no-repeat;
+		overflow: hidden;
+		text-indent: -500px;
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+		display: block;
+		float: left;
+		margin-top: -5px;
+		padding-right: 10px;
+		border-right: 1px solid #e7e5e7;
+	}
+
+	
+	#player .info_button {
+		background-image: url($skin + "btn_info.png");
+		background-repeat: no-repeat;
+		float: left;
+		
+		width: 30px;
+		height: 30px;
+		display: block;
+		overflow: hidden;
+		text-indent: 40px;
+		/*margin-top: -5px;
+		margin-left: 10px;*/
+	}
+
+	#player select {
+		margin-right: 5px;
+		font-size: 12px;
+		height: 2.6em;
+		margin-bottom: 0;
+		float: left;
+		width: 220px;
+	}
+	
+	.modes .btn{
+		font-size: 12px;
+	}
+	
+	.modes {
+		width: 100%;
+	}
+	
+	.modes .active {
+		background-color: $talking-jobs-red;
+		color: white;
+	}
+	
+	.modes .whole_interview_order{
+		width: 27%;
+	}
+	
+	.modes .random_order{
+		width: 11%;
+	}
+	
+	.modes .whole_question_order{
+		width: 43%;
+	}
+	
+	#player .play-mode-shuffle,
+	#player .play-mode-interview {
+		
+		margin-top: 0.2em;
+		float: right;
+		display: block;
+		background-repeat: no-repeat;
+		padding-top: 0;
+		padding-bottom: 0;
+		overflow: hidden;
+		font-size: 12px;
+		
+	}
+	
+	
+	#player .play-mode-interview:hover,
+	#player .play-mode-shuffle:hover {
+		background-position: 0 0;
+		background-color: transparent;
+	}
+	
+	#player .play-mode-shuffle .tj-icon {
+		background-image: url($skin + "icon_shuffle.png");
+	}
+	
+	
+	#player .play-mode-interview .tj-icon {
+		background-image: url($skin + "icon_play.png");
+	}
+	
+		#player .play-mode-shuffle .tj-label,
+		#player .play-mode-interview .tj-label {
+			display: block;
+			float: left;
+			padding-top: 0.4em;
+			margin-right: 10px;
+		}
+		
+		#player .play-mode-shuffle .tj-icon,
+		#player .play-mode-interview .tj-icon {
+			margin-top: 2px;
+			
+			background-repeat: no-repeat;
+			width: 26px;
+			height: 26px;
+			display: inline-block;
+			float: right;
+			overflow: hidden;
+			text-indent: 40px;
+		}
+		
+		
+		
+	#player .player {
+		position: relative;
+	}
+	
+	#player .player .previous_button,
+	#player .player .next_button {
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		text-indent: -500px;
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-position: 10px 10px;
+		top: 50%;
+		margin-top: -20px;
+	}
+	
+	#player .player .next_button {
+		background-image: url($skin + "btn_right_arrow.png");
+		right: 0;
+	}
+
+	#player .player .previous_button {
+		background-image: url($skin + "btn_left_arrow.png");
+		left: 0;
+	}
+	
+		
+		
+	#player .mejs-controls .mejs-play button {
+		background-image: url($skin + "btn_transport_play.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+	}
+	
+	#player .mejs-controls .mejs-pause button {
+		background-image: url($skin + "btn_transport_pause.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+		background-position: 0 0px;
+	}
+	
+	#player .mejs-controls .restart_video_btn {
+		background-image: url($skin + "btn_transport_restart.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+		margin-right: 1px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+	}	
+		
+	#player .mejs-controls .prev_track_btn {
+		background-image: url($skin + "btn_transport_previous.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+	}
+		
+	#player .mejs-controls .next_track_btn {
+		background-image: url($skin + "btn_transport_next.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+	}
+		
+		
+	#player .mejs-controls .add_video_btn {
+		background-image: url($skin + "btn_transport_add.png");
+		height: 22px;
+		width: 20px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+	}
+		
+		
+	.mejs-controls .mejs-time-rail .mejs-time-loaded {
+		background: $talking-jobs-red !important;
+	}
+		
+
+
+@media only screen  and (max-width: 480px) {
+	#player .info_button {
+		float: right;
+	}
+	
+	#player .interviewee_select {
+		float : left;
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	.modes {
+		display: none;
+	}
+	
+	#player {
+		height: auto;
+	}
+	
+	#player .mejs-controls .add_video_btn {
+		display: none;
+	}
+	
+	#player .play-mode-shuffle .tj-icon {
+		background-image: none;
+	}
+	
+	
+	#player .play-mode-interview .tj-icon {
+		background-image: none;
+	}
+	
+	
+	#player .play-mode-shuffle  {
+		background-image: url($skin + "btn_shuffle.png");
+		margin-top: -1px;
+	}
+	
+	
+	#player .play-mode-interview {
+		background-image: url($skin + "btn_play.png");
+	}
+	
+	.top_nav .btn{
+		display: block;
+		font-size: 14px;
+		line-height: 20px;
+		color: #333;
+		text-align: center;
+		text-shadow: none;
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: none;
+		background-image: none;
+		background-image: none;
+		background-image: none;
+		background-image: none;
+		background-image: none;
+		background-repeat:no-repeat;
+		border: none;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		filter: none;
+		filter: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		text-indent: -500px;
+		overflow: hidden;
+	}
+}	
+		
+@media only screen and (min-width: 1200px) {
+
+	.modes .random_order{
+		width: 16%;
+	}
+	/*
+	.modes .whole_interview_order{
+		width: 27%;
+	}
+	
+	.modes .whole_question_order{
+		width: 43%;
+	}
+	*/
+}
+@media only screen  and (min-width: 978px) {
+
+}

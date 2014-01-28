@@ -1,0 +1,163 @@
+.welcome_modal{
+	position: absolute;
+	z-index: 100000;
+	background-color: white;
+	width: 100%;
+	padding-bottom: 50px;
+	min-height: 100%;
+}
+
+.welcome_modal .span12 {
+	width: 628px;
+}
+
+.welcome_modal .span6 {
+	width: 302px;
+}
+
+
+.welcome_modal .header {
+	background: #E7E5E7;
+	min-height: 140px;
+	height: auto;
+}
+
+.welcome_modal .span12 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 34px;
+	float: none;
+}
+
+.welcome_modal .partners{
+	margin-top: -20px;
+	border-left: 1px solid $tab-edging-colour;
+	
+}
+
+.welcome_modal .partners,
+.welcome_modal .hero {
+	padding-left: 20px;
+}
+.welcome_modal .partners img 
+{
+	height :89px;
+}
+
+.modal_controls {
+	margin-top: 30px;
+}
+
+.modal_controls input {
+	margin-top: 0;
+}
+
+.modal_controls label {
+	display: inline;
+}
+
+.modal_controls .start {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+	width: 3em;
+}
+
+
+
+
+@media only screen  and (max-width: 480px) {
+	.welcome_modal .span6,
+	.welcome_modal .span12 {
+		width: 280px;
+	}
+
+	
+	.welcome_modal .header .span6 {
+		width: 140px;
+		float: left;
+		margin-top: 0;
+	}
+	.welcome_modal .span12 {
+		margin-top: 20px;
+	}
+
+	.welcome_modal .header {
+		min-height: 0;
+	}
+	
+	.welcome_modal .header img {
+		width: 80%;
+		height: auto;
+	}
+	
+	.welcome_modal .partners img {
+		width: 50%;
+	}
+	
+	.welcome_modal h2 {
+		font-size: 21.5px;
+		line-height: 24px;
+	}
+	
+	.welcome_modal .partners {
+		margin-top: 20px;
+		border-left: none;
+	}
+
+	.welcome_modal .partners,
+	.welcome_modal .hero {
+		padding-left: 0px;
+	}
+	
+}
+
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	.welcome_modal .header img {
+		width: 80%;
+		height: auto;
+	}
+	
+	.welcome_modal .partners img {
+		width: 50%;
+	}
+	
+	.welcome_modal h2 {
+		font-size: 21.5px;
+		line-height: 24px;
+	}
+	
+	.welcome_modal .span12 {
+		width: 420px;
+	}
+	
+	.welcome_modal .span6 {
+		width: 200px;
+		float: left;
+	}
+
+	
+	.welcome_modal .header .span6 {
+		float: left;
+		margin-top: 0;
+	}
+	
+
+}
+
+@media only screen  and (min-width: 978px) {
+	.welcome_modal .span12 {
+		width: 625px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.welcome_modal .span12 {
+		width: 778px;
+	}
+
+	.welcome_modal .span6 {
+		width: 378px;
+	}
+}
