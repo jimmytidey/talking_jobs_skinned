@@ -87,6 +87,10 @@ job_player.attachEvents = function(player_instance) {
         job_player.playlistChange(playlist_no, local_player_instance, true);        
     });
     
+    //make the email send work for reflections  
+    $('.email_reflections').click(function(){ 
+        job_player.emailReflections(local_player_instance);
+    });
     
     //set the player to zero for init
     job_player.playlistChange(0, local_player_instance, false);

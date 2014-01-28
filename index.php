@@ -52,7 +52,7 @@
             
             <div class='tab tab_favourites'>
                 <h1>Favourites</h1>
-				<div class="export">
+				<div class="fav_export">
 					<form action="">
 					<fieldset>
 						<label>Your name</label>
@@ -64,7 +64,6 @@
 					</fieldset>
 					<button class="btn">Save</button>
 					<button class="btn">Email</button>
-					<button class="btn">Print</button>
 					</form>
 				</div>
                 <div class='fav_container content-container'>
@@ -74,18 +73,14 @@
             
             <div class='tab tab_reflections'>
                 <h1>Reflections</h1>
-			<div class="export">
+			<div class="reflect_export">
 				<form action="">
 				<fieldset>
-					<label>Your name</label>
-					<input type="text" />
-				</fieldset>
-				<fieldset>
-					<label>Filename</label>
-					<input type="text" />
+					<label>Your email</label>
+					<input type="text" class='reflections_email' />
 				</fieldset>
 				<button class="btn">Save</button>
-				<button class="btn">Email</button>
+				<button class="btn email_reflections">Email</button>
 				<button class="btn">Print</button>
 				</form>
 			</div>

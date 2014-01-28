@@ -36,6 +36,7 @@
         <script src="js/tabs.js"></script>  
         <script src="js/favourites.js"></script>
         <script src="js/notes.js"></script>
+        <script src="js/email.js"></script>
               
         <script src="js/main.js"></script>
         
