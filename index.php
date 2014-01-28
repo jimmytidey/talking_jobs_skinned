@@ -24,7 +24,7 @@
 			    <div class='modal_controls'>
 			        <input type="checkbox" id="israndom" checked />
 					<label for="israndom">Automatic playback</label>
-			        <a href="/index.php" class='btn start btn-danger'>Start</a>
+			        <a href="index.php" class='btn start btn-danger'>Start</a>
 			    </div>
 			</div>
 			<div class="span6 hero">
