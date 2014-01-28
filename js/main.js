@@ -15,14 +15,11 @@
             this.options.welcome_modal_header       = '';
             this.options.welcome_modal_text         = ''; 
             this.options.welcome_modal_image        = '';  
-            this.options.subtitles_folder           = 'modules/yssg/subtitles/';    
-            this.options.elem               = this.element; 
-            this.options.mode               = 'normal'; //could also be whole_interview or random or whole_question 
-            this.options.current_module     = 'yssg';
-            this.options.image_prefix       = "https://s3-eu-west-1.amazonaws.com/gloucestershire/Grabs/";
-            this.options.video_prefix       = "https://s3-eu-west-1.amazonaws.com/gloucestershire/";
+            this.options.subtitles_folder   = 'http://dev.talkingjobs.net/player/subtitles/';    
             this.options.xml_url            = "modules/yssg/";
-            //populate the data structure 
+            //Go! 
+            this.options.elem = this.element; 
+            this.options.mode = 'normal'; //could also be whole_interview or random or whole_question
             job_player.getData(this.options);
         }
     });

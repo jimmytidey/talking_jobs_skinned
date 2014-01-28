@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"  xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
 
   <head>
@@ -8,8 +8,9 @@
 
   <body>
     <div>
-      <p begin="00:00:00.000">Susbtitles have yet to be produced</p>
-
+      <p begin="00:00:00.428">My name’s Steve and I’m joint managing director of a local security company.  What I actually do is run a company of 85 staff where</p>
+      <p begin="00:00:10.614">we provide security services for a number of customers around Gloucestershire, 20% of those are residential, 80% of those are commercial</p>
+      <p begin="00:00:20.504">and my responsibility really is to provide, let’s say, the daily support for my staff as well as the customers.</p>
     </div>
   </body>
 

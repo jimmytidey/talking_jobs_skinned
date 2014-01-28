@@ -19,7 +19,6 @@ job_player.drawInterface = function(player_instance) {
     var options = {
         alwaysShowControls: true,
         translationSelector: false,
-        startLanguage: 'en',
         success: function (mediaElement, domObject) {                
             $('.mejs-playpause-button').after('<div class="next_track_btn"> &raquo;</div>');
             $('.mejs-playpause-button').after('<div class="prev_track_btn"> &laquo;</div>');

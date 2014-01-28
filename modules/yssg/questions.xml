@@ -6,7 +6,7 @@
 	<intro_copy>
 		<heading><![CDATA[The Gloucestershire Module]]></heading>
 		<copy><![CDATA[This module holds 14 interviews with people living and working in Gloucestershire all asked the same questions about work, learning and life.<br><Br>The Gloucestershire Module is part of a pilot project between Youth Services Team Gloucester and the producer of the Talking Jobs resource.]]></copy>
-		<welcome_image><![CDATA[GYSS_Front_2.jpg]]></welcome_image>
+		<welcome_image><![CDATA[https://s3-eu-west-1.amazonaws.com/gloucestershire/Grabs/GYSS_Front_2.jpg]]></welcome_image>
 	</intro_copy>
 	<question_types>
 		<type id="0" label="WORK" colour="0xd5e9ce" style="WorkButton_skin">
