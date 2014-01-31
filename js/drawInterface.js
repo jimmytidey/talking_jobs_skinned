@@ -19,15 +19,20 @@ job_player.drawInterface = function(player_instance) {
     var options = {
         alwaysShowControls: true,
         translationSelector: false,
-        success: function (mediaElement, domObject) {                
+        success: function (media, node, player) {  
+           
             $('.mejs-playpause-button').after('<div class="next_track_btn"> &raquo;</div>');
             $('.mejs-playpause-button').after('<div class="prev_track_btn"> &laquo;</div>');
             $('.mejs-playpause-button').after('<div class="restart_video_btn"> &lt;</div>');
             var width = $('.mejs-time-rail').css('width');
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
+
+            
+            local_player_instance.video = player;
+            local_player_instance.media = media;
             //for some reason the mediaElement object isn't properly set in Chrome, so have to rely on this hack
-            setTimeout( function(){job_player.attachEvents(local_player_instance); }, 1000 );
+            setTimeout( function(){job_player.attachEvents(local_player_instance); }, 2000 );
         }   
     }
     
@@ -41,8 +46,9 @@ job_player.drawInterface = function(player_instance) {
         options.mode = 'shim';
     }
     
-    local_player_instance.video = new MediaElementPlayer('#video_player', options);
+    $('video').mediaelementplayer(options);
     
+
     
     //write the drop down   
     $.each(player_instance.interviewees, function(key, val) {
@@ -108,9 +114,7 @@ job_player.drawInterface = function(player_instance) {
         }
     };    
 
-    
-    
-    //now add the question type 
+
     //now add the question type 
     var element = $('.question_types'); 
     
@@ -122,5 +126,12 @@ job_player.drawInterface = function(player_instance) {
     };
     var number_of_questions =  player_instance.questions.length + 1;
      
+    //make sure the player is in the correct mode
+    job_player.initModes(player_instance); 
+     
     
 };
+
+job_player.clearModeButtons = function() { 
+    $('.flow_controls p').removeClass('active');
+}

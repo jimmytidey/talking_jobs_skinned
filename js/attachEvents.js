@@ -1,6 +1,7 @@
 job_player.attachEvents = function(player_instance) {
 
     var local_player_instance = player_instance;    
+
     
     job_player.notes(local_player_instance);
     
@@ -34,6 +35,8 @@ job_player.attachEvents = function(player_instance) {
         }
         
         job_player.playlistChange(i, player_instance, true);
+        local_player_instance.mode= 'normal';
+        job_player.clearModeButtons(local_player_instance);
     });
     
     
@@ -49,6 +52,8 @@ job_player.attachEvents = function(player_instance) {
         }
         
         job_player.playlistChange(i, local_player_instance, true);
+        local_player_instance.mode= 'normal';
+        job_player.clearModeButtons(local_player_instance);
     });
         
     //for clicks on the question scroller 
@@ -57,25 +62,26 @@ job_player.attachEvents = function(player_instance) {
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;
         var playlist_no = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance)
         job_player.playlistChange(playlist_no, local_player_instance, true);
+        local_player_instance.mode= 'normal';
+        job_player.clearModeButtons(local_player_instance);
     });
 
     //set modes 
     $('.whole_interview_order').click(function(){ 
         job_player.clearModeButtons();
         job_player.setInterviewMode(local_player_instance);
-        local_player_instance.mode = 'whole_interview';
         $(this).addClass('active');
     });
     
     $('.whole_question_order').click(function(){ 
         job_player.clearModeButtons();
-        local_player_instance.mode = 'whole_question';
         job_player.setQuestionMode(local_player_instance);
         $(this).addClass('active');
     });
-    
-    $('.random_order').unbind()
+
     $('.random_order').click(function(){
+        job_player.clearModeButtons();
+        $('.random_order').addClass('active');
         job_player.setRandomMode(local_player_instance);
     });
     
@@ -89,13 +95,22 @@ job_player.attachEvents = function(player_instance) {
     
     //make the email send work for reflections  
     $('.email_reflections').click(function(){ 
-        job_player.emailReflections(local_player_instance);
+        job_player  .emailReflections(local_player_instance);
     });
+    
     
     //set the player to zero for init
     job_player.playlistChange(0, local_player_instance, false);
     
     job_player.attachTransportEvents(local_player_instance);
+    
+    console.log(local_player_instance.video);
+    
+    local_player_instance.media.addEventListener("ended", function() {
+        if(local_player_instance.mode !== 'normal'){ 
+            job_player.playlistChange(local_player_instance.playlist_position +1 , local_player_instance, true); 
+        }
+    });
     
 };
 
@@ -119,5 +134,8 @@ job_player.attachTransportEvents = function(local_player_instance) {
     $('.restart_video_btn').click(function(){ 
         local_player_instance.video.setCurrentTime(0);
     });
+   
+
+    
     
 }

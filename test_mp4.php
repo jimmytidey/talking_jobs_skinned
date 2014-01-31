@@ -12,10 +12,9 @@
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css"  >
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="media_elements/build/mediaelementplayer.css">
+  
+        <link rel="stylesheet" href="stylesheets/main.css">
+ 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
        
     </head>
@@ -56,11 +55,10 @@
                 var options = {
                     alwaysShowControls: true,
                     success: function (mediaElement, domObject) {                
-                        $('.mejs-playpause-button').after('<div class="next_track_btn"> &raquo;</div>');
-                        $('.mejs-playpause-button').after('<div class="prev_track_btn"> &laquo;</div>');
-                        $('.mejs-playpause-button').after('<div class="restart_video_btn"> &lt;</div>');
-                        var width = $('.mejs-time-rail').css('width');
-                        $('.mejs-time-rail').css('width', width -90);
+                        mediaElement.addEventListener("ended", function() {
+                            console.log('hi');
+                        });
+                        console.log(domObject);
 
                     }   
                 }

@@ -19,7 +19,7 @@
             this.options.xml_url            = "modules/yssg/";
             //Go! 
             this.options.elem = this.element; 
-            this.options.mode = 'normal'; //could also be whole_interview or random or whole_question
+            this.options.mode = 'whole_interview'; //could also be whole_interview or random or whole_question
             job_player.getData(this.options);
         }
     });
