@@ -38,7 +38,6 @@ job_player.getPlaylistIdByQuestionType = function(interviewee_no, type_no, playe
                 break;
         }
     }
-    
     return(result);    
 }
 
@@ -54,7 +53,6 @@ job_player.findPlaylistID = function(interviewee_no, question_no, player_instanc
                 result = i;
         }
     }
-    
     return(result);
 }
 

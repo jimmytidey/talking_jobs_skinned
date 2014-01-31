@@ -38,6 +38,7 @@
         <script src="js/notes.js"></script>
         <script src="js/email.js"></script>
         <script src="js/modes.js"></script>
+        <script src="js/drawPlayer.js"></script>
               
         <script src="js/main.js"></script>
         

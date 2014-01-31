@@ -14,42 +14,7 @@ job_player.drawInterface = function(player_instance) {
     //Draw any existing favs in 
     job_player.renderFavourites(player_instance);
     
-    
-    //draw the video player
-    var options = {
-        alwaysShowControls: true,
-        translationSelector: false,
-        success: function (media, node, player) {  
-           
-            $('.mejs-playpause-button').after('<div class="next_track_btn"> &raquo;</div>');
-            $('.mejs-playpause-button').after('<div class="prev_track_btn"> &laquo;</div>');
-            $('.mejs-playpause-button').after('<div class="restart_video_btn"> &lt;</div>');
-            var width = $('.mejs-time-rail').css('width');
-            $('.mejs-time-rail').css('width', width -120);
-            $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
-
-            
-            local_player_instance.video = player;
-            local_player_instance.media = media;
-            //for some reason the mediaElement object isn't properly set in Chrome, so have to rely on this hack
-            setTimeout( function(){job_player.attachEvents(local_player_instance); }, 2000 );
-        }   
-    }
-    
-    //Old IE cannot play mp4 natively 
-    if (isIE()) {  
-        options.mode = 'shim';
-    }
-    
-    //Firefox cannot play mp4 natively and must fall back on Flash 
-    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-        options.mode = 'shim';
-    }
-    
-    $('video').mediaelementplayer(options);
-    
-
-    
+        
     //write the drop down   
     $.each(player_instance.interviewees, function(key, val) {
         var html = "<option value='" + val.id + "'>" + val.interviewee +"</option>";  
@@ -128,7 +93,10 @@ job_player.drawInterface = function(player_instance) {
      
     //make sure the player is in the correct mode
     job_player.initModes(player_instance); 
-     
+    
+    job_player.drawPlayer(player_instance); 
+    
+    job_player.attachEvents(player_instance);
     
 };
 

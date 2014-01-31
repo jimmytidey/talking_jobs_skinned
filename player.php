@@ -41,7 +41,7 @@
 
 <!-- player -->
 <div class='row player'>
-     <div class='span7' >
+     <div class='span7 video_container' >
         <video id='video_player' preload="auto" poster='' type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;"  src="https://s3-eu-west-1.amazonaws.com/gloucestershire/YSSG_Dale_01.mp4?<?=time() ?>" class='video_player' controls="controls">
             <track id='subtitles' kind="subtitles" src="" srclang="en" />
             <object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf">

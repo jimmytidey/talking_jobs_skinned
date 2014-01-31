@@ -23,7 +23,7 @@
 			    <p class='welcome_text'></p>
 			    <div class='modal_controls'>
 			        <input type="checkbox" id="israndom" checked />
-					<label for="israndom">Automatic playback</label>
+					<label for="israndom">mix it up</label>
 			        <a href="index.php" class='btn start btn-danger'>Start</a>
 			    </div>
 			</div>

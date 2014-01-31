@@ -1,4 +1,28 @@
 
+job_player.setNormalMode = function(player_instance) { 
+    //TODO: refector UI out of this function 
+    player_instance.mode = 'normal';
+    job_player.clearModeButtons(player_instance);
+    
+    var new_playlist = [];
+    var current_question_id     = player_instance.playlist[player_instance.playlist_position].question_id;
+    var current_interviewee_id  = player_instance.playlist[player_instance.playlist_position].interviewee_id;
+    
+    for(var i = 0; i< player_instance.questions.length; i++) { 
+        for(var j = 0; j< player_instance.interviewees.length; j++) {
+            new_playlist.push(job_player.getObjectFromPlaylist(i,j,player_instance));
+        }
+    }
+    
+    player_instance.playlist = new_playlist;
+  
+    var new_playlist_id = job_player.findPlaylistID(current_interviewee_id, current_question_id, player_instance);
+    
+    player_instance.playlist_position = new_playlist_id;
+    
+    
+}
+
 
 job_player.setRandomMode = function(player_instance) {
     player_instance.mode = 'random';
@@ -68,6 +92,4 @@ job_player.initModes = function(player_instance) {
         $('.random_order').addClass('active');
         $('.btn.random_order', player_instance.elem).addClass('active');
     }
-
-
 }
