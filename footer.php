@@ -18,7 +18,6 @@
         
         <!-- 3rd party -->
         <script type="text/javascript" src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
-        <script type="text/javascript" src="js/vendor/scrollTo.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src='media_elements/build/mediaelement-and-player.min.js' ></script>
   

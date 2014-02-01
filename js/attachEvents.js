@@ -57,9 +57,8 @@ job_player.attachEvents = function(player_instance) {
     $('.question_selector').click(function(){
         var question_no     = $(this).attr('data-id');
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;
-        var playlist_no = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance)
+        var playlist_no = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
         job_player.playlistChange(playlist_no, local_player_instance, true);
-        
         job_player.setNormalMode(local_player_instance);
         
     });
@@ -99,11 +98,6 @@ job_player.attachEvents = function(player_instance) {
     
     //set the player to zero for init
     job_player.playlistChange(0, local_player_instance, false);
-    
-    
-    
-
-
     
 };
 

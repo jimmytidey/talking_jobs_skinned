@@ -99,22 +99,7 @@ job_player.detectWidth = function(){
     }
 }
 
-job_player.testQuestionVisibility = function(id, player_instance) { 
-    var top = $('.question_selector[data-id="'+id+'"]' ).position().top -490;
-    var height = $('.question_scroller').height();
 
-    if (top < height) { 
-        var visible = true; 
-    }
-    if (top < 0) { 
-        var visible = false; 
-    }
-    else { 
-        var visible = false;     
-    }
-    
-    return visible;
-}
 
 job_player.triggerMoreInfoModal = function(player_instance) {
     var body_text = player_instance.playlist[player_instance.playlist_position].about_training;

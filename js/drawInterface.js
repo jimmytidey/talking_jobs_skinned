@@ -31,7 +31,6 @@ job_player.drawInterface = function(player_instance) {
         if (i == player_instance.interviewees.length -1) { 
            
             //Draw the carousel     
-        	
         	$(".interviewee_scroller").carouFredSel({
         		auto: { 
         		    play: false
@@ -54,8 +53,6 @@ job_player.drawInterface = function(player_instance) {
         		align: 'left',
         		height:'70px'		
         	});    
-        	
-        	
         	//add tooltips 
         	$('.interviewee_selector').tooltip();
         }
@@ -71,7 +68,7 @@ job_player.drawInterface = function(player_instance) {
         $(scroller).append("<p  class='question_selector question_type_"+ type +" cf' data-id='"+ id + "' > <span class='number'>Q" + question_number + ".</span>   <span class='question'>" + player_instance.questions[i]['__cdata'] + "</span> </p>");
         
         if (i === player_instance.questions.length-1 && !isIE()) {
-            myScroll = new IScroll('.question_scroller',{
+            player_instance.myScroll = new IScroll('.question_scroller',{
                 scrollbars:true,
                 mouseWheel:true
             });
@@ -93,8 +90,7 @@ job_player.drawInterface = function(player_instance) {
      
     //make sure the player is in the correct mode
     job_player.initModes(player_instance); 
-    
-    job_player.drawPlayer(player_instance); 
+
     
     job_player.attachEvents(player_instance);
     
