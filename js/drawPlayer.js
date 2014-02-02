@@ -1,5 +1,6 @@
 job_player.drawPlayer = function(player_instance, autoplay){
-       
+    console.log('drawing new player');
+    
     var current_item = player_instance.playlist[player_instance.playlist_position];
         
     //set subtitles 
@@ -14,8 +15,12 @@ job_player.drawPlayer = function(player_instance, autoplay){
     var poster_src = current_item.now_image;
     
     //add in new HTML
+    $('.video_container').empty();
+    
     var html = '<video id="video_player" preload="auto" poster="'+poster_src+'" type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;" src="' + video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+subtitles_src+'" srclang="en" /> <object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf"> <param name="movie" value="media_elements/build/flashmediaelement.swf" /> <param name="flashvars" value="controls=true&file='+video_src+'" /> </object> </video>';
-    $('video').remove();
+    console.log(player_instance.video);
+
+    
     $('.video_container').html(html);
     
      
@@ -65,11 +70,8 @@ job_player.drawPlayer = function(player_instance, autoplay){
     
     //Firefox cannot play mp4 natively and must fall back on Flash 
     if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-        options.mode = 'auto_plugin';
+        options.mode = 'shim';
     }
     
-    player_instance.video = $('#video_player').mediaelementplayer(options); 
-    
-
-    
+    player_instance.video = $('#video_player').mediaelementplayer(options);     
 }

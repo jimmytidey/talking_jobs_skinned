@@ -4,7 +4,7 @@
 <div class="welcome_modal row" title="The Gloucestershire Module">
 
 	<div class='row header cf'>
-		<div id="" class="span12">
+		<div  class="span12">
 			<div class="span6">
 				<img src='img/tj_welcome_logo.png' alt='Talking Jobs' />
 			</div>
@@ -24,11 +24,11 @@
 			    <div class='modal_controls'>
 			        <input type="checkbox" id="israndom" checked />
 					<label for="israndom">mix it up</label>
-			        <a href="index.php" class='btn start btn-danger'>Start</a>
+			        <span class='btn start btn-danger'>Start</span>
 			    </div>
 			</div>
 			<div class="span6 hero">
-				<img src='https://s3-eu-west-1.amazonaws.com/gloucestershire/Grabs/YSSG_Dale.jpg' width="100%" class='welcome_image' />
+				<img src=''class='welcome_image' />
 			</div>
 		</div>
 

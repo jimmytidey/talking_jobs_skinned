@@ -65,17 +65,16 @@ job_player.drawInterface = function(player_instance) {
         var type = player_instance.questions[i]['_type'];
         var id   = player_instance.questions[i]['_id'];
         var question_number = parseInt(id) + 1;
-        $(scroller).append("<p  class='question_selector question_type_"+ type +" cf' data-id='"+ id + "' > <span class='number'>Q" + question_number + ".</span>   <span class='question'>" + player_instance.questions[i]['__cdata'] + "</span> </p>");
+        $(scroller).append("<li class='question_selector question_type_"+ type +" cf' data-id='"+ id + "' > <span class='number'>Q" + question_number + ".</span>   <span class='question'>" + player_instance.questions[i]['__cdata'] + "</span> </li>");
         
         if (i === player_instance.questions.length-1 && !isIE()) {
             player_instance.myScroll = new IScroll('.question_scroller',{
                 scrollbars:true,
-                mouseWheel:true
+                mouseWheel:true,
             });
-            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+            
         }
     };    
-
 
     //now add the question type 
     var element = $('.question_types'); 
@@ -87,11 +86,9 @@ job_player.drawInterface = function(player_instance) {
         $(".question_type_"+ i).css('background-color', colour);
     };
     var number_of_questions =  player_instance.questions.length + 1;
-     
-    //make sure the player is in the correct mode
-    job_player.initModes(player_instance); 
-
     
+    //make sure the player is in the correct mode
+
     job_player.attachEvents(player_instance);
     
 };

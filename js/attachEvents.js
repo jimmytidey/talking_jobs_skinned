@@ -19,7 +19,15 @@ job_player.attachEvents = function(player_instance) {
     $('.modal_controls .start').click(function( event ){
 		$(".welcome_modal").addClass("hide");
 		$(".jobs_player").removeClass("hide");
-		event.preventDefault();
+		
+		if ($('#israndom').is(':checked')) { 
+            player_instance.mode = 'random';
+        }
+        
+        //make sure the player is in the correct mode
+        job_player.initModes(player_instance);
+        job_player.drawPlayer(player_instance, true);
+		
     });
     
     $('.interviewee_select select', player_instance.elem).change(function(val){

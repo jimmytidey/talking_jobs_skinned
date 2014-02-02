@@ -1,7 +1,5 @@
 job_player.playlistChange = function(val, player_instance, autoplay) {
 
-    
-   
     var local_player_instance = player_instance;    
     player_instance.playlist_position = val;
     
@@ -34,6 +32,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     $('.interviewee_name', this.elem).text(current_item.contributor); 
     $('.interviewee_selector').removeClass('selected');
     $('.interviewee_selector[data-id="'+ current_item.interviewee_id +'"]' ).addClass('selected');
+    
     //scroll to interviewee
     if (job_player.detectWidth() === 'big') { 
         var target_no = parseInt(current_item.interviewee_id) -3; 
@@ -41,13 +40,18 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     else { 
         var target_no = parseInt(current_item.interviewee_id) -2; 
     }
+    $(".interviewee_scroller").trigger("slideTo", target_no );
      
     //scroll to question  
     $('.question_selector').removeClass('selected');
     var target_elem = $('.question_selector[data-id="'+ current_item.question_id +'"]' );
     target_elem.addClass('selected');
     
-    local_player_instance.myScroll.scrollToElement(target_elem[0], 2000, 0, -30, IScroll.utils.ease.quadratic);
+    
+    
+    var question_top_offset = job_player.questionPosition(current_item.question_id, player_instance);
+    
+    local_player_instance.myScroll.scrollToElement('.question_selector.selected .question');
     
     
     job_player.drawPlayer(player_instance, autoplay);

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
+        
         <meta charset="utf-8">
         
         <title>Talking Jobs</title>

@@ -86,10 +86,11 @@ job_player.initModes = function(player_instance) {
         $('.btn.whole_interview_order', player_instance.elem).addClass('active');
     }
     
-    if(player_instance.mode == 'random') { 
+    if(player_instance.mode == 'random') {
         job_player.clearModeButtons();
         job_player.setRandomMode(player_instance);
         $('.random_order').addClass('active');
         $('.btn.random_order', player_instance.elem).addClass('active');
     }
+    
 }

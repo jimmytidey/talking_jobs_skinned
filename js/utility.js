@@ -99,7 +99,11 @@ job_player.detectWidth = function(){
     }
 }
 
-
+job_player.questionPosition = function(id, player_instance) { 
+    var top = $('.question_selector[data-id="'+id+'"]' ).position().top;
+    
+    return top;
+}
 
 job_player.triggerMoreInfoModal = function(player_instance) {
     var body_text = player_instance.playlist[player_instance.playlist_position].about_training;
