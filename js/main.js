@@ -17,6 +17,7 @@
             this.options.welcome_modal_image        = '';  
             this.options.subtitles_folder   = 'http://dev.talkingjobs.net/player/subtitles/';    
             this.options.xml_url            = "modules/yssg/";
+            
             //Go! 
             this.options.elem = this.element; 
             this.options.mode = 'whole_interview'; //could also be whole_interview or random or whole_question

@@ -1,5 +1,6 @@
 job_player.drawPlayer = function(player_instance, autoplay){
     console.log('drawing new player');
+    
     if(typeof player_instance.video !== 'undefined') { 
         player_instance.video = null;
     }
@@ -8,15 +9,20 @@ job_player.drawPlayer = function(player_instance, autoplay){
         
     //set subtitles 
     var subtitles_src = 'xml_converter.php?target='+current_item.subtitles_url;
-    
+    console.log(subtitles_src);
     //WHAAA?? Chrome has bug that causes video requests to fail unless you make them different every time 
     // so you have to add the timestampt to the end
     var timestamp = new Date().getTime();
     var video_src =  current_item.video + "?" + timestamp;
       
     //get poster URL
-    var poster_src = current_item.now_image;
+    if(player_instance.mode= 'normal'){
+        var poster_src = current_item.now_image;
+    } 
     
+    else {
+        var poster_src = null;
+    }
     //add in new HTML
     $('.video_container').empty();
     
@@ -46,9 +52,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
             
             media.addEventListener("ended", function() {
                 if(player_instance.mode == 'normal'){ 
-                    
-                    $('video').attr('poster', poster_src );
-
+                    $(".mejs-inner").find(".mejs-poster").show();
                 } else { 
                     job_player.playlistChange(player_instance.playlist_position +1 , player_instance, true);
                 }

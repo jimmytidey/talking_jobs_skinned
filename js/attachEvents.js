@@ -21,13 +21,14 @@ job_player.attachEvents = function(player_instance) {
 		$(".jobs_player").removeClass("hide");
 		
 		if ($('#israndom').is(':checked')) { 
-            player_instance.mode = 'random';
+            job_player.setRandomMode(player_instance);
+            job_player.playlistChange(0, player_instance, true);
         }
-        
-        //make sure the player is in the correct mode
-        job_player.initModes(player_instance);
-        job_player.drawPlayer(player_instance, true);
-		
+        else { 
+            job_player.setInterviewMode(player_instance);
+            job_player.playlistChange(0, player_instance, false);
+        }
+	
     });
     
     $('.interviewee_select select', player_instance.elem).change(function(val){
@@ -72,40 +73,32 @@ job_player.attachEvents = function(player_instance) {
     });
 
     //set modes 
-    $('.whole_interview_order').click(function(){ 
-        job_player.clearModeButtons();
+    $('.whole_interview_order').click(function(){
         job_player.setInterviewMode(local_player_instance);
-        $(this).addClass('active');
     });
     
     $('.whole_question_order').click(function(){ 
-        job_player.clearModeButtons();
         job_player.setQuestionMode(local_player_instance);
-        $(this).addClass('active');
     });
 
     $('.random_order').click(function(){
-        job_player.clearModeButtons();
-        $('.random_order').addClass('active');
         job_player.setRandomMode(local_player_instance);
     });
     
     //make the question type buttons work
     $('.question_type').click(function(){ 
+        
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;
         var type_no         = $(this).attr('data-type');
         var playlist_no = job_player.getPlaylistIdByQuestionType(interviewee_no, type_no, local_player_instance);
-        job_player.playlistChange(playlist_no, local_player_instance, true);        
+        job_player.playlistChange(playlist_no, local_player_instance, true);
+        job_player.setNormalMode(local_player_instance);      
     });
     
     //make the email send work for reflections  
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
     });
-    
-    
-    //set the player to zero for init
-    job_player.playlistChange(0, local_player_instance, false);
     
 };
 
@@ -129,8 +122,5 @@ job_player.attachTransportEvents = function(local_player_instance) {
     $('.restart_video_btn').click(function(){ 
         local_player_instance.video.setCurrentTime(0);
     });
-   
-
-    
-    
+ 
 }

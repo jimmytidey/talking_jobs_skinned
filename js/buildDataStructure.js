@@ -11,7 +11,7 @@ job_player.buildDataStructure = function(player_instance) {
         $.each(interview_value.responses.response, function(response_key, response_value ) {
             
             var playlist_object             = {};
-            var subtitle_bodge              = response_value['_src'].split("/")[4];
+            var subtitle_bodge              = response_value['_src'].split("/")[3];
             playlist_object.interviewee_id  = interview_value['_id']; 
             playlist_object.about_training  = interview_value.about_training['__cdata'];
             playlist_object.contributor     = interview_value.contributor['__cdata'];

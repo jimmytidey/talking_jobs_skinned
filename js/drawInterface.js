@@ -5,15 +5,11 @@ job_player.drawInterface = function(player_instance) {
     //build the modal 
     job_player.buildModal(player_instance);
     
-    //first thing, might as well pop the modal 
-    //job_player.triggerModal(player_instance);
-    
     //init the tabs 
     job_player.tabs(player_instance);
     
     //Draw any existing favs in 
     job_player.renderFavourites(player_instance);
-    
         
     //write the drop down   
     $.each(player_instance.interviewees, function(key, val) {
@@ -89,7 +85,6 @@ job_player.drawInterface = function(player_instance) {
     var number_of_questions =  player_instance.questions.length + 1;
     
     //make sure the player is in the correct mode
-
     job_player.attachEvents(player_instance);
     
 };
