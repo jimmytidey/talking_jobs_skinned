@@ -51,7 +51,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     var question_top_offset = job_player.questionPosition(current_item.question_id, player_instance);
     
-    local_player_instance.myScroll.scrollToElement('.question_selector.selected .question');
+    local_player_instance.myScroll.scrollToElement('.question_selector.selected .question', 1500, 0, -300, IScroll.utils.ease.quadratic );
     
     
     job_player.drawPlayer(player_instance, autoplay);

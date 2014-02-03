@@ -67,12 +67,13 @@ job_player.drawInterface = function(player_instance) {
         var question_number = parseInt(id) + 1;
         $(scroller).append("<li class='question_selector question_type_"+ type +" cf' data-id='"+ id + "' > <span class='number'>Q" + question_number + ".</span>   <span class='question'>" + player_instance.questions[i]['__cdata'] + "</span> </li>");
         
-        if (i === player_instance.questions.length-1 && !isIE()) {
-            player_instance.myScroll = new IScroll('.question_scroller',{
+        if (i === player_instance.questions.length-1) {
+            console.log('launching scroller',$('.scroller_wrapper'));
+            player_instance.myScroll = new IScroll('.scroller_wrapper',{
                 scrollbars:true,
                 mouseWheel:true,
             });
-            
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
         }
     };    
 

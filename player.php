@@ -75,10 +75,13 @@
             
         </div>
     </div>
-
-    <div class='span5 question_scroller default-skin'>
-        <ul></ul>
-    </div>
+    <div class='span5'>
+        <div class='scroller_wrapper'>       
+            <div class='question_scroller'>
+                <ul></ul>
+            </div>
+        </div>
+    </div>    
 </div>
 <!-- end question_scroller -->
 

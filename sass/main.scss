@@ -1,18 +1,13 @@
-@import "src/structural.scss";
-@import "src/paths.scss"; 
+@import 'src/paths.scss';
+@import 'libs/bootstrap.min.scss';
+@import 'libs/bootstrap-responsive.min.scss';
+@import 'libs/mediaelementplayer.scss';
 
-@import "libs/bootstrap-responsive.min.scss";
-@import "libs/bootstrap.min.scss";
-@import "libs/mediaelementplayer.scss"; 
-
-
-@import "src/carousel.scss";
-@import "src/favourites.scss";
-@import "src/information.scss";
-@import "src/main.scss"; 
-
-@import "src/player.scss";
-@import "src/questions.scss";   
-@import "src/tabs.scss"; 
-@import "src/welcome_modal.scss"; 
-
+@import 'src/structural.scss';
+@import 'src/player.scss';
+@import 'src/carousel.scss';
+@import 'src/questions.scss';
+@import 'src/tabs.scss';
+@import 'src/information.scss';
+@import 'src/favourites.scss';
+@import 'src/welcome_modal.scss';

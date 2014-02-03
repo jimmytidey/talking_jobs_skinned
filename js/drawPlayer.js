@@ -1,5 +1,8 @@
 job_player.drawPlayer = function(player_instance, autoplay){
     console.log('drawing new player');
+    if(typeof player_instance.video !== 'undefined') { 
+        player_instance.video = null;
+    }
     
     var current_item = player_instance.playlist[player_instance.playlist_position];
         
