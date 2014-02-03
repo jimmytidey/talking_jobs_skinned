@@ -24,6 +24,7 @@
         <script src="js/vendor/xml_to_json.js"></script>
         <script src="js/vendor/jquery.cookie.js"></script>
         <script src="js/vendor/iscroll.js"></script>
+        <script src="js/vendor/scrollTo.js"></script>
         
         
         <script src="js/getData.js"></script>

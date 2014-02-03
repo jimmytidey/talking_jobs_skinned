@@ -104,6 +104,11 @@ job_player.attachEvents = function(player_instance) {
         job_player.emailQuestion(local_player_instance);
     });
     
+    $('.tab_buttons li').click(function(){
+        console.log(local_player_instance);
+        local_player_instance.media.stop();
+    });
+    
 };
 
 job_player.attachTransportEvents = function(local_player_instance) { 

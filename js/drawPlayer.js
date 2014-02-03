@@ -46,7 +46,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
             
-            player_instance.media = player;
+            player_instance.media = media;
             player_instance.video = player;
             
             media.addEventListener("ended", function() {
