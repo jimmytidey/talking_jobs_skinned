@@ -116,7 +116,7 @@ job_player.triggerMoreInfoModal = function(player_instance) {
     });
 }
 
-function isIE () {
+function isIE() {
   var myNav = navigator.userAgent.toLowerCase();
   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 }

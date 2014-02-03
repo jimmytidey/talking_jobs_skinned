@@ -1,5 +1,5 @@
 job_player.drawPlayer = function(player_instance, autoplay){
-    console.log('drawing new player');
+    
     
     if(typeof player_instance.video !== 'undefined') { 
         player_instance.video = null;
@@ -9,7 +9,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
         
     //set subtitles 
     var subtitles_src = 'xml_converter.php?target='+current_item.subtitles_url;
-    console.log(subtitles_src);
+
     //WHAAA?? Chrome has bug that causes video requests to fail unless you make them different every time 
     // so you have to add the timestampt to the end
     var timestamp = new Date().getTime();
@@ -27,7 +27,6 @@ job_player.drawPlayer = function(player_instance, autoplay){
     $('.video_container').empty();
     
     var html = '<video id="video_player" preload="auto" poster="'+poster_src+'" type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;" src="' + video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+subtitles_src+'" srclang="en" /> <object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf"> <param name="movie" value="media_elements/build/flashmediaelement.swf" /> <param name="flashvars" value="controls=true&file='+video_src+'" /> </object> </video>';
-    console.log(player_instance.video);
 
     
     $('.video_container').html(html);
@@ -64,7 +63,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
             if (autoplay) {
                $('video').attr('poster', null);
                player_instance.video.play();
-               console.log()
+               
             }
         }
     }

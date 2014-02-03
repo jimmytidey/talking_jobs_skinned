@@ -82,12 +82,13 @@
 	background: #ccc;
 	overflow: hidden;
 	height:200px;
-	margin-left:8px;	
+	margin-left:8px;
+	width:100%;	
 }
 
 .question_scroller {
     position:absolute;
-    
+    min-height:200px;
     width:100%;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-transform: translateZ(0);
@@ -131,44 +132,38 @@
 	display: block;
 }
 
-@media only screen  and (max-width: 480px) {
-	.question_scroller {
-		height: auto;
-		overflow: auto;
-		position: static;
-		width: 100%;
-	}
-	
-	.question_container .span5 {
-		width: 100%;
-		float: none;
-	}
-
-	.question_type {
-		display: none;
-	}
-		
+/* Default: 940px and up  */
+.scroller_wrapper  {
+    width: 300px;
 }
 
-@media only screen  and (min-width: 481px)  and (max-width: 767px) {
-	.question_scroller {
-		width: 286px;
-		top: 380px;
-	}
-	
-	.question_selector .question {
-		width: 70%;
-	}
-}
 
-@media only screen and (min-width: 1200px) {
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .scroller_wrapper  {
+        width: 279px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .scroller_wrapper  {
+        width: 279px;
+    }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) { 
+    .scroller_wrapper  {
+        width: 279px;
+    }
+}
+ 
+
+/* Large desktop */
+@media (min-width: 1210px) { 
 	.scroller_wrapper  {
-		width: 412px;
+		width: 427px;
 	}
-}
-
-@media only screen and (max-width: 979px) and (min-width: 768px) {
-	.question_scroller {
-		width: 303px;
-	}
+ 
 }
