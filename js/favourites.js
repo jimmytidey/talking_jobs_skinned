@@ -13,7 +13,7 @@ job_player.favourites = function(options){
         
         var playlist_item  = options.playlist[current_item];
         var question_no    = parseInt(playlist_item.question_id) +1;
-        
+        $('.favourites_tab_alert', options.elem).empty();
         $('.favourites_tab_alert', options.elem).show();
         $('.favourites_tab_alert', options.elem).append('Q.' + question_no );
         

@@ -22,3 +22,28 @@ job_player.emailReflections = function(options){
     }); 
     
 }
+
+job_player.emailQuestion = function(options){ 
+    var question_note  = $('.question_note', options.elem).val();
+    
+    var text = "<strong>A question from Talking Jobs</strong>";
+    text += "<p>" + question_note + "</p>";
+    
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Question from Talking Jobs website&toAddress='; 
+        url += "jimmytidey@gmail.com&emailContent=";
+        url += encodeURIComponent(text); 
+        
+    $.ajax({
+        dataType: "json",
+        url: url, 
+        error:function(){
+            $('.tab_have_a_quesiton').append('<div class="question_sent">Your question has been sent</div>');        
+            setTimeout(function(){
+                $('.question_sent').fadeOut(400, function(){
+                    $('.question_sent').remove();
+                });
+            }, 2000);
+        }    
+    }); 
+    
+}

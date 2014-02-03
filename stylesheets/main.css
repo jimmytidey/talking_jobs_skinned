@@ -9859,7 +9859,7 @@ and full interview mode button
 @media only screen and (min-width: 1200px) {
   /* line 165, ../sass/src/_questions.scss */
   .scroller_wrapper {
-    width: 416px;
+    width: 412px;
   }
 }
 @media only screen and (max-width: 979px) and (min-width: 768px) {
@@ -9934,15 +9934,16 @@ bootstrap, as they're not needed for these tabs
   margin-bottom: 15px;
 }
 
-/* line 76, ../sass/src/_tabs.scss */
+/* line 77, ../sass/src/_tabs.scss */
 .tab_activities,
 .tab_about,
 .tab_reflections,
-.tab_favourites {
+.tab_favourites,
+.tab_have_a_quesiton {
   display: none;
 }
 
-/* line 81, ../sass/src/_tabs.scss */
+/* line 82, ../sass/src/_tabs.scss */
 .tab_reflections textarea {
   width: 90%;
   padding: 10px;
@@ -9952,7 +9953,7 @@ bootstrap, as they're not needed for these tabs
   margin-top: 10px;
 }
 
-/* line 90, ../sass/src/_tabs.scss */
+/* line 91, ../sass/src/_tabs.scss */
 .tab .content-container {
   position: absolute;
   top: 60px;
@@ -9961,34 +9962,34 @@ bootstrap, as they're not needed for these tabs
   width: 422px;
 }
 
-/* line 98, ../sass/src/_tabs.scss */
+/* line 99, ../sass/src/_tabs.scss */
 .tab.tab_reflections .content-container,
 .tab.tab_favourites .content-container {
   top: 180px;
 }
 
-/* line 102, ../sass/src/_tabs.scss */
+/* line 103, ../sass/src/_tabs.scss */
 .tab fieldset {
   float: left;
   width: 50%;
 }
 
-/* line 107, ../sass/src/_tabs.scss */
+/* line 108, ../sass/src/_tabs.scss */
 .tab fieldset input {
   width: 90%;
 }
 
-/* line 111, ../sass/src/_tabs.scss */
+/* line 112, ../sass/src/_tabs.scss */
 .tab .export {
   border-bottom: 1px solid #dad8db;
 }
 
-/* line 115, ../sass/src/_tabs.scss */
+/* line 116, ../sass/src/_tabs.scss */
 .tab .export button {
   clear: left;
 }
 
-/* line 119, ../sass/src/_tabs.scss */
+/* line 120, ../sass/src/_tabs.scss */
 .tab h1 {
   font-size: 20px;
   color: #4A4A4A;
@@ -9996,45 +9997,45 @@ bootstrap, as they're not needed for these tabs
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 126, ../sass/src/_tabs.scss */
+  /* line 127, ../sass/src/_tabs.scss */
   .tab .content-container {
     position: relative;
   }
 
-  /* line 130, ../sass/src/_tabs.scss */
+  /* line 131, ../sass/src/_tabs.scss */
   #tabs {
     display: none;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 137, ../sass/src/_tabs.scss */
+  /* line 138, ../sass/src/_tabs.scss */
   #player,
   #tabs {
     float: left;
   }
 
-  /* line 141, ../sass/src/_tabs.scss */
+  /* line 142, ../sass/src/_tabs.scss */
   .question_container .span5 {
     width: 286px;
   }
 
-  /* line 145, ../sass/src/_tabs.scss */
+  /* line 146, ../sass/src/_tabs.scss */
   .question_container .span2 {
     float: left;
   }
 
-  /* line 149, ../sass/src/_tabs.scss */
+  /* line 150, ../sass/src/_tabs.scss */
   .question_container .span5 {
     float: right;
   }
 
-  /* line 153, ../sass/src/_tabs.scss */
+  /* line 154, ../sass/src/_tabs.scss */
   .tab .content-container {
     width: 405px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 159, ../sass/src/_tabs.scss */
+  /* line 160, ../sass/src/_tabs.scss */
   .tab .content-container {
     width: 548px;
   }
@@ -10406,4 +10407,8 @@ bootstrap, as they're not needed for these tabs
   .welcome_modal .span6 {
     width: 378px;
   }
+}
+/* line 1, ../sass/src/_email.scss */
+.question_sent {
+  margin-top: 100px;
 }

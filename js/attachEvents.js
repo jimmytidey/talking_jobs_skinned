@@ -99,6 +99,10 @@ job_player.attachEvents = function(player_instance) {
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
     });
+    //make the email send work for reflections  
+    $('.email_question').click(function(){ 
+        job_player.emailQuestion(local_player_instance);
+    });
     
 };
 

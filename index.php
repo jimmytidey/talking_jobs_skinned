@@ -81,7 +81,7 @@
 				</fieldset>
 				<button class="btn">Save</button>
 				<button class="btn email_reflections">Email</button>
-				<button class="btn">Print</button>
+				
 				</form>
 			</div>
 				<div class='content-container'>
@@ -109,6 +109,15 @@
 				</div>
             </div>
             
+            <div class='tab tab_have_a_quesiton'>
+                <h1>Ask a question</h1>
+				<div class='content-container'>
+				    <p>Write your question</p>
+	                <textarea class='question_note'></textarea>
+	                <button class="btn email_question">Email</button>
+				</div>
+            </div>
+            
         </div>
         
         <div id="tabs" class='span3'>
@@ -118,7 +127,8 @@
                     <li><a href="#favourites" >Favourite <span class='favourites_tab_alert'></span></a></li>
                     <li><a href="#reflections">Reflections</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#activities">Activities</a></li>                        
+                    <li><a href="#activities">Activities</a></li> 
+                    <li><a href="#have_a_quesiton">Ask a question</a></li>                        
                 </ul>
             </nav>
 
