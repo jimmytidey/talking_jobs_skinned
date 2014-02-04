@@ -22,7 +22,7 @@
 				<h2>The Gloucestershire Module</h2>
 			    <p class='welcome_text'></p>
 			    <div class='modal_controls'>
-			        <input type="checkbox" id="israndom" checked />
+			        <input type="checkbox" id="israndom"  />
 					<label for="israndom">mix it up</label>
 			        <span class='btn start btn-danger'>Start</span>
 			    </div>

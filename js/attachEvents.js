@@ -28,38 +28,25 @@ job_player.attachEvents = function(player_instance) {
             job_player.setInterviewMode(player_instance);
             job_player.playlistChange(0, player_instance, false);
         }
-	
     });
     
     $('.interviewee_select select', player_instance.elem).change(function(val){
-        
-        var val = $(this).val();
-        
-        //find the first playlist item with contribtuor ID 
-        for(var i=0; i < player_instance.playlist.length; i++) { 
-            if (val === player_instance.playlist[i].interviewee_id) { 
-                break;
-            }
-        }
-        
-        job_player.playlistChange(i, player_instance, true);
+        var interviewee_no = $(this).val();
+        var question_no = $('.question_selector.selected').attr('data-id');
         job_player.setNormalMode(local_player_instance);
+        var target_id = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
+        job_player.playlistChange(target_id, local_player_instance, true);
     });
     
     
     //for clicks on the interviewee scroller 
     $('.interviewee_selector').click(function(){ 
-        var val = $(this).attr('data-id');
-        
-        //find the first playlist item with contribtuor ID 
-        for(var i=0; i < local_player_instance.playlist.length; i++) { 
-            if (val === local_player_instance.playlist[i].interviewee_id) { 
-                break;
-            }
-        }
-     
-        job_player.playlistChange(i, local_player_instance, true);
+        var interviewee_no = $(this).attr('data-id');
+        var question_no = $('.question_selector.selected').attr('data-id');
         job_player.setNormalMode(local_player_instance);
+        var target_id = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
+        job_player.playlistChange(target_id, local_player_instance, true);
+        
     });
         
     //for clicks on the question scroller 
@@ -67,9 +54,8 @@ job_player.attachEvents = function(player_instance) {
         var question_no     = $(this).attr('data-id');
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;
         var playlist_no = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
-        job_player.playlistChange(playlist_no, local_player_instance, true);
         job_player.setNormalMode(local_player_instance);
-        
+        job_player.playlistChange(playlist_no, local_player_instance, true);
     });
 
     //set modes 
@@ -87,12 +73,11 @@ job_player.attachEvents = function(player_instance) {
     
     //make the question type buttons work
     $('.question_type').click(function(){ 
-        
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;
         var type_no         = $(this).attr('data-type');
         var playlist_no = job_player.getPlaylistIdByQuestionType(interviewee_no, type_no, local_player_instance);
+        job_player.setNormalMode(local_player_instance); 
         job_player.playlistChange(playlist_no, local_player_instance, true);
-        job_player.setNormalMode(local_player_instance);      
     });
     
      
@@ -116,6 +101,8 @@ job_player.attachEvents = function(player_instance) {
 };
 
 job_player.attachTransportEvents = function(local_player_instance) { 
+    
+    console.log('hi');
     
     job_player.favourites(local_player_instance);
     
