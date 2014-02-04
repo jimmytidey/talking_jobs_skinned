@@ -22,22 +22,38 @@ job_player.emailReflections = function(options){
 }
 
 job_player.emailFavourites = function(options){ 
-    var found_out_note  = $('.found_out_note', options.elem).val();
-    var relate_note     = $('.relate_note', options.elem).val();
-    var next_steps_note = $('.next_steps_note', options.elem).val();
-    var text = "<strong>What have I just found out?</strong>";
-    text += "<p>" + found_out_note + "</p>";
+
+    var text  = "<strong>Your favourites</strong>";
     
+    $('.fav_wrapper').each(function(key,val){
+        var title = $('.fav_job_title', val).text();
+        var transcript = $('.fav_transcript', val).text();
+        var notes = $('textarea', val).val();
+        //text += "<h3>"+ title+"</h3><strong>Transcript<p>" +transcript+ "</p>"; 
+        if(notes){ 
+            text +="<strong>Notes</strong><p>" + notes + "</p>";
+        }
+    });
 
     
-    var target = $('.reflections_email', options.elem).val(); 
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Your Talking Jobs reflections&toAddress='; 
+    var target = $('.favs_email', options.elem).val(); 
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Your Talking Jobs favourites&toAddress='; 
         url += encodeURIComponent(target) + "&emailContent=";
         url += encodeURIComponent(text)+"&callback=?"; 
 
-    $.getJSON(url, function(arg1, arg2){ 
-        
-    });    
+    $.ajax({
+        dataType: "json",
+        url: url, 
+        error:function(e){
+           
+            $('.tab_favourites').append('<div class="question_sent">Your favourites have been sent</div>');        
+            setTimeout(function(){
+                $('.question_sent').fadeOut(400, function(){
+                    $('.question_sent').remove();
+                });
+            }, 2000);
+        }    
+    }); 
 }
 
 job_player.emailQuestion = function(options){ 

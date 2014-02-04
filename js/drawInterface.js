@@ -66,7 +66,7 @@ job_player.drawInterface = function(player_instance) {
         if (i === player_instance.questions.length-1 && $('html.lt-ie9').length==0) {
             player_instance.myScroll = new IScroll('.scroller_wrapper',{
                 scrollbars:true,
-                mouseWheel:true,
+                mouseWheel:true
             });
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
         }

@@ -55,15 +55,12 @@
 				<div class="fav_export">
 					<form action="">
 					<fieldset>
-						<label>Your name</label>
-						<input type="text" />
+						<label>Your email</label>
+						<input type="text" class='favs_email' />
 					</fieldset>
-					<fieldset>
-						<label>Filename</label>
-						<input type="text" />
-					</fieldset>
-					<button class="btn">Save</button>
-					<button class="btn">Email</button>
+
+					<button class="btn save_favs">Save</button>
+					<button class="btn email_favs">Email</button>
 					</form>
 				</div>
                 <div class='fav_container content-container'>

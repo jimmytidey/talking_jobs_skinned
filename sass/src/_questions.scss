@@ -86,6 +86,11 @@
 	width:100%;	
 }
 
+.lt-ie9 .scroller_wrapper { 
+    overflow:auto;
+    position:relative;
+}
+
 .question_scroller {
     position:absolute;
     min-height:200px;

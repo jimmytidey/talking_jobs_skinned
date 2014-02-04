@@ -8053,7 +8053,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   width: 100px;
   height: 100px;
   margin: -50px 0 0 -50px;
-  background: url("img/mediaelements/bigplay.svg") no-repeat;
+  background: url("img/mediaelements/bigplay.png") no-repeat;
 }
 
 /* line 100, ../sass/libs/_mediaelementplayer.scss */
@@ -8144,7 +8144,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   height: 16px;
   width: 16px;
   border: 0;
-  background: transparent url("img/mediaelements/controls.svg") no-repeat;
+  background: transparent url("img/mediaelements/controls.png") no-repeat;
 }
 
 /* line 184, ../sass/libs/_mediaelementplayer.scss */
@@ -9775,6 +9775,12 @@ and full interview mode button
 }
 
 /* line 89, ../sass/src/_questions.scss */
+.lt-ie9 .scroller_wrapper {
+  overflow: auto;
+  position: relative;
+}
+
+/* line 94, ../sass/src/_questions.scss */
 .question_scroller {
   position: absolute;
   min-height: 200px;
@@ -9797,7 +9803,7 @@ and full interview mode button
   text-size-adjust: none;
 }
 
-/* line 111, ../sass/src/_questions.scss */
+/* line 116, ../sass/src/_questions.scss */
 .question_scroller ul {
   list-style-type: none;
   margin-left: 0px;
@@ -9806,56 +9812,56 @@ and full interview mode button
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 119, ../sass/src/_questions.scss */
+/* line 124, ../sass/src/_questions.scss */
 .question_scroller .selected {
   background-color: white !important;
 }
 
-/* line 123, ../sass/src/_questions.scss */
+/* line 128, ../sass/src/_questions.scss */
 .question_scroller .selected .number {
   color: #d0021b;
 }
 
-/* line 127, ../sass/src/_questions.scss */
+/* line 132, ../sass/src/_questions.scss */
 .question_scroller .selected .question {
   color: #d0021b;
 }
 
-/* line 131, ../sass/src/_questions.scss */
+/* line 136, ../sass/src/_questions.scss */
 .question_scroller .selected .play-mode-questions {
   display: block;
 }
 
 /* Default: 940px and up  */
-/* line 136, ../sass/src/_questions.scss */
+/* line 141, ../sass/src/_questions.scss */
 .scroller_wrapper {
   width: 300px;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* line 143, ../sass/src/_questions.scss */
+  /* line 148, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  /* line 150, ../sass/src/_questions.scss */
+  /* line 155, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) {
-  /* line 157, ../sass/src/_questions.scss */
+  /* line 162, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Large desktop */
 @media (min-width: 1210px) {
-  /* line 165, ../sass/src/_questions.scss */
+  /* line 170, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 427px;
   }

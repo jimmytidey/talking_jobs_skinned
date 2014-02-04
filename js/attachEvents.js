@@ -95,17 +95,21 @@ job_player.attachEvents = function(player_instance) {
         job_player.setNormalMode(local_player_instance);      
     });
     
-    //make the email send work for reflections  
+     
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
     });
-    //make the email send work for reflections  
+   
     $('.email_question').click(function(){ 
         job_player.emailQuestion(local_player_instance);
     });
     
-    $('.tab_buttons li').click(function(){
-        console.log(local_player_instance);
+    $('.email_favs').click(function(){
+       job_player.emailFavourites(local_player_instance); 
+    });
+    
+
+    $('.tab_buttons li').click(function(){       
         local_player_instance.media.stop();
     });
     
