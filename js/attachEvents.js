@@ -95,7 +95,7 @@ job_player.attachEvents = function(player_instance) {
     
 
     $('.tab_buttons li').click(function(){       
-        local_player_instance.media.stop();
+        local_player_instance.player.pause();
     });
     
 };

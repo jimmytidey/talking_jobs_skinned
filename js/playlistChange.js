@@ -51,7 +51,13 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     var question_top_offset = job_player.questionPosition(current_item.question_id, player_instance);
     
-    $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 1200);
+    if($('html.lt-ie9').length==0) { 
+        player_instance.myScroll.scrollToElement('.question_selector.selected .question', 600, 0, -300);
+    } else {
+        $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 300);
+    }
+    
+    
     
     
     job_player.drawPlayer(player_instance, autoplay);

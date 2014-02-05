@@ -32,6 +32,12 @@ job_player.drawPlayer = function(player_instance, autoplay){
     }
     else {
         
+        $('#subtitles').attr('src', player_instance.subtitles_src);
+        
+        player_instance.player.findTracks();
+        player_instance.player.loadTrack(0);
+        player_instance.player.setTrack(0);
+        console.log(player_instance.player);
         player_instance.player.pause();
         player_instance.player.setSrc(player_instance.video_src)
         player_instance.player.load();
@@ -63,7 +69,7 @@ job_player.newPlayer = function(player_instance) {
                 media.play();
                 if (media.pluginType == 'flash') {
                     media.addEventListener('canplay', function() {
-                        console.log('can play event fired');
+                        
                         media.play();
                     }, false);
                 }
@@ -76,8 +82,8 @@ job_player.newPlayer = function(player_instance) {
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
             job_player.attachTransportEvents(player_instance);
-            player_instance.media = media;
             player_instance.player = player;
+            player_instance.media = player;
         
             media.addEventListener("ended", function() {
                 
@@ -102,10 +108,7 @@ job_player.newPlayer = function(player_instance) {
         options.mode = 'shim';
     }
 
-    //Firefox cannot play mp4 natively and must fall back on Flash 
-    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-        options.mode = 'shim';
-    }
 
-    $('#video_player').mediaelementplayer(options);
+    var player = new MediaElementPlayer('#video_player',options);
+    //$('#video_player').mediaelementplayer(options);
 }
