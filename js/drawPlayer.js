@@ -1,11 +1,21 @@
 job_player.drawPlayer = function(player_instance, autoplay){
     
+    if(player_instance.player) { 
+        $('.video_container').empty();
+        player_instance.player.setSrc = '';
+		player_instance.player.load();
+        player_instance.player.remove();
+        window.player_root = null; 
+        player_instance.media = null; 
+    }
+    
     player_instance.autoplay = autoplay;
     
     var current_item = player_instance.playlist[player_instance.playlist_position];
         
     //set subtitles 
     player_instance.subtitles_src = 'xml_converter.php?target='+current_item.subtitles_url;
+    player_instance.subtitles_src = '';
 
     //WHAAA?? Chrome has bug that causes video requests to fail unless you make them different every time 
     // so you have to add the timestampt to the end
@@ -23,11 +33,9 @@ job_player.drawPlayer = function(player_instance, autoplay){
         $('#video_player').attr('poster', player_instance.poster_src);
     }
     
-
-    
     //do we need to draw the whole player?
-    isMobile = false;
-    if(typeof player_instance.player == 'undefined' || isMobile) {
+    var redraw = true;
+    if(typeof player_instance.player == 'undefined' || redraw) {
         job_player.newPlayer(player_instance);
     }
     else {
@@ -37,9 +45,10 @@ job_player.drawPlayer = function(player_instance, autoplay){
         player_instance.player.findTracks();
         player_instance.player.loadTrack(0);
         player_instance.player.setTrack(0);
-        console.log(player_instance.player);
+        player_instance.player.setCurrentTime(0);
+      
         player_instance.player.pause();
-        player_instance.player.setSrc(player_instance.video_src)
+
         player_instance.player.load();
         if(player_instance.autoplay) { 
             player_instance.player.play();
@@ -53,10 +62,14 @@ job_player.drawPlayer = function(player_instance, autoplay){
 job_player.newPlayer = function(player_instance) { 
     
     //add in new HTML
+    $('#video_player').remove();
     $('.video_container').empty();
-    var html = '<video id="video_player"  poster="'+player_instance.poster_src+'" type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;" src="' + player_instance.video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+player_instance.subtitles_src+'" srclang="en" /> <object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf"> <param name="movie" value="media_elements/build/flashmediaelement.swf" /> <param name="flashvars" value="controls=true&file='+player_instance.video_src+'" /> </object> </video>';
+    
+    //<object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf"> <param name="movie" value="media_elements/build/flashmediaelement.swf" /> <param name="flashvars" value="controls=true&file='+player_instance.video_src+'" /> </object>
+    var html = '<video id="video_player"  poster="'+player_instance.poster_src+'" type="video/mp4"   src="' + player_instance.video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+player_instance.subtitles_src+'" srclang="en" />  </video>';
     $('.video_container').html(html);
 
+    console.log($('#video_player').html());
 
     //draw the video player
     var options = {
@@ -74,14 +87,18 @@ job_player.newPlayer = function(player_instance) {
                     }, false);
                 }
             }
-        
-            $('.mejs-playpause-button').after('<div class="next_track_btn"> &raquo;</div>');
-            $('.mejs-playpause-button').after('<div class="prev_track_btn"> &laquo;</div>');
+            
+            $('.mejs-playpause-button').after('<div class="next_track_btn transport_btn"> &raquo;</div>');
+            $('.mejs-playpause-button').after('<div class="prev_track_btn transport_btn"> &laquo;</div>');
             $('.mejs-playpause-button').after('<div class="restart_video_btn"> &lt;</div>');
+            $('.transport_btn').unbind();
+            
             var width = $('.mejs-time-rail').css('width');
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
-            job_player.attachTransportEvents(player_instance);
+            
+            
+            
             player_instance.player = player;
             player_instance.media = player;
         
@@ -94,11 +111,15 @@ job_player.newPlayer = function(player_instance) {
                     $('#video_player').attr('poster', player_instance.poster_src);
                     $(".mejs-inner").find(".mejs-poster").show();
                 } else { 
-                    job_player.playlistChange(player_instance.playlist_position +1 , player_instance, true);
+                    job_player.playlistChange(player_instance.playlist_position +1, player_instance, true);
                 }
             });
+            
+            media.addEventListener("loadeddata", function(arg1, arg2) {   
+                setTimeout(function(){job_player.attachTransportEvents(player_instance)}, 500);
+            });
         
-   
+            
         }
     }
 
@@ -109,6 +130,6 @@ job_player.newPlayer = function(player_instance) {
     }
 
 
-    var player = new MediaElementPlayer('#video_player',options);
+    window.player_root = new MediaElementPlayer('#video_player',options);
     //$('#video_player').mediaelementplayer(options);
 }

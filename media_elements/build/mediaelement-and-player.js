@@ -1415,8 +1415,7 @@ mejs.HtmlMediaElementShim = {
 			if (preload === 'none' && !autoplay) {
 			
 				// forces the browser to stop loading (note: fails in IE9)
-				htmlMediaElement.src = '';
-				htmlMediaElement.load();
+
 				htmlMediaElement.canceledPreload = true;
 
 				htmlMediaElement.addEventListener('play',function() {

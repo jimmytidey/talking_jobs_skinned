@@ -102,8 +102,7 @@ job_player.attachEvents = function(player_instance) {
 
 job_player.attachTransportEvents = function(local_player_instance) { 
     
-    console.log('hi');
-    
+
     job_player.favourites(local_player_instance);
     
     //navigation buttons 

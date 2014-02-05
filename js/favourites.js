@@ -10,7 +10,7 @@ job_player.favourites = function(options){
         if($.inArray(current_favs) === -1) {
             job_player.addFavourite(current_item, options)
         }
-        console.log(current_favs);
+       
         var playlist_item  = options.playlist[current_item];
         var question_no    = parseInt(playlist_item.question_id) +1;
         $('.favourites_tab_alert', options.elem).empty();
@@ -117,7 +117,7 @@ job_player.renderFavourites = function(options) {
     
     $('.fav_delete').click(function(){
         var id   = $(this).parent().attr('data-id');
-        console.log(id);
+        
         var current_favs = eval($.cookie('tj_favourites'));
         current_favs.splice(id,1);
         $.cookie('tj_favourites',current_favs);
