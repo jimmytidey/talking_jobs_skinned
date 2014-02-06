@@ -44,15 +44,15 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
      
     //scroll to question  
     $('.question_selector').removeClass('selected');
+    
     var target_elem = $('.question_selector[data-id="'+ current_item.question_id +'"]' );
     target_elem.addClass('selected');
+
     
-    
-    
-    var question_top_offset = job_player.questionPosition(current_item.question_id, player_instance);
+    var question_top_offset = 0 - job_player.questionPosition(current_item.question_id, player_instance);
     
     if($('html.lt-ie9').length==0) { 
-        player_instance.myScroll.scrollToElement('.question_selector.selected .question', 600, 0, -300);
+        player_instance.myScroll.scrollTo(0, question_top_offset, 500);
     } else {
         $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 300);
     }

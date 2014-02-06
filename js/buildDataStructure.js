@@ -9,7 +9,7 @@ job_player.buildDataStructure = function(player_instance) {
 
         var player_instance = this.player_instance;
         $.each(interview_value.responses.response, function(response_key, response_value ) {
-            
+        
             var playlist_object             = {};
             var subtitle_bodge              = response_value['_src'].split("/")[3];
             playlist_object.interviewee_id  = interview_value['_id']; 
@@ -25,10 +25,11 @@ job_player.buildDataStructure = function(player_instance) {
             playlist_object.video           = response_value['_src'] + ".mp4";
             
             local_player_instance.playlist.push(playlist_object);
+            
         });
+        
     }); 
-    
-    
+
     //build a list of each interview  
     $.each(player_instance.interviews_json.talking_jobs.interview_responses.interview, function(interview_key, interview_value ){
         local_player_instance.interviewees.push({interviewee: interview_value.job_title, id: interview_value['_id'], now_image: interview_value.now_image['_src']});

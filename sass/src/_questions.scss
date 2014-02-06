@@ -131,6 +131,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.question_scroller li {
+    height:60px;
+}
+
 .question_scroller .selected {
 	background-color: white !important;
 }

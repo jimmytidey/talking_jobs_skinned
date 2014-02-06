@@ -69,17 +69,18 @@
             </div>
             
             <div class='tab tab_reflections'>
-                <h1>Reflections</h1>
+            <h1>Reflections</h1>
 			<div class="reflect_export">
 				<form action="">
 				<fieldset>
 					<label>Your email</label>
 					<input type="text" class='reflections_email' />
 				</fieldset>
-				<button class="btn">Save</button>
-				<button class="btn email_reflections">Email</button>
+				<div class="btn download_reflections">Save</div>
+				<div class="btn email_reflections">Email</div>
 				
 				</form>
+				<div class='reflections_alert' ></div>
 			</div>
 				<div class='content-container'>
 	                <p>What have I just found out?</p>

@@ -1,4 +1,5 @@
-job_player.emailReflections = function(options){ 
+job_player.generateReflectionsText = function(options){
+    
     var found_out_note  = $('.found_out_note', options.elem).val();
     var relate_note     = $('.relate_note', options.elem).val();
     var next_steps_note = $('.next_steps_note', options.elem).val();
@@ -10,19 +11,59 @@ job_player.emailReflections = function(options){
     
     text += "<strong>What are my next steps?</strong>";
     text += "<p>" + next_steps_note + "</p>";
+    return text; 
+}
+
+
+job_player.emailReflections = function(options){ 
+    
+    var text = job_player.generateReflectionsText(options);
     
     var target = $('.reflections_email', options.elem).val(); 
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Your Talking Jobs reflections&toAddress='; 
-        url += encodeURIComponent(target) + "&emailContent=";
-        url += encodeURIComponent(text)+"&callback=?"; 
-      
-    $.getJSON(url, function(arg1, arg2){ 
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    
+    var data = { 
+        method: 'sendEmail',
+        subject: 'Your Talking Jobs reflections',
+        toAddress: target,
+        emailContent: text   
+    }
 
+    $.post(url, data, function(arg1, arg2){ 
+        
+        $('.reflections_alert').html('Email sent');
+        
+        setTimeout(function(){
+               $('.reflections_alert', options.elem).fadeOut(400, function(){
+                   $('.reflections_alert', options.elem).html('');
+               });
+           }, 2000);
     });    
 }
 
-job_player.emailFavourites = function(options){ 
+job_player.downloadReflections = function(options){ 
+    
+    var text = job_player.generateReflectionsText(options);
+    
+    var target = $('.reflections_email', options.elem).val(); 
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    
+    var data = { 
+        method: 'html5PDF',
+        pdfContent: text
+    }
 
+    $.post(url, data, function(arg1, arg2){ 
+        console.log(arg1);
+        var url = arg1.split('<string>')[1];
+        url = url.split('</string>')[0];
+        
+        $('.reflections_alert').html('<a target="_blank" href="'+url+'">Download</a>');
+    });    
+}
+
+
+job_player.generateFavsText = function(options) { 
     var text  = "<strong>Your favourites</strong>";
     
     $('.fav_wrapper').each(function(key,val){
@@ -34,7 +75,11 @@ job_player.emailFavourites = function(options){
             text +="<strong>Notes</strong><p>" + notes + "</p>";
         }
     });
+}
 
+job_player.emailFavourites = function(options){ 
+
+    var text = job_player.generateFavsText(options); 
     
     var target = $('.favs_email', options.elem).val(); 
     var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Your Talking Jobs favourites&toAddress='; 

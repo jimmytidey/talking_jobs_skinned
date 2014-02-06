@@ -7,13 +7,21 @@ job_player.favourites = function(options){
         
         var current_favs = $.cookie('tj_favourites');
         
-        if($.inArray(current_favs) === -1) {
-            job_player.addFavourite(current_item, options)
+        job_player.addFavourite(current_item, options)
+        
+        if(typeof current_favs === 'undefined') { 
+            var number_of_favs=0; 
         }
-       
+        else { 
+            var number_of_favs =current_favs.length; 
+        }
+         
+     
         var playlist_item  = options.playlist[current_item];
         var question_no    = parseInt(playlist_item.question_id) +1;
         $('.favourites_tab_alert', options.elem).empty();
+        
+        $('.favourites_tab_alert').html(number_of_favs+1);
         $('.favourites_tab_alert', options.elem).show();
         $('.favourites_tab_alert', options.elem).append();
         

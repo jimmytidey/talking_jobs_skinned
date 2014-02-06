@@ -8754,9 +8754,9 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 /* line 690, ../sass/libs/_mediaelementplayer.scss */
 .mejs-captions-position {
   position: absolute;
-  width: 100%;
+  width: 80%;
   bottom: 15px;
-  left: 0;
+  left: 10% !important;
 }
 
 /* line 697, ../sass/libs/_mediaelementplayer.scss */
@@ -9826,55 +9826,60 @@ and full interview mode button
 }
 
 /* line 134, ../sass/src/_questions.scss */
+.question_scroller li {
+  height: 60px;
+}
+
+/* line 138, ../sass/src/_questions.scss */
 .question_scroller .selected {
   background-color: white !important;
 }
 
-/* line 138, ../sass/src/_questions.scss */
+/* line 142, ../sass/src/_questions.scss */
 .question_scroller .selected .number {
   color: #d0021b;
 }
 
-/* line 142, ../sass/src/_questions.scss */
+/* line 146, ../sass/src/_questions.scss */
 .question_scroller .selected .question {
   color: #d0021b;
 }
 
-/* line 146, ../sass/src/_questions.scss */
+/* line 150, ../sass/src/_questions.scss */
 .question_scroller .selected .play-mode-questions {
   display: block;
 }
 
 /* Default: 940px and up  */
-/* line 151, ../sass/src/_questions.scss */
+/* line 155, ../sass/src/_questions.scss */
 .scroller_wrapper {
   width: 300px;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  /* line 158, ../sass/src/_questions.scss */
+  /* line 162, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  /* line 165, ../sass/src/_questions.scss */
+  /* line 169, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) {
-  /* line 172, ../sass/src/_questions.scss */
+  /* line 176, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 279px;
   }
 }
 /* Large desktop */
 @media (min-width: 1210px) {
-  /* line 180, ../sass/src/_questions.scss */
+  /* line 184, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 427px;
   }

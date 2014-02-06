@@ -4,8 +4,7 @@ job_player.getObjectFromPlaylist = function(interviewee_no, question_no, player_
     var result;
     
     for(var i=0; i < player_instance.playlist.length; i++) {
-       
-            
+
         if (question_no === parseInt(player_instance.playlist[i].question_id) &&
             interviewee_no === parseInt(player_instance.playlist[i].interviewee_id)) { 
                 result = (player_instance.playlist[i]);
@@ -31,12 +30,12 @@ job_player.getPlaylistIdByQuestionType = function(interviewee_no, type_no, playe
        interviewee_no   = parseInt(interviewee_no);
        type_no          = parseInt(type_no);
         
-        
         if (type_no === parseInt(player_instance.playlist[i].question_type) &&
             interviewee_no === parseInt(player_instance.playlist[i].interviewee_id)) { 
                 result = i
                 break;
         }
+        
     }
     return(result);    
 }
@@ -101,7 +100,6 @@ job_player.detectWidth = function(){
 
 job_player.questionPosition = function(id, player_instance) { 
     var top = $('.question_selector[data-id="'+id+'"]' ).position().top;
-    
     return top;
 }
 

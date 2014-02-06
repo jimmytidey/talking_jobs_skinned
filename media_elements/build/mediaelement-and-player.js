@@ -1415,7 +1415,8 @@ mejs.HtmlMediaElementShim = {
 			if (preload === 'none' && !autoplay) {
 			
 				// forces the browser to stop loading (note: fails in IE9)
-
+				htmlMediaElement.src = '';
+				htmlMediaElement.load();
 				htmlMediaElement.canceledPreload = true;
 
 				htmlMediaElement.addEventListener('play',function() {
@@ -2655,7 +2656,7 @@ if (typeof jQuery != 'undefined') {
 					parentWidth = t.container.parent().closest(':visible').width(),
 					newHeight = t.isVideo || !t.options.autosizeProgress ? parseInt(parentWidth * nativeHeight/nativeWidth, 10) : nativeHeight;
 
-				if (t.container.parent()[0].tagName.toLowerCase() === 'body') { // && t.container.siblings().count == 0) {
+				if (t.container.parent()[0] && t.container.parent()[0].tagName.toLowerCase() === 'body') { // && t.container.siblings().count == 0) {
 					parentWidth = $(window).width();
 					newHeight = $(window).height();
 				}
@@ -5046,4 +5047,3 @@ $.extend(mejs.MepDefaults,
 	});
 
 })(mejs.$);
-

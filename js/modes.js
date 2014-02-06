@@ -8,9 +8,10 @@ job_player.setNormalMode = function(player_instance) {
     var current_question_id     = player_instance.playlist[player_instance.playlist_position].question_id;
     var current_interviewee_id  = player_instance.playlist[player_instance.playlist_position].interviewee_id;
     
-    for(var i = 0; i< player_instance.questions.length; i++) { 
-        for(var j = 0; j< player_instance.interviewees.length; j++) {
-            new_playlist.push(job_player.getObjectFromPlaylist(i,j,player_instance));
+     
+    for(var j = 0; j< player_instance.interviewees.length; j++) {
+        for(var i = 0; i< player_instance.questions.length; i++) { 
+            new_playlist.push(job_player.getObjectFromPlaylist(j,i,player_instance));
         }
     }
     
@@ -65,14 +66,15 @@ job_player.setInterviewMode = function(player_instance) {
     var new_playlist = [];
   
     player_instance.mode = 'whole_interview';
-  
-    for(var i = 0; i< player_instance.questions.length; i++) { 
-        for(var j = 0; j< player_instance.interviewees.length; j++) {
-            new_playlist.push(job_player.getObjectFromPlaylist(i,j,player_instance));
+        
+    for(var j = 0; j< player_instance.interviewees.length; j++) {
+        for(var i = 0; i< player_instance.questions.length; i++) { 
+            new_playlist.push(job_player.getObjectFromPlaylist(j,i,player_instance));
         }
     }
     
     player_instance.playlist = new_playlist;
+    
   
     var new_playlist_id = job_player.findPlaylistID(current_interviewee_id, current_question_id, player_instance);
     
