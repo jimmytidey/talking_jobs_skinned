@@ -84,7 +84,6 @@ job_player.attachEvents = function(player_instance) {
         job_player.downloadReflections(local_player_instance);
     });
     
-    
    
     $('.email_question').click(function(){ 
         job_player.emailQuestion(local_player_instance);
@@ -94,6 +93,9 @@ job_player.attachEvents = function(player_instance) {
        job_player.emailFavourites(local_player_instance); 
     });
     
+    $('.save_favs').click(function(){
+       job_player.downloadFavs(local_player_instance); 
+    });
 
     $('.tab_buttons li').click(function(){       
         local_player_instance.player.pause();
@@ -113,7 +115,6 @@ job_player.attachTransportEvents = function(local_player_instance) {
         job_player.setNormalMode(local_player_instance);
         var target_id = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
         job_player.playlistChange(target_id, local_player_instance, true);
-        
     });
         
     //for clicks on the question scroller 
@@ -143,7 +144,7 @@ job_player.attachTransportEvents = function(local_player_instance) {
 
     $('.restart_video_btn').unbind();    
     $('.restart_video_btn').click(function(){ 
-        local_player_instance.video.setCurrentTime(0);
+        local_player_instance.player.setCurrentTime(0);
     });
  
 }

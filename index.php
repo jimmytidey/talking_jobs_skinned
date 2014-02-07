@@ -59,9 +59,10 @@
 						<input type="text" class='favs_email' />
 					</fieldset>
 
-					<button class="btn save_favs">Save</button>
-					<button class="btn email_favs">Email</button>
+					<div class="btn save_favs">Save</div>
+					<div class="btn email_favs">Email</div>
 					</form>
+					<div class='favs_alert' ></div>
 				</div>
                 <div class='fav_container content-container'>
                 
