@@ -38,3 +38,10 @@
 .more_info_modal b:after{
 	content: ":";
 }
+
+.then_image { 
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 

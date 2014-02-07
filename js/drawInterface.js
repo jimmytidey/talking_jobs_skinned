@@ -23,7 +23,7 @@ job_player.drawInterface = function(player_instance) {
     var scroller = $('.interviewee_scroller'); 
     
     for(var i = 0; i <player_instance.interviewees.length; i++){ 
-        $(scroller).append("<img rel='tooltip' title='"+ player_instance.interviewees[i].interviewee+"' data-placement='bottom' src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector ' data-id='"+ player_instance.interviewees[i].id + "' />");
+        $(scroller).append("<img   src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].interviewee+"'   rel='tooltip' data-placement='bottom' />");
         
         if (i == player_instance.interviewees.length -1) { 
            
@@ -51,7 +51,8 @@ job_player.drawInterface = function(player_instance) {
         		height:'70px'		
         	});    
         	//add tooltips 
-        	$('.interviewee_selector').tooltip();
+        	$('.interviewee_selector').tooltip({trigger: 'hover'});
+        
         }
     };
     
@@ -68,7 +69,8 @@ job_player.drawInterface = function(player_instance) {
         if (i === player_instance.questions.length-1 && $('html.lt-ie9').length==0) {
             player_instance.myScroll = new IScroll('.scroller_wrapper',{
                 scrollbars:true,
-                mouseWheel:true
+                mouseWheel:true,
+                interactiveScrollbars: true
             });
             document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
         }

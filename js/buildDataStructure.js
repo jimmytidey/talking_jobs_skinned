@@ -18,6 +18,7 @@ job_player.buildDataStructure = function(player_instance) {
             playlist_object.job_prefix      = interview_value.job_prefix['__cdata']; 
             playlist_object.job_title       = interview_value.job_title['__cdata'];
             playlist_object.now_image       = interview_value.now_image['_src'];
+            playlist_object.then_image       = interview_value.then_image['_src'];
             playlist_object.question        = local_player_instance.questions_json.talking_jobs.questions.question[response_key]['__cdata'];
             playlist_object.question_id     = response_value['_question_id'];
             playlist_object.subtitles_url   = local_player_instance.subtitles_folder + subtitle_bodge  + "_track0.xml";

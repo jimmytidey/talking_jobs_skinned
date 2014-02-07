@@ -64,7 +64,9 @@ job_player.downloadReflections = function(options){
 
 
 job_player.generateFavsText = function(options) { 
-    var text  = "<strong>Your favourites</strong>";
+    var name = $('.favs_name').val();
+    var text  = "<strong>favourites</strong>";
+        text += "<p>Name: " + name + "</p>";
     
     $('.fav_wrapper').each(function(key,val){
         var title = $('.fav_job_title', val).text();
@@ -94,11 +96,8 @@ job_player.emailFavourites = function(options){
                });
            }, 2000);
         
-        
     } else { 
-        
-        console.log('email trying to send ');
-        
+
         var text = job_player.generateFavsText(options); 
     
         var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc';
@@ -150,23 +149,32 @@ job_player.emailQuestion = function(options){
     var question_note  = $('.question_note', options.elem).val();
     
     var text = "<strong>A question from Talking Jobs</strong>";
-    text += "<p>" + question_note + "</p>";
+    text    += "<p>" + question_note + "</p>";
     
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc?method=sendEmail&subject=Question from Talking Jobs website&toAddress='; 
-        url += "jimmytidey@gmail.com&emailContent=";
-        url += encodeURIComponent(text); 
-        
-    $.ajax({
-        dataType: "json",
-        url: url, 
-        error:function(){
-            $('.tab_have_a_quesiton').append('<div class="question_sent">Your question has been sent</div>');        
-            setTimeout(function(){
-                $('.question_sent').fadeOut(400, function(){
-                    $('.question_sent').remove();
-                });
-            }, 2000);
-        }    
-    }); 
+    var target = $('.question_target').val();
+    if(target === '') {
+        $('.question_alert').html('You must enter an email address');
+    }
+    
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    
+    var data = { 
+         method: 'sendEmail',
+         subject: 'Question via Talking Jobs',
+         toAddress: target,
+         emailContent: text   
+     }
+
+    $.post(url, data, function(arg1, arg2){ 
+        $('.question_alert').show();
+        $('.question_alert').html('Email sent');
+
+        setTimeout(function(){
+               $('.question_alert', options.elem).fadeOut(400, function(){
+                   $('.question_alert', options.elem).html('');
+               });
+           }, 2000);
+    });
+
     
 }

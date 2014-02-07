@@ -1,7 +1,7 @@
 
 <? include 'header.php'  ?>
 
-<div class="welcome_modal row" title="The Gloucestershire Module">
+<div class="welcome_modal row" >
 
 	<div class='row header cf'>
 		<div  class="span12">
@@ -38,13 +38,11 @@
 
 
 
+
+
 <div class='container jobs_player'>
     
-    <div id="app" class='row'>
-
-
-      
-        
+    <div id="app" class='row'>        
         <div id="player" class='span9'>
             <div class='tab tab_player' >
                 <? include('player.php') ?>
@@ -58,6 +56,11 @@
 						<label>Your email</label>
 						<input type="text" class='favs_email' />
 					</fieldset>
+					
+					<fieldset>
+    					<label>Your name</label>
+    					<input type="text" class='favs_name' />
+    				</fieldset>
 
 					<div class="btn save_favs">Save</div>
 					<div class="btn email_favs">Email</div>
@@ -77,6 +80,8 @@
 					<label>Your email</label>
 					<input type="text" class='reflections_email' />
 				</fieldset>
+				
+
 				<div class="btn download_reflections">Save</div>
 				<div class="btn email_reflections">Email</div>
 				
@@ -112,8 +117,10 @@
                 <h1>Ask a question</h1>
 				<div class='content-container'>
 				    <p>Write your question</p>
+				    <input type='text' class='question_target' placeholder='Send to (email address)' />
 	                <textarea class='question_note'></textarea>
 	                <button class="btn email_question">Email</button>
+	                <div class='question_alert' ></div>
 				</div>
             </div>
             

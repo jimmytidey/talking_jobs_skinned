@@ -72,9 +72,16 @@ job_player.attachEvents = function(player_instance) {
         } else {
             $('.scroller_wrapper').scrollTo(target_elem, 300);
         } 
-       
     });
     
+    $('.camera_button').click(function(){
+        var current_item = local_player_instance.playlist[local_player_instance.playlist_position]; 
+        if($('.then_image').length === 0){
+            $('.mejs-container').prepend('<div class="then_image"><img src="'+current_item.then_image+'" /></div>');
+        } else { 
+            $('.then_image').remove();
+        }
+    });
      
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
@@ -101,11 +108,15 @@ job_player.attachEvents = function(player_instance) {
         local_player_instance.player.pause();
     });
     
+    
+    
 };
 
 job_player.attachTransportEvents = function(local_player_instance) { 
     
-    
+    $('.mejs-captions-button').click(function(){
+
+    });
     
     //for clicks on the interviewee scroller 
     $('.interviewee_selector').unbind();
@@ -146,5 +157,7 @@ job_player.attachTransportEvents = function(local_player_instance) {
     $('.restart_video_btn').click(function(){ 
         local_player_instance.player.setCurrentTime(0);
     });
+    
+
  
 }

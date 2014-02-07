@@ -9567,6 +9567,12 @@ and full interview mode button
   }
   */
 }
+/* make the subtitles work */
+/* line 353, ../sass/src/_player.scss */
+.mejs-captions-selector {
+  /*display:none!important;*/
+}
+
 /* line 3, ../sass/src/_carousel.scss */
 .carousel .carousel_prev,
 .carousel_container,
@@ -9574,13 +9580,19 @@ and full interview mode button
   /*float: left;*/
 }
 
-/* line 9, ../sass/src/_carousel.scss */
+/* line 7, ../sass/src/_carousel.scss */
+.tooltip {
+  position: absolute;
+  z-index: 100000;
+}
+
+/* line 13, ../sass/src/_carousel.scss */
 .carousel {
   position: relative;
   overflow: hidden;
 }
 
-/* line 16, ../sass/src/_carousel.scss */
+/* line 20, ../sass/src/_carousel.scss */
 .carousel,
 .interviewee_scroller,
 .caroufredsel_wrapper,
@@ -9588,7 +9600,7 @@ and full interview mode button
   height: 44px !important;
 }
 
-/* line 19, ../sass/src/_carousel.scss */
+/* line 23, ../sass/src/_carousel.scss */
 .carousel_container {
   overflow: hidden;
   width: 346px;
@@ -9597,7 +9609,7 @@ and full interview mode button
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 29, ../sass/src/_carousel.scss */
+/* line 33, ../sass/src/_carousel.scss */
 .interviewee_selector {
   margin-right: 1px !important;
   width: 69px;
@@ -9606,12 +9618,12 @@ and full interview mode button
   vertical-align: top;
 }
 
-/* line 37, ../sass/src/_carousel.scss */
+/* line 41, ../sass/src/_carousel.scss */
 .carousel .selected {
   border-bottom: 5px solid #d0021b;
 }
 
-/* line 42, ../sass/src/_carousel.scss */
+/* line 46, ../sass/src/_carousel.scss */
 .carousel .carousel_next,
 .carousel .carousel_prev {
   display: block !important;
@@ -9624,7 +9636,7 @@ and full interview mode button
   visibility: visible;
 }
 
-/* line 53, ../sass/src/_carousel.scss */
+/* line 57, ../sass/src/_carousel.scss */
 .carousel .carousel_prev {
   left: 0;
   background-image: url("img/defaultskin/btn_carousel_left_arrow.png");
@@ -9632,7 +9644,7 @@ and full interview mode button
   margin-right: 1px;
 }
 
-/* line 60, ../sass/src/_carousel.scss */
+/* line 64, ../sass/src/_carousel.scss */
 .carousel .carousel_next {
   background-image: url("img/defaultskin/btn_carousel_right_arrow.png");
   background-repeat: no-repeat;
@@ -9640,36 +9652,36 @@ and full interview mode button
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 67, ../sass/src/_carousel.scss */
+  /* line 71, ../sass/src/_carousel.scss */
   .carousel {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  /* line 75, ../sass/src/_carousel.scss */
+  /* line 79, ../sass/src/_carousel.scss */
   .carousel .carousel_next,
   .carousel .carousel_prev {
     margin-top: -2px;
   }
 
-  /* line 79, ../sass/src/_carousel.scss */
+  /* line 83, ../sass/src/_carousel.scss */
   .interviewee_selector {
     width: 65px;
   }
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 86, ../sass/src/_carousel.scss */
+  /* line 90, ../sass/src/_carousel.scss */
   .carousel_container {
     width: 346px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 92, ../sass/src/_carousel.scss */
+  /* line 96, ../sass/src/_carousel.scss */
   .carousel_container {
     width: 472px;
   }
 
-  /* line 98, ../sass/src/_carousel.scss */
+  /* line 102, ../sass/src/_carousel.scss */
   .interviewee_selector {
     width: 67px;
     height: 39px;
@@ -10103,6 +10115,14 @@ bootstrap, as they're not needed for these tabs
 /* line 38, ../sass/src/_information.scss */
 .more_info_modal b:after {
   content: ":";
+}
+
+/* line 42, ../sass/src/_information.scss */
+.then_image {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 /* line 1, ../sass/src/_favourites.scss */

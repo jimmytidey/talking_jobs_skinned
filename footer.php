@@ -17,14 +17,14 @@
         
         
         <script src='media_elements/build/mediaelement-and-player.js' ></script>
-
+        <script src="js/vendor/bootstrap.min.js"></script>
+        
         <!-- 3rd party -->
         <script type="text/javascript" src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script> 
+         
             
         
         <script src="js/vendor/xml_to_json.js"></script>
-        
         <script src="js/vendor/jquery.cookie.js"></script>
         <script src="js/vendor/iscroll.js"></script>
         <script src="js/vendor/scrollTo.js"></script>
@@ -49,7 +49,8 @@
                 jQuery('.jobs_player').job_player();
             });
         </script>
-                
+        
+        
         <!-- 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
