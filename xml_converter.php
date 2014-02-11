@@ -1,4 +1,4 @@
-<? 
+<?php
 @$target_file = $_GET['target'];
 
 if(empty($target_file)) { 

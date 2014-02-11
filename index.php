@@ -1,5 +1,5 @@
 
-<? include 'header.php'  ?>
+<?php include 'header.php'  ?>
 
 <div class="welcome_modal row" >
 
@@ -45,7 +45,7 @@
     <div id="app" class='row'>        
         <div id="player" class='span9'>
             <div class='tab tab_player' >
-                <? include('player.php') ?>
+                <?php include('player.php') ?>
             </div>
             
             <div class='tab tab_favourites'>
@@ -149,5 +149,5 @@
 
 <br /><br />
 
-<? include 'footer.php'  ?>        
+<?php include 'footer.php'  ?>        
 
