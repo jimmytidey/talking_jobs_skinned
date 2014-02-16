@@ -84,14 +84,15 @@ and full interview mode button
 		width: 220px;
 	}
 	
-	.modes .btn{
-		font-size: 12px;
-	}
-	
 	.modes {
+		margin-left: 0 !important;
 		width: 100%;
 	}
 	
+	.modes .btn{
+		font-size: 12px;
+	}
+		
 	.modes .active {
 		background-color: $talking-jobs-red;
 		color: white;
@@ -108,6 +109,8 @@ and full interview mode button
 	.modes .whole_question_order{
 		width: 43%;
 	}
+	
+
 	
 	#player .play-mode-shuffle,
 	#player .play-mode-interview {
