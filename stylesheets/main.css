@@ -6898,13 +6898,15 @@ and full interview mode button
   position: absolute;
   background: #ccc;
   overflow: hidden;
-  height: 200px;
   margin-left: 8px;
-  width: 100%; }
+  width: 100%;
+  top: 460px;
+  bottom: 32px; }
 
 .lt-ie9 .scroller_wrapper {
-  overflow: auto;
-  position: relative; }
+  /*overflow:auto;
+  position:relative;*/
+  top: 389px; }
 
 .question_scroller {
   position: absolute;
