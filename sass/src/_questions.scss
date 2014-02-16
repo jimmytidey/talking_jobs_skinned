@@ -92,7 +92,7 @@
 	overflow: hidden;
 	margin-left:8px;
 	width:100%;
-	top: 460px;
+	top: 389px;
 	bottom: 32px;
 
 }
@@ -169,22 +169,32 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .scroller_wrapper  {
-        width: 279px;
+        width: 287px;
+		top: 381px;
+		margin-left: 0;
     }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) { 
     .scroller_wrapper  {
-        width: 279px;
+        width: 302px;
+		top: 389px;
     }
 }
  
+@media (min-width: 1200px) and (max-width: 1209px) { 
+    .scroller_wrapper  {
+        width: 427px;
+		top: 460px;
+    }
+}
 
 /* Large desktop */
 @media (min-width: 1210px) { 
 	.scroller_wrapper  {
 		width: 427px;
+		top: 460px;
 	}
  
 }
