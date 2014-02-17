@@ -36,7 +36,7 @@
 }
 
 .fav_wrapper .fav_play {
-	background-image: url("../img/skin/btn_play.png");
+	background-image: url($skin + "btn_play.png");
 	background-repeat: no-repeat;
 	left: 0;
 	width: 30px;
@@ -55,7 +55,7 @@
 
 .fav_wrapper .fav_delete {
 	right: 10px;
-	background-image: url("../img/skin/btn_delete.png");
+	background-image: url($skin + "btn_delete.png");
 	background-repeat: no-repeat;
 	width: 30px;
 	height: 30px;
@@ -88,7 +88,7 @@
 
 .fav_wrapper .content .view_transcript {
 	margin-top: 20px;
-	background-image: url("../img/skin/transcript_arrow.png");
+	background-image: url($skin +  "transcript_arrow.png");
 	background-repeat: no-repeat;
 	background-position: 0 6px;
 	text-indent: 35px;
