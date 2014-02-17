@@ -6417,9 +6417,9 @@ Player. Left column
     height: auto; }
 
   .jobs_player {
-    width: 100%;
-    position: static;
-    margin-left: 0; }
+    width: 310px;
+    position: absolute;
+    margin-left: -155px; }
 
   #branding {
     border-right: none;
@@ -6462,6 +6462,36 @@ Player. Left column
 
 #player .mejs-container {
   background: none; }
+
+#player .mejs-container .mejs-controls {
+  top: 259px; }
+
+#player .mejs-time-rail {
+  position: absolute;
+  top: -25px;
+  background: #000;
+  width: 100% !important; }
+
+#player .mejs-time-total {
+  width: 70% !important;
+  margin-left: 15%; }
+
+#player .mejs-duration-container,
+#player .mejs-currenttime-container {
+  position: absolute;
+  top: -25px;
+  background: #000;
+  z-index: 10; }
+
+#player .mejs-currenttime-container {
+  left: 0; }
+
+#player .mejs-duration-container {
+  right: 0; }
+
+#player .mejs-captions-position {
+  width: 100%;
+  left: 0 !important; }
 
 #player {
   /*border-left: 1px solid $player-edging-colour;*/
@@ -6594,7 +6624,8 @@ and full interview mode button
 
 #player .player {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 290px; }
 
 #player .player .previous_button,
 #player .player .next_button {
@@ -6732,9 +6763,27 @@ and full interview mode button
     padding: 0;
     text-indent: -500px;
     overflow: hidden; } }
+@media only screen and (max-width: 480px) {
+  #player .mejs-container .mejs-controls {
+    top: 190px; }
+
+  #player .player {
+    height: 220px; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #player .player {
+    height: 279px; }
+
+  #player .mejs-container .mejs-controls {
+    top: 248px; } }
 @media only screen and (min-width: 1200px) {
   .modes .random_order {
     width: 16%; }
+
+  #player .player {
+    height: 360px; }
+
+  #player .mejs-container .mejs-controls {
+    top: 329px; }
 
   /*
   .modes .whole_interview_order{
@@ -6909,13 +6958,13 @@ and full interview mode button
   overflow: hidden;
   margin-left: 8px;
   width: 100%;
-  top: 389px;
+  top: 448px;
   bottom: 32px; }
 
 .lt-ie9 .scroller_wrapper {
   /*overflow:auto;
   position:relative;*/
-  top: 389px; }
+  top: 448px; }
 
 .question_scroller {
   position: absolute;
@@ -6984,20 +7033,23 @@ and full interview mode button
     width: 287px;
     top: 381px;
     margin-left: 0; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .scroller_wrapper {
+    top: 436px; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) {
   .scroller_wrapper {
     width: 302px;
-    top: 389px; } }
+    top: 448px; } }
 @media (min-width: 1200px) and (max-width: 1209px) {
   .scroller_wrapper {
     width: 427px;
-    top: 460px; } }
+    top: 518px; } }
 /* Large desktop */
 @media (min-width: 1210px) {
   .scroller_wrapper {
     width: 427px;
-    top: 460px; } }
+    top: 518px; } }
 /* --------------------------------------
 Vars
 -----------------------------------------*/

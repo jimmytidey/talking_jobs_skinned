@@ -1,6 +1,7 @@
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
+
 #player .mejs-poster {
 	background-size: 100%;
 }
@@ -9,6 +10,42 @@ Player. Left column
 	background: none;
 }
 
+#player .mejs-container .mejs-controls {
+	top: 259px;
+}
+
+#player .mejs-time-rail {
+	position: absolute;
+	top: -25px;
+	background: #000;
+	width: 100% !important;
+}
+
+#player .mejs-time-total {
+	width: 70% !important;
+	margin-left: 15%;
+}
+
+#player .mejs-duration-container,
+#player .mejs-currenttime-container {
+	position: absolute;
+	top: -25px;
+	background: #000;
+	z-index: 10;
+}
+
+#player .mejs-currenttime-container {
+	left: 0;
+}
+
+#player .mejs-duration-container {
+	right: 0;
+}
+
+#player .mejs-captions-position {
+	width: 100%;
+	left: 0 !important;
+}
 #player {
 	/*border-left: 1px solid $player-edging-colour;*/
 	background-color: $tab-on-colour; 
@@ -173,7 +210,8 @@ and full interview mode button
 		
 	#player .player {
 		position: relative;
-		overflow: hidden;	
+		overflow: hidden;
+		height: 290px;	
 	}
 	
 	#player .player .previous_button,
@@ -342,11 +380,40 @@ and full interview mode button
 		overflow: hidden;
 	}
 }	
-		
+
+@media only screen  and (max-width: 480px) {
+	#player .mejs-container .mejs-controls {
+		top: 190px;
+	}
+	
+	#player .player {
+		height: 220px;	
+	}
+}
+
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	
+	#player .player {
+		height: 279px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 248px;
+	}
+}
+	
 @media only screen and (min-width: 1200px) {
 
 	.modes .random_order{
 		width: 16%;
+	}
+	
+	#player .player {
+		height: 360px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 329px;
 	}
 	/*
 	.modes .whole_interview_order{

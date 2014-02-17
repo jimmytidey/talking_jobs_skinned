@@ -92,7 +92,7 @@
 	overflow: hidden;
 	margin-left:8px;
 	width:100%;
-	top: 389px;
+	top: 448px;
 	bottom: 32px;
 
 }
@@ -100,7 +100,7 @@
 .lt-ie9 .scroller_wrapper { 
     /*overflow:auto;
     position:relative;*/
-	top: 389px;
+	top: 448px;
 }
 
 .question_scroller {
@@ -179,7 +179,9 @@
 		display: none;
 	}
 }
- 
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .scroller_wrapper  {
@@ -188,19 +190,26 @@
 		margin-left: 0;
     }
 }
- 
+
+ @media only screen  and (min-width: 481px)  and (max-width: 767px) {
+
+    .scroller_wrapper  {
+       top: 436px;
+    }
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) { 
     .scroller_wrapper  {
         width: 302px;
-		top: 389px;
+		top: 448px;
     }
 }
  
 @media (min-width: 1200px) and (max-width: 1209px) { 
     .scroller_wrapper  {
         width: 427px;
-		top: 460px;
+		top: 518px;
     }
 }
 
@@ -208,7 +217,7 @@
 @media (min-width: 1210px) { 
 	.scroller_wrapper  {
 		width: 427px;
-		top: 460px;
+		top: 518px;
 	}
  
 }
