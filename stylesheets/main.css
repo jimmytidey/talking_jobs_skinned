@@ -7218,6 +7218,10 @@ bootstrap, as they're not needed for these tabs
   height: 100%;
   position: relative; }
 
+.then_image img {
+  width: 100%;
+  height: 100%; }
+
 .fav_wrapper {
   position: relative;
   margin-bottom: 30px;
