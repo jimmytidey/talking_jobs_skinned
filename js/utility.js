@@ -107,11 +107,13 @@ job_player.triggerMoreInfoModal = function(player_instance) {
     var body_text = player_instance.playlist[player_instance.playlist_position].about_training;
     $('.more_info_body').html(body_text);
     
+/*
     $('.more_info_modal').dialog({
         width: '400px',
         height:'400',
         position: { my: "center top", at: "center top", of: '.player' } 
     });
+*/
 }
 
 function isIE() {

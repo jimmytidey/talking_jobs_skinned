@@ -9,7 +9,7 @@
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	background-image: url("../img/skin/btn_close.png");
+	background-image: url($skin + "/btn_close.png");
 	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
