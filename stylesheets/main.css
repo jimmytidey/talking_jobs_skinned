@@ -6353,10 +6353,12 @@ html, body,
   bottom: 0;
   top: 0;
   left: 50%;
-  margin-left: -299px; }
+  margin-left: -299px;
+  border-left: 1px solid #e7e5e7;
+  border-right: 1px solid #dad8db; }
 
 #branding {
-  width: 596px; }
+  width: 598px; }
 
 .jobs_player .span9 {
   width: 414px; }
@@ -6377,8 +6379,8 @@ html, body,
   position: fixed;
   bottom: 0;
   background-color: white;
-  border-right: 1px solid #dad8db;
-  border-left: 1px solid #e7e5e7; }
+  /*border-right: 1px solid $tab-edging-colour;
+  border-left: 1px solid $player-edging-colour;*/ }
 
 #branding img {
   float: right;
@@ -6403,7 +6405,7 @@ Player. Left column
     margin-left: -362px; }
 
   #branding {
-    width: 722px; }
+    width: 724px; }
 
   .jobs_player .span9 {
     width: 540px; }
@@ -6438,7 +6440,7 @@ Player. Left column
     margin-left: -290px; }
 
   #branding {
-    width: 578px; }
+    width: 580px; }
 
   .jobs_player .span7 {
     width: 397px; } }
@@ -6448,7 +6450,7 @@ Player. Left column
     margin-left: -299px; }
 
   #branding {
-    width: 596px; }
+    width: 598px; }
 
   .jobs_player .span9 {
     width: 414px; } }
@@ -6456,7 +6458,7 @@ Player. Left column
 Player. Left column
 -----------------------------------------*/
 #player {
-  border-left: 1px solid #e7e5e7;
+  /*border-left: 1px solid $player-edging-colour;*/
   background-color: #f8f6f9; }
 
 /* --------------------------------------
@@ -7005,9 +7007,10 @@ bootstrap, as they're not needed for these tabs
   border-radius: 0; }
 
 #tabs {
-  border-right: 1px solid #dad8db;
+  /*border-right: 1px solid $tab-edging-colour;*/
   background-color: #e7e5e7;
-  position: relative; }
+  position: relative;
+  width: 168px; }
 
 #tabs .tab_buttons a {
   border-bottom: 1px solid #dad8db;
@@ -7095,6 +7098,9 @@ bootstrap, as they're not needed for these tabs
   #player,
   #tabs {
     float: left; }
+
+  #tabs {
+    width: 166px; }
 
   .question_container .span5 {
     width: 286px; }
