@@ -11,7 +11,7 @@
 	</div>
 	
 	<div class="more_info_modal hide" title="More info">
-		<a href="" class="close inoformation panel">close</a>
+		<a href="" class="close information panel">close</a>
 		<h2>More information</h2>
 	    <div class='more_info_body'></div>
 	</div>

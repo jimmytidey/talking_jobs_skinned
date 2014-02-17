@@ -7116,7 +7116,7 @@ bootstrap, as they're not needed for these tabs
   width: 30px;
   overflow: hidden;
   text-indent: -100px;
-  opacity: 1; }
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 
 .more_info_modal h2 {
   font-size: 20px;
