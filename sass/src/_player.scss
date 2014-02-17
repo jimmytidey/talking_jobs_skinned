@@ -45,7 +45,15 @@ Player. Left column
 #player .mejs-captions-position {
 	width: 100%;
 	left: 0 !important;
+	bottom: 0;
 }
+
+#player .mejs-captions-text {
+	padding: 10px;
+	display: block;
+	font-weight: lighter;
+}
+
 #player {
 	/*border-left: 1px solid $player-edging-colour;*/
 	background-color: $tab-on-colour; 
