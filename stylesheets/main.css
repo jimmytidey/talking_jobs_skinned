@@ -6470,7 +6470,9 @@ Player. Left column
   position: absolute;
   top: -25px;
   background: #000;
-  width: 100% !important; }
+  width: 100% !important;
+  height: 22px;
+  padding-top: 3px; }
 
 #player .mejs-time-total {
   width: 70% !important;
