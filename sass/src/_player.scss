@@ -1,7 +1,13 @@
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
+#player .mejs-poster {
+	background-size: 100%;
+}
 
+#player .mejs-container { 
+	background: none;
+}
 
 #player {
 	/*border-left: 1px solid $player-edging-colour;*/
@@ -167,6 +173,7 @@ and full interview mode button
 		
 	#player .player {
 		position: relative;
+		overflow: hidden;	
 	}
 	
 	#player .player .previous_button,
