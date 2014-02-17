@@ -6956,9 +6956,19 @@ and full interview mode button
   width: 300px; }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .question_container .span5 {
+    width: 100%; }
+
   .scroller_wrapper {
-    width: 279px; } }
+    width: 100% !important;
+    position: static; }
+
+  .question_scroller {
+    position: static; }
+
+  .question_type {
+    display: none; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .scroller_wrapper {
