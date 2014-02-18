@@ -7250,7 +7250,7 @@ bootstrap, as they're not needed for these tabs
   bottom: 31px;
   left: 0;
   z-index: 1;
-  background-color: #D4D4D4;
+  background-color: #DDDBDE;
   width: 414px;
   padding: 8px; }
 
@@ -7378,9 +7378,9 @@ bootstrap, as they're not needed for these tabs
 
 .fav_wrapper {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #e7e5e7;
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
 
 .fav_wrapper .question_holder {
   padding: 10px;
@@ -7388,11 +7388,13 @@ bootstrap, as they're not needed for these tabs
   border: 1px solid #dad8db;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  width: 93%; }
 
 .fav_wrapper .fav_play,
 .fav_wrapper .fav_delete {
-  position: absolute; }
+  position: absolute;
+  top: -5px; }
 
 .fav_wrapper .fav_question_number,
 .fav_wrapper .fav_question {
@@ -7437,19 +7439,20 @@ bootstrap, as they're not needed for these tabs
   box-shadow: none; }
 
 .fav_wrapper .content {
-  margin-left: 47px;
-  width: 75%; }
+  margin-left: 0px;
+  width: 100%; }
 
 .fav_wrapper .fav_job_title {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
-  display: block; }
+  display: block;
+  margin-left: 35px; }
 
 .fav_wrapper .content textarea {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+  width: 95%;
+  min-width: 95%;
+  max-width: 95%;
   background: #e7e5e7; }
 
 .fav_wrapper .content .view_transcript {
@@ -7457,9 +7460,8 @@ bootstrap, as they're not needed for these tabs
   background-image: url("img/defaultskin/transcript_arrow.png");
   background-repeat: no-repeat;
   background-position: 0 6px;
-  text-indent: 35px;
-  margin-left: -35px;
-  /*margin-bottom: 10px;*/ }
+  text-indent: 17px;
+  cursor: pointer; }
 
 .fav_wrapper .content .fav_transcript {
   margin-bottom: 10px;
@@ -7471,7 +7473,8 @@ bootstrap, as they're not needed for these tabs
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  font-style: italic; }
+  font-style: italic;
+  width: 93%; }
 
 .fav_wrapper .content .fav_transcript p {
   margin-bottom: 10px; }

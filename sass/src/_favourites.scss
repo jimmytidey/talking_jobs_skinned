@@ -1,8 +1,8 @@
 .fav_wrapper {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid $player-edging-colour;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 
@@ -13,11 +13,13 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	width: 93%;
 }
 
 .fav_wrapper .fav_play,
 .fav_wrapper .fav_delete {
 	position: absolute;
+	top: -5px;
 }
 
 .fav_wrapper .fav_question_number, 
@@ -68,8 +70,8 @@
 }
 
 .fav_wrapper .content {
-	margin-left: 47px;
-	width: 75%;
+	margin-left: 0px;
+	width: 100%;
 }
 
 .fav_wrapper .fav_job_title {
@@ -77,12 +79,13 @@
 	font-weight: bold;
 	margin-bottom: 10px;
 	display: block;
+	margin-left: 35px;
 }
 
 .fav_wrapper .content textarea{
-	width: 100%;
-	min-width: 100%;
-	max-width: 100%;
+	width: 95%;
+	min-width: 95%;
+	max-width: 95%;
 	background: #e7e5e7;
 }
 
@@ -91,9 +94,8 @@
 	background-image: url($skin +  "transcript_arrow.png");
 	background-repeat: no-repeat;
 	background-position: 0 6px;
-	text-indent: 35px;
-	margin-left: -35px;
-	/*margin-bottom: 10px;*/
+	text-indent: 17px;
+	cursor: pointer;
 }
 
 .fav_wrapper .content .fav_transcript {
@@ -107,6 +109,7 @@
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	font-style: italic;
+	width: 93%;
 }
 
 .fav_wrapper .content .fav_transcript p {
