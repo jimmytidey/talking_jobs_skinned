@@ -7281,6 +7281,15 @@ bootstrap, as they're not needed for these tabs
 .tab .export .button-set {
   right: 8px; }
 
+.tab_have_a_quesiton .content-container * {
+  display: block; }
+
+.tab_have_a_quesiton .content-container textarea {
+  width: 95%;
+  max-width: 95%;
+  min-width: 95%;
+  min-height: 200px; }
+
 .tab h1 {
   font-size: 20px;
   color: #4A4A4A;

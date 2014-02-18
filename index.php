@@ -127,12 +127,16 @@
             
             <div class='tab tab_have_a_quesiton'>
                 <h1>Ask a question</h1>
+
 				<div class='content-container'>
-				    <p>Write your question</p>
+				    <p>Subject</p>
+				    <input type='text' class='question_target' placeholder='Talking jobs' />
+				    <p>Recipient's email address</p>
 				    <input type='text' class='question_target' placeholder='Send to (email address)' />
+					<p>Write your question</p>
 	                <textarea class='question_note'></textarea>
-	                <button class="btn email_question">Email</button>
 	                <div class='question_alert' ></div>
+					<input type="button" class="btn email_favs" value="Send">
 				</div>
             </div>
             
