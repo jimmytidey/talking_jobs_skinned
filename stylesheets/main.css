@@ -6467,6 +6467,10 @@ Player. Left column
   top: 259px;
   background: none; }
 
+.mejs-fullscreen #player .mejs-container .mejs-controls {
+  top: auto;
+  background: black; }
+
 #player .mejs-time-rail {
   position: absolute;
   top: -25px;
@@ -6475,9 +6479,21 @@ Player. Left column
   height: 22px;
   padding-top: 3px; }
 
+.mejs-fullscreen #player .mejs-time-rail {
+  top: auto;
+  background: none;
+  /*height: auto;
+  position: relative;
+  margin-top: 0;
+  width: 60% !important;*/ }
+
 #player .mejs-time-total {
   width: 70% !important;
   margin-left: 15%; }
+
+.mejs-fullscreen #player .mejs-time-total {
+  /*width: 100% !important;
+  margin-left: 0;*/ }
 
 #player .mejs-duration-container,
 #player .mejs-currenttime-container {
@@ -6486,11 +6502,21 @@ Player. Left column
   background: #000;
   z-index: 10; }
 
+.mejs-fullscreen #player .mejs-duration-container,
+.mejs-fullscreen #player .mejs-currenttime-container {
+  top: 0px; }
+
 #player .mejs-currenttime-container {
-  left: 0; }
+  left: 0px; }
 
 #player .mejs-duration-container {
-  right: 0; }
+  right: 0px; }
+
+.mejs-fullscreen #player .mejs-currenttime-container {
+  left: 176px; }
+
+.mejs-fullscreen #player .mejs-duration-container {
+  right: 180px; }
 
 #player .mejs-captions-position {
   width: 100%;
