@@ -15,7 +15,8 @@
             this.options.welcome_modal_header       = '';
             this.options.welcome_modal_text         = ''; 
             this.options.welcome_modal_image        = '';  
-            this.options.subtitles_folder   = 'http://dev.talkingjobs.net/player/subtitles/';    
+            //this.options.subtitles_folder   = 'http://dev.talkingjobs.net/player/subtitles/';  
+			this.options.subtitles_folder   = 'modules/yssg/subtitles/';    
             this.options.xml_url            = "modules/yssg/";
             this.options.subtitles_on       = false;
             //Go! 
