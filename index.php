@@ -50,22 +50,26 @@
             
             <div class='tab tab_favourites'>
                 <h1>Favourites</h1>
-				<div class="fav_export">
+				<div class="export fav_export cf">
 					<form action="">
 					<fieldset>
 						<label>Your email</label>
 						<input type="text" class='favs_email' />
+						<input type="button" class="btn email_favs" value="Email">
+						<input type="button" class="btn save_favs" value="Download">
 					</fieldset>
-					
-					<fieldset>
-    					<label>Your name</label>
-    					<input type="text" class='favs_name' />
-    				</fieldset>
 
-					<div class="btn save_favs">Save</div>
-					<div class="btn email_favs">Email</div>
 					</form>
 					<div class='favs_alert' ></div>
+				</div>
+				<div class="identify cf">
+					<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+					<form action="">
+					<fieldset>
+						<label>Your name</label>
+						<input type="text" class='reflections_name' />
+					</fieldset>
+					</form>
 				</div>
                 <div class='fav_container content-container'>
                 
@@ -74,31 +78,39 @@
             
             <div class='tab tab_reflections'>
             <h1>Reflections</h1>
-			<div class="reflect_export">
+			<div class="export reflect_export">
 				<form action="">
 				<fieldset>
 					<label>Your email</label>
-					<input type="text" class='reflections_email' />
+					<input type="text" class='favs_email' />
+					<input type="button" class="btn email_favs" value="Email">
+					<input type="button" class="btn save_favs" value="Download">
 				</fieldset>
-				
 
-				<div class="btn download_reflections">Save</div>
-				<div class="btn email_reflections">Email</div>
 				
 				</form>
 				<div class='reflections_alert' ></div>
 			</div>
-				<div class='content-container'>
-	                <p>What have I just found out?</p>
-	                <textarea class='found_out_note'></textarea>
-                
-	                <p>How does this relate to me?</p>
-	                <textarea class='relate_note'></textarea>
-                
-	                <p>What are my next steps?</p>
-	                <textarea class='next_steps_note'></textarea>
+			<div class="identify cf">
+				<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+				<form action="">
+				<fieldset>
+					<label>Your name</label>
+					<input type="text" class='reflections_name' />
+				</fieldset>
+				</form>
+			</div>
+			<div class='content-container'>
+                <p>What have I just found out?</p>
+                <textarea class='found_out_note'></textarea>
+               
+                <p>How does this relate to me?</p>
+                <textarea class='relate_note'></textarea>
+               
+                <p>What are my next steps?</p>
+                <textarea class='next_steps_note'></textarea>
 
-				</div>
+			</div>
             </div>
             
             <div class='tab tab_about'>

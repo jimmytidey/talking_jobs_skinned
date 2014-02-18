@@ -88,34 +88,85 @@ bootstrap, as they're not needed for these tabs
 		margin-bottom: 40px;
 		margin-top: 10px;
 	}
-	
+
+.tab form {
+	margin-bottom: 0;
+}
+
 .tab .content-container {
+	border-top: 1px solid $tab-edging-colour;
 	position: absolute;
-	top: 60px;
-	bottom: 30px;
+	top: 190px;
+	bottom: 105px;
 	overflow: auto;
 	width: 422px;
+	padding-top: 10px;
 }
-.tab.tab_reflections .content-container,
-.tab.tab_favourites .content-container {
-	top: 180px;
-}
-
-.tab fieldset {
-	float :left;
-	width: 50%;
+.tab_about .content-container,
+.tab_activities .content-container,
+.tab_have_a_quesiton .content-container {
+	top: 54px;
+	bottom: 31px;
 }
 
-.tab fieldset input {
-	width: 90%;
+.tab .identify {
+	border-bottom: 1px solid $tab-edging-colour;
+	padding: 10px;
+	background: #F7D2D6;
+}
+
+.tab .identify .notice {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 10px;
+	
 }
 
 .tab .export {
-	border-bottom: 1px solid $tab-edging-colour;
+	position: absolute;
+	bottom: 31px;
+	left: 0;
+	z-index: 1;
+	background-color: #D4D4D4;
+	width: 414px;
+	padding: 8px;
+}
+
+.tab fieldset {
+	width: 100%;
+}
+
+.tab fieldset input[type=button]{
+	width: auto;
+	display:inline-block;
+}
+
+.tab fieldset input {
+
+	margin-bottom: 0;
+}
+
+.tab .export {
+	min-height: 55px;
 }
 
 .tab .export button {
 	clear: left;
+}
+
+
+.tab .export .button-set,
+.tab .export fieldset {
+	position: absolute;
+	bottom: 8px;
+}
+
+.tab .export fieldset {
+	left: 8px;
+}
+
+.tab .export .button-set {
+	right: 8px;
 }
 
 .tab h1 {
@@ -159,9 +210,17 @@ bootstrap, as they're not needed for these tabs
 		.tab .content-container {
 			width: 405px;
 		}
+		
+		.tab .export {
+			width: 398px;
+		}
 	}
 	
 	@media only screen and (min-width: 1200px) {
+		.tab .export {
+			width: 540px;
+		}
+		
 		.tab .content-container {
 			width: 548px;
 		}
