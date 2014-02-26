@@ -185,7 +185,7 @@
         
     </div>    
 	<div id="branding">
-        <img class='' src='img/powered_by.png' alt='Powered by Talking jobs' />
+        <a href="http://talkingjobs.net"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
     </div>
 </div> <!-- /container -->        
 
