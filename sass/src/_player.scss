@@ -51,6 +51,27 @@ Player. Left column
 	margin-left: 0;*/
 }
 
+
+.mejs-fullscreen #player .mejs-playpause-button,
+.mejs-fullscreen #player .restart_video_btn,
+.mejs-fullscreen #player .prev_track_btn,
+.mejs-fullscreen #player .next_track_btn {
+	position: absolute;
+	z-index: 20;
+}
+
+.mejs-fullscreen #player .restart_video_btn {
+	left: 41px;
+}
+
+.mejs-fullscreen #player .prev_track_btn {
+	left: 82px;
+}
+
+.mejs-fullscreen #player .next_track_btn {
+	left: 123px;
+}
+
 #player .mejs-duration-container,
 #player .mejs-currenttime-container {
 	position: absolute;
