@@ -56,6 +56,7 @@
 						<label>Your email</label>
 						<input type="text" class='favs_email' />
 						<input type="button" class="btn email_favs" value="Email">
+						<input type="button" class="btn print_favs" value="Print">
 						<input type="button" class="btn save_favs" value="Save">
 					</fieldset>
 
@@ -84,9 +85,9 @@
 					<label>Your email</label>
 					<input type="text" class='favs_email' />
 					<input type="button" class="btn email_favs" value="Email">
+					<input type="button" class="btn print_favs" value="Print">
 					<input type="button" class="btn save_favs" value="Save">
 				</fieldset>
-
 				
 				</form>
 				<div class='reflections_alert' ></div>
@@ -136,16 +137,32 @@
             
             <div class='tab tab_have_a_quesiton'>
                 <h1>Ask a question</h1>
-
+				<div class="export reflect_export">
+					<form action="">
+					<fieldset>
+						<label>Your email</label>
+						<input type="text" class='favs_email' />
+						<input type="button" class="btn email_favs" value="Email">
+						<input type="button" class="btn print_favs" value="Print">
+						<input type="button" class="btn save_favs" value="Save">
+					</fieldset>
+				
+					</form>
+					<div class='reflections_alert' ></div>
+				</div>
+				<div class="identify cf">
+					<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+					<form action="">
+					<fieldset>
+						<label>Your name</label>
+						<input type="text" class='reflections_name' />
+					</fieldset>
+					</form>
+				</div>
 				<div class='content-container'>
-				    <p>Subject</p>
-				    <input type='text' class='question_target' placeholder='Talking jobs' />
-				    <p>Recipient's email address</p>
-				    <input type='text' class='question_target' placeholder='Send to (email address)' />
 					<p>Write your question</p>
 	                <textarea class='question_note'></textarea>
 	                <div class='question_alert' ></div>
-					<input type="button" class="btn email_favs" value="Send">
 				</div>
             </div>
             
