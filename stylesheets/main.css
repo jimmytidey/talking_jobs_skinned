@@ -7169,7 +7169,7 @@ and full interview mode button
   .question_type {
     display: none; } }
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .scroller_wrapper {
     width: 287px;
     top: 381px;
