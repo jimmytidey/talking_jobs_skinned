@@ -126,6 +126,11 @@
             <div class='tab tab_activities'>
                 <h1>Activities</h1>
 				<div class='content-container'>
+					<p>The Activities can be used with any of the Talking Jobs Modules. Students will need independent access to a computer at school, college or home. Each activity closes with a self-evaluation where students are asked to reflect on how what they have seen applies to them. We recommend this is followed up with plenary sessions to discuss shared findings.</p>
+					<p><a href="/assets/TalkingJobsMapping_ACEG_KS3_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS3 learning outcomes</span></a><br>
+					<a href="/assets/TalkingJobsMapping_ACEG_KS4_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS4 learning outcomes</span></a><br>
+					<a href="/assets/TalkingJobsMapping_ACEG_Post16_LearningOutcomes.pdf" target="_blank"><span class="boldRed">Post 16 learning outcomes</span></a><br>
+					<a href="/assets/TalkingJobsMapping_ACEG_ElementsCareerWorkLearning.pdf" target="_blank"><span class="boldRed">Elements of career and work related learning</span></a></p>
 				</div>
             </div>
             

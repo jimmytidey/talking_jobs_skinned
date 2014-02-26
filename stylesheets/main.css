@@ -7631,3 +7631,6 @@ bootstrap, as they're not needed for these tabs
 .tab_about img {
   display: block;
   margin-top: 10px; }
+
+.tab_activities p {
+  margin-bottom: 10px; }
