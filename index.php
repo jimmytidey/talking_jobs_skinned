@@ -56,7 +56,7 @@
 						<label>Your email</label>
 						<input type="text" class='favs_email' />
 						<input type="button" class="btn email_favs" value="Email">
-						<input type="button" class="btn save_favs" value="Download">
+						<input type="button" class="btn save_favs" value="Save">
 					</fieldset>
 
 					</form>
@@ -84,7 +84,7 @@
 					<label>Your email</label>
 					<input type="text" class='favs_email' />
 					<input type="button" class="btn email_favs" value="Email">
-					<input type="button" class="btn save_favs" value="Download">
+					<input type="button" class="btn save_favs" value="Save">
 				</fieldset>
 
 				
