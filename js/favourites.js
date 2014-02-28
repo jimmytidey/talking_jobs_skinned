@@ -97,10 +97,10 @@ job_player.renderFavourites = function(options) {
 	           html    += "<div class='notes_and_transcript hide cf'>";
 	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";
 	               html    += "<div class='fav_transcript'>" + val.transcript + "</div>";
-					html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+					//html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
 					html    += "<p class='notes_title'><strong>My notes</strong></p>";
 	               html    += "<textarea>"+current_favs[i].notes+"</textarea>";
-	               html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
 	           html    += "</div>";
 			html    += "</div>";
         html    += '</div>';

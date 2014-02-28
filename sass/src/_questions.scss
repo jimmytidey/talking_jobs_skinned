@@ -13,14 +13,14 @@
 }
 
 .question_type {
-	height: 67px;
+	height: 57px;
 	padding: 0;
 	margin-bottom: 6px;
 }
 
 .question_type span {
 	display: block;
-	padding-top: 25px;
+	padding-top: 20px;
 }
 	
 .iScrollVerticalScrollbar  { 
@@ -90,15 +90,17 @@
 	position:absolute;
 	background: #ccc;
 	overflow: hidden;
-	height:200px;
 	margin-left:8px;
-	width:100%;	
+	width:100%;
+	top: 448px;
+	bottom: 32px;
 
 }
 
 .lt-ie9 .scroller_wrapper { 
-    overflow:auto;
-    position:relative;
+    /*overflow:auto;
+    position:relative;*/
+	top: 448px;
 }
 
 .question_scroller {
@@ -158,31 +160,64 @@
 
 
 /* Landscape phones and down */
-@media (max-width: 480px) { 
+@media screen and (max-width: 480px) { 
+	
+	.question_container .span5 {
+		width: 100%;
+	}
+	
     .scroller_wrapper  {
-        width: 279px;
+        width: 100% !important;
+		position: static;
     }
+
+	.question_scroller {
+		position: static;
+	}
+	
+	.question_type {
+		display: none;
+	}
 }
- 
+
+
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .scroller_wrapper  {
-        width: 279px;
+        width: 287px;
+		top: 381px;
+		margin-left: 0;
     }
 }
- 
+
+ @media only screen  and (min-width: 481px)  and (max-width: 767px) {
+
+    .scroller_wrapper  {
+       top: 436px;
+    }
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) { 
     .scroller_wrapper  {
-        width: 279px;
+        width: 302px;
+		top: 448px;
     }
 }
  
+@media (min-width: 1200px) and (max-width: 1209px) { 
+    .scroller_wrapper  {
+        width: 427px;
+		top: 518px;
+    }
+}
 
 /* Large desktop */
 @media (min-width: 1210px) { 
 	.scroller_wrapper  {
 		width: 427px;
+		top: 518px;
 	}
  
 }

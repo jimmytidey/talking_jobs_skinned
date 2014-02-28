@@ -91,10 +91,12 @@ html, body,
 	top: 0;
 	left: 50%;
 	margin-left: -299px;
+	border-left: 1px solid $player-edging-colour;
+	border-right: 1px solid $tab-edging-colour;
 }
 
 #branding{
-	width: 596px;
+	width: 598px;
 }
 
 .jobs_player .span9 {
@@ -106,7 +108,7 @@ html, body,
 }
 
 .player .span7 {
-	width: 414px;
+	width: 416px;
 }
 
 .question_container .span2 {
@@ -120,8 +122,8 @@ html, body,
 	position: fixed;
 	bottom: 0;
 	background-color: white;
-	border-right: 1px solid $tab-edging-colour;
-	border-left: 1px solid $player-edging-colour;
+	/*border-right: 1px solid $tab-edging-colour;
+	border-left: 1px solid $player-edging-colour;*/
 }
 #branding img{
 	float: right;
@@ -151,13 +153,13 @@ Player. Left column
 	}
 	
 	#branding{
-		width: 722px;
+		width: 724px;
 	}
 	.jobs_player .span9 {
 		width: 540px;
 	}
 	.player .span7 {
-		width: 540px;
+		width: 541px;
 	}
 }
 @media only screen  and (max-width: 480px) {
@@ -168,9 +170,9 @@ Player. Left column
 	}
 	
 	.jobs_player {
-		width: 100%;
-		position: static;
-		margin-left: 0;
+		width: 310px;
+		position: absolute;
+		margin-left: -155px;
 	}
 	
 	#branding{
@@ -205,7 +207,7 @@ Player. Left column
 	}
 	
 	#branding{
-		width: 578px;
+		width: 580px;
 	}
 	
 	.jobs_player .span7 {
@@ -221,7 +223,7 @@ Player. Left column
 	}
 	
 	#branding{
-		width: 596px;
+		width: 598px;
 	}
 	
 	.jobs_player .span9 {

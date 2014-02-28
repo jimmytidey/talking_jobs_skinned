@@ -6353,12 +6353,10 @@ html, body,
   bottom: 0;
   top: 0;
   left: 50%;
-  margin-left: -299px;
-  border-left: 1px solid #e7e5e7;
-  border-right: 1px solid #dad8db; }
+  margin-left: -299px; }
 
 #branding {
-  width: 598px; }
+  width: 596px; }
 
 .jobs_player .span9 {
   width: 414px; }
@@ -6367,7 +6365,7 @@ html, body,
   width: 166px; }
 
 .player .span7 {
-  width: 416px; }
+  width: 414px; }
 
 .question_container .span2 {
   width: 104px; }
@@ -6379,8 +6377,8 @@ html, body,
   position: fixed;
   bottom: 0;
   background-color: white;
-  /*border-right: 1px solid $tab-edging-colour;
-  border-left: 1px solid $player-edging-colour;*/ }
+  border-right: 1px solid #dad8db;
+  border-left: 1px solid #e7e5e7; }
 
 #branding img {
   float: right;
@@ -6405,21 +6403,21 @@ Player. Left column
     margin-left: -362px; }
 
   #branding {
-    width: 724px; }
+    width: 722px; }
 
   .jobs_player .span9 {
     width: 540px; }
 
   .player .span7 {
-    width: 541px; } }
+    width: 540px; } }
 @media only screen and (max-width: 480px) {
   #app {
     height: auto; }
 
   .jobs_player {
-    width: 310px;
-    position: absolute;
-    margin-left: -155px; }
+    width: 100%;
+    position: static;
+    margin-left: 0; }
 
   #branding {
     border-right: none;
@@ -6440,7 +6438,7 @@ Player. Left column
     margin-left: -290px; }
 
   #branding {
-    width: 580px; }
+    width: 578px; }
 
   .jobs_player .span7 {
     width: 397px; } }
@@ -6450,102 +6448,15 @@ Player. Left column
     margin-left: -299px; }
 
   #branding {
-    width: 598px; }
+    width: 596px; }
 
   .jobs_player .span9 {
     width: 414px; } }
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
-#player .mejs-poster {
-  background-size: 100%; }
-
-#player .mejs-container {
-  background: none; }
-
-#player .mejs-container .mejs-controls {
-  top: 259px;
-  background: none; }
-
-.mejs-fullscreen #player .mejs-container .mejs-controls {
-  top: auto;
-  background: black; }
-
-#player .mejs-time-rail {
-  position: absolute;
-  top: -25px;
-  background: #000;
-  width: 100% !important;
-  height: 22px;
-  padding-top: 3px; }
-
-.mejs-fullscreen #player .mejs-time-rail {
-  top: auto;
-  background: none;
-  /*height: auto;
-  position: relative;
-  margin-top: 0;
-  width: 60% !important;*/ }
-
-#player .mejs-time-total {
-  width: 70% !important;
-  margin-left: 15%; }
-
-.mejs-fullscreen #player .mejs-time-total {
-  /*width: 100% !important;
-  margin-left: 0;*/ }
-
-.mejs-fullscreen #player .mejs-playpause-button,
-.mejs-fullscreen #player .restart_video_btn,
-.mejs-fullscreen #player .prev_track_btn,
-.mejs-fullscreen #player .next_track_btn {
-  position: absolute;
-  z-index: 20; }
-
-.mejs-fullscreen #player .restart_video_btn {
-  left: 41px; }
-
-.mejs-fullscreen #player .prev_track_btn {
-  left: 82px; }
-
-.mejs-fullscreen #player .next_track_btn {
-  left: 123px; }
-
-#player .mejs-duration-container,
-#player .mejs-currenttime-container {
-  position: absolute;
-  top: -25px;
-  background: #000;
-  z-index: 10; }
-
-.mejs-fullscreen #player .mejs-duration-container,
-.mejs-fullscreen #player .mejs-currenttime-container {
-  top: 0px; }
-
-#player .mejs-currenttime-container {
-  left: 0px; }
-
-#player .mejs-duration-container {
-  right: 0px; }
-
-.mejs-fullscreen #player .mejs-currenttime-container {
-  left: 176px; }
-
-.mejs-fullscreen #player .mejs-duration-container {
-  right: 180px; }
-
-#player .mejs-captions-position {
-  width: 100%;
-  left: 0 !important;
-  bottom: 0; }
-
-#player .mejs-captions-text {
-  padding: 10px;
-  display: block;
-  font-weight: lighter; }
-
 #player {
-  /*border-left: 1px solid $player-edging-colour;*/
+  border-left: 1px solid #e7e5e7;
   background-color: #f8f6f9; }
 
 /* --------------------------------------
@@ -6613,12 +6524,11 @@ and full interview mode button
   float: left;
   width: 220px; }
 
-.modes {
-  margin-left: 0 !important;
-  width: 100%; }
-
 .modes .btn {
   font-size: 12px; }
+
+.modes {
+  width: 100%; }
 
 .modes .active {
   background-color: #d0021b;
@@ -6674,9 +6584,7 @@ and full interview mode button
   text-indent: 40px; }
 
 #player .player {
-  position: relative;
-  overflow: hidden;
-  height: 290px; }
+  position: relative; }
 
 #player .player .previous_button,
 #player .player .next_button {
@@ -6699,48 +6607,23 @@ and full interview mode button
   background-image: url("img/defaultskin/btn_left_arrow.png");
   left: 0; }
 
-.mejs-controls .mejs-button button:focus {
-  outline: none; }
-
-#player .mejs-playpause-button,
-#player .mejs-controls .mejs-play,
-#player .mejs-controls .mejs-fullscreen-button,
-#player .mejs-controls .mejs-volume-button,
-#player .mejs-controls .mejs-captions-button {
-  width: 40px; }
-
-#player .restart_video_btn,
-#player .prev_track_btn,
-#player .next_track_btn,
-#player .add_video_btn,
-#player .mejs-controls .mejs-play button,
-#player .mejs-controls .mejs-pause button,
-#player .mejs-controls .mejs-fullscreen-button button,
-#player .mejs-controls .mejs-volume-button button,
-#player .mejs-controls .mejs-captions-button button {
-  margin-top: 3px !important;
-  margin-left: 0; }
-
-#player .mejs-playpause-button {
-  margin-right: 1px; }
-
 #player .mejs-controls .mejs-play button {
   background-image: url("img/defaultskin/btn_transport_play.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px; }
 
 #player .mejs-controls .mejs-pause button {
   background-image: url("img/defaultskin/btn_transport_pause.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px;
-  background-position: 0 0; }
+  background-position: 0 0px; }
 
 #player .mejs-controls .restart_video_btn {
   background-image: url("img/defaultskin/btn_transport_restart.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px;
   margin-right: 1px;
   overflow: hidden;
@@ -6749,8 +6632,8 @@ and full interview mode button
 
 #player .mejs-controls .prev_track_btn {
   background-image: url("img/defaultskin/btn_transport_previous.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px;
   overflow: hidden;
   text-indent: -100px;
@@ -6759,91 +6642,26 @@ and full interview mode button
 
 #player .mejs-controls .next_track_btn {
   background-image: url("img/defaultskin/btn_transport_next.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px;
   overflow: hidden;
   text-indent: -100px;
   cursor: pointer;
   margin-right: 1px; }
-
-#player .mejs-controls .add_video_btn {
-  position: absolute;
-  right: 123px; }
 
 #player .mejs-controls .add_video_btn {
   background-image: url("img/defaultskin/btn_transport_add.png");
-  height: 24px;
-  width: 40px;
+  height: 22px;
+  width: 20px;
   margin-top: 4px;
   overflow: hidden;
   text-indent: -100px;
   cursor: pointer;
   margin-right: 1px; }
 
-#player .mejs-controls .mejs-captions-button {
-  position: absolute;
-  right: 82px; }
-
-#player .mejs-controls .mejs-captions-button button {
-  background-image: url("img/defaultskin/btn_transport_captions.png") !important;
-  height: 24px;
-  width: 40px;
-  margin-top: 4px;
-  overflow: hidden;
-  text-indent: -100px;
-  cursor: pointer;
-  margin-right: 1px;
-  background: none;
-  margin-left: 0; }
-
-#player .mejs-controls .mejs-volume-button {
-  position: absolute;
-  right: 41px; }
-
-#player .mejs-controls .mejs-volume-button button {
-  background-image: url("img/defaultskin/btn_transport_volume.png") !important;
-  height: 24px;
-  width: 40px;
-  margin-top: 4px;
-  overflow: hidden;
-  text-indent: -100px;
-  cursor: pointer;
-  margin-right: 1px;
-  background: none;
-  margin-left: 0; }
-
-#player .mejs-controls .mejs-fullscreen-button {
-  position: absolute;
-  right: 0; }
-
-#player .mejs-controls .mejs-fullscreen-button button {
-  background-image: url("img/defaultskin/btn_transport_fullscreen.png") !important;
-  height: 24px;
-  width: 40px;
-  margin-top: 4px;
-  overflow: hidden;
-  text-indent: -100px;
-  cursor: pointer;
-  margin-right: 1px;
-  background: none;
-  margin-left: 0; }
-
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: #d0021b !important; }
-
-.mejs-controls .mejs-volume-button .mejs-volume-slider {
-  width: 40px; }
-
-.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
-.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
-  left: 20px; }
-
-.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
-  background: #d0021b; }
-
-.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
-  left: 13px; }
 
 @media only screen and (max-width: 480px) {
   #player .info_button {
@@ -6904,27 +6722,9 @@ and full interview mode button
     padding: 0;
     text-indent: -500px;
     overflow: hidden; } }
-@media only screen and (max-width: 480px) {
-  #player .mejs-container .mejs-controls {
-    top: 190px; }
-
-  #player .player {
-    height: 220px; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  #player .player {
-    height: 279px; }
-
-  #player .mejs-container .mejs-controls {
-    top: 248px; } }
 @media only screen and (min-width: 1200px) {
   .modes .random_order {
     width: 16%; }
-
-  #player .player {
-    height: 360px; }
-
-  #player .mejs-container .mejs-controls {
-    top: 329px; }
 
   /*
   .modes .whole_interview_order{
@@ -7030,13 +6830,13 @@ and full interview mode button
   margin-top: 6px; }
 
 .question_type {
-  height: 57px;
+  height: 67px;
   padding: 0;
   margin-bottom: 6px; }
 
 .question_type span {
   display: block;
-  padding-top: 20px; }
+  padding-top: 25px; }
 
 .iScrollVerticalScrollbar {
   z-index: 20; }
@@ -7097,15 +6897,13 @@ and full interview mode button
   position: absolute;
   background: #ccc;
   overflow: hidden;
+  height: 200px;
   margin-left: 8px;
-  width: 100%;
-  top: 448px;
-  bottom: 32px; }
+  width: 100%; }
 
 .lt-ie9 .scroller_wrapper {
-  /*overflow:auto;
-  position:relative;*/
-  top: 448px; }
+  overflow: auto;
+  position: relative; }
 
 .question_scroller {
   position: absolute;
@@ -7155,42 +6953,21 @@ and full interview mode button
   width: 300px; }
 
 /* Landscape phones and down */
-@media screen and (max-width: 480px) {
-  .question_container .span5 {
-    width: 100%; }
-
+@media (max-width: 480px) {
   .scroller_wrapper {
-    width: 100% !important;
-    position: static; }
-
-  .question_scroller {
-    position: static; }
-
-  .question_type {
-    display: none; } }
+    width: 279px; } }
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .scroller_wrapper {
-    width: 287px;
-    top: 381px;
-    margin-left: 0; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .scroller_wrapper {
-    top: 436px; } }
+    width: 279px; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 940px) {
   .scroller_wrapper {
-    width: 302px;
-    top: 448px; } }
-@media (min-width: 1200px) and (max-width: 1209px) {
-  .scroller_wrapper {
-    width: 427px;
-    top: 518px; } }
+    width: 279px; } }
 /* Large desktop */
 @media (min-width: 1210px) {
   .scroller_wrapper {
-    width: 427px;
-    top: 518px; } }
+    width: 427px; } }
 /* --------------------------------------
 Vars
 -----------------------------------------*/
@@ -7207,10 +6984,9 @@ bootstrap, as they're not needed for these tabs
   border-radius: 0; }
 
 #tabs {
-  /*border-right: 1px solid $tab-edging-colour;*/
+  border-right: 1px solid #dad8db;
   background-color: #e7e5e7;
-  position: relative;
-  width: 168px; }
+  position: relative; }
 
 #tabs .tab_buttons a {
   border-bottom: 1px solid #dad8db;
@@ -7259,77 +7035,29 @@ bootstrap, as they're not needed for these tabs
   margin-bottom: 40px;
   margin-top: 10px; }
 
-.tab form {
-  margin-bottom: 0; }
-
 .tab .content-container {
-  border-top: 1px solid #dad8db;
   position: absolute;
-  top: 190px;
-  bottom: 105px;
+  top: 60px;
+  bottom: 30px;
   overflow: auto;
-  width: 422px;
-  padding-top: 10px; }
+  width: 422px; }
 
-.tab_about .content-container,
-.tab_activities .content-container {
-  top: 54px;
-  bottom: 31px; }
-
-.tab .identify {
-  border-bottom: 1px solid #dad8db;
-  padding: 10px;
-  background: #F7D2D6; }
-
-.tab .identify .notice {
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 10px; }
-
-.tab .export {
-  position: absolute;
-  bottom: 31px;
-  left: 0;
-  z-index: 1;
-  background-color: #DDDBDE;
-  width: 414px;
-  padding: 8px; }
+.tab.tab_reflections .content-container,
+.tab.tab_favourites .content-container {
+  top: 180px; }
 
 .tab fieldset {
-  width: 100%; }
-
-.tab fieldset input[type=button] {
-  width: auto;
-  display: inline-block; }
+  float: left;
+  width: 50%; }
 
 .tab fieldset input {
-  margin-bottom: 0; }
+  width: 90%; }
 
 .tab .export {
-  min-height: 55px; }
+  border-bottom: 1px solid #dad8db; }
 
 .tab .export button {
   clear: left; }
-
-.tab .export .button-set,
-.tab .export fieldset {
-  position: absolute;
-  bottom: 8px; }
-
-.tab .export fieldset {
-  left: 8px; }
-
-.tab .export .button-set {
-  right: 8px; }
-
-.tab_have_a_quesiton .content-container * {
-  display: block; }
-
-.tab_have_a_quesiton .content-container textarea {
-  width: 95%;
-  max-width: 95%;
-  min-width: 95%;
-  min-height: 200px; }
 
 .tab h1 {
   font-size: 20px;
@@ -7347,9 +7075,6 @@ bootstrap, as they're not needed for these tabs
   #tabs {
     float: left; }
 
-  #tabs {
-    width: 166px; }
-
   .question_container .span5 {
     width: 286px; }
 
@@ -7360,14 +7085,8 @@ bootstrap, as they're not needed for these tabs
     float: right; }
 
   .tab .content-container {
-    width: 405px; }
-
-  .tab .export {
-    width: 398px; } }
+    width: 405px; } }
 @media only screen and (min-width: 1200px) {
-  .tab .export {
-    width: 540px; }
-
   .tab .content-container {
     width: 548px; } }
 .more_info_modal {
@@ -7380,13 +7099,13 @@ bootstrap, as they're not needed for these tabs
   position: absolute;
   right: 10px;
   top: 10px;
-  background-image: url("img/defaultskin//btn_close.png");
+  background-image: url("../img/skin/btn_close.png");
   background-repeat: no-repeat;
   height: 30px;
   width: 30px;
   overflow: hidden;
   text-indent: -100px;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+  opacity: 1; }
 
 .more_info_modal h2 {
   font-size: 20px;
@@ -7413,15 +7132,11 @@ bootstrap, as they're not needed for these tabs
   height: 100%;
   position: relative; }
 
-.then_image img {
-  width: 100%;
-  height: 100%; }
-
 .fav_wrapper {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #e7e5e7;
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
 
 .fav_wrapper .question_holder {
   padding: 10px;
@@ -7429,13 +7144,11 @@ bootstrap, as they're not needed for these tabs
   border: 1px solid #dad8db;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
-  width: 93%; }
+  border-radius: 4px; }
 
 .fav_wrapper .fav_play,
 .fav_wrapper .fav_delete {
-  position: absolute;
-  top: -5px; }
+  position: absolute; }
 
 .fav_wrapper .fav_question_number,
 .fav_wrapper .fav_question {
@@ -7451,7 +7164,7 @@ bootstrap, as they're not needed for these tabs
   margin-left: 10px; }
 
 .fav_wrapper .fav_play {
-  background-image: url("img/defaultskin/btn_play.png");
+  background-image: url("../img/skin/btn_play.png");
   background-repeat: no-repeat;
   left: 0;
   width: 30px;
@@ -7468,7 +7181,7 @@ bootstrap, as they're not needed for these tabs
 
 .fav_wrapper .fav_delete {
   right: 10px;
-  background-image: url("img/defaultskin/btn_delete.png");
+  background-image: url("../img/skin/btn_delete.png");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -7480,29 +7193,29 @@ bootstrap, as they're not needed for these tabs
   box-shadow: none; }
 
 .fav_wrapper .content {
-  margin-left: 0px;
-  width: 100%; }
+  margin-left: 47px;
+  width: 75%; }
 
 .fav_wrapper .fav_job_title {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
-  display: block;
-  margin-left: 35px; }
+  display: block; }
 
 .fav_wrapper .content textarea {
-  width: 95%;
-  min-width: 95%;
-  max-width: 95%;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   background: #e7e5e7; }
 
 .fav_wrapper .content .view_transcript {
   margin-top: 20px;
-  background-image: url("img/defaultskin/transcript_arrow.png");
+  background-image: url("../img/skin/transcript_arrow.png");
   background-repeat: no-repeat;
   background-position: 0 6px;
-  text-indent: 17px;
-  cursor: pointer; }
+  text-indent: 35px;
+  margin-left: -35px;
+  /*margin-bottom: 10px;*/ }
 
 .fav_wrapper .content .fav_transcript {
   margin-bottom: 10px;
@@ -7514,8 +7227,7 @@ bootstrap, as they're not needed for these tabs
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  font-style: italic;
-  width: 93%; }
+  font-style: italic; }
 
 .fav_wrapper .content .fav_transcript p {
   margin-bottom: 10px; }
@@ -7643,9 +7355,3 @@ bootstrap, as they're not needed for these tabs
 
   .welcome_modal .span6 {
     width: 378px; } }
-.tab_about img {
-  display: block;
-  margin-top: 10px; }
-
-.tab_activities p {
-  margin-bottom: 10px; }

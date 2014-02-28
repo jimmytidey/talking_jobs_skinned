@@ -11,7 +11,7 @@
 	</div>
 	
 	<div class="more_info_modal hide" title="More info">
-		<a href="" class="close inoformation panel">close</a>
+		<a href="" class="close information panel">close</a>
 		<h2>More information</h2>
 	    <div class='more_info_body'></div>
 	</div>
@@ -19,9 +19,9 @@
 	<div class='flow_controls'>
 
 		<div class='modes span6  btn-group'>
-			<p class='btn random_order'>Mix it up</p>
 	        <p class='btn whole_interview_order'>Play whole interview</p>
 	        <p class='btn whole_question_order'>Play all answers to this question</p>
+			<p class='btn random_order'>Mix it up</p>
 	    </div>
 	
 		<!--

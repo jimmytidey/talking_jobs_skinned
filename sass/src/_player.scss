@@ -2,9 +2,119 @@
 Player. Left column
 -----------------------------------------*/
 
+#player .mejs-poster {
+	background-size: 100%;
+}
+
+#player .mejs-container { 
+	background: none;
+}
+
+#player .mejs-container .mejs-controls {
+	top: 259px;
+	background: none;
+}
+
+.mejs-fullscreen #player .mejs-container .mejs-controls {
+	top: auto;
+	background: black;
+}
+
+#player .mejs-time-rail {
+	position: absolute;
+	top: -25px;
+	background: #000;
+	width: 100% !important;
+	height: 22px;
+	padding-top: 3px;
+}
+
+.mejs-fullscreen #player .mejs-time-rail {
+	top: auto;
+	background: none;
+	/*height: auto;
+	position: relative;
+	margin-top: 0;
+	width: 60% !important;*/
+}
+.mejs-fullscreen #player .mejs-time-rail span {
+	
+}
+
+#player .mejs-time-total {
+	width: 70% !important;
+	margin-left: 15%;
+}
+
+.mejs-fullscreen #player .mejs-time-total {
+	/*width: 100% !important;
+	margin-left: 0;*/
+}
+
+
+.mejs-fullscreen #player .mejs-playpause-button,
+.mejs-fullscreen #player .restart_video_btn,
+.mejs-fullscreen #player .prev_track_btn,
+.mejs-fullscreen #player .next_track_btn {
+	position: absolute;
+	z-index: 20;
+}
+
+.mejs-fullscreen #player .restart_video_btn {
+	left: 41px;
+}
+
+.mejs-fullscreen #player .prev_track_btn {
+	left: 82px;
+}
+
+.mejs-fullscreen #player .next_track_btn {
+	left: 123px;
+}
+
+#player .mejs-duration-container,
+#player .mejs-currenttime-container {
+	position: absolute;
+	top: -25px;
+	background: #000;
+	z-index: 10;
+}
+
+.mejs-fullscreen #player .mejs-duration-container,
+.mejs-fullscreen #player .mejs-currenttime-container {
+	top: 0px;
+}
+
+#player .mejs-currenttime-container {
+	left: 0px;
+}
+
+#player .mejs-duration-container {
+	right: 0px;
+}
+
+.mejs-fullscreen #player .mejs-currenttime-container {
+	left: 176px;
+}
+
+.mejs-fullscreen #player .mejs-duration-container {
+	right: 180px;
+}
+
+#player .mejs-captions-position {
+	width: 100%;
+	left: 0 !important;
+	bottom: 0;
+}
+
+#player .mejs-captions-text {
+	padding: 10px;
+	display: block;
+	font-weight: lighter;
+}
 
 #player {
-	border-left: 1px solid $player-edging-colour;
+	/*border-left: 1px solid $player-edging-colour;*/
 	background-color: $tab-on-colour; 
 }
 
@@ -84,14 +194,15 @@ and full interview mode button
 		width: 220px;
 	}
 	
-	.modes .btn{
-		font-size: 12px;
-	}
-	
 	.modes {
+		margin-left: 0 !important;
 		width: 100%;
 	}
 	
+	.modes .btn{
+		font-size: 12px;
+	}
+		
 	.modes .active {
 		background-color: $talking-jobs-red;
 		color: white;
@@ -108,6 +219,8 @@ and full interview mode button
 	.modes .whole_question_order{
 		width: 43%;
 	}
+	
+
 	
 	#player .play-mode-shuffle,
 	#player .play-mode-interview {
@@ -164,6 +277,8 @@ and full interview mode button
 		
 	#player .player {
 		position: relative;
+		overflow: hidden;
+		height: 290px;	
 	}
 	
 	#player .player .previous_button,
@@ -190,27 +305,56 @@ and full interview mode button
 		left: 0;
 	}
 	
+	.mejs-controls .mejs-button button:focus {
+		outline: none;
+	}
+	
+	#player .mejs-playpause-button,
+	#player .mejs-controls .mejs-play,
+	#player .mejs-controls .mejs-fullscreen-button,
+	#player .mejs-controls .mejs-volume-button,
+	#player .mejs-controls .mejs-captions-button {
+		width: 40px;
+	}	
+	
+
+	#player .restart_video_btn,
+	#player .prev_track_btn,
+	#player .next_track_btn,
+	#player .add_video_btn,
+	#player .mejs-controls .mejs-play button,
+	#player .mejs-controls .mejs-pause button,
+	#player .mejs-controls .mejs-fullscreen-button button,
+	#player .mejs-controls .mejs-volume-button button,
+	#player .mejs-controls .mejs-captions-button button {
+		margin-top: 3px !important;
+		margin-left: 0;
 		
+	}
 		
+	#player .mejs-playpause-button {
+		margin-right: 1px;
+	}
+	
 	#player .mejs-controls .mejs-play button {
 		background-image: url($skin + "btn_transport_play.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
 	}
 	
 	#player .mejs-controls .mejs-pause button {
 		background-image: url($skin + "btn_transport_pause.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
-		background-position: 0 0px;
+		background-position: 0 0;
 	}
 	
 	#player .mejs-controls .restart_video_btn {
 		background-image: url($skin + "btn_transport_restart.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
 		margin-right: 1px;
 		overflow: hidden;
@@ -220,8 +364,8 @@ and full interview mode button
 		
 	#player .mejs-controls .prev_track_btn {
 		background-image: url($skin + "btn_transport_previous.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
 		overflow: hidden;
 		text-indent: -100px;
@@ -231,8 +375,8 @@ and full interview mode button
 		
 	#player .mejs-controls .next_track_btn {
 		background-image: url($skin + "btn_transport_next.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
 		overflow: hidden;
 		text-indent: -100px;
@@ -240,25 +384,97 @@ and full interview mode button
 		margin-right: 1px;
 	}
 		
+	#player .mejs-controls .add_video_btn {
+		position: absolute;
+		right: 123px;	
+	}
 		
 	#player .mejs-controls .add_video_btn {
 		background-image: url($skin + "btn_transport_add.png");
-		height: 22px;
-		width: 20px;
+		height: 24px;
+		width: 40px;
 		margin-top: 4px;
 		overflow: hidden;
 		text-indent: -100px;
 		cursor: pointer;
 		margin-right: 1px;
 	}
-		
-		
+	
+
+	
+	#player .mejs-controls .mejs-captions-button {
+		position: absolute;
+		right: 82px;	
+	}
+	
+	#player .mejs-controls .mejs-captions-button button {
+		background-image: url($skin + "btn_transport_captions.png") !important;
+		height: 24px;
+		width: 40px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+		background: none;
+		margin-left: 0;
+	}
+	#player .mejs-controls .mejs-volume-button {
+		position: absolute;
+		right: 41px;
+	}
+	
+	#player .mejs-controls .mejs-volume-button button {
+		background-image: url($skin + "btn_transport_volume.png") !important;
+		height: 24px;
+		width: 40px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+		background: none;
+		margin-left: 0;
+	}
+	
+	#player .mejs-controls .mejs-fullscreen-button {
+		position: absolute;
+		right: 0;
+	}
+	#player .mejs-controls .mejs-fullscreen-button button {
+		background-image: url($skin + "btn_transport_fullscreen.png") !important;
+		height: 24px;
+		width: 40px;
+		margin-top: 4px;
+		overflow: hidden;
+		text-indent: -100px;
+		cursor: pointer;
+		margin-right: 1px;
+		background: none;
+		margin-left: 0;
+	}
+
 	.mejs-controls .mejs-time-rail .mejs-time-loaded {
 		background: $talking-jobs-red !important;
 	}
 		
+	.mejs-controls .mejs-volume-button .mejs-volume-slider {
+		width: 40px;
+	}
 
+	.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
+	.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
+		left: 20px;
+	}
 
+	.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{
+		background: $talking-jobs-red;
+	}
+	
+	.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+		left: 13px;
+	}
+	
 @media only screen  and (max-width: 480px) {
 	#player .info_button {
 		float: right;
@@ -332,11 +548,40 @@ and full interview mode button
 		overflow: hidden;
 	}
 }	
-		
+
+@media only screen  and (max-width: 480px) {
+	#player .mejs-container .mejs-controls {
+		top: 190px;
+	}
+	
+	#player .player {
+		height: 220px;	
+	}
+}
+
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	
+	#player .player {
+		height: 279px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 248px;
+	}
+}
+	
 @media only screen and (min-width: 1200px) {
 
 	.modes .random_order{
 		width: 16%;
+	}
+	
+	#player .player {
+		height: 360px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 329px;
 	}
 	/*
 	.modes .whole_interview_order{
