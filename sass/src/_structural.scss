@@ -146,22 +146,6 @@ Player. Left column
 }
 
 
-@media only screen and (min-width: 1200px) {
-	.jobs_player {
-		width: 724px;
-		margin-left: -362px;
-	}
-	
-	#branding{
-		width: 724px;
-	}
-	.jobs_player .span9 {
-		width: 540px;
-	}
-	.player .span7 {
-		width: 541px;
-	}
-}
 @media only screen  and (max-width: 480px) {
 
 
@@ -214,7 +198,7 @@ Player. Left column
 		width: 397px;
 	}
 }
-
+/*
 @media only screen  and (max-width: 979px) and (min-width: 768px) {
 
 	.jobs_player {
@@ -233,3 +217,20 @@ Player. Left column
 }
 
 
+@media only screen and (min-width: 1200px) {
+	.jobs_player {
+		width: 724px;
+		margin-left: -362px;
+	}
+	
+	#branding{
+		width: 724px;
+	}
+	.jobs_player .span9 {
+		width: 540px;
+	}
+	.player .span7 {
+		width: 541px;
+	}
+}
+*/

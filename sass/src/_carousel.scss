@@ -67,12 +67,14 @@
 	right: 0;
 }
 
+
 @media only screen  and (max-width: 480px) {
 	.carousel {
 		display : none;
 	}
 }
 
+/*
 @media (max-width: 767px) {
 	
 	.carousel .carousel_next,
@@ -104,3 +106,4 @@
 		height: 39px;
 	}
 }
+*/

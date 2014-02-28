@@ -182,7 +182,7 @@
 
 
 
-/* Landscape phone to portrait tablet */
+ /*Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     .scroller_wrapper  {
         width: 287px;
@@ -197,8 +197,8 @@
        top: 436px;
     }
 }
-
-/* Portrait tablet to landscape and desktop */
+/*
+ Portrait tablet to landscape and desktop 
 @media (min-width: 768px) and (max-width: 940px) { 
     .scroller_wrapper  {
         width: 302px;
@@ -213,7 +213,7 @@
     }
 }
 
-/* Large desktop */
+ Large desktop 
 @media (min-width: 1210px) { 
 	.scroller_wrapper  {
 		width: 427px;
@@ -221,3 +221,5 @@
 	}
  
 }
+
+*/

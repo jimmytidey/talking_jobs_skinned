@@ -6399,19 +6399,6 @@ Player. Left column
 #player .info_open .question_container {
   display: none; }
 
-@media only screen and (min-width: 1200px) {
-  .jobs_player {
-    width: 724px;
-    margin-left: -362px; }
-
-  #branding {
-    width: 724px; }
-
-  .jobs_player .span9 {
-    width: 540px; }
-
-  .player .span7 {
-    width: 541px; } }
 @media only screen and (max-width: 480px) {
   #app {
     height: auto; }
@@ -6444,16 +6431,42 @@ Player. Left column
 
   .jobs_player .span7 {
     width: 397px; } }
-@media only screen and (max-width: 979px) and (min-width: 768px) {
-  .jobs_player {
-    width: 598px;
-    margin-left: -299px; }
+/*
+@media only screen  and (max-width: 979px) and (min-width: 768px) {
 
-  #branding {
-    width: 598px; }
+	.jobs_player {
+		width: 598px;
+		margin-left: -299px;
+	}
+	
+	#branding{
+		width: 598px;
+	}
+	
+	.jobs_player .span9 {
+		width: 414px;
+	}
+		
+}
 
-  .jobs_player .span9 {
-    width: 414px; } }
+
+@media only screen and (min-width: 1200px) {
+	.jobs_player {
+		width: 724px;
+		margin-left: -362px;
+	}
+	
+	#branding{
+		width: 724px;
+	}
+	.jobs_player .span9 {
+		width: 540px;
+	}
+	.player .span7 {
+		width: 541px;
+	}
+}
+*/
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
@@ -6916,25 +6929,23 @@ and full interview mode button
 
   #player .mejs-container .mejs-controls {
     top: 248px; } }
+/*	
 @media only screen and (min-width: 1200px) {
-  .modes .random_order {
-    width: 16%; }
 
-  #player .player {
-    height: 360px; }
+	.modes .random_order{
+		width: 16%;
+	}
+	
+	#player .player {
+		height: 360px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 329px;
+	}
 
-  #player .mejs-container .mejs-controls {
-    top: 329px; }
-
-  /*
-  .modes .whole_interview_order{
-  	width: 27%;
-  }
-  
-  .modes .whole_question_order{
-  	width: 43%;
-  }
-  */ }
+}
+*/
 /* make the subtitles work */
 .mejs-captions-selector {
   /*display:none!important;*/ }
@@ -7000,23 +7011,39 @@ and full interview mode button
 @media only screen and (max-width: 480px) {
   .carousel {
     display: none; } }
+/*
 @media (max-width: 767px) {
-  .carousel .carousel_next,
-  .carousel .carousel_prev {
-    margin-top: -2px; }
+	
+	.carousel .carousel_next,
+	.carousel .carousel_prev {
+		margin-top: -2px;
+	}
+	
+	.interviewee_selector {
+		width: 65px;
+	}
+}
 
-  .interviewee_selector {
-    width: 65px; } }
+
 @media (max-width: 979px) and (min-width: 768px) {
-  .carousel_container {
-    width: 346px; } }
-@media (min-width: 1200px) {
-  .carousel_container {
-    width: 472px; }
+	.carousel_container {
+		width: 346px;
+	}
+}
 
-  .interviewee_selector {
-    width: 67px;
-    height: 39px; } }
+@media (min-width: 1200px) {
+	.carousel_container {
+		width: 472px;
+	}
+	
+
+	
+	.interviewee_selector {
+		width: 67px;
+		height: 39px;
+	}
+}
+*/
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px; }
@@ -7168,7 +7195,7 @@ and full interview mode button
 
   .question_type {
     display: none; } }
-/* Landscape phone to portrait tablet */
+/*Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .scroller_wrapper {
     width: 287px;
@@ -7177,20 +7204,32 @@ and full interview mode button
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .scroller_wrapper {
     top: 436px; } }
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 940px) {
-  .scroller_wrapper {
-    width: 302px;
-    top: 448px; } }
-@media (min-width: 1200px) and (max-width: 1209px) {
-  .scroller_wrapper {
-    width: 427px;
-    top: 518px; } }
-/* Large desktop */
-@media (min-width: 1210px) {
-  .scroller_wrapper {
-    width: 427px;
-    top: 518px; } }
+/*
+ Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 940px) { 
+    .scroller_wrapper  {
+        width: 302px;
+		top: 448px;
+    }
+}
+ 
+@media (min-width: 1200px) and (max-width: 1209px) { 
+    .scroller_wrapper  {
+        width: 427px;
+		top: 518px;
+    }
+}
+
+ Large desktop 
+@media (min-width: 1210px) { 
+	.scroller_wrapper  {
+		width: 427px;
+		top: 518px;
+	}
+ 
+}
+
+*/
 /* --------------------------------------
 Vars
 -----------------------------------------*/
@@ -7364,12 +7403,17 @@ bootstrap, as they're not needed for these tabs
 
   .tab .export {
     width: 398px; } }
+/*
 @media only screen and (min-width: 1200px) {
-  .tab .export {
-    width: 540px; }
-
-  .tab .content-container {
-    width: 548px; } }
+	.tab .export {
+		width: 540px;
+	}
+	
+	.tab .content-container {
+		width: 548px;
+	}
+}
+*/
 .more_info_modal {
   position: relative;
   margin-bottom: 10px;
@@ -7612,37 +7656,57 @@ bootstrap, as they're not needed for these tabs
   .welcome_modal .partners,
   .welcome_modal .hero {
     padding-left: 0px; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .welcome_modal .header img {
-    width: 80%;
-    height: auto; }
+/*
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	.welcome_modal .header img {
+		width: 80%;
+		height: auto;
+	}
+	
+	.welcome_modal .partners img {
+		width: 50%;
+	}
+	
+	.welcome_modal h2 {
+		font-size: 21.5px;
+		line-height: 24px;
+	}
+	
+	.welcome_modal .span12 {
+		width: 420px;
+	}
+	
+	.welcome_modal .span6 {
+		width: 200px;
+		float: left;
+	}
 
-  .welcome_modal .partners img {
-    width: 50%; }
+	
+	.welcome_modal .header .span6 {
+		float: left;
+		margin-top: 0;
+	}
+	
 
-  .welcome_modal h2 {
-    font-size: 21.5px;
-    line-height: 24px; }
+}
 
-  .welcome_modal .span12 {
-    width: 420px; }
+@media only screen  and (min-width: 978px) {
+	.welcome_modal .span12 {
+		width: 625px;
+	}
+}
 
-  .welcome_modal .span6 {
-    width: 200px;
-    float: left; }
 
-  .welcome_modal .header .span6 {
-    float: left;
-    margin-top: 0; } }
-@media only screen and (min-width: 978px) {
-  .welcome_modal .span12 {
-    width: 625px; } }
 @media (min-width: 1200px) {
-  .welcome_modal .span12 {
-    width: 778px; }
+	.welcome_modal .span12 {
+		width: 778px;
+	}
 
-  .welcome_modal .span6 {
-    width: 378px; } }
+	.welcome_modal .span6 {
+		width: 378px;
+	}
+}
+*/
 .tab_about img {
   display: block;
   margin-top: 10px; }
