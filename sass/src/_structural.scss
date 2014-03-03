@@ -155,8 +155,8 @@ Player. Left column
 	
 	.jobs_player {
 		width: 310px;
-		position: absolute;
-		margin-left: -155px;
+		position: static;
+		margin-left: auto;
 	}
 	
 	#branding{
