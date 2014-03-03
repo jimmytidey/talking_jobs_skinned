@@ -16,6 +16,8 @@ job_player.drawInterface = function(player_instance) {
     $.each(player_instance.interviewees, function(key, val) {
         var html = "<option value='" + val.id + "'>" + val.interviewee +"</option>";  
         $('.interviewee_select select', this.elem).append(html);
+
+        $('.lowres_interviewee').append(html);
     });
     
     
@@ -65,6 +67,8 @@ job_player.drawInterface = function(player_instance) {
         var question_number = parseInt(id) + 1;
         $(scroller).append("<li class='question_selector question_type_"+ type +" cf' data-id='"+ id + "' > <span class='number'>Q" + question_number + ".</span>   <span class='question'>" + player_instance.questions[i]['__cdata'] + "</span> </li>");
         
+        var html = "<option value='" + id + "'>" + player_instance.questions[i]['__cdata'] +"</option>";
+        $('.lowres_question').append(html);
           
         if (i === player_instance.questions.length-1 && $('html.lt-ie9').length==0) {
 			// We don't need iScroll for mobile devices
@@ -106,14 +110,7 @@ job_player.drawInterface = function(player_instance) {
 	jQuery(window).resize(function() {
 		job_player.onResize(player_instance);
 	});
-    
-    //add the scroller to the favs pannel 
-    console.log('ini favs scroller');
-    
-    
-
-    
-    
+     
 };
 
 job_player.resizeTmr = null;

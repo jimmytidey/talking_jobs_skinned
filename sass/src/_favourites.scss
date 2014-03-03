@@ -119,12 +119,16 @@
 .notes_and_transcript .notes_title {
 	margin-top: 20px;
 }
+
 .notes_and_transcript button {
 	font-size: 12px;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
-.favs_scroller { 
-
+.favs_alert { 
+    width:100px;
+    position:absolute;
+    right:0px;
+    z-index:100000;
 }

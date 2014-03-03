@@ -8963,6 +8963,29 @@ they play nicely together
 /* --------------------------------------
 Vars
 -----------------------------------------*/
+/*for the low res option */
+@media only screen and (max-width: 300px) {
+  /* line 19, ../sass/src/_structural.scss */
+  .fullscreen {
+    display: none;
+  }
+
+  /* line 22, ../sass/src/_structural.scss */
+  .lowres {
+    display: block;
+  }
+}
+@media only screen and (min-width: 301px) {
+  /* line 28, ../sass/src/_structural.scss */
+  .fullscreen {
+    display: block;
+  }
+
+  /* line 31, ../sass/src/_structural.scss */
+  .lowres {
+    display: none;
+  }
+}
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -8972,7 +8995,7 @@ Vars
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 27, ../sass/src/_structural.scss */
+/* line 47, ../sass/src/_structural.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -8981,7 +9004,7 @@ Vars
   /* 2 */
 }
 
-/* line 32, ../sass/src/_structural.scss */
+/* line 52, ../sass/src/_structural.scss */
 .cf:after {
   clear: both;
 }
@@ -8990,12 +9013,12 @@ Vars
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 40, ../sass/src/_structural.scss */
+/* line 60, ../sass/src/_structural.scss */
 .cf {
   *zoom: 1;
 }
 
-/* line 49, ../sass/src/_structural.scss */
+/* line 69, ../sass/src/_structural.scss */
 body {
   padding-left: 0;
   padding-right: 0;
@@ -9005,7 +9028,7 @@ body {
 Remove any margins and padding applied by
 twitter bootstrap keep adding if more are found
 -----------------------------------------*/
-/* line 66, ../sass/src/_structural.scss */
+/* line 86, ../sass/src/_structural.scss */
 div,
 [class*="span"],
 .row,
@@ -9022,7 +9045,7 @@ p {
 Gives us the abiloity to have 100% throughout
 the app
 -----------------------------------------*/
-/* line 79, ../sass/src/_structural.scss */
+/* line 99, ../sass/src/_structural.scss */
 html, body,
 .jobs_player,
 #app,
@@ -9031,7 +9054,7 @@ html, body,
   height: 100%;
 }
 
-/* line 84, ../sass/src/_structural.scss */
+/* line 104, ../sass/src/_structural.scss */
 .jobs_player {
   width: 598px;
   /*position: relative;*/
@@ -9045,37 +9068,37 @@ html, body,
   border-right: 1px solid #dad8db;
 }
 
-/* line 98, ../sass/src/_structural.scss */
+/* line 118, ../sass/src/_structural.scss */
 #branding {
   width: 598px;
 }
 
-/* line 102, ../sass/src/_structural.scss */
+/* line 122, ../sass/src/_structural.scss */
 .jobs_player .span9 {
   width: 414px;
 }
 
-/* line 106, ../sass/src/_structural.scss */
+/* line 126, ../sass/src/_structural.scss */
 .jobs_player .span3 {
   width: 166px;
 }
 
-/* line 110, ../sass/src/_structural.scss */
+/* line 130, ../sass/src/_structural.scss */
 .player .span7 {
   width: 416px;
 }
 
-/* line 114, ../sass/src/_structural.scss */
+/* line 134, ../sass/src/_structural.scss */
 .question_container .span2 {
   width: 104px;
 }
 
-/* line 117, ../sass/src/_structural.scss */
+/* line 137, ../sass/src/_structural.scss */
 .question_container .span5 {
   width: 303px;
 }
 
-/* line 121, ../sass/src/_structural.scss */
+/* line 141, ../sass/src/_structural.scss */
 #branding {
   position: fixed;
   bottom: 0;
@@ -9084,7 +9107,7 @@ html, body,
   border-left: 1px solid $player-edging-colour;*/
 }
 
-/* line 128, ../sass/src/_structural.scss */
+/* line 148, ../sass/src/_structural.scss */
 #branding img {
   float: right;
   height: 31px;
@@ -9093,14 +9116,14 @@ html, body,
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
-/* line 136, ../sass/src/_structural.scss */
+/* line 156, ../sass/src/_structural.scss */
 #player {
   padding-left: 8px;
   padding-right: 8px;
   width: 414px;
 }
 
-/* line 145, ../sass/src/_structural.scss */
+/* line 165, ../sass/src/_structural.scss */
 #player .info_open .player,
 #player .info_open .modes,
 #player .info_open .carousel,
@@ -9109,36 +9132,36 @@ Player. Left column
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 153, ../sass/src/_structural.scss */
+  /* line 173, ../sass/src/_structural.scss */
   #app {
     height: auto;
   }
 
-  /* line 157, ../sass/src/_structural.scss */
+  /* line 177, ../sass/src/_structural.scss */
   .jobs_player {
     width: 310px;
     position: static;
     margin-left: auto;
   }
 
-  /* line 163, ../sass/src/_structural.scss */
+  /* line 183, ../sass/src/_structural.scss */
   #branding {
     border-right: none;
     border-left: none;
     position: static;
   }
 
-  /* line 169, ../sass/src/_structural.scss */
+  /* line 189, ../sass/src/_structural.scss */
   #branding {
     width: 100%;
   }
 
-  /* line 173, ../sass/src/_structural.scss */
+  /* line 193, ../sass/src/_structural.scss */
   .player .span7 {
     width: 100%;
   }
 
-  /* line 176, ../sass/src/_structural.scss */
+  /* line 196, ../sass/src/_structural.scss */
   .jobs_player .span9 {
     width: 100%;
   }
@@ -9160,7 +9183,7 @@ Player. Left column
   */
 }
 @media (max-width: 767px) {
-  /* line 205, ../sass/src/_structural.scss */
+  /* line 225, ../sass/src/_structural.scss */
   [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -10696,10 +10719,18 @@ bootstrap, as they're not needed for these tabs
   margin-top: 20px;
 }
 
-/* line 122, ../sass/src/_favourites.scss */
+/* line 123, ../sass/src/_favourites.scss */
 .notes_and_transcript button {
   font-size: 12px;
   margin-bottom: 20px;
+}
+
+/* line 129, ../sass/src/_favourites.scss */
+.favs_alert {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  z-index: 100000;
 }
 
 /* line 1, ../sass/src/_welcome_modal.scss */
@@ -10884,6 +10915,22 @@ bootstrap, as they're not needed for these tabs
 /* line 1, ../sass/src/_email.scss */
 .question_sent {
   margin-top: 100px;
+}
+
+/* line 5, ../sass/src/_email.scss */
+.reflections_alert {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  z-index: 100000;
+}
+
+/* line 12, ../sass/src/_email.scss */
+.question_alert {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  z-index: 100000;
 }
 
 /* line 1, ../sass/src/_about.scss */

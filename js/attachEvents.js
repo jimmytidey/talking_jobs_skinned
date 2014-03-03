@@ -95,29 +95,70 @@ job_player.attachEvents = function(player_instance) {
             $('.then_image').remove();
         }
     });
-     
+    
+    
+    //Favourites events 
+    $('.email_favs').click(function(){
+       job_player.emailFavs(local_player_instance); 
+    });
+    
+    $('.print_favs').click(function(){
+       job_player.printFavs(local_player_instance); 
+    });
+    
+    $('.save_favs').click(function(){
+       job_player.downloadFavs(local_player_instance); 
+    });
+    
+    
+     //Reflections events 
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
     });
-    
+
     $('.download_reflections').click(function(){ 
+        console.log('attach  reflections');
         job_player.downloadReflections(local_player_instance);
     });
     
-   
-    $('.email_question').click(function(){ 
-        job_player.emailQuestion(local_player_instance);
+    $('.print_reflections').click(function(){ 
+        console.log('print  reflections');
+        job_player.printReflections(local_player_instance);
     });
     
-    $('.email_favs').click(function(){
-       job_player.emailFavourites(local_player_instance); 
+   
+    //Question events 
+    $('.email_question').click(function(){ 
+        job_player.emailQuestion(local_player_instance);
+    }); 
+    
+    $('.download_question').click(function(){ 
+        job_player.downloadQuestion(local_player_instance);
+    });
+    
+    $('.print_question').click(function(){ 
+        job_player.printQuestion(local_player_instance);
     });
     
     $('.tab_buttons li').click(function(){       
         local_player_instance.player.pause();
     });
     
+    
+    $('.lowres_interviewee, .lowres_question').change(function(){
+        job_player.updateLowRes(local_player_instance);
+    });
+    
+    job_player.updateLowRes(local_player_instance);
 };
+
+job_player.updateLowRes = function(local_player_instance) { 
+    var interviewee_id = parseInt($('.lowres_interviewee').val());
+    var question_id = parseInt($('.lowres_question').val());
+    var pl_object = job_player.getObjectFromPlaylist(interviewee_id, question_id, local_player_instance);
+    $('.lowres_view').attr('href', pl_object.video);
+
+}
 
 job_player.attachTransportEvents = function(local_player_instance) { 
     

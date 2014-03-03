@@ -1,6 +1,7 @@
 
 <?php include 'header.php'  ?>
 
+<div class='fullscreen'>
 <div class="welcome_modal row" >
 
 	<div class='row header cf'>
@@ -37,9 +38,6 @@
 
 
 
-
-
-
 <div class='container jobs_player hide'>
     
     <div id="app" class='row'>        
@@ -68,7 +66,7 @@
 					<form action="">
 					<fieldset>
 						<label>Your name</label>
-						<input type="text" class='reflections_name' />
+						<input type="text" class='favs_name' />
 					</fieldset>
 					</form>
 				</div>
@@ -87,10 +85,10 @@
 				<form action="">
 				<fieldset>
 					<label>Your email</label>
-					<input type="text" class='favs_email' />
-					<input type="button" class="btn email_favs" value="Email">
-					<input type="button" class="btn print_favs" value="Print">
-					<input type="button" class="btn save_favs" value="Save">
+					<input type="text" class='reflections_email' />
+					<input type="button" class="btn email_reflections " value="Email">
+					<input type="button" class="btn print_reflections" value="Print">
+					<input type="button" class="btn download_reflections" value="Save">
 				</fieldset>
 				
 				</form>
@@ -141,14 +139,14 @@
             
             <div class='tab tab_have_a_quesiton'>
                 <h1>Ask a question</h1>
-				<div class="export reflect_export">
+				<div class="export question_export">
 					<form action="">
 					<fieldset>
 						<label>Your email</label>
-						<input type="text" class='favs_email' />
-						<input type="button" class="btn email_favs" value="Email">
-						<input type="button" class="btn print_favs" value="Print">
-						<input type="button" class="btn save_favs" value="Save">
+						<input type="text" class='question_email' />
+						<input type="button" class="btn email_question" value="Email">
+						<input type="button" class="btn print_question" value="Print">
+						<input type="button" class="btn download_question" value="Save">
 					</fieldset>
 				
 					</form>
@@ -159,7 +157,7 @@
 					<form action="">
 					<fieldset>
 						<label>Your name</label>
-						<input type="text" class='reflections_name' />
+						<input type="text" class='question_name' />
 					</fieldset>
 					</form>
 				</div>
@@ -193,6 +191,21 @@
     </div>
 </div> <!-- /container -->        
 
+</div>
+
+<div class='lowres'>
+    <select class='lowres_interviewee'>
+    
+    </select>
+    
+    <select class='lowres_question'>
+    
+    </select>
+    
+    <br/>    <br/>
+    
+    <a class='lowres_view' target='_blank' href=''  >Click to view</a>
+</div>
 
 <?php include 'footer.php'  ?>        
 

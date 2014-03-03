@@ -13,6 +13,26 @@ $tab-edging-colour: #DAD8DB;
 $standard-text-colour: #4A4A4A;
 $talking-jobs-red: #D0021B;
 
+/*for the low res option */
+
+@media only screen and (max-width: 300px) {
+    .fullscreen { 
+        display:none;
+    }
+    .lowres { 
+        display:block;
+    }
+}
+
+@media only screen and (min-width: 301px) {
+    .fullscreen { 
+        display:block;
+    }
+    .lowres { 
+        display:none;
+    }
+}
+
 
 /**
  * For modern browsers
