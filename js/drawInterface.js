@@ -67,14 +67,23 @@ job_player.drawInterface = function(player_instance) {
         
           
         if (i === player_instance.questions.length-1 && $('html.lt-ie9').length==0) {
-            player_instance.myScroll = new IScroll('.scroller_wrapper',{
-                scrollbars:true,
-                mouseWheel:true,
-                interactiveScrollbars: true
-            });
-			// Disabled the line below because ti stoppeed the welcome screen from scrolling
-			// on a touch device.
-            //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			// We don't need iScroll for mobile devices
+			if( jQuery(window).width() < 481) {
+				jQuery("#question_list").removeClass("scroller_wrapper");
+			}
+			
+			if( jQuery("#question_list").hasClass("scroller_wrapper") )
+			{
+			    player_instance.myScroll = new IScroll('.scroller_wrapper',{
+	                scrollbars:true,
+	                mouseWheel:true,
+	                interactiveScrollbars: true
+	            });
+				// Disabled the line below because ti stoppeed the welcome screen from scrolling
+				// on a touch device.
+	            //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
+			}
+
         }
         
     };    
@@ -92,8 +101,39 @@ job_player.drawInterface = function(player_instance) {
     
     //make sure the player is in the correct mode
     job_player.attachEvents(player_instance);
+
+
+	jQuery(window).resize(function() {
+		job_player.onResize(player_instance);
+	});
     
 };
+
+job_player.resizeTmr = null;
+job_player.onResize = function(player_instance) { 
+	
+	if( jQuery(window).width() < 481) {
+		jQuery("#question_list").removeClass("scroller_wrapper");
+	}else
+	{
+		jQuery("#question_list").addClass("scroller_wrapper");
+		if( !player_instance.myScroll )
+		{
+			player_instance.myScroll = new IScroll('.scroller_wrapper',{
+                scrollbars:true,
+                mouseWheel:true,
+                interactiveScrollbars: true
+            });
+		}
+		else
+		{
+			setTimeout(function () {
+		       player_instance.myScroll.refresh();
+		    }, 0);
+		}
+	}
+	
+}
 
 job_player.clearModeButtons = function() { 
     $('.flow_controls p').removeClass('active');

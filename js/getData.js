@@ -3,6 +3,7 @@ window.job_player = {};
 
 job_player.getData = function(player_instance) { 
     
+	
     var counter = 0; 
     
     $.ajax({
