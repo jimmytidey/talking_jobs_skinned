@@ -189,7 +189,6 @@
     </div>
 </div> <!-- /container -->        
 
-<br /><br />
 
 <?php include 'footer.php'  ?>        
 
