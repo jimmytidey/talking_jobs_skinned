@@ -72,7 +72,9 @@ job_player.drawInterface = function(player_instance) {
                 mouseWheel:true,
                 interactiveScrollbars: true
             });
-            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			// Disabled the line below because ti stoppeed the welcome screen from scrolling
+			// on a touch device.
+            //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
         }
         
     };    

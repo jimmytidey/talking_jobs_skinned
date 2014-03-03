@@ -19,6 +19,10 @@ job_player.attachEvents = function(player_instance) {
     $('.modal_controls .start').click(function( event ){
 		$(".welcome_modal").addClass("hide");
 		$(".jobs_player").removeClass("hide");
+		// Sometimes the welcome screen may be scrolled down
+		// to where the start button is. Move the window back to
+		// the top, just in case it has been scrolled
+		window.scrollTo(0, 0);
 		
 		if ($('#israndom').is(':checked')) { 
             job_player.setRandomMode(player_instance);

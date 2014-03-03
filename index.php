@@ -40,7 +40,7 @@
 
 
 
-<div class='container jobs_player'>
+<div class='container jobs_player hide'>
     
     <div id="app" class='row'>        
         <div id="player" class='span9'>
