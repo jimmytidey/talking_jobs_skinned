@@ -6391,7 +6391,8 @@ Player. Left column
 -----------------------------------------*/
 #player {
   padding-left: 8px;
-  padding-right: 8px; }
+  padding-right: 8px;
+  width: 414px; }
 
 #player .info_open .player,
 #player .info_open .modes,
@@ -6422,15 +6423,25 @@ Player. Left column
   .jobs_player .span9 {
     width: 100%; } }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  /*
   .jobs_player {
-    width: 580px;
-    margin-left: -290px; }
-
-  #branding {
-    width: 580px; }
-
+  	width: 580px;
+  	margin-left: -290px;
+  }
+  
+  #branding{
+  	width: 580px;
+  }
+  
   .jobs_player .span7 {
-    width: 397px; } }
+  	width: 397px;
+  }
+  */ }
+@media (max-width: 767px) {
+  [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; } }
 /*
 @media only screen  and (max-width: 979px) and (min-width: 768px) {
 
@@ -6689,7 +6700,8 @@ and full interview mode button
 #player .player {
   position: relative;
   overflow: hidden;
-  height: 290px; }
+  height: 290px;
+  width: 414px; }
 
 #player .player .previous_button,
 #player .player .next_button {
@@ -6859,6 +6871,10 @@ and full interview mode button
   left: 13px; }
 
 @media only screen and (max-width: 480px) {
+  #player .mejs-container .mejs-controls {
+    top: 190px;
+    background: none; }
+
   #player .info_button {
     float: right; }
 
@@ -6871,7 +6887,12 @@ and full interview mode button
     display: none; }
 
   #player {
-    height: auto; }
+    height: auto;
+    width: inherit; }
+
+  #player .player {
+    width: 100%;
+    height: 217px; }
 
   #player .mejs-controls .add_video_btn {
     display: none; }
@@ -6917,19 +6938,28 @@ and full interview mode button
     padding: 0;
     text-indent: -500px;
     overflow: hidden; } }
-@media only screen and (max-width: 480px) {
-  #player .mejs-container .mejs-controls {
-    top: 190px; }
+/*
+@media only screen  and (max-width: 480px) {
+	#player .mejs-container .mejs-controls {
+		top: 190px;
+	}
+	
+	#player .player {
+		height: 220px;	
+	}
+}
 
-  #player .player {
-    height: 220px; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  #player .player {
-    height: 279px; }
-
-  #player .mejs-container .mejs-controls {
-    top: 248px; } }
-/*	
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	
+	#player .player {
+		height: 279px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 248px;
+	}
+}
+	
 @media only screen and (min-width: 1200px) {
 
 	.modes .random_order{
@@ -6967,18 +6997,18 @@ and full interview mode button
 .interviewee_scroller,
 .caroufredsel_wrapper,
 .carousel_container {
-  height: 44px !important; }
+  height: 43px !important; }
 
 .carousel_container {
   overflow: hidden;
-  width: 346px;
+  width: 345px;
   position: absolute;
-  left: 34px;
+  left: 35px;
   -webkit-transform: translate3d(0, 0, 0); }
 
 .interviewee_selector {
   margin-right: 1px !important;
-  width: 69px;
+  width: 68px;
   /*height: 52px;*/
   display: inline-block;
   vertical-align: top; }
@@ -7207,12 +7237,9 @@ and full interview mode button
 /*Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .scroller_wrapper {
-    width: 287px;
-    top: 381px;
+        /*width: 287px;
+		top: 381px;*/
     margin-left: 0; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  .scroller_wrapper {
-    top: 436px; } }
 /*
  Portrait tablet to landscape and desktop 
 @media (min-width: 768px) and (max-width: 940px) { 
@@ -7307,6 +7334,9 @@ bootstrap, as they're not needed for these tabs
   margin-bottom: 40px;
   margin-top: 10px; }
 
+.tab {
+  width: 414px; }
+
 .tab form {
   margin-bottom: 0; }
 
@@ -7385,6 +7415,9 @@ bootstrap, as they're not needed for these tabs
   font-weight: lighter; }
 
 @media only screen and (max-width: 480px) {
+  .tab {
+    width: auto; }
+
   .tab .content-container {
     position: relative; }
 
@@ -7395,12 +7428,10 @@ bootstrap, as they're not needed for these tabs
   #tabs {
     float: left; }
 
-  #tabs {
-    width: 166px; }
-
+  /*
   .question_container .span5 {
-    width: 286px; }
-
+  	width: 286px;
+  }*/
   .question_container .span2 {
     float: left; }
 

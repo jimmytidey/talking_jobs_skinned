@@ -136,6 +136,7 @@ Player. Left column
 #player {
 	padding-left: 8px;
 	padding-right: 8px;
+	width: 414px;
 }
 
 #player .info_open .player,
@@ -184,7 +185,7 @@ Player. Left column
 }
 
 @media only screen  and (min-width: 481px)  and (max-width: 767px) {
-	
+	/*
 	.jobs_player {
 		width: 580px;
 		margin-left: -290px;
@@ -197,7 +198,17 @@ Player. Left column
 	.jobs_player .span7 {
 		width: 397px;
 	}
+	*/
 }
+
+@media (max-width: 767px) {
+	[class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+}
+
 /*
 @media only screen  and (max-width: 979px) and (min-width: 768px) {
 
