@@ -162,6 +162,17 @@
 /* Landscape phones and down */
 @media screen and (max-width: 480px) { 
 	
+	.question_selector .question {
+		padding: 10px;
+		padding-left: 0px;
+		width: 80%;
+		margin-left: 50px;
+	}
+	
+	.question_selector .number {
+		left: 0;
+	}
+	
 	.question_container .span5 {
 		width: 100%;
 	}
