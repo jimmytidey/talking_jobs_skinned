@@ -76,7 +76,7 @@
         </div>
     </div>
     <div class='span5'>
-        <div class='scroller_wrapper'>       
+        <div id="question_list" class='scroller_wrapper'>       
             <div class='question_scroller'>
                 <ul></ul>
             </div>

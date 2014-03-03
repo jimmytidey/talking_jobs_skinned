@@ -88,6 +88,10 @@ bootstrap, as they're not needed for these tabs
 		margin-bottom: 40px;
 		margin-top: 10px;
 	}
+	
+.tab {
+	width:414px;
+}
 
 .tab form {
 	margin-bottom: 0;
@@ -186,6 +190,10 @@ bootstrap, as they're not needed for these tabs
 }
 
 	@media only screen  and (max-width: 480px) {
+		.tab {
+			width: auto;
+		}
+		
 		.tab .content-container {
 			position: relative;
 		}
@@ -195,19 +203,18 @@ bootstrap, as they're not needed for these tabs
 		}
 	}
 	
+	
 	@media only screen  and (min-width: 481px)  and (max-width: 767px) {
 		#player,
 		#tabs{
 			float: left;
 		}
 		
-		#tabs{
-			width: 166px;
-		}
 		
+		/*
 		.question_container .span5 {
 			width: 286px;
-		}
+		}*/
 		
 		.question_container .span2{
 			float: left;
@@ -225,7 +232,7 @@ bootstrap, as they're not needed for these tabs
 			width: 398px;
 		}
 	}
-	
+	/*
 	@media only screen and (min-width: 1200px) {
 		.tab .export {
 			width: 540px;
@@ -235,3 +242,4 @@ bootstrap, as they're not needed for these tabs
 			width: 548px;
 		}
 	}
+	*/

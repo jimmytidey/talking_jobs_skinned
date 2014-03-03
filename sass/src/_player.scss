@@ -14,7 +14,8 @@ Player. Left column
 	top: 259px;
 	background: none;
 }
-
+ 
+ 
 .mejs-fullscreen #player .mejs-container .mejs-controls {
 	top: auto;
 	background: black;
@@ -278,7 +279,8 @@ and full interview mode button
 	#player .player {
 		position: relative;
 		overflow: hidden;
-		height: 290px;	
+		height: 290px;
+		width: 414px;
 	}
 	
 	#player .player .previous_button,
@@ -476,6 +478,12 @@ and full interview mode button
 	}
 	
 @media only screen  and (max-width: 480px) {
+
+	#player .mejs-container .mejs-controls {
+		top: 190px;
+		background: none;
+	}
+	
 	#player .info_button {
 		float: right;
 	}
@@ -492,6 +500,12 @@ and full interview mode button
 	
 	#player {
 		height: auto;
+		width: inherit;
+	}
+	
+	#player .player{
+		width: 100%;
+		height: 217px;
 	}
 	
 	#player .mejs-controls .add_video_btn {
@@ -549,6 +563,7 @@ and full interview mode button
 	}
 }	
 
+/*
 @media only screen  and (max-width: 480px) {
 	#player .mejs-container .mejs-controls {
 		top: 190px;
@@ -583,17 +598,9 @@ and full interview mode button
 	#player .mejs-container .mejs-controls {
 		top: 329px;
 	}
-	/*
-	.modes .whole_interview_order{
-		width: 27%;
-	}
-	
-	.modes .whole_question_order{
-		width: 43%;
-	}
-	*/
-}
 
+}
+*/
 /* make the subtitles work */ 
 .mejs-captions-selector { 
     display:none!important; 

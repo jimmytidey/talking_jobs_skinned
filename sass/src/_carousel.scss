@@ -18,13 +18,13 @@
 .interviewee_scroller,
 .caroufredsel_wrapper,
 .carousel_container  {
-	height: 44px !important;
+	height: 43px !important;
 }
 	.carousel_container {
 		overflow: hidden;
-		width: 346px;
+		width: 345px;
 		position: absolute;
-		left: 34px;
+		left: 35px;
 		-webkit-transform: translate3d(0, 0, 0);
 	}
 	
@@ -32,7 +32,7 @@
 	
 .interviewee_selector {
 	margin-right: 1px!important;
-	width: 69px;
+	width: 68px;
 	/*height: 52px;*/
 	display:inline-block;
 	vertical-align: top;
@@ -67,12 +67,14 @@
 	right: 0;
 }
 
+
 @media only screen  and (max-width: 480px) {
 	.carousel {
 		display : none;
 	}
 }
 
+/*
 @media (max-width: 767px) {
 	
 	.carousel .carousel_next,
@@ -104,3 +106,4 @@
 		height: 39px;
 	}
 }
+*/

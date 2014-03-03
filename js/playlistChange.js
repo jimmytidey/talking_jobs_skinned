@@ -50,12 +50,15 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 
     
     var question_top_offset = 0 - job_player.questionPosition(current_item.question_id, player_instance);
-    
-    if($('html.lt-ie9').length==0) { 
-        player_instance.myScroll.scrollTo(0, question_top_offset, 500);
-    } else {
-        $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 300);
-    }
+    if( player_instance.myScroll )
+	{
+	    if($('html.lt-ie9').length==0) { 
+	        player_instance.myScroll.scrollTo(0, question_top_offset, 500);
+	    } else {
+	        $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 300);
+	    }
+	}
+
     
     
     

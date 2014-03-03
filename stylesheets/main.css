@@ -9097,9 +9097,10 @@ Player. Left column
 #player {
   padding-left: 8px;
   padding-right: 8px;
+  width: 414px;
 }
 
-/* line 144, ../sass/src/_structural.scss */
+/* line 145, ../sass/src/_structural.scss */
 #player .info_open .player,
 #player .info_open .modes,
 #player .info_open .carousel,
@@ -9107,97 +9108,101 @@ Player. Left column
   display: none;
 }
 
-@media only screen and (min-width: 1200px) {
-  /* line 150, ../sass/src/_structural.scss */
-  .jobs_player {
-    width: 724px;
-    margin-left: -362px;
-  }
-
-  /* line 155, ../sass/src/_structural.scss */
-  #branding {
-    width: 724px;
-  }
-
-  /* line 158, ../sass/src/_structural.scss */
-  .jobs_player .span9 {
-    width: 540px;
-  }
-
-  /* line 161, ../sass/src/_structural.scss */
-  .player .span7 {
-    width: 541px;
-  }
-}
 @media only screen and (max-width: 480px) {
-  /* line 168, ../sass/src/_structural.scss */
+  /* line 153, ../sass/src/_structural.scss */
   #app {
     height: auto;
   }
 
-  /* line 172, ../sass/src/_structural.scss */
+  /* line 157, ../sass/src/_structural.scss */
   .jobs_player {
     width: 310px;
-    position: absolute;
-    margin-left: -155px;
+    position: static;
+    margin-left: auto;
   }
 
-  /* line 178, ../sass/src/_structural.scss */
+  /* line 163, ../sass/src/_structural.scss */
   #branding {
     border-right: none;
     border-left: none;
     position: static;
   }
 
-  /* line 184, ../sass/src/_structural.scss */
+  /* line 169, ../sass/src/_structural.scss */
   #branding {
     width: 100%;
   }
 
-  /* line 188, ../sass/src/_structural.scss */
+  /* line 173, ../sass/src/_structural.scss */
   .player .span7 {
     width: 100%;
   }
 
-  /* line 191, ../sass/src/_structural.scss */
+  /* line 176, ../sass/src/_structural.scss */
   .jobs_player .span9 {
     width: 100%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 204, ../sass/src/_structural.scss */
+  /*
   .jobs_player {
-    width: 580px;
-    margin-left: -290px;
+  	width: 580px;
+  	margin-left: -290px;
   }
-
-  /* line 209, ../sass/src/_structural.scss */
-  #branding {
-    width: 580px;
+  
+  #branding{
+  	width: 580px;
   }
-
-  /* line 213, ../sass/src/_structural.scss */
+  
   .jobs_player .span7 {
-    width: 397px;
+  	width: 397px;
+  }
+  */
+}
+@media (max-width: 767px) {
+  /* line 205, ../sass/src/_structural.scss */
+  [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
   }
 }
-@media only screen and (max-width: 979px) and (min-width: 768px) {
-  /* line 220, ../sass/src/_structural.scss */
-  .jobs_player {
-    width: 598px;
-    margin-left: -299px;
-  }
+/*
+@media only screen  and (max-width: 979px) and (min-width: 768px) {
 
-  /* line 225, ../sass/src/_structural.scss */
-  #branding {
-    width: 598px;
-  }
-
-  /* line 229, ../sass/src/_structural.scss */
-  .jobs_player .span9 {
-    width: 414px;
-  }
+	.jobs_player {
+		width: 598px;
+		margin-left: -299px;
+	}
+	
+	#branding{
+		width: 598px;
+	}
+	
+	.jobs_player .span9 {
+		width: 414px;
+	}
+		
 }
+
+
+@media only screen and (min-width: 1200px) {
+	.jobs_player {
+		width: 724px;
+		margin-left: -362px;
+	}
+	
+	#branding{
+		width: 724px;
+	}
+	.jobs_player .span9 {
+		width: 540px;
+	}
+	.player .span7 {
+		width: 541px;
+	}
+}
+*/
 /* --------------------------------------
 Player. Left column
 -----------------------------------------*/
@@ -9217,13 +9222,13 @@ Player. Left column
   background: none;
 }
 
-/* line 18, ../sass/src/_player.scss */
+/* line 19, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-container .mejs-controls {
   top: auto;
   background: black;
 }
 
-/* line 23, ../sass/src/_player.scss */
+/* line 24, ../sass/src/_player.scss */
 #player .mejs-time-rail {
   position: absolute;
   top: -25px;
@@ -9233,7 +9238,7 @@ Player. Left column
   padding-top: 3px;
 }
 
-/* line 32, ../sass/src/_player.scss */
+/* line 33, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-time-rail {
   top: auto;
   background: none;
@@ -9243,19 +9248,19 @@ Player. Left column
   width: 60% !important;*/
 }
 
-/* line 44, ../sass/src/_player.scss */
+/* line 45, ../sass/src/_player.scss */
 #player .mejs-time-total {
   width: 70% !important;
   margin-left: 15%;
 }
 
-/* line 49, ../sass/src/_player.scss */
+/* line 50, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-time-total {
   /*width: 100% !important;
   margin-left: 0;*/
 }
 
-/* line 58, ../sass/src/_player.scss */
+/* line 59, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-playpause-button,
 .mejs-fullscreen #player .restart_video_btn,
 .mejs-fullscreen #player .prev_track_btn,
@@ -9264,22 +9269,22 @@ Player. Left column
   z-index: 20;
 }
 
-/* line 63, ../sass/src/_player.scss */
+/* line 64, ../sass/src/_player.scss */
 .mejs-fullscreen #player .restart_video_btn {
   left: 41px;
 }
 
-/* line 67, ../sass/src/_player.scss */
+/* line 68, ../sass/src/_player.scss */
 .mejs-fullscreen #player .prev_track_btn {
   left: 82px;
 }
 
-/* line 71, ../sass/src/_player.scss */
+/* line 72, ../sass/src/_player.scss */
 .mejs-fullscreen #player .next_track_btn {
   left: 123px;
 }
 
-/* line 76, ../sass/src/_player.scss */
+/* line 77, ../sass/src/_player.scss */
 #player .mejs-duration-container,
 #player .mejs-currenttime-container {
   position: absolute;
@@ -9288,47 +9293,47 @@ Player. Left column
   z-index: 10;
 }
 
-/* line 84, ../sass/src/_player.scss */
+/* line 85, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-duration-container,
 .mejs-fullscreen #player .mejs-currenttime-container {
   top: 0px;
 }
 
-/* line 88, ../sass/src/_player.scss */
+/* line 89, ../sass/src/_player.scss */
 #player .mejs-currenttime-container {
   left: 0px;
 }
 
-/* line 92, ../sass/src/_player.scss */
+/* line 93, ../sass/src/_player.scss */
 #player .mejs-duration-container {
   right: 0px;
 }
 
-/* line 96, ../sass/src/_player.scss */
+/* line 97, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-currenttime-container {
   left: 176px;
 }
 
-/* line 100, ../sass/src/_player.scss */
+/* line 101, ../sass/src/_player.scss */
 .mejs-fullscreen #player .mejs-duration-container {
   right: 180px;
 }
 
-/* line 104, ../sass/src/_player.scss */
+/* line 105, ../sass/src/_player.scss */
 #player .mejs-captions-position {
   width: 100%;
   left: 0 !important;
   bottom: 0;
 }
 
-/* line 110, ../sass/src/_player.scss */
+/* line 111, ../sass/src/_player.scss */
 #player .mejs-captions-text {
   padding: 10px;
   display: block;
   font-weight: lighter;
 }
 
-/* line 116, ../sass/src/_player.scss */
+/* line 117, ../sass/src/_player.scss */
 #player {
   /*border-left: 1px solid $player-edging-colour;*/
   background-color: #f8f6f9;
@@ -9338,20 +9343,20 @@ Player. Left column
 Header area: info button, interview select
 and full interview mode button
 -----------------------------------------*/
-/* line 126, ../sass/src/_player.scss */
+/* line 127, ../sass/src/_player.scss */
 #player .top_nav {
   padding-bottom: 10px;
   position: relative;
   min-height: 20px;
 }
 
-/* line 132, ../sass/src/_player.scss */
+/* line 133, ../sass/src/_player.scss */
 .interviewee_select {
   float: right;
   margin-top: -5px;
 }
 
-/* line 137, ../sass/src/_player.scss */
+/* line 138, ../sass/src/_player.scss */
 #player .contributor {
   border-bottom: 1px solid #e7e5e7;
   padding-top: 20px;
@@ -9361,7 +9366,7 @@ and full interview mode button
   color: #4A4A4A;
 }
 
-/* line 148, ../sass/src/_player.scss */
+/* line 149, ../sass/src/_player.scss */
 #player .contributor .interviewee_name,
 #player .contributor .previous_button,
 #player .contributor .next_button {
@@ -9369,13 +9374,13 @@ and full interview mode button
   display: block;
 }
 
-/* line 153, ../sass/src/_player.scss */
+/* line 154, ../sass/src/_player.scss */
 #player .contributor .interviewee_name {
   border-right: 1px solid #e7e5e7;
   padding-right: 10px;
 }
 
-/* line 158, ../sass/src/_player.scss */
+/* line 159, ../sass/src/_player.scss */
 #player .contributor .camera_button {
   background-image: url("img/defaultskin/btn_camera.png");
   background-repeat: no-repeat;
@@ -9391,7 +9396,7 @@ and full interview mode button
   border-right: 1px solid #e7e5e7;
 }
 
-/* line 174, ../sass/src/_player.scss */
+/* line 175, ../sass/src/_player.scss */
 #player .info_button {
   background-image: url("img/defaultskin/btn_info.png");
   background-repeat: no-repeat;
@@ -9405,7 +9410,7 @@ and full interview mode button
   margin-left: 10px;*/
 }
 
-/* line 188, ../sass/src/_player.scss */
+/* line 189, ../sass/src/_player.scss */
 #player select {
   margin-right: 5px;
   font-size: 12px;
@@ -9415,39 +9420,39 @@ and full interview mode button
   width: 220px;
 }
 
-/* line 197, ../sass/src/_player.scss */
+/* line 198, ../sass/src/_player.scss */
 .modes {
   margin-left: 0 !important;
   width: 100%;
 }
 
-/* line 202, ../sass/src/_player.scss */
+/* line 203, ../sass/src/_player.scss */
 .modes .btn {
   font-size: 12px;
 }
 
-/* line 206, ../sass/src/_player.scss */
+/* line 207, ../sass/src/_player.scss */
 .modes .active {
   background-color: #d0021b;
   color: white;
 }
 
-/* line 211, ../sass/src/_player.scss */
+/* line 212, ../sass/src/_player.scss */
 .modes .whole_interview_order {
   width: 27%;
 }
 
-/* line 215, ../sass/src/_player.scss */
+/* line 216, ../sass/src/_player.scss */
 .modes .random_order {
   width: 11%;
 }
 
-/* line 219, ../sass/src/_player.scss */
+/* line 220, ../sass/src/_player.scss */
 .modes .whole_question_order {
   width: 43%;
 }
 
-/* line 226, ../sass/src/_player.scss */
+/* line 227, ../sass/src/_player.scss */
 #player .play-mode-shuffle,
 #player .play-mode-interview {
   margin-top: 0.2em;
@@ -9460,24 +9465,24 @@ and full interview mode button
   font-size: 12px;
 }
 
-/* line 241, ../sass/src/_player.scss */
+/* line 242, ../sass/src/_player.scss */
 #player .play-mode-interview:hover,
 #player .play-mode-shuffle:hover {
   background-position: 0 0;
   background-color: transparent;
 }
 
-/* line 246, ../sass/src/_player.scss */
+/* line 247, ../sass/src/_player.scss */
 #player .play-mode-shuffle .tj-icon {
   background-image: url("img/defaultskin/icon_shuffle.png");
 }
 
-/* line 251, ../sass/src/_player.scss */
+/* line 252, ../sass/src/_player.scss */
 #player .play-mode-interview .tj-icon {
   background-image: url("img/defaultskin/icon_play.png");
 }
 
-/* line 256, ../sass/src/_player.scss */
+/* line 257, ../sass/src/_player.scss */
 #player .play-mode-shuffle .tj-label,
 #player .play-mode-interview .tj-label {
   display: block;
@@ -9486,7 +9491,7 @@ and full interview mode button
   margin-right: 10px;
 }
 
-/* line 264, ../sass/src/_player.scss */
+/* line 265, ../sass/src/_player.scss */
 #player .play-mode-shuffle .tj-icon,
 #player .play-mode-interview .tj-icon {
   margin-top: 2px;
@@ -9499,14 +9504,15 @@ and full interview mode button
   text-indent: 40px;
 }
 
-/* line 278, ../sass/src/_player.scss */
+/* line 279, ../sass/src/_player.scss */
 #player .player {
   position: relative;
   overflow: hidden;
   height: 290px;
+  width: 414px;
 }
 
-/* line 285, ../sass/src/_player.scss */
+/* line 287, ../sass/src/_player.scss */
 #player .player .previous_button,
 #player .player .next_button {
   display: block;
@@ -9521,24 +9527,24 @@ and full interview mode button
   margin-top: -20px;
 }
 
-/* line 298, ../sass/src/_player.scss */
+/* line 300, ../sass/src/_player.scss */
 #player .player .next_button {
   background-image: url("img/defaultskin/btn_right_arrow.png");
   right: 0;
 }
 
-/* line 303, ../sass/src/_player.scss */
+/* line 305, ../sass/src/_player.scss */
 #player .player .previous_button {
   background-image: url("img/defaultskin/btn_left_arrow.png");
   left: 0;
 }
 
-/* line 308, ../sass/src/_player.scss */
+/* line 310, ../sass/src/_player.scss */
 .mejs-controls .mejs-button button:focus {
   outline: none;
 }
 
-/* line 316, ../sass/src/_player.scss */
+/* line 318, ../sass/src/_player.scss */
 #player .mejs-playpause-button,
 #player .mejs-controls .mejs-play,
 #player .mejs-controls .mejs-fullscreen-button,
@@ -9547,7 +9553,7 @@ and full interview mode button
   width: 40px;
 }
 
-/* line 329, ../sass/src/_player.scss */
+/* line 331, ../sass/src/_player.scss */
 #player .restart_video_btn,
 #player .prev_track_btn,
 #player .next_track_btn,
@@ -9561,12 +9567,12 @@ and full interview mode button
   margin-left: 0;
 }
 
-/* line 335, ../sass/src/_player.scss */
+/* line 337, ../sass/src/_player.scss */
 #player .mejs-playpause-button {
   margin-right: 1px;
 }
 
-/* line 339, ../sass/src/_player.scss */
+/* line 341, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-play button {
   background-image: url("img/defaultskin/btn_transport_play.png");
   height: 24px;
@@ -9574,7 +9580,7 @@ and full interview mode button
   margin-top: 4px;
 }
 
-/* line 346, ../sass/src/_player.scss */
+/* line 348, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-pause button {
   background-image: url("img/defaultskin/btn_transport_pause.png");
   height: 24px;
@@ -9583,7 +9589,7 @@ and full interview mode button
   background-position: 0 0;
 }
 
-/* line 354, ../sass/src/_player.scss */
+/* line 356, ../sass/src/_player.scss */
 #player .mejs-controls .restart_video_btn {
   background-image: url("img/defaultskin/btn_transport_restart.png");
   height: 24px;
@@ -9595,7 +9601,7 @@ and full interview mode button
   cursor: pointer;
 }
 
-/* line 365, ../sass/src/_player.scss */
+/* line 367, ../sass/src/_player.scss */
 #player .mejs-controls .prev_track_btn {
   background-image: url("img/defaultskin/btn_transport_previous.png");
   height: 24px;
@@ -9607,7 +9613,7 @@ and full interview mode button
   margin-right: 1px;
 }
 
-/* line 376, ../sass/src/_player.scss */
+/* line 378, ../sass/src/_player.scss */
 #player .mejs-controls .next_track_btn {
   background-image: url("img/defaultskin/btn_transport_next.png");
   height: 24px;
@@ -9619,13 +9625,13 @@ and full interview mode button
   margin-right: 1px;
 }
 
-/* line 387, ../sass/src/_player.scss */
+/* line 389, ../sass/src/_player.scss */
 #player .mejs-controls .add_video_btn {
   position: absolute;
   right: 123px;
 }
 
-/* line 392, ../sass/src/_player.scss */
+/* line 394, ../sass/src/_player.scss */
 #player .mejs-controls .add_video_btn {
   background-image: url("img/defaultskin/btn_transport_add.png");
   height: 24px;
@@ -9637,13 +9643,13 @@ and full interview mode button
   margin-right: 1px;
 }
 
-/* line 405, ../sass/src/_player.scss */
+/* line 407, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-captions-button {
   position: absolute;
   right: 82px;
 }
 
-/* line 410, ../sass/src/_player.scss */
+/* line 412, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-captions-button button {
   background-image: url("img/defaultskin/btn_transport_captions.png") !important;
   height: 24px;
@@ -9657,13 +9663,13 @@ and full interview mode button
   margin-left: 0;
 }
 
-/* line 422, ../sass/src/_player.scss */
+/* line 424, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-volume-button {
   position: absolute;
   right: 41px;
 }
 
-/* line 427, ../sass/src/_player.scss */
+/* line 429, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-volume-button button {
   background-image: url("img/defaultskin/btn_transport_volume.png") !important;
   height: 24px;
@@ -9677,13 +9683,13 @@ and full interview mode button
   margin-left: 0;
 }
 
-/* line 440, ../sass/src/_player.scss */
+/* line 442, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-fullscreen-button {
   position: absolute;
   right: 0;
 }
 
-/* line 444, ../sass/src/_player.scss */
+/* line 446, ../sass/src/_player.scss */
 #player .mejs-controls .mejs-fullscreen-button button {
   background-image: url("img/defaultskin/btn_transport_fullscreen.png") !important;
   height: 24px;
@@ -9697,82 +9703,95 @@ and full interview mode button
   margin-left: 0;
 }
 
-/* line 457, ../sass/src/_player.scss */
+/* line 459, ../sass/src/_player.scss */
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: #d0021b !important;
 }
 
-/* line 461, ../sass/src/_player.scss */
+/* line 463, ../sass/src/_player.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider {
   width: 40px;
 }
 
-/* line 466, ../sass/src/_player.scss */
+/* line 468, ../sass/src/_player.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
   left: 20px;
 }
 
-/* line 470, ../sass/src/_player.scss */
+/* line 472, ../sass/src/_player.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
   background: #d0021b;
 }
 
-/* line 474, ../sass/src/_player.scss */
+/* line 476, ../sass/src/_player.scss */
 .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
   left: 13px;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 479, ../sass/src/_player.scss */
+  /* line 482, ../sass/src/_player.scss */
+  #player .mejs-container .mejs-controls {
+    top: 190px;
+    background: none;
+  }
+
+  /* line 487, ../sass/src/_player.scss */
   #player .info_button {
     float: right;
   }
 
-  /* line 483, ../sass/src/_player.scss */
+  /* line 491, ../sass/src/_player.scss */
   #player .interviewee_select {
     float: left;
     margin-top: 10px;
     width: 100%;
   }
 
-  /* line 489, ../sass/src/_player.scss */
+  /* line 497, ../sass/src/_player.scss */
   .modes {
     display: none;
   }
 
-  /* line 493, ../sass/src/_player.scss */
+  /* line 501, ../sass/src/_player.scss */
   #player {
     height: auto;
+    width: inherit;
   }
 
-  /* line 497, ../sass/src/_player.scss */
+  /* line 506, ../sass/src/_player.scss */
+  #player .player {
+    width: 100%;
+    height: 217px;
+  }
+
+  /* line 511, ../sass/src/_player.scss */
   #player .mejs-controls .add_video_btn {
     display: none;
   }
 
-  /* line 501, ../sass/src/_player.scss */
+  /* line 515, ../sass/src/_player.scss */
   #player .play-mode-shuffle .tj-icon {
     background-image: none;
   }
 
-  /* line 506, ../sass/src/_player.scss */
+  /* line 520, ../sass/src/_player.scss */
   #player .play-mode-interview .tj-icon {
     background-image: none;
   }
 
-  /* line 511, ../sass/src/_player.scss */
+  /* line 525, ../sass/src/_player.scss */
   #player .play-mode-shuffle {
     background-image: url("img/defaultskin/btn_shuffle.png");
     margin-top: -1px;
   }
 
-  /* line 517, ../sass/src/_player.scss */
+  /* line 531, ../sass/src/_player.scss */
   #player .play-mode-interview {
     background-image: url("img/defaultskin/btn_play.png");
   }
 
-  /* line 521, ../sass/src/_player.scss */
+  /* line 535, ../sass/src/_player.scss */
   .top_nav .btn {
     display: block;
     font-size: 14px;
@@ -9803,56 +9822,46 @@ and full interview mode button
     overflow: hidden;
   }
 }
-@media only screen and (max-width: 480px) {
-  /* line 553, ../sass/src/_player.scss */
-  #player .mejs-container .mejs-controls {
-    top: 190px;
-  }
-
-  /* line 557, ../sass/src/_player.scss */
-  #player .player {
-    height: 220px;
-  }
+/*
+@media only screen  and (max-width: 480px) {
+	#player .mejs-container .mejs-controls {
+		top: 190px;
+	}
+	
+	#player .player {
+		height: 220px;	
+	}
 }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 564, ../sass/src/_player.scss */
-  #player .player {
-    height: 279px;
-  }
 
-  /* line 568, ../sass/src/_player.scss */
-  #player .mejs-container .mejs-controls {
-    top: 248px;
-  }
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	
+	#player .player {
+		height: 279px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 248px;
+	}
 }
+	
 @media only screen and (min-width: 1200px) {
-  /* line 575, ../sass/src/_player.scss */
-  .modes .random_order {
-    width: 16%;
-  }
 
-  /* line 579, ../sass/src/_player.scss */
-  #player .player {
-    height: 360px;
-  }
+	.modes .random_order{
+		width: 16%;
+	}
+	
+	#player .player {
+		height: 360px;	
+	}
+	
+	#player .mejs-container .mejs-controls {
+		top: 329px;
+	}
 
-  /* line 583, ../sass/src/_player.scss */
-  #player .mejs-container .mejs-controls {
-    top: 329px;
-  }
-
-  /*
-  .modes .whole_interview_order{
-  	width: 27%;
-  }
-  
-  .modes .whole_question_order{
-  	width: 43%;
-  }
-  */
 }
+*/
 /* make the subtitles work */
-/* line 598, ../sass/src/_player.scss */
+/* line 605, ../sass/src/_player.scss */
 .mejs-captions-selector {
   display: none !important;
 }
@@ -9881,22 +9890,22 @@ and full interview mode button
 .interviewee_scroller,
 .caroufredsel_wrapper,
 .carousel_container {
-  height: 44px !important;
+  height: 43px !important;
 }
 
 /* line 23, ../sass/src/_carousel.scss */
 .carousel_container {
   overflow: hidden;
-  width: 346px;
+  width: 345px;
   position: absolute;
-  left: 34px;
+  left: 35px;
   -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* line 33, ../sass/src/_carousel.scss */
 .interviewee_selector {
   margin-right: 1px !important;
-  width: 69px;
+  width: 68px;
   /*height: 52px;*/
   display: inline-block;
   vertical-align: top;
@@ -9936,41 +9945,44 @@ and full interview mode button
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 71, ../sass/src/_carousel.scss */
+  /* line 72, ../sass/src/_carousel.scss */
   .carousel {
     display: none;
   }
 }
+/*
 @media (max-width: 767px) {
-  /* line 79, ../sass/src/_carousel.scss */
-  .carousel .carousel_next,
-  .carousel .carousel_prev {
-    margin-top: -2px;
-  }
-
-  /* line 83, ../sass/src/_carousel.scss */
-  .interviewee_selector {
-    width: 65px;
-  }
+	
+	.carousel .carousel_next,
+	.carousel .carousel_prev {
+		margin-top: -2px;
+	}
+	
+	.interviewee_selector {
+		width: 65px;
+	}
 }
+
+
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 90, ../sass/src/_carousel.scss */
-  .carousel_container {
-    width: 346px;
-  }
+	.carousel_container {
+		width: 346px;
+	}
 }
-@media (min-width: 1200px) {
-  /* line 96, ../sass/src/_carousel.scss */
-  .carousel_container {
-    width: 472px;
-  }
 
-  /* line 102, ../sass/src/_carousel.scss */
-  .interviewee_selector {
-    width: 67px;
-    height: 39px;
-  }
+@media (min-width: 1200px) {
+	.carousel_container {
+		width: 472px;
+	}
+	
+
+	
+	.interviewee_selector {
+		width: 67px;
+		height: 39px;
+	}
 }
+*/
 /* line 1, ../sass/src/_questions.scss */
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -10157,64 +10169,74 @@ and full interview mode button
 /* Landscape phones and down */
 @media screen and (max-width: 480px) {
   /* line 165, ../sass/src/_questions.scss */
+  .question_selector .question {
+    padding: 10px;
+    padding-left: 0px;
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  /* line 172, ../sass/src/_questions.scss */
+  .question_selector .number {
+    left: 0;
+  }
+
+  /* line 176, ../sass/src/_questions.scss */
   .question_container .span5 {
     width: 100%;
   }
 
-  /* line 169, ../sass/src/_questions.scss */
+  /* line 180, ../sass/src/_questions.scss */
   .scroller_wrapper {
     width: 100% !important;
     position: static;
   }
 
-  /* line 174, ../sass/src/_questions.scss */
+  /* line 185, ../sass/src/_questions.scss */
   .question_scroller {
     position: static;
   }
 
-  /* line 178, ../sass/src/_questions.scss */
+  /* line 189, ../sass/src/_questions.scss */
   .question_type {
     display: none;
   }
 }
-/* Landscape phone to portrait tablet */
+/*Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 187, ../sass/src/_questions.scss */
+  /* line 198, ../sass/src/_questions.scss */
   .scroller_wrapper {
-    width: 287px;
-    top: 381px;
+        /*width: 287px;
+		top: 381px;*/
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 196, ../sass/src/_questions.scss */
-  .scroller_wrapper {
-    top: 436px;
-  }
+/*
+ Portrait tablet to landscape and desktop 
+@media (min-width: 768px) and (max-width: 940px) { 
+    .scroller_wrapper  {
+        width: 302px;
+		top: 448px;
+    }
 }
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 940px) {
-  /* line 203, ../sass/src/_questions.scss */
-  .scroller_wrapper {
-    width: 302px;
-    top: 448px;
-  }
+ 
+@media (min-width: 1200px) and (max-width: 1209px) { 
+    .scroller_wrapper  {
+        width: 427px;
+		top: 518px;
+    }
 }
-@media (min-width: 1200px) and (max-width: 1209px) {
-  /* line 210, ../sass/src/_questions.scss */
-  .scroller_wrapper {
-    width: 427px;
-    top: 518px;
-  }
+
+ Large desktop 
+@media (min-width: 1210px) { 
+	.scroller_wrapper  {
+		width: 427px;
+		top: 518px;
+	}
+ 
 }
-/* Large desktop */
-@media (min-width: 1210px) {
-  /* line 218, ../sass/src/_questions.scss */
-  .scroller_wrapper {
-    width: 427px;
-    top: 518px;
-  }
-}
+
+*/
 /* --------------------------------------
 Vars
 -----------------------------------------*/
@@ -10302,11 +10324,16 @@ bootstrap, as they're not needed for these tabs
 }
 
 /* line 92, ../sass/src/_tabs.scss */
+.tab {
+  width: 414px;
+}
+
+/* line 96, ../sass/src/_tabs.scss */
 .tab form {
   margin-bottom: 0;
 }
 
-/* line 96, ../sass/src/_tabs.scss */
+/* line 100, ../sass/src/_tabs.scss */
 .tab .content-container {
   border-top: 1px solid #dad8db;
   position: absolute;
@@ -10317,28 +10344,28 @@ bootstrap, as they're not needed for these tabs
   padding-top: 10px;
 }
 
-/* line 106, ../sass/src/_tabs.scss */
+/* line 110, ../sass/src/_tabs.scss */
 .tab_about .content-container,
 .tab_activities .content-container {
   top: 54px;
   bottom: 31px;
 }
 
-/* line 111, ../sass/src/_tabs.scss */
+/* line 115, ../sass/src/_tabs.scss */
 .tab .identify {
   border-bottom: 1px solid #dad8db;
   padding: 10px;
   background: #F7D2D6;
 }
 
-/* line 117, ../sass/src/_tabs.scss */
+/* line 121, ../sass/src/_tabs.scss */
 .tab .identify .notice {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 10px;
 }
 
-/* line 124, ../sass/src/_tabs.scss */
+/* line 128, ../sass/src/_tabs.scss */
 .tab .export {
   position: absolute;
   bottom: 31px;
@@ -10349,55 +10376,55 @@ bootstrap, as they're not needed for these tabs
   padding: 8px;
 }
 
-/* line 134, ../sass/src/_tabs.scss */
+/* line 138, ../sass/src/_tabs.scss */
 .tab fieldset {
   width: 100%;
 }
 
-/* line 138, ../sass/src/_tabs.scss */
+/* line 142, ../sass/src/_tabs.scss */
 .tab fieldset input[type=button] {
   width: auto;
   display: inline-block;
 }
 
-/* line 143, ../sass/src/_tabs.scss */
+/* line 147, ../sass/src/_tabs.scss */
 .tab fieldset input {
   margin-bottom: 0;
 }
 
-/* line 148, ../sass/src/_tabs.scss */
+/* line 152, ../sass/src/_tabs.scss */
 .tab .export {
   min-height: 55px;
 }
 
-/* line 152, ../sass/src/_tabs.scss */
+/* line 156, ../sass/src/_tabs.scss */
 .tab .export button {
   clear: left;
 }
 
-/* line 158, ../sass/src/_tabs.scss */
+/* line 162, ../sass/src/_tabs.scss */
 .tab .export .button-set,
 .tab .export fieldset {
   position: absolute;
   bottom: 8px;
 }
 
-/* line 163, ../sass/src/_tabs.scss */
+/* line 167, ../sass/src/_tabs.scss */
 .tab .export fieldset {
   left: 8px;
 }
 
-/* line 167, ../sass/src/_tabs.scss */
+/* line 171, ../sass/src/_tabs.scss */
 .tab .export .button-set {
   right: 8px;
 }
 
-/* line 171, ../sass/src/_tabs.scss */
+/* line 175, ../sass/src/_tabs.scss */
 .tab_have_a_quesiton .content-container * {
   display: block;
 }
 
-/* line 175, ../sass/src/_tabs.scss */
+/* line 179, ../sass/src/_tabs.scss */
 .tab_have_a_quesiton .content-container textarea {
   width: 95%;
   max-width: 95%;
@@ -10405,7 +10432,7 @@ bootstrap, as they're not needed for these tabs
   min-height: 200px;
 }
 
-/* line 182, ../sass/src/_tabs.scss */
+/* line 186, ../sass/src/_tabs.scss */
 .tab h1 {
   font-size: 20px;
   color: #4A4A4A;
@@ -10413,64 +10440,63 @@ bootstrap, as they're not needed for these tabs
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 189, ../sass/src/_tabs.scss */
+  /* line 193, ../sass/src/_tabs.scss */
+  .tab {
+    width: auto;
+  }
+
+  /* line 197, ../sass/src/_tabs.scss */
   .tab .content-container {
     position: relative;
   }
 
-  /* line 193, ../sass/src/_tabs.scss */
+  /* line 201, ../sass/src/_tabs.scss */
   #tabs {
     display: none;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 200, ../sass/src/_tabs.scss */
+  /* line 209, ../sass/src/_tabs.scss */
   #player,
   #tabs {
     float: left;
   }
 
-  /* line 204, ../sass/src/_tabs.scss */
-  #tabs {
-    width: 166px;
-  }
-
-  /* line 208, ../sass/src/_tabs.scss */
+  /*
   .question_container .span5 {
-    width: 286px;
-  }
-
-  /* line 212, ../sass/src/_tabs.scss */
+  	width: 286px;
+  }*/
+  /* line 219, ../sass/src/_tabs.scss */
   .question_container .span2 {
     float: left;
   }
 
-  /* line 216, ../sass/src/_tabs.scss */
+  /* line 223, ../sass/src/_tabs.scss */
   .question_container .span5 {
     float: right;
   }
 
-  /* line 220, ../sass/src/_tabs.scss */
+  /* line 227, ../sass/src/_tabs.scss */
   .tab .content-container {
     width: 405px;
   }
 
-  /* line 224, ../sass/src/_tabs.scss */
+  /* line 231, ../sass/src/_tabs.scss */
   .tab .export {
     width: 398px;
   }
 }
+/*
 @media only screen and (min-width: 1200px) {
-  /* line 230, ../sass/src/_tabs.scss */
-  .tab .export {
-    width: 540px;
-  }
-
-  /* line 234, ../sass/src/_tabs.scss */
-  .tab .content-container {
-    width: 548px;
-  }
+	.tab .export {
+		width: 540px;
+	}
+	
+	.tab .content-container {
+		width: 548px;
+	}
 }
+*/
 /* line 1, ../sass/src/_information.scss */
 .more_info_modal {
   position: relative;
@@ -10804,58 +10830,57 @@ bootstrap, as they're not needed for these tabs
     padding-left: 0px;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 116, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .header img {
-    width: 80%;
-    height: auto;
-  }
+/*
+@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+	.welcome_modal .header img {
+		width: 80%;
+		height: auto;
+	}
+	
+	.welcome_modal .partners img {
+		width: 50%;
+	}
+	
+	.welcome_modal h2 {
+		font-size: 21.5px;
+		line-height: 24px;
+	}
+	
+	.welcome_modal .span12 {
+		width: 420px;
+	}
+	
+	.welcome_modal .span6 {
+		width: 200px;
+		float: left;
+	}
 
-  /* line 121, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .partners img {
-    width: 50%;
-  }
+	
+	.welcome_modal .header .span6 {
+		float: left;
+		margin-top: 0;
+	}
+	
 
-  /* line 125, ../sass/src/_welcome_modal.scss */
-  .welcome_modal h2 {
-    font-size: 21.5px;
-    line-height: 24px;
-  }
-
-  /* line 130, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .span12 {
-    width: 420px;
-  }
-
-  /* line 134, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .span6 {
-    width: 200px;
-    float: left;
-  }
-
-  /* line 140, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .header .span6 {
-    float: left;
-    margin-top: 0;
-  }
 }
-@media only screen and (min-width: 978px) {
-  /* line 149, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .span12 {
-    width: 625px;
-  }
+
+@media only screen  and (min-width: 978px) {
+	.welcome_modal .span12 {
+		width: 625px;
+	}
 }
+
+
 @media (min-width: 1200px) {
-  /* line 156, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .span12 {
-    width: 778px;
-  }
+	.welcome_modal .span12 {
+		width: 778px;
+	}
 
-  /* line 160, ../sass/src/_welcome_modal.scss */
-  .welcome_modal .span6 {
-    width: 378px;
-  }
+	.welcome_modal .span6 {
+		width: 378px;
+	}
 }
+*/
 /* line 1, ../sass/src/_email.scss */
 .question_sent {
   margin-top: 100px;
