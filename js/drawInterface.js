@@ -91,6 +91,13 @@ job_player.drawInterface = function(player_instance) {
     //make sure the player is in the correct mode
     job_player.attachEvents(player_instance);
     
+    //add the scroller to the favs pannel 
+    console.log('ini favs scroller');
+    
+    
+
+    
+    
 };
 
 job_player.clearModeButtons = function() { 

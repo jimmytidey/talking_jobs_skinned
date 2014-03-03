@@ -16,50 +16,14 @@ job_player.generateReflectionsText = function(options){
 
 
 job_player.emailReflections = function(options){ 
-    
     var text = job_player.generateReflectionsText(options);
-    
     var target = $('.reflections_email', options.elem).val(); 
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
-    
-    var data = { 
-        method: 'sendEmail',
-        subject: 'Your Talking Jobs reflections',
-        toAddress: target,
-        emailContent: text   
-    }
-
-    $.post(url, data, function(arg1, arg2){ 
-        
-        $('.reflections_alert').html('Email sent');
-        
-        setTimeout(function(){
-               $('.reflections_alert', options.elem).fadeOut(400, function(){
-                   $('.reflections_alert', options.elem).html('');
-               });
-           }, 2000);
-    });    
+    job_player.sendEmail(text, target, 'Your Talking Jobs reflections', '.favs_alert');  
 }
 
 job_player.downloadReflections = function(options){ 
-    
     var text = job_player.generateReflectionsText(options);
-    
-    var target = $('.reflections_email', options.elem).val(); 
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
-    
-    var data = { 
-        method: 'html5PDF',
-        pdfContent: text
-    }
-
-    $.post(url, data, function(arg1, arg2){ 
-        console.log(arg1);
-        var url = arg1.split('<string>')[1];
-        url = url.split('</string>')[0];
-        
-        $('.reflections_alert').html('<a target="_blank" href="'+url+'">Download</a>');
-    });    
+    job_player.makePDF(text, '.reflections_alert');
 }
 
 
@@ -80,54 +44,67 @@ job_player.generateFavsText = function(options) {
     return text;
 }
 
-job_player.emailFavourites = function(options){ 
-    
-    console.log('email clicked');
-    
+job_player.emailFavourites = function(options){     
     var target = $('.favs_email').val();
-    
-    if (target === '') { 
-        $('.favs_alert').show();
-        $('.favs_alert').html('You must enter an email');
-
-        setTimeout(function(){
-               $('.favs_alert', options.elem).fadeOut(400, function(){
-                   $('.favs_alert', options.elem).html('');
-               });
-           }, 2000);
-        
-    } else { 
-
-        var text = job_player.generateFavsText(options); 
-    
-        var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc';
-    
-        var data = { 
-             method: 'sendEmail',
-             subject: 'Your Talking Jobs favourties',
-             toAddress: target,
-             emailContent: text   
-         }
-
-        $.post(url, data, function(arg1, arg2){ 
-            $('.favs_alert').show();
-            $('.favs_alert').html('Email sent');
-
-            setTimeout(function(){
-                   $('.favs_alert', options.elem).fadeOut(400, function(){
-                       $('.favs_alert', options.elem).html('');
-                   });
-               }, 2000);
-        });
-    }    
+    var text = job_player.generateFavsText(options); 
+    job_player.sendEmail(text, target, 'Your Talking Jobs favourties', '.favs_alert');
 }
 
 job_player.downloadFavs = function(options){ 
-        
     var text = job_player.generateFavsText(options);
+    job_player.makePDF(text, '.favs_alert');
+}
+
+
+
+job_player.emailQuestion = function(options){ 
+    var question_note  = $('.question_note', options.elem).val();
+    var text = "<strong>A question from Talking Jobs</strong>";
+    text    += "<p>" + question_note + "</p>";    
+    job_player.sendEmail(text, address, 'Question via Talking Jobs', '.question_alert');
+}
+
+
+
+
+job_player.sendEmail = function(text, address, subject, alert_field) { 
+    
+    if(!job_player.validateEmail(email)) { 
+        $(alert_field).show();
+         $(alert_field).html('You must fill out a valid email adderss');
+
+         setTimeout(function(){
+                $(alert_field, options.elem).fadeOut(400, function(){
+                    $(alert_field, options.elem).html('');
+                });
+            }, 2000);
+        return 
+    }
     
     var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
-    console.log(text);
+    
+    var data = { 
+         method: 'sendEmail',
+         subject: subject,
+         toAddress: address,
+         emailContent: text   
+     }
+
+    $.post(url, data, function(arg1, arg2){ 
+        $(alert_field).show();
+        $(alert_field).html('Email sent');
+
+        setTimeout(function(){
+               $(alert_field, options.elem).fadeOut(400, function(){
+                   $(alert_field, options.elem).html('');
+               });
+           }, 2000);
+    });   
+}
+
+job_player.makePDF = function(text, alert_field) { 
+    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    
     var data = { 
         method: 'html5PDF',
         pdfContent: text
@@ -137,44 +114,13 @@ job_player.downloadFavs = function(options){
         console.log(arg1);
         var url = arg1.split('<string>')[1];
         url = url.split('</string>')[0];
-        $('.favs_alert').show();
-        $('.favs_alert').html('<a target="_blank" href="'+url+'">Download</a>');
-    });    
-}
-
-
-
-
-job_player.emailQuestion = function(options){ 
-    var question_note  = $('.question_note', options.elem).val();
-    
-    var text = "<strong>A question from Talking Jobs</strong>";
-    text    += "<p>" + question_note + "</p>";
-    
-    var target = $('.question_target').val();
-    if(target === '') {
-        $('.question_alert').html('You must enter an email address');
-    }
-    
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
-    
-    var data = { 
-         method: 'sendEmail',
-         subject: 'Question via Talking Jobs',
-         toAddress: target,
-         emailContent: text   
-     }
-
-    $.post(url, data, function(arg1, arg2){ 
-        $('.question_alert').show();
-        $('.question_alert').html('Email sent');
-
-        setTimeout(function(){
-               $('.question_alert', options.elem).fadeOut(400, function(){
-                   $('.question_alert', options.elem).html('');
-               });
-           }, 2000);
+        $(alert_field).show();
+        $(alert_field).html('<a target="_blank" href="'+url+'">Download</a>');
     });
-
-    
 }
+
+job_player.validateEmail = function(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);    
+}
+

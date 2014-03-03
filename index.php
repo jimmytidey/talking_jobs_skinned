@@ -28,7 +28,7 @@
 			    </div>
 			</div>
 			<div class="span6 hero">
-				<img src=''class='welcome_image' />
+				<img src='' class='welcome_image' />
 			</div>
 		</div>
 
@@ -72,8 +72,12 @@
 					</fieldset>
 					</form>
 				</div>
-                <div class='fav_container content-container'>
-                
+				<div class='favs_scroller'>
+                    <div class='fav_container content-container'>
+                        <ul>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
             

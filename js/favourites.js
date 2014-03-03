@@ -79,7 +79,7 @@ job_player.renderFavourites = function(options) {
         return false
     }
     
-    $('.fav_container').html('');
+    $('.fav_container ul').html('');
     
     for (var i=0; i < current_favs.length; i++) {
         var val = current_favs[i];
@@ -87,9 +87,9 @@ job_player.renderFavourites = function(options) {
         
         var question_number_string =  parseInt(item.question_id) + 1;
         
-        var html = "<div data-id='" + i + "' class='fav_wrapper'>";
+        var html = "<li data-id='" + i + "' class='fav_wrapper'>";
 			html    += "<a href ='' class='fav_play'>Play</a>";
-			html    += "<a href ='' class='fav_delete btn_red'>Delete</a>";
+			html    += "<div class='fav_delete btn_red'>Delete</div>";
 			html    += "<div class='content'>";
 	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
 	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
@@ -103,11 +103,20 @@ job_player.renderFavourites = function(options) {
 	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
 	           html    += "</div>";
 			html    += "</div>";
-        html    += '</div>';
+        html    += '</li>';
         
         
-        $('.fav_container').append(html);
+        $('.fav_container ul').append(html);
+    
     };  
+    
+    options.fav_scroll = new IScroll('.favs_scroller', {
+        scrollbars:true,
+        mouseWheel:true,
+        interactiveScrollbars: true
+    });
+    
+    
     
     //attach events 
     $('.view_transcript').unbind();
@@ -123,9 +132,9 @@ job_player.renderFavourites = function(options) {
         $.cookie('tj_favourites',current_favs);
     });
     
+    $('.fav_delete').unbind();
     $('.fav_delete').click(function(){
-        var id   = $(this).parent().attr('data-id');
-        
+        var id   = $(this).parent().attr('data-id');    
         var current_favs = eval($.cookie('tj_favourites'));
         current_favs.splice(id,1);
         $.cookie('tj_favourites',current_favs);

@@ -133,9 +133,7 @@ job_player.newPlayer = function(player_instance) {
         options.startLanguage =  'en';
         $('.mejs-captions-selector').find('input[value="en"]').attr("checked", 'checked');
     }
-    
-
-    
+        
     //Old IE cannot play mp4 natively 
     if (isIE()) {  
         options.mode = 'shim';
@@ -145,9 +143,10 @@ job_player.newPlayer = function(player_instance) {
     $('#video_player').remove();
     $('.video_container').empty();
     //<object width="640" height="360" type="application/x-shockwave-flash" data="media_elements/build/flashmediaelement.swf"> <param name="movie" value="media_elements/build/flashmediaelement.swf" /> <param name="flashvars" value="controls=true&file='+player_instance.video_src+'" /> </object>
-    var html = '<video id="video_player" '+ poster_text +' type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;" src="' + player_instance.video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+player_instance.subtitles_src+'" srclang="en" />  </video>';
+    var html = '<video   id="video_player" '+ poster_text +' type="video/mp4" width="640" height="360" style="width: 100%; height: 100%;" src="' + player_instance.video_src + '" class="video_player" controls="controls"> <track id="subtitles" kind="subtitles" src="'+player_instance.subtitles_src+'" srclang="en" />  </video>';
     $('.video_container').html(html);
 
     window.player_root = new MediaElementPlayer('#video_player',options);
     //$('#video_player').mediaelementplayer(options);
+    setTimeout(function(){job_player.attachTransportEvents(player_instance)}, 1500);
 }
