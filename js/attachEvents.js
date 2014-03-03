@@ -23,6 +23,15 @@ job_player.attachEvents = function(player_instance) {
 		// to where the start button is. Move the window back to
 		// the top, just in case it has been scrolled
 		window.scrollTo(0, 0);
+		// iScroll doesn't work properly when elements are
+		// set to display none - it can't calculate the height.
+		// But we can trigger a refresh to get it to update itself
+		if( player_instance.myScroll )
+		{
+		    setTimeout(function () {
+		       player_instance.myScroll.refresh();
+		    }, 100);
+		}
 		
 		if ($('#israndom').is(':checked')) { 
             job_player.setRandomMode(player_instance);
