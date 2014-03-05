@@ -110,11 +110,15 @@ job_player.renderFavourites = function(options) {
     
     };  
     
-    options.fav_scroll = new IScroll('.favs_scroller', {
-        scrollbars:true,
-        mouseWheel:true,
-        interactiveScrollbars: true
-    });
+	if( jQuery('.favs_scroller').length > 0 )
+	{
+	    options.fav_scroll = new IScroll('.favs_scroller', {
+	        scrollbars:true,
+	        mouseWheel:true,
+	        interactiveScrollbars: true
+	    });	
+	}
+
     
     
     

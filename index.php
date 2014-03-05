@@ -70,13 +70,11 @@
 					</fieldset>
 					</form>
 				</div>
-				<div class='favs_scroller'>
-                    <div class='fav_container content-container'>
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                </div>
+				<div class='fav_container content-container'>
+				    <ul>
+        
+				    </ul>
+				</div>
             </div>
             
             <div class='tab tab_reflections'>
