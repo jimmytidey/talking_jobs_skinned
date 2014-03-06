@@ -196,6 +196,19 @@ Player. Left column
 	.jobs_player .span9 {
 		width: 100%;
 	}
+	
+	
+	.tab_player{
+		display: block !important;
+	}
+	
+	.tab_have_a_quesiton,
+	.tab_activities,
+	.tab_about,
+	.tab_reflections,
+	.tab_favourites{
+		display: none !important;
+	}
 }
 
 

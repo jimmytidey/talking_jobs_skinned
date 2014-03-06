@@ -6434,7 +6434,17 @@ Player. Left column
     width: 100%; }
 
   .jobs_player .span9 {
-    width: 100%; } }
+    width: 100%; }
+
+  .tab_player {
+    display: block !important; }
+
+  .tab_have_a_quesiton,
+  .tab_activities,
+  .tab_about,
+  .tab_reflections,
+  .tab_favourites {
+    display: none !important; } }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /*
   .jobs_player {
