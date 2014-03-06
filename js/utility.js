@@ -121,5 +121,28 @@ function isIE() {
   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 }
 
+job_player.isBlackBerry = function() {
+	return navigator.userAgent.match(/BlackBerry/i);
+}
+
+job_player.isAndroid = function( ) {
+	return navigator.userAgent.match(/Android/i);
+}
+
+job_player.isIOS = function() {
+	return navigator.userAgent.match(/iPhone|iPod|iPad/i);
+}
+
+job_player.isWindows = function() {
+	return navigator.userAgent.match(/IEMobile/i);
+}
+
+job_player.isOpera = function() {
+	 return navigator.userAgent.match(/Opera Mini/i);
+}
+
+job_player.isMobile = function() {
+	 return ( job_player.isAndroid() || job_player.isBlackBerry() || job_player.isIOS() || job_player.isOpera() || job_player.isWindows() );
+}
 
 

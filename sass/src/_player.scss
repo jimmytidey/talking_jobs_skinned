@@ -21,6 +21,11 @@ Player. Left column
 	background: black;
 }
 
+.ios.mejs-fullscreen #player .mejs-container .mejs-controls {
+	top: 259px !important;
+	background: none;
+}
+
 #player .mejs-time-rail {
 	position: absolute;
 	top: -25px;
@@ -33,11 +38,14 @@ Player. Left column
 .mejs-fullscreen #player .mejs-time-rail {
 	top: auto;
 	background: none;
-	/*height: auto;
-	position: relative;
-	margin-top: 0;
-	width: 60% !important;*/
 }
+
+.android.mejs-fullscreen #player .mejs-time-rail,
+.ios.mejs-fullscreen #player .mejs-time-rail {
+	top: -25px;
+	background: #000;
+}
+
 .mejs-fullscreen #player .mejs-time-rail span {
 	
 }
@@ -86,6 +94,13 @@ Player. Left column
 	top: 0px;
 }
 
+.android.mejs-fullscreen #player .mejs-duration-container,
+.android.mejs-fullscreen #player .mejs-currenttime-container,
+.ios.mejs-fullscreen #player .mejs-duration-container,
+.ios.mejs-fullscreen #player .mejs-currenttime-container {
+	top: -25px;
+}
+
 #player .mejs-currenttime-container {
 	left: 0px;
 }
@@ -98,8 +113,18 @@ Player. Left column
 	left: 176px;
 }
 
+.android.mejs-fullscreen #player .mejs-currenttime-container,
+.ios.mejs-fullscreen #player .mejs-currenttime-container {
+	left: 0;
+}
+
 .mejs-fullscreen #player .mejs-duration-container {
 	right: 180px;
+}
+
+.android.mejs-fullscreen #player .mejs-duration-container,
+.ios.mejs-fullscreen #player .mejs-duration-container {
+	right: 0;
 }
 
 #player .mejs-captions-position {
@@ -391,6 +416,10 @@ and full interview mode button
 		right: 123px;	
 	}
 		
+	.touch #player .mejs-controls .add_video_btn {
+		right: 82px;
+	}
+	
 	#player .mejs-controls .add_video_btn {
 		background-image: url($skin + "btn_transport_add.png");
 		height: 24px;
@@ -409,6 +438,10 @@ and full interview mode button
 		right: 82px;	
 	}
 	
+	.touch #player .mejs-controls .mejs-captions-button {
+		right: 41px;	
+	}
+	
 	#player .mejs-controls .mejs-captions-button button {
 		background-image: url($skin + "btn_transport_captions.png") !important;
 		height: 24px;
@@ -421,6 +454,8 @@ and full interview mode button
 		background: none;
 		margin-left: 0;
 	}
+
+	
 	#player .mejs-controls .mejs-volume-button {
 		position: absolute;
 		right: 41px;

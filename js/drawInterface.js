@@ -11,7 +11,17 @@ job_player.drawInterface = function(player_instance) {
     
     //Draw any existing favs in 
     job_player.renderFavourites(player_instance);
-        
+      
+	if( job_player.isIOS() )
+	{
+		$('html').addClass('ios');
+	}
+	
+	if( job_player.isAndroid() )
+	{
+		$('html').addClass('android');
+	}
+	
     //write the drop down   
     $.each(player_instance.interviewees, function(key, val) {
         var html = "<option value='" + val.id + "'>" + val.interviewee +"</option>";  

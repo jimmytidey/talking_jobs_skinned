@@ -6508,6 +6508,10 @@ Player. Left column
   top: auto;
   background: black; }
 
+.ios.mejs-fullscreen #player .mejs-container .mejs-controls {
+  top: 259px !important;
+  background: none; }
+
 #player .mejs-time-rail {
   position: absolute;
   top: -25px;
@@ -6518,11 +6522,12 @@ Player. Left column
 
 .mejs-fullscreen #player .mejs-time-rail {
   top: auto;
-  background: none;
-  /*height: auto;
-  position: relative;
-  margin-top: 0;
-  width: 60% !important;*/ }
+  background: none; }
+
+.android.mejs-fullscreen #player .mejs-time-rail,
+.ios.mejs-fullscreen #player .mejs-time-rail {
+  top: -25px;
+  background: #000; }
 
 #player .mejs-time-total {
   width: 70% !important;
@@ -6559,6 +6564,12 @@ Player. Left column
 .mejs-fullscreen #player .mejs-currenttime-container {
   top: 0px; }
 
+.android.mejs-fullscreen #player .mejs-duration-container,
+.android.mejs-fullscreen #player .mejs-currenttime-container,
+.ios.mejs-fullscreen #player .mejs-duration-container,
+.ios.mejs-fullscreen #player .mejs-currenttime-container {
+  top: -25px; }
+
 #player .mejs-currenttime-container {
   left: 0px; }
 
@@ -6568,8 +6579,16 @@ Player. Left column
 .mejs-fullscreen #player .mejs-currenttime-container {
   left: 176px; }
 
+.android.mejs-fullscreen #player .mejs-currenttime-container,
+.ios.mejs-fullscreen #player .mejs-currenttime-container {
+  left: 0; }
+
 .mejs-fullscreen #player .mejs-duration-container {
   right: 180px; }
+
+.android.mejs-fullscreen #player .mejs-duration-container,
+.ios.mejs-fullscreen #player .mejs-duration-container {
+  right: 0; }
 
 #player .mejs-captions-position {
   width: 100%;
@@ -6809,6 +6828,9 @@ and full interview mode button
   position: absolute;
   right: 123px; }
 
+.touch #player .mejs-controls .add_video_btn {
+  right: 82px; }
+
 #player .mejs-controls .add_video_btn {
   background-image: url("img/defaultskin/btn_transport_add.png");
   height: 24px;
@@ -6822,6 +6844,9 @@ and full interview mode button
 #player .mejs-controls .mejs-captions-button {
   position: absolute;
   right: 82px; }
+
+.touch #player .mejs-controls .mejs-captions-button {
+  right: 41px; }
 
 #player .mejs-controls .mejs-captions-button button {
   background-image: url("img/defaultskin/btn_transport_captions.png") !important;
