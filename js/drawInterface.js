@@ -91,7 +91,8 @@ job_player.drawInterface = function(player_instance) {
 			    player_instance.myScroll = new IScroll('.scroller_wrapper',{
 	                scrollbars:true,
 	                mouseWheel:true,
-	                interactiveScrollbars: true
+	                interactiveScrollbars: true,
+					click:true
 	            });
 				// Disabled the line below because ti stoppeed the welcome screen from scrolling
 				// on a touch device.
