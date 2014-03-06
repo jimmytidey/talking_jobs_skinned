@@ -14,7 +14,7 @@
         
         <link rel="stylesheet" href="stylesheets/main.css">
 
-        
+        <script src="js/vendor/modernizr.custom.touch.js"></script>
 
     </head>
     <body>
