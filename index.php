@@ -51,9 +51,9 @@
 				<div class="export fav_export cf">
 					<form action="">
 					<fieldset>
-						<label>Your email</label>
+						<label>Email</label>
 						<input type="text" class='favs_email' />
-						<input type="button" class="btn email_favs" value="Email">
+						<input type="button" class="btn email_favs" value="Send">
 						<input type="button" class="btn print_favs" value="Print">
 						<input type="button" class="btn save_favs" value="Save">
 					</fieldset>
@@ -82,9 +82,9 @@
 			<div class="export reflect_export">
 				<form action="">
 				<fieldset>
-					<label>Your email</label>
+					<label>Email</label>
 					<input type="text" class='reflections_email' />
-					<input type="button" class="btn email_reflections " value="Email">
+					<input type="button" class="btn email_reflections " value="Send">
 					<input type="button" class="btn print_reflections" value="Print">
 					<input type="button" class="btn download_reflections" value="Save">
 				</fieldset>
@@ -140,9 +140,9 @@
 				<div class="export question_export">
 					<form action="">
 					<fieldset>
-						<label>Your email</label>
+						<label>Email</label>
 						<input type="text" class='question_email' />
-						<input type="button" class="btn email_question" value="Email">
+						<input type="button" class="btn email_question" value="Send">
 						<input type="button" class="btn print_question" value="Print">
 						<input type="button" class="btn download_question" value="Save">
 					</fieldset>

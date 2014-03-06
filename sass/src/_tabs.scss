@@ -165,6 +165,7 @@ bootstrap, as they're not needed for these tabs
 }
 
 .tab .export fieldset {
+	position: static;
 	left: 8px;
 }
 
@@ -205,6 +206,7 @@ bootstrap, as they're not needed for these tabs
 	
 	
 	@media only screen  and (min-width: 481px)  and (max-width: 767px) {
+		
 		#player,
 		#tabs{
 			float: left;
@@ -228,9 +230,7 @@ bootstrap, as they're not needed for these tabs
 			width: 405px;
 		}
 		
-		.tab .export {
-			width: 398px;
-		}
+
 	}
 	/*
 	@media only screen and (min-width: 1200px) {

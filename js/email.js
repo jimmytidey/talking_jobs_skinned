@@ -107,13 +107,14 @@ job_player.sendEmail = function(text, address, subject, alert_field) {
     
     if(!job_player.validateEmail(address)) { 
         $(alert_field).show();
-         $(alert_field).html('Email failed: Please check the email address and try again');
-
+         $(alert_field).html('<p class="email_error">Email failed: Please check the email address and try again</p>');
+		
          setTimeout(function(){
                 $(alert_field).fadeOut(400, function(){
                     $(alert_field).html('');
                 });
             }, 2000);
+			
         return 
     }
     
@@ -128,8 +129,8 @@ job_player.sendEmail = function(text, address, subject, alert_field) {
 
     $.post(url, data, function(arg1, arg2){ 
         $(alert_field).show();
-        $(alert_field).html(' Email has been sent to '  + address);
-
+        $(alert_field).html('<p class="email">Email has been sent to '  + address + '</p>');
+		
         setTimeout(function(){
                $(alert_field).fadeOut(400, function(){
                    $(alert_field).html('');
@@ -155,7 +156,7 @@ job_player.makePDF = function(text, alert_field, button_field) {
         url = url.split('</string>')[0];
         $(alert_field).show();
         $(button_field).val(old_txt);
-        $(alert_field).html('<a target="_blank" href="'+url+'">Click here</a>');
+        $(alert_field).html('<p class="download"><a target="_blank" href="'+url+'">Download PDF</a></p>');
     });
 }
 
