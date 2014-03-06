@@ -7381,6 +7381,10 @@ bootstrap, as they're not needed for these tabs
 .tab {
   width: 414px; }
 
+.tab h2 {
+  color: #4A4A4A;
+  font-size: 20px; }
+
 .tab form {
   margin-bottom: 0; }
 
@@ -7813,9 +7817,15 @@ bootstrap, as they're not needed for these tabs
 	}
 }
 */
+.tab_about .welcome_text {
+  margin-bottom: 60px; }
+
 .tab_about img {
   display: block;
-  margin-top: 10px; }
+  margin-top: 10px;
+  width: 100px;
+  border-bottom: 1px solid #dad8db;
+  padding-bottom: 10px; }
 
 .tab_activities p {
   margin-bottom: 10px; }

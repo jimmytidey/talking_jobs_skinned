@@ -119,8 +119,8 @@
 				<div class='content-container'>
 					<h2>The Gloucestershire Module</h2>
 					<p class='welcome_text'></p>
-					<a href="http://talkingjobs.net"><img src='img/tj_welcome_logo.png' alt='Talking Jobs' /></a>
-					<a href="http://www.whatnowglos.co.uk/information_and_support/youth_support_team/gloucester_youth_support_team/"><img src='img/yssg_logo.png' alt='Youth Support Team' /></a>
+					<a href="http://talkingjobs.net"><img src='img/about_talkingjobs_logo.png' alt='Talking Jobs' /></a>
+					<a href="http://www.whatnowglos.co.uk/information_and_support/youth_support_team/gloucester_youth_support_team/"><img src='img/about_yssg_logo.png' alt='Youth Support Team' /></a>
 				</div>
             </div>
             
