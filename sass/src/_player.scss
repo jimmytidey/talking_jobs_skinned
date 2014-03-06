@@ -513,7 +513,14 @@ and full interview mode button
 	}
 	
 @media only screen  and (max-width: 480px) {
-
+	.ios #player .mejs-controls .mejs-fullscreen-button {
+		display:none;
+	}
+	
+	.touch.ios #player .mejs-controls .mejs-captions-button {
+		right: 0px;	
+	}
+	
 	#player .mejs-container .mejs-controls {
 		top: 190px;
 		background: none;
