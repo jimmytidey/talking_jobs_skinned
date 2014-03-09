@@ -207,16 +207,17 @@ job_player.attachTransportEvents = function(local_player_instance) {
         local_player_instance.player.setCurrentTime(0);
     });
     
-    //subitles 
-    
+    //subitles
+    $('.mejs-captions-button button').unbind();
     $('.mejs-captions-button button').click(function(){
-        if($('#mep_0_captions_none').is(':checked')) { 
+        
+        if($('.mejs-captions-selector ul li:first-child input').is(':checked')) { 
             console.log('on');
-            $('#mep_0_captions_en').click();
+            $('.mejs-captions-selector ul li:nth-child(2) input').click();
         } 
-        else if($('#mep_0_captions_en').is(':checked')) { 
+        else { 
             console.log('off');
-            $('#mep_0_captions_none').click();
+            $('.mejs-captions-selector ul li:first-child input').click();
         }
         
     });

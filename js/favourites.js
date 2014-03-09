@@ -93,7 +93,6 @@ job_player.renderFavourites = function(options) {
             }
             
             var item =options.playlist[val.playlist_id];
-            console.log(val);
         
             var html = "<li data-id='" + i + "' class='fav_wrapper'>";
     			html    += "<a href ='' class='fav_play'>Play</a>";
