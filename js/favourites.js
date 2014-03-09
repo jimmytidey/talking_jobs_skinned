@@ -1,7 +1,7 @@
 job_player.favourites = function(options){
     $.cookie.json = true;
     
-    
+    $('.add_video_btn', options.elem).unbind();
     $('.add_video_btn', options.elem).click(function(){
         var current_item = options.playlist_position;
         
@@ -34,6 +34,7 @@ job_player.favourites = function(options){
 }
 
 job_player.addFavourite = function(id, options) { 
+    
     //save the item 
     var current_favs = $.cookie('tj_favourites');
     
@@ -41,7 +42,7 @@ job_player.addFavourite = function(id, options) {
         current_favs = [];
     }
     
-    var subtitles_url = options.playlist[id].subtitles_url;
+    
     
     cookie_obj = {
         playlist_id: id, 
@@ -49,25 +50,14 @@ job_player.addFavourite = function(id, options) {
         transcript:''
     }
     
-    $.ajax({
-        type: "GET",
-        url: subtitles_url,
-        dataType: 'text'
-    }).done(function(xml){
+
     
-        var x2js = new X2JS();    
-        var json = x2js.xml_str2json(xml);
-        
-        var transcription ='';
-        for(var i=0; i < json.tt.body.div.p.length; i++){
-            transcription += '<p>' + json.tt.body.div.p[i]["__text"] + "</p>";
-        }   
-        cookie_obj.transcript = transcription;
-        
-        current_favs.push(cookie_obj);
-        $.cookie('tj_favourites',current_favs);
-        job_player.renderFavourites(options);    
-    });
+    current_favs.push(cookie_obj);
+    
+    $.cookie('tj_favourites',current_favs);
+    job_player.renderFavourites(options);    
+
+    
 
 }
 
@@ -86,65 +76,90 @@ job_player.renderFavourites = function(options) {
         var item = options.playlist[val.playlist_id];
         
         var question_number_string =  parseInt(item.question_id) + 1;
+        var subtitles_url = options.playlist[val.playlist_id].subtitles_url;
         
-        var html = "<li data-id='" + i + "' class='fav_wrapper'>";
-			html    += "<a href ='' class='fav_play'>Play</a>";
-			html    += "<div class='fav_delete btn_red'>Delete</div>";
-			html    += "<div class='content'>";
-	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
-	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
-				html    += "<p class='view_transcript'>View transcript and notes</p>";
-	           html    += "<div class='notes_and_transcript hide cf'>";
-	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";
-	               html    += "<div class='fav_transcript'>" + val.transcript + "</div>";
-					//html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
-					html    += "<p class='notes_title'><strong>My notes</strong></p>";
-	               html    += "<textarea>"+current_favs[i].notes+"</textarea>";
-	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
-	           html    += "</div>";
-			html    += "</div>";
-        html    += '</li>';
+        $.ajax({
+            type: "GET",
+            url: subtitles_url,
+            dataType: 'text'
+        }).done(function(xml){
         
-        
-        $('.fav_container ul').append(html);
-    
-    };  
-    
-	if( jQuery('.favs_scroller').length > 0 )
-	{
-	    options.fav_scroll = new IScroll('.favs_scroller', {
-	        scrollbars:true,
-	        mouseWheel:true,
-	        interactiveScrollbars: true
-	    });	
-	}
+            var x2js = new X2JS();    
+            var json = x2js.xml_str2json(xml);
 
+            var transcription ='';
+            for(var i=0; i < json.tt.body.div.p.length; i++){
+             transcription += '<p>' + json.tt.body.div.p[i]["__text"] + "</p>";
+            }
+            
+            var item =options.playlist[val.playlist_id];
+            console.log(val);
+        
+            var html = "<li data-id='" + i + "' class='fav_wrapper'>";
+    			html    += "<a href ='' class='fav_play'>Play</a>";
+    			html    += "<div class='fav_delete btn_red'>Delete</div>";
+    			html    += "<div class='content'>";
+    	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
+    	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
+    				html    += "<p class='view_transcript'>View transcript and notes</p>";
+    	           html    += "<div class='notes_and_transcript hide cf'>";
+    	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";
+    	               html    += "<div class='fav_transcript'>" + transcription + "</div>";
+    					//html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+    					html    += "<p class='notes_title'><strong>My notes</strong></p>";
+    	                html    += "<textarea>"+val.notes+"</textarea>";
+    	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+    	           html    += "</div>";
+    			html    += "</div>";
+            html    += '</li>';
+        
+        
+            $('.fav_container ul').append(html);
+            
+            //attach events once everything is rendered
+            if(i == current_favs.length -1) {
+                
+                if( jQuery('.favs_scroller').length > 0 )
+            	{
+            	    options.fav_scroll = new IScroll('.favs_scroller', {
+            	        scrollbars:true,
+            	        mouseWheel:true,
+            	        interactiveScrollbars: true
+            	    });	
+            	}
+
+
+                //attach events 
+                $('.view_transcript').unbind();
+                $('.view_transcript').click(function(){
+                    $(this).next().slideToggle();
+                });
+
+                $('.save_fav_notes').click(function(){
+                    var note = $(this).prev().val();
+                    var id   = $(this).attr('data-id');
+                    var current_favs = eval($.cookie('tj_favourites'));
+                    current_favs[id].notes = note;
+                    $.cookie('tj_favourites',current_favs);
+                });
+
+                $('.fav_delete').unbind();
+                $('.fav_delete').click(function(){
+                    var id   = $(this).parent().attr('data-id');    
+                    var current_favs = eval($.cookie('tj_favourites'));
+                    current_favs.splice(id,1);
+                    $.cookie('tj_favourites',current_favs);
+                    $(this).parent().remove();
+                });
+            	
+                
+                
+            }
+        });
     
+    };
     
-    
-    //attach events 
-    $('.view_transcript').unbind();
-    $('.view_transcript').click(function(){
-        $(this).next().slideToggle();
-    });
-    
-    $('.save_fav_notes').click(function(){
-        var note = $(this).prev().val();
-        var id   = $(this).attr('data-id');
-        var current_favs = eval($.cookie('tj_favourites'));
-        current_favs[id].notes = note;
-        $.cookie('tj_favourites',current_favs);
-    });
-    
-    $('.fav_delete').unbind();
-    $('.fav_delete').click(function(){
-        var id   = $(this).parent().attr('data-id');    
-        var current_favs = eval($.cookie('tj_favourites'));
-        current_favs.splice(id,1);
-        $.cookie('tj_favourites',current_favs);
-        $(this).parent().remove();
-    });
-    
+
     
     
 }
