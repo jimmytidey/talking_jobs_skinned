@@ -205,7 +205,7 @@
     
 	<div class="play_btn">
     <a class='lowres_view' target='_blank' href=''  >Click to view</a>
-	<p>Click to watch the response</p>
+	<p>Click to download and watch the response.</p>
 	</div>
 	<div id="branding">
         <a href="http://talkingjobs.net"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
