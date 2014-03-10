@@ -15,7 +15,7 @@ $talking-jobs-red: #D0021B;
 
 /*for the low res option */
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
     .fullscreen { 
         display:none;
     }
@@ -24,7 +24,7 @@ $talking-jobs-red: #D0021B;
     }
 }
 
-@media only screen and (min-width: 301px) {
+@media only screen and (min-width: 321px) {
     .fullscreen { 
         display:block;
     }
@@ -33,6 +33,37 @@ $talking-jobs-red: #D0021B;
     }
 }
 
+.lowres {
+	padding: 10px;
+}
+
+.lowres select {
+	width: 100%;;
+}
+
+.lowres #branding {
+	position: fixed;
+	right:0;
+}
+
+.lowres .lowres_view {
+	background: url("img/defaultskin/big-play-btn.jpg") no-repeat;
+	width: 138px;
+	height: 138px;
+	display: block;
+	overflow:hidden;
+	text-indent:-500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lowres .play_btn p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 138px;
+	text-align: center;
+	margin-top: 20px;
+}
 
 /**
  * For modern browsers

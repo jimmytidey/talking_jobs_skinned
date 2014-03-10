@@ -1,9 +1,7 @@
 
 <?php include 'header.php'  ?>
 
-<div class='fullscreen'>
 <div class="welcome_modal row" >
-
 	<div class='row header cf'>
 		<div  class="span12">
 			<div class="span6">
@@ -35,6 +33,9 @@
 
 	</div>
 </div>
+
+<div class='fullscreen'>
+
 
 
 
@@ -202,7 +203,13 @@
     
     <br/>    <br/>
     
+	<div class="play_btn">
     <a class='lowres_view' target='_blank' href=''  >Click to view</a>
+	<p>Click to watch the response</p>
+	</div>
+	<div id="branding">
+        <a href="http://talkingjobs.net"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
+    </div>
 </div>
 
 <?php include 'footer.php'  ?>        
