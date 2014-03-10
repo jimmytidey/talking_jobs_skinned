@@ -6290,45 +6290,57 @@ they play nicely together
 Vars
 -----------------------------------------*/
 /*for the low res option */
+/*
 @media only screen and (max-width: 320px) {
-  .fullscreen {
-    display: none; }
+    .fullscreen { 
+        display:none;
+    }
+    .lowres { 
+        display:block;
+    }
+}
 
-  .lowres {
-    display: block; } }
 @media only screen and (min-width: 321px) {
-  .fullscreen {
-    display: block; }
+    .fullscreen { 
+        display:block;
+    }
+    .lowres { 
+        display:none;
+    }
+}
 
-  .lowres {
-    display: none; } }
 .lowres {
-  padding: 10px; }
+	padding: 10px;
+}
 
 .lowres select {
-  width: 100%; }
+	width: 100%;;
+}
 
 .lowres #branding {
-  position: fixed;
-  right: 0; }
+	position: fixed;
+	right:0;
+}
 
 .lowres .lowres_view {
-  background: url("img/defaultskin/big-play-btn.jpg") no-repeat;
-  width: 138px;
-  height: 138px;
-  display: block;
-  overflow: hidden;
-  text-indent: -500px;
-  margin-left: auto;
-  margin-right: auto; }
+	background: url("img/defaultskin/big-play-btn.jpg") no-repeat;
+	width: 138px;
+	height: 138px;
+	display: block;
+	overflow:hidden;
+	text-indent:-500px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-.lowres .play_btn p {
-  margin-left: auto;
-  margin-right: auto;
-  width: 148px;
-  text-align: center;
-  margin-top: 20px; }
-
+.lowres .play_btn p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 148px;
+	text-align: center;
+	margin-top: 20px;
+}
+*/
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the

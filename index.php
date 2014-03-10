@@ -34,11 +34,6 @@
 	</div>
 </div>
 
-<div class='fullscreen'>
-
-
-
-
 <div class='container jobs_player hide'>
     
     <div id="app" class='row'>        
@@ -190,27 +185,6 @@
     </div>
 </div> <!-- /container -->        
 
-</div>
-
-<div class='lowres'>
-    <select class='lowres_interviewee'>
-    
-    </select>
-    
-    <select class='lowres_question'>
-    
-    </select>
-    
-    <br/>    <br/>
-    
-	<div class="play_btn">
-    <a class='lowres_view' target='_blank' href=''  >Click to view</a>
-	<p>Click to download and watch the response.</p>
-	</div>
-	<div id="branding">
-        <a href="http://talkingjobs.net"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
-    </div>
-</div>
 
 <?php include 'footer.php'  ?>        
 
