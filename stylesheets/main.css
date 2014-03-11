@@ -6423,6 +6423,7 @@ html, body,
   position: fixed;
   bottom: 0;
   background-color: white;
+  z-index: 100;
   /*border-right: 1px solid $tab-edging-colour;
   border-left: 1px solid $player-edging-colour;*/ }
 
