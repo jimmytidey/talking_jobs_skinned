@@ -1,9 +1,7 @@
 
 <?php include 'header.php'  ?>
 
-<div class='fullscreen'>
 <div class="welcome_modal row" >
-
 	<div class='row header cf'>
 		<div  class="span12">
 			<div class="span6">
@@ -35,8 +33,6 @@
 
 	</div>
 </div>
-
-
 
 <div class='container jobs_player hide'>
     
@@ -189,21 +185,6 @@
     </div>
 </div> <!-- /container -->        
 
-</div>
-
-<div class='lowres'>
-    <select class='lowres_interviewee'>
-    
-    </select>
-    
-    <select class='lowres_question'>
-    
-    </select>
-    
-    <br/>    <br/>
-    
-    <a class='lowres_view' target='_blank' href=''  >Click to view</a>
-</div>
 
 <?php include 'footer.php'  ?>        
 
