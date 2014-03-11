@@ -45,8 +45,6 @@
 
      </div>
 
-	<a class="previous_button" href="#">Previous contributor</a>
-	<a class="next_button" href="#">Next contributor</a>
 </div>
 <!-- end player -->
 
