@@ -170,9 +170,9 @@
                     <li class="active"><a href="#player">Player</a></li>
                     <li><a href="#favourites" >Favourites <span class='favourites_tab_alert'></span></a></li>
                     <li><a href="#reflections">Reflections</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#have_a_quesiton">Ask a question</a></li> 
                     <li><a href="#activities">Activities</a></li> 
-                    <li><a href="#have_a_quesiton">Ask a question</a></li>                        
+					<li><a href="#about">About</a></li>                     
                 </ul>
             </nav>
 
