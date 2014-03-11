@@ -7744,7 +7744,8 @@ bootstrap, as they're not needed for these tabs
   width: 628px; }
 
 .welcome_modal .span6 {
-  width: 302px; }
+  width: 302px;
+  float: left !important; }
 
 .welcome_modal .header {
   background: #E7E5E7;
