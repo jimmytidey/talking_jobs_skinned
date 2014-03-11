@@ -6291,15 +6291,6 @@ Vars
 -----------------------------------------*/
 /*for the low res option */
 /*
-@media only screen and (max-width: 320px) {
-    .fullscreen { 
-        display:none;
-    }
-    .lowres { 
-        display:block;
-    }
-}
-
 @media only screen and (min-width: 321px) {
     .fullscreen { 
         display:block;
@@ -6453,6 +6444,15 @@ Player. Left column
   display: none; }
 
 @media only screen and (max-width: 480px) {
+  .mejs-controls {
+    display: none; }
+
+  .mejs-mediaelement {
+    position: static; }
+
+  #player .player {
+    height: 167px !important; }
+
   #app {
     height: auto; }
 
