@@ -7766,6 +7766,9 @@ bootstrap, as they're not needed for these tabs
 .welcome_modal .hero {
   padding-left: 20px; }
 
+.welcome_modal .hero {
+  padding-top: 20px; }
+
 .welcome_modal .partners img {
   height: 89px; }
 
@@ -7785,6 +7788,10 @@ bootstrap, as they're not needed for these tabs
   width: 3em; }
 
 @media only screen and (max-width: 480px) {
+  .welcome_modal .modal_controls input,
+  .welcome_modal .modal_controls label {
+    display: none; }
+
   .welcome_modal .span6,
   .welcome_modal .span12 {
     width: 280px; }
