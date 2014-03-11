@@ -26,7 +26,7 @@ job_player.drawInterface = function(player_instance) {
     $.each(player_instance.interviewees, function(key, val) {
         var html = "<option value='" + val.id + "'>" + val.interviewee +"</option>";  
         $('.interviewee_select select', this.elem).append(html);
-
+        //for the low res mobile version
         $('.lowres_interviewee').append(html);
     });
     
@@ -38,30 +38,7 @@ job_player.drawInterface = function(player_instance) {
         $(scroller).append("<img   src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].interviewee+"'   rel='tooltip' data-placement='bottom' />");
         
         if (i == player_instance.interviewees.length -1) { 
-           
-            //Draw the carousel     
-        	$(".interviewee_scroller").carouFredSel({
-        		auto: { 
-        		    play: false
-        		},
-        		prev : { 
-        		    button: '.carousel_prev'
-        		},
-        		next : { 
-        		    button: '.carousel_next'
-        		}, 
-        		swipe: { 
-        		    onTouch: true
-        		},
-        		scroll: { 
-        		    easing: 'swing', 
-        		    duration: 600,
-        		    items: 3
-        		},
-        		width:'100%', 
-        		align: 'left',
-        		height:'70px'		
-        	});    
+            	
         	//add tooltips 
         	$('.interviewee_selector').tooltip({trigger: 'hover'});
         

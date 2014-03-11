@@ -35,11 +35,13 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     //scroll to interviewee
     if (job_player.detectWidth() === 'big') { 
-        var target_no = parseInt(current_item.interviewee_id) -3; 
+        var target_no = parseInt(current_item.interviewee_id) -2; 
     }
     else { 
         var target_no = parseInt(current_item.interviewee_id) -2; 
     }
+    
+    
     $(".interviewee_scroller").trigger("slideTo", target_no );
      
     //scroll to question  
@@ -51,7 +53,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     var question_top_offset = 0 - job_player.questionPosition(current_item.question_id, player_instance);
     if( player_instance.myScroll )
-	{
+	{   
 	    if($('html.lt-ie9').length==0) { 
 	        player_instance.myScroll.scrollTo(0, question_top_offset, 500);
 	    } else {
@@ -64,5 +66,31 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     
     job_player.drawPlayer(player_instance, autoplay);
+    
+    
+    //the carousel has to be triggered every time the playlist changes 
+    $(".interviewee_scroller").carouFredSel({
+		auto: { 
+		    play: false
+		},
+		prev : { 
+		    button: '.carousel_prev'
+		},
+		next : { 
+		    button: '.carousel_next'
+		}, 
+		swipe: { 
+		    onTouch: true
+		},
+		scroll: { 
+		    easing: 'swing', 
+		    duration: 600,
+		    items: 3
+		},
+		width:'100%', 
+		align: 'left',
+		height:'70px'		
+	}); 
+    
     
 };

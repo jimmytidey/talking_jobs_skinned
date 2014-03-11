@@ -15,14 +15,9 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
        
         
-        
         <script src='media_elements/build/mediaelement-and-player.js' ></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-        <!-- 3rd party -->
         <script type="text/javascript" src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
-         
-            
         
         <script src="js/vendor/xml_to_json.js"></script>
         <script src="js/vendor/jquery.cookie.js"></script>
