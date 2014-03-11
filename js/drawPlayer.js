@@ -60,11 +60,15 @@ job_player.newPlayer = function(player_instance) {
 
     
     //add a poster either in normal mode, or if the player is starting for the first time and isn't random 
-    if (player_instance.mode === 'normal' || ( typeof window.player_root =='undefined' && player_instance.mode !== 'random')) {
+    console.log(player_instance.mode);
+    console.log(typeof window.player_root);
+    console.log(player_instance.mode);
+    if (player_instance.mode === 'whole_interview' || ( typeof window.player_root == 'undefined' && player_instance.mode !== 'random')) {
         var poster_text = ' poster="'+player_instance.poster_src+'" '; 
     }
     else { 
         var poster_text = ' ';
+        
     }
 
     //draw the video player

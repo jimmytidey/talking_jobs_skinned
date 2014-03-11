@@ -112,55 +112,44 @@ job_player.renderFavourites = function(options) {
     			html    += "</div>";
             html    += '</li>';
         
-        
             $('.fav_container ul').append(html);
             
             //attach events once everything is rendered
-            if(i == current_favs.length -1) {
-                
-                if( jQuery('.favs_scroller').length > 0 )
-            	{
-            	    options.fav_scroll = new IScroll('.favs_scroller', {
-            	        scrollbars:true,
-            	        mouseWheel:true,
-            	        interactiveScrollbars: true
-            	    });	
-            	}
+            if( jQuery('.favs_scroller').length > 0 )
+        	{
+        	    options.fav_scroll = new IScroll('.favs_scroller', {
+        	        scrollbars:true,
+        	        mouseWheel:true,
+        	        interactiveScrollbars: true
+        	    });	
+        	}
 
+            //attach events 
+            $('.view_transcript').unbind();
+            $('.view_transcript').click(function(){
+                $(this).next().slideToggle();
+            });
+            
+            
+            $('.save_fav_notes').unbind();
+            $('.save_fav_notes').click(function(){
+                var note = $(this).prev().val();
+                var id   = $(this).attr('data-id');
+                var current_favs = eval($.cookie('tj_favourites'));
+                current_favs[id].notes = note;
+                $.cookie('tj_favourites',current_favs);
+            });
 
-                //attach events 
-                $('.view_transcript').unbind();
-                $('.view_transcript').click(function(){
-                    $(this).next().slideToggle();
-                });
-
-                $('.save_fav_notes').click(function(){
-                    var note = $(this).prev().val();
-                    var id   = $(this).attr('data-id');
-                    var current_favs = eval($.cookie('tj_favourites'));
-                    current_favs[id].notes = note;
-                    $.cookie('tj_favourites',current_favs);
-                });
-
-                $('.fav_delete').unbind();
-                $('.fav_delete').click(function(){
-                    var id   = $(this).parent().attr('data-id');    
-                    var current_favs = eval($.cookie('tj_favourites'));
-                    current_favs.splice(id,1);
-                    $.cookie('tj_favourites',current_favs);
-                    $(this).parent().remove();
-                });
-            	
-                
-                
-            }
+            $('.fav_delete').unbind();
+            $('.fav_delete').click(function(){
+                var id   = $(this).parent().attr('data-id');    
+                var current_favs = eval($.cookie('tj_favourites'));
+                current_favs.splice(id,1);
+                $.cookie('tj_favourites',current_favs);
+                $(this).parent().remove();
+            });
         });
-    
-    };
-    
-
-    
-    
+    };    
 }
 
 
