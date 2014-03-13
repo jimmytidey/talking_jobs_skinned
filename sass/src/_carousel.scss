@@ -38,6 +38,11 @@
 	vertical-align: top;
 }
 
+.interviewee_selector:hover {
+	cursor: pointer;
+	border-bottom: 2px solid $talking-jobs-red;
+}
+
 .carousel .selected {
 	border-bottom: 5px solid $talking-jobs-red;
 }
@@ -52,6 +57,10 @@
 	position: absolute;
 	top: 0;
 	visibility: visible;
+}
+
+.carousel .carousel_controls:hover {
+	background-position: 0 -39px;
 }
 
 .carousel .carousel_prev{

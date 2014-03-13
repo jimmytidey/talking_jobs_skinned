@@ -211,6 +211,11 @@ and full interview mode button
 		margin-left: 10px;*/
 	}
 
+	#player .info_button:hover,
+	#player .contributor .camera_button:hover {
+		background-position: 0 -30px;
+	}
+	
 	#player select {
 		margin-right: 5px;
 		font-size: 12px;
@@ -413,7 +418,7 @@ and full interview mode button
 		
 	#player .mejs-controls .add_video_btn {
 		position: absolute;
-		right: 123px;	
+		right: 125px;	
 	}
 		
 	.touch #player .mejs-controls .add_video_btn {
@@ -435,7 +440,7 @@ and full interview mode button
 	
 	#player .mejs-controls .mejs-captions-button {
 		position: absolute;
-		right: 82px;	
+		right: 84px;	
 	}
 	
 	.touch #player .mejs-controls .mejs-captions-button {
@@ -458,7 +463,7 @@ and full interview mode button
 	
 	#player .mejs-controls .mejs-volume-button {
 		position: absolute;
-		right: 41px;
+		right: 43px;
 	}
 	
 	#player .mejs-controls .mejs-volume-button button {
@@ -476,7 +481,7 @@ and full interview mode button
 	
 	#player .mejs-controls .mejs-fullscreen-button {
 		position: absolute;
-		right: 0;
+		right: 2px;
 	}
 	#player .mejs-controls .mejs-fullscreen-button button {
 		background-image: url($skin + "btn_transport_fullscreen.png") !important;
@@ -490,7 +495,16 @@ and full interview mode button
 		background: none;
 		margin-left: 0;
 	}
-
+	
+	#player .mejs-controls .restart_video_btn:hover,
+	#player .mejs-controls .prev_track_btn:hover,
+	#player .mejs-controls .next_track_btn:hover,
+	#player .mejs-controls .add_video_btn:hover,
+	#player .mejs-controls .mejs-captions-button:hover button,
+	#player .mejs-controls .mejs-volume-button:hover button,
+	#player .mejs-controls .mejs-fullscreen-button:hover button {
+		background-position: 0 -24px;
+	}
 	.mejs-controls .mejs-time-rail .mejs-time-loaded {
 		background: $talking-jobs-red !important;
 	}
