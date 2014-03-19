@@ -31,7 +31,7 @@ job_player.setRandomMode = function(player_instance) {
     player_instance.mode = 'random';
     player_instance.playlist = job_player.shuffle(player_instance.playlist);
     
-    job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    job_player.playlistChange(1, player_instance, true);
 }
 
 job_player.setQuestionMode = function(player_instance) { 
