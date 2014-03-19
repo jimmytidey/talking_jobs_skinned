@@ -14,16 +14,21 @@ $standard-text-colour: #4A4A4A;
 $talking-jobs-red: #D0021B;
 
 /*for the low res option */
-/*
-@media only screen and (max-width: 320px) {
-    .fullscreen { 
-        display:none;
-    }
-    .lowres { 
-        display:block;
-    }
-}
 
+@media only screen and (max-width: 320px)  {
+	.mejs-controls {
+		display: none;
+	}
+	
+	.mejs-mediaelement {
+		position: static;
+	}
+	
+	#player .player {
+		height: 167px !important;
+	}
+}
+/*
 @media only screen and (min-width: 321px) {
     .fullscreen { 
         display:block;
@@ -144,6 +149,7 @@ html, body,
 	margin-left: -299px;
 	border-left: 1px solid $player-edging-colour;
 	border-right: 1px solid $tab-edging-colour;
+	min-height: 675px;
 }
 
 #branding{
@@ -173,6 +179,7 @@ html, body,
 	position: fixed;
 	bottom: 0;
 	background-color: white;
+	z-index: 100;
 	/*border-right: 1px solid $tab-edging-colour;
 	border-left: 1px solid $player-edging-colour;*/
 }
@@ -201,6 +208,7 @@ Player. Left column
 @media only screen  and (max-width: 480px) {
 
 
+	
 	#app {
 		height: auto;
 	}

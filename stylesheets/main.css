@@ -6290,16 +6290,16 @@ they play nicely together
 Vars
 -----------------------------------------*/
 /*for the low res option */
-/*
 @media only screen and (max-width: 320px) {
-    .fullscreen { 
-        display:none;
-    }
-    .lowres { 
-        display:block;
-    }
-}
+  .mejs-controls {
+    display: none; }
 
+  .mejs-mediaelement {
+    position: static; }
+
+  #player .player {
+    height: 167px !important; } }
+/*
 @media only screen and (min-width: 321px) {
     .fullscreen { 
         display:block;
@@ -6407,7 +6407,8 @@ html, body,
   left: 50%;
   margin-left: -299px;
   border-left: 1px solid #e7e5e7;
-  border-right: 1px solid #dad8db; }
+  border-right: 1px solid #dad8db;
+  min-height: 675px; }
 
 #branding {
   width: 598px; }
@@ -6431,6 +6432,7 @@ html, body,
   position: fixed;
   bottom: 0;
   background-color: white;
+  z-index: 100;
   /*border-right: 1px solid $tab-edging-colour;
   border-left: 1px solid $player-edging-colour;*/ }
 
@@ -6710,6 +6712,10 @@ and full interview mode button
   /*margin-top: -5px;
   margin-left: 10px;*/ }
 
+#player .info_button:hover,
+#player .contributor .camera_button:hover {
+  background-position: 0 -30px; }
+
 #player select {
   margin-right: 5px;
   font-size: 12px;
@@ -6875,7 +6881,7 @@ and full interview mode button
 
 #player .mejs-controls .add_video_btn {
   position: absolute;
-  right: 123px; }
+  right: 125px; }
 
 .touch #player .mejs-controls .add_video_btn {
   right: 82px; }
@@ -6892,7 +6898,7 @@ and full interview mode button
 
 #player .mejs-controls .mejs-captions-button {
   position: absolute;
-  right: 82px; }
+  right: 84px; }
 
 .touch #player .mejs-controls .mejs-captions-button {
   right: 41px; }
@@ -6911,7 +6917,7 @@ and full interview mode button
 
 #player .mejs-controls .mejs-volume-button {
   position: absolute;
-  right: 41px; }
+  right: 43px; }
 
 #player .mejs-controls .mejs-volume-button button {
   background-image: url("img/defaultskin/btn_transport_volume.png") !important;
@@ -6927,7 +6933,7 @@ and full interview mode button
 
 #player .mejs-controls .mejs-fullscreen-button {
   position: absolute;
-  right: 0; }
+  right: 2px; }
 
 #player .mejs-controls .mejs-fullscreen-button button {
   background-image: url("img/defaultskin/btn_transport_fullscreen.png") !important;
@@ -6940,6 +6946,15 @@ and full interview mode button
   margin-right: 1px;
   background: none;
   margin-left: 0; }
+
+#player .mejs-controls .restart_video_btn:hover,
+#player .mejs-controls .prev_track_btn:hover,
+#player .mejs-controls .next_track_btn:hover,
+#player .mejs-controls .add_video_btn:hover,
+#player .mejs-controls .mejs-captions-button:hover button,
+#player .mejs-controls .mejs-volume-button:hover button,
+#player .mejs-controls .mejs-fullscreen-button:hover button {
+  background-position: 0 -24px; }
 
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
   background: #d0021b !important; }
@@ -7106,6 +7121,10 @@ and full interview mode button
   display: inline-block;
   vertical-align: top; }
 
+.interviewee_selector:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #d0021b; }
+
 .carousel .selected {
   border-bottom: 5px solid #d0021b; }
 
@@ -7119,6 +7138,9 @@ and full interview mode button
   position: absolute;
   top: 0;
   visibility: visible; }
+
+.carousel .carousel_controls:hover {
+  background-position: 0 -39px; }
 
 .carousel .carousel_prev {
   left: 0;
@@ -7188,6 +7210,9 @@ and full interview mode button
   display: block;
   padding-top: 20px; }
 
+.question_type:hover span {
+  color: #d0021b; }
+
 .iScrollVerticalScrollbar {
   z-index: 20; }
 
@@ -7214,7 +7239,7 @@ and full interview mode button
 
 .question_selector .question {
   padding: 10px;
-  width: 70%;
+  width: 80%;
   margin-left: 50px; }
 
 .question_selector .play-mode-questions {
@@ -7241,6 +7266,9 @@ and full interview mode button
   overflow: hidden;
   text-indent: 40px;
   float: right; }
+
+.question_selector:hover span {
+  color: #d0021b; }
 
 .scroller_wrapper {
   z-index: 1;
@@ -7565,7 +7593,12 @@ bootstrap, as they're not needed for these tabs
   width: 30px;
   overflow: hidden;
   text-indent: -100px;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.more_info_modal .close:hover {
+  background-position: 0 -30px; }
 
 .more_info_modal h2 {
   font-size: 20px;
@@ -7658,6 +7691,10 @@ bootstrap, as they're not needed for these tabs
   border: none;
   box-shadow: none; }
 
+.fav_wrapper .fav_play:hover,
+.fav_wrapper .fav_delete:hover {
+  background-position: 0 -30px; }
+
 .fav_wrapper .content {
   margin-left: 0px;
   width: 100%; }
@@ -7742,7 +7779,8 @@ bootstrap, as they're not needed for these tabs
   width: 628px; }
 
 .welcome_modal .span6 {
-  width: 302px; }
+  width: 302px;
+  float: left !important; }
 
 .welcome_modal .header {
   background: #E7E5E7;
@@ -7763,6 +7801,9 @@ bootstrap, as they're not needed for these tabs
 .welcome_modal .hero {
   padding-left: 20px; }
 
+.welcome_modal .hero {
+  padding-top: 20px; }
+
 .welcome_modal .partners img {
   height: 89px; }
 
@@ -7782,6 +7823,10 @@ bootstrap, as they're not needed for these tabs
   width: 3em; }
 
 @media only screen and (max-width: 480px) {
+  .welcome_modal .modal_controls input,
+  .welcome_modal .modal_controls label {
+    display: none; }
+
   .welcome_modal .span6,
   .welcome_modal .span12 {
     width: 280px; }

@@ -16,6 +16,11 @@
 	overflow: hidden;
 	text-indent: -100px;
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.more_info_modal .close:hover {
+	background-position: 0 -30px;
 }
 .more_info_modal h2 {
 	font-size: 20px;

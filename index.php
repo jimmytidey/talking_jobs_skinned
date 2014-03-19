@@ -19,12 +19,12 @@
 		<div class='span12'>
 			<div class="span6">
 				<h2>The Gloucestershire Module</h2>
-			    <p class='welcome_text'></p>
 			    <div class='modal_controls'>
 			        <input type="checkbox" id="israndom"  />
 					<label for="israndom">mix it up</label>
 			        <span class='btn start btn-danger'>Start</span>
 			    </div>
+			    <p class='welcome_text'></p>
 			</div>
 			<div class="span6 hero">
 				<img src='' class='welcome_image' />
@@ -170,9 +170,9 @@
                     <li class="active"><a href="#player">Player</a></li>
                     <li><a href="#favourites" >Favourites <span class='favourites_tab_alert'></span></a></li>
                     <li><a href="#reflections">Reflections</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#have_a_quesiton">Ask a question</a></li> 
                     <li><a href="#activities">Activities</a></li> 
-                    <li><a href="#have_a_quesiton">Ask a question</a></li>                        
+					<li><a href="#about">About</a></li>                     
                 </ul>
             </nav>
 
