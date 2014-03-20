@@ -35,7 +35,8 @@ job_player.drawInterface = function(player_instance) {
     var scroller = $('.interviewee_scroller'); 
     
     for(var i = 0; i <player_instance.interviewees.length; i++){ 
-        $(scroller).append("<img   src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].interviewee+"'   rel='tooltip' data-placement='bottom' />");
+        
+        $(scroller).append("<img   src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"'   rel='tooltip' data-placement='bottom' />");
         
         if (i == player_instance.interviewees.length -1) { 
             	

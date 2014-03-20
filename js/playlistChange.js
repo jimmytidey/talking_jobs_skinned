@@ -42,7 +42,12 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     }
     
     
-    $(".interviewee_scroller").trigger("slideTo", target_no );
+    $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { 
+
+        easing          : "elastic",
+        duration        : 1000,                         
+        pauseOnHover    : true
+	}}] );
      
     //scroll to question  
     $('.question_selector').removeClass('selected');
@@ -83,9 +88,9 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 		    onTouch: true
 		},
 		scroll: { 
-		    easing: 'swing', 
-		    duration: 600,
-		    items: 3
+            //items           : 3,
+            easing          : "elastic",
+            duration        : 1000, 
 		},
 		width:'100%', 
 		align: 'left',

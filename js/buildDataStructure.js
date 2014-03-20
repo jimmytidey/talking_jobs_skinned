@@ -33,7 +33,12 @@ job_player.buildDataStructure = function(player_instance) {
 
     //build a list of each interview  
     $.each(player_instance.interviews_json.talking_jobs.interview_responses.interview, function(interview_key, interview_value ){
-        local_player_instance.interviewees.push({interviewee: interview_value.job_title, id: interview_value['_id'], now_image: interview_value.now_image['_src']});
+        
+        local_player_instance.interviewees.push({interviewee: interview_value.job_title, 
+                                                id: interview_value['_id'], 
+                                                now_image: interview_value.now_image['_src'],
+                                                name: interview_value.contributor['__cdata']
+                                                });
     });
     
     //build a list of each question 

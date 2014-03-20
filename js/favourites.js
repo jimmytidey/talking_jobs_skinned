@@ -82,20 +82,20 @@ job_player.renderFavourites = function(options) {
             type: "GET",
             url: subtitles_url,
             dataType: 'text'
-        }).done(function(xml){
+        }).done(function(xml,i){
         
             var x2js = new X2JS();    
             var json = x2js.xml_str2json(xml);
 
             var transcription ='';
-            for(var i=0; i < json.tt.body.div.p.length; i++){
-             transcription += '<p>' + json.tt.body.div.p[i]["__text"] + "</p>";
+            for(var j=0; j < json.tt.body.div.p.length; j++){
+             transcription += '<p>' + json.tt.body.div.p[j]["__text"] + "</p>";
             }
             
             var item =options.playlist[val.playlist_id];
         
-            var html = "<li data-id='" + i + "' class='fav_wrapper'>";
-    			html    += "<a href ='' class='fav_play'>Play</a>";
+            var html = "<li data-id='" + i + "'  class='fav_wrapper'>";
+    			//html    += "<a href ='' class='fav_play'>Play</a>";
     			html    += "<div class='fav_delete btn_red'>Delete</div>";
     			html    += "<div class='content'>";
     	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
@@ -142,10 +142,14 @@ job_player.renderFavourites = function(options) {
 
             $('.fav_delete').unbind();
             $('.fav_delete').click(function(){
-                var id   = $(this).parent().attr('data-id');    
+                var id   = $(this).parent().attr('data-id');   
+                console.log(id); 
                 var current_favs = eval($.cookie('tj_favourites'));
+                console.log(current_favs);
                 current_favs.splice(id,1);
+                console.log(current_favs);
                 $.cookie('tj_favourites',current_favs);
+                
                 $(this).parent().remove();
             });
         });

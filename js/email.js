@@ -20,7 +20,8 @@ job_player.generateFavsText = function(options) {
 job_player.emailFavs = function(options){
     var target = $('.favs_email').val();
     var text = job_player.generateFavsText(options); 
-    job_player.sendEmail(text, target, 'Your Talking Jobs favourties [' + $(".favs_name").val() + ']', '.favs_alert');
+    var name = $(".favs_name").val(); 
+    job_player.sendEmail(text, target, 'Your Talking Jobs favourties [' + name + ']', '.favs_alert', name);
 }
 
 job_player.downloadFavs = function(options){ 
@@ -59,9 +60,10 @@ job_player.generateReflectionsText = function(options){
 
 
 job_player.emailReflections = function(options){ 
-    var text = job_player.generateReflectionsText(options);
-    var target = $('.reflections_email', options.elem).val(); 
-    job_player.sendEmail(text, target, 'Your Talking Jobs reflections [' + $(".reflections_name").val() + ']', '.reflections_alert');  
+    var text    = job_player.generateReflectionsText(options);
+    var target  = $('.reflections_email', options.elem).val(); 
+    var name    = $(".reflections_name").val();
+    job_player.sendEmail(text, target, 'Your Talking Jobs reflections [' + name  + ']', '.reflections_alert', name);  
 }
 
 job_player.downloadReflections = function(options){ 
@@ -87,7 +89,8 @@ job_player.generateQuestionText = function(options) {
 job_player.emailQuestion = function(options){ 
     var text = job_player.generateQuestionText(options);
     var target = $('.question_email', options.elem).val(); 
-    job_player.sendEmail(text, target, 'Question via Talking Jobs  [' + $(".question_name").val() + ']', '.question_alert');
+    var name = $(".question_name").val()
+    job_player.sendEmail(text, target, 'Question via Talking Jobs  [' + name + ']', '.question_alert', name);
 }
 
 job_player.downloadQuestion = function(options){ 
@@ -103,11 +106,23 @@ job_player.printQuestion = function(options){
 
 
 //Utility functions 
-job_player.sendEmail = function(text, address, subject, alert_field) { 
+job_player.sendEmail = function(text, address, subject, alert_field, name) { 
     
     if(!job_player.validateEmail(address)) { 
         $(alert_field).show();
-         $(alert_field).html('<p class="email_error">Email failed: Please check the email address and try again</p>');
+        $(alert_field).html('<p class="email_error">Email failed: Please check the email address and try again</p>');
+		
+         setTimeout(function(){
+                $(alert_field).fadeOut(400, function(){
+                    $(alert_field).html('');
+                });
+            }, 2000);
+			
+        return 
+    }
+    else if (name === ''){ 
+        $(alert_field).show();
+        $(alert_field).html('<p class="email_error">Please add your name and try again</p>');
 		
          setTimeout(function(){
                 $(alert_field).fadeOut(400, function(){
@@ -129,7 +144,7 @@ job_player.sendEmail = function(text, address, subject, alert_field) {
 
     $.post(url, data, function(arg1, arg2){ 
         $(alert_field).show();
-        $(alert_field).html('<p class="email">Email has been sent to '  + address + '</p>');
+        $(alert_field).html('<p class="email_error">Email has been sent to '  + address + '</p>');
 		
         setTimeout(function(){
                $(alert_field).fadeOut(400, function(){
