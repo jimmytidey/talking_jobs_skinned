@@ -33,6 +33,30 @@ job_player.favourites = function(options){
     });
 }
 
+job_player.getTranscript = function(elem, subtitles_url) { 
+    
+    
+
+    
+
+    $.ajax({
+        type: "GET",
+        url: subtitles_url,
+        dataType: 'text'
+    }).done(function(xml,i){
+        var x2js = new X2JS();    
+        var json = x2js.xml_str2json(xml);
+        
+        var transcription =''; 
+        
+        for(var j=0; j < json.tt.body.div.p.length; j++){
+            transcription += '<p>' + json.tt.body.div.p[j]["__text"] + "</p>";
+        }
+        $(elem).append(transcription);
+    }); 
+
+}
+
 job_player.addFavourite = function(id, options) { 
     
     //save the item 
@@ -78,81 +102,69 @@ job_player.renderFavourites = function(options) {
         var question_number_string =  parseInt(item.question_id) + 1;
         var subtitles_url = options.playlist[val.playlist_id].subtitles_url;
         
-        $.ajax({
-            type: "GET",
-            url: subtitles_url,
-            dataType: 'text'
-        }).done(function(xml,i){
+        var item =options.playlist[val.playlist_id];
+    
+        var html = "<li data-id='" + i + "'  class='fav_wrapper'>";
+			//html    += "<a href ='' class='fav_play'>Play</a>";
+			html    += "<div class='fav_delete btn_red'>Delete</div>";
+			html    += "<div class='content'>";
+	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
+	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
+				html    += "<p class='view_transcript'>View transcript and notes</p>";
+	           html    += "<div class='notes_and_transcript hide cf'>";
+	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";
+	                html    += "<div class='fav_transcript'></div>";
+					//html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+					html    += "<p class='notes_title'><strong>My notes</strong></p>";
+	                html    += "<textarea>"+val.notes+"</textarea>";
+	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
+	           html    += "</div>";
+			html    += "</div>";
+        html    += '</li>';
+    
+        $('.fav_container ul').append(html);
         
-            var x2js = new X2JS();    
-            var json = x2js.xml_str2json(xml);
-
-            var transcription ='';
-            for(var j=0; j < json.tt.body.div.p.length; j++){
-             transcription += '<p>' + json.tt.body.div.p[j]["__text"] + "</p>";
-            }
-            
-            var item =options.playlist[val.playlist_id];
+        job_player.getTranscript($('.fav_container ul li[data-id="'+i+'"] .fav_transcript'), subtitles_url);
         
-            var html = "<li data-id='" + i + "'  class='fav_wrapper'>";
-    			//html    += "<a href ='' class='fav_play'>Play</a>";
-    			html    += "<div class='fav_delete btn_red'>Delete</div>";
-    			html    += "<div class='content'>";
-    	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
-    	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
-    				html    += "<p class='view_transcript'>View transcript and notes</p>";
-    	           html    += "<div class='notes_and_transcript hide cf'>";
-    	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";
-    	               html    += "<div class='fav_transcript'>" + transcription + "</div>";
-    					//html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
-    					html    += "<p class='notes_title'><strong>My notes</strong></p>";
-    	                html    += "<textarea>"+val.notes+"</textarea>";
-    	               //html    += "<button data-id='" + i + "' class='btn save_fav_notes'>Copy to clipboard</button>";
-    	           html    += "</div>";
-    			html    += "</div>";
-            html    += '</li>';
-        
-            $('.fav_container ul').append(html);
-            
-            //attach events once everything is rendered
-            if( jQuery('.favs_scroller').length > 0 )
-        	{
-        	    options.fav_scroll = new IScroll('.favs_scroller', {
-        	        scrollbars:true,
-        	        mouseWheel:true,
-        	        interactiveScrollbars: true
-        	    });	
-        	}
+        //attach events once everything is rendered
+        if( jQuery('.favs_scroller').length > 0 )
+    	{
+    	    options.fav_scroll = new IScroll('.favs_scroller', {
+    	        scrollbars:true,
+    	        mouseWheel:true,
+    	        interactiveScrollbars: true
+    	    });	
+    	}
 
-            //attach events 
-            $('.view_transcript').unbind();
-            $('.view_transcript').click(function(){
-                $(this).next().slideToggle();
-            });
-            
-            
-            $('.save_fav_notes').unbind();
-            $('.save_fav_notes').click(function(){
-                var note = $(this).prev().val();
-                var id   = $(this).attr('data-id');
-                var current_favs = eval($.cookie('tj_favourites'));
-                current_favs[id].notes = note;
-                $.cookie('tj_favourites',current_favs);
-            });
-
-            $('.fav_delete').unbind();
-            $('.fav_delete').click(function(){
-                var id   = $(this).parent().attr('data-id');   
-                console.log(id); 
-                var current_favs = eval($.cookie('tj_favourites'));
-                console.log(current_favs);
-                current_favs.splice(id,1);
-                console.log(current_favs);
-                $.cookie('tj_favourites',current_favs);
-                
-                $(this).parent().remove();
-            });
+        //attach events 
+        $('.view_transcript').unbind();
+        $('.view_transcript').click(function(){
+            $(this).next().slideToggle();
         });
+        
+        
+        $('.save_fav_notes').unbind();
+        $('.save_fav_notes').click(function(){
+            var note = $(this).prev().val();
+            var id   = $(this).attr('data-id');
+            var current_favs = eval($.cookie('tj_favourites'));
+            current_favs[id].notes = note;
+            $.cookie('tj_favourites',current_favs);
+        });
+
+        $('.fav_delete').unbind();
+        $('.fav_delete').click(function(){
+            var id   = $(this).parent().attr('data-id');   
+            console.log(id); 
+            var current_favs = eval($.cookie('tj_favourites'));
+            console.log(current_favs);
+            current_favs.splice(id,1);
+            console.log(current_favs);
+            $.cookie('tj_favourites',current_favs);
+            
+            $(this).parent().remove();
+        });
+        
     };    
 }
 
