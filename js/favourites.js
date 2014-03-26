@@ -90,10 +90,14 @@ job_player.renderFavourites = function(options) {
     var current_favs = eval($.cookie('tj_favourites'));
     
     if(!current_favs) {
+        var message = "Use the '+' button on the player screen to select your favourite clips. Once done transcripts of these clips will be shown here for you to make notes against.";
+        $('.fav_container ul').html("<li>" + message + "</li>");
         return false
     }
     
     $('.fav_container ul').html('');
+    
+
     
     for (var i=0; i < current_favs.length; i++) {
         var val = current_favs[i];
