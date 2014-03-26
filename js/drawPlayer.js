@@ -94,14 +94,7 @@ job_player.newPlayer = function(player_instance) {
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"> + </div>');
             
-            $('.mejs-captions-button').click(function(){
-                if($('.mejs-captions-selector').find('input[value="en"]').is(":checked")) {
-                    player_instance.subtitles_on = true;
-                }
-                else { 
-                    player_instance.subtitles_on = false;
-                }
-            });
+
             
             
             player_instance.player = player;

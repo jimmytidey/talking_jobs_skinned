@@ -212,11 +212,11 @@ job_player.attachTransportEvents = function(local_player_instance) {
     $('.mejs-captions-button button').click(function(){
         
         if($('.mejs-captions-selector ul li:first-child input').is(':checked')) { 
-            console.log('on');
+            local_player_instance.subtitles_on = true;
             $('.mejs-captions-selector ul li:nth-child(2) input').click();
         } 
         else { 
-            console.log('off');
+            local_player_instance.subtitles_on = false;
             $('.mejs-captions-selector ul li:first-child input').click();
         }
         
