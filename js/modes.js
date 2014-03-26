@@ -21,6 +21,9 @@ job_player.setNormalMode = function(player_instance) {
     
     player_instance.playlist_position = new_playlist_id;
     
+    if(player_instance.player && player_instance.player.media.paused) { 
+        job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    }
     
 }
 
@@ -31,7 +34,9 @@ job_player.setRandomMode = function(player_instance) {
     player_instance.mode = 'random';
     player_instance.playlist = job_player.shuffle(player_instance.playlist);
     
-    job_player.playlistChange(1, player_instance, true);
+    if(player_instance.player && player_instance.player.media.paused) { 
+        job_player.playlistChange(1, player_instance, true);
+    }
 }
 
 job_player.setQuestionMode = function(player_instance) { 
@@ -55,9 +60,12 @@ job_player.setQuestionMode = function(player_instance) {
   
     var new_playlist_id = job_player.findPlaylistID(current_interviewee_id, current_question_id, player_instance);
     
-    player_instance.playlist_position = new_playlist_id;
     
-    job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    
+    player_instance.playlist_position = new_playlist_id;
+    if(player_instance.player && player_instance.player.media.paused) { 
+        job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    }
    
 }
 
@@ -81,7 +89,9 @@ job_player.setInterviewMode = function(player_instance) {
     var new_playlist_id = job_player.findPlaylistID(current_interviewee_id, current_question_id, player_instance);
     player_instance.playlist_position = new_playlist_id;
     
-    job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    if(player_instance.player && player_instance.player.media.paused) { 
+        job_player.playlistChange(player_instance.playlist_position, player_instance, true);
+    }
 }
 
 job_player.initModes = function(player_instance) { 

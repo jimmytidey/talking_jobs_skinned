@@ -67,11 +67,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 	}
 
     
-    
-    
-    
     job_player.drawPlayer(player_instance, autoplay);
-    
     
     //the carousel has to be triggered every time the playlist changes 
     $(".interviewee_scroller").carouFredSel({
