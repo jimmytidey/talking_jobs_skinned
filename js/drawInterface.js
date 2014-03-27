@@ -36,14 +36,34 @@ job_player.drawInterface = function(player_instance) {
     
     for(var i = 0; i <player_instance.interviewees.length; i++){ 
         
-        $(scroller).append("<img   src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"'   rel='tooltip' data-placement='bottom' />");
-        
+        $(scroller).append("<img rel='tooltip' src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"' data-placement='bottom' />");
+
         if (i == player_instance.interviewees.length -1) { 
-            	
-        	//add tooltips 
-        	$('.interviewee_selector').tooltip({trigger: 'hover'});
-        
+        	//add tooltips
+			console.log('add tooltips')
+        	$('.interviewee_selector').tooltip();
+
+			$( '.interviewee_selector' ).hover( function(e) {
+				console.log("hi")
+			},function(e) {
+				console.log("by")
+			});
+			
+			
+        	$('.interviewee_selector').on({
+	
+			    'mouseenter': function (e) {
+			        console.log("hi")
+			
+			    },
+			        'mouseeleave': function (e) {
+			       console.log("by")
+			    }
+			});
+			
         }
+
+
     };
     
     //write the question scroller 

@@ -161,7 +161,7 @@ job_player.updateLowRes = function(local_player_instance) {
 }
 
 job_player.attachTransportEvents = function(local_player_instance) { 
-    
+    console.log('job_player.attachTransportEvents');
     //for clicks on the interviewee scroller 
     $('.interviewee_selector').unbind();
     $('.interviewee_selector').click(function(){ 

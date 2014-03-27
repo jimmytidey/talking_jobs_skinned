@@ -51,7 +51,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
 }
 
 job_player.newPlayer = function(player_instance) { 
-
+	console.log('job_player.newPlayer');
     //unbind any events we don't want firing until the player is ready
     $('.interviewee_selector').unbind();
     $('.question_selector').unbind();
