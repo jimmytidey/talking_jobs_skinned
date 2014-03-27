@@ -58,7 +58,7 @@
 					<div class='favs_alert' ></div>
 				</div>
 				<div class="identify cf">
-					<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+					<p class="notice">Enter your name below for it to appear on pages you save or print, or in the subject line of emails sent from this page.</p>
 					<form action="">
 					<fieldset>
 						<label>Your name</label>
@@ -89,7 +89,7 @@
 				<div class='reflections_alert' ></div>
 			</div>
 			<div class="identify cf">
-				<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+				<p class="notice">Enter your name below for it to appear on pages you save or print, or in the subject line of emails sent from this page.</p>
 				<form action="">
 				<fieldset>
 					<label>Your name</label>
@@ -147,7 +147,7 @@
 					<div class='reflections_alert' ></div>
 				</div>
 				<div class="identify cf">
-					<p class="notice">If you want to print this information we recommend you add your name, so you can identify it when it comes out of the printer.</p>
+					<p class="notice">Enter your name below for it to appear on pages you save or print, or in the subject line of emails sent from this page.</p>
 					<form action="">
 					<fieldset>
 						<label>Your name</label>
