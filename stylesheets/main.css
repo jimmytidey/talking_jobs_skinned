@@ -6646,10 +6646,16 @@ Player. Left column
   left: 0 !important;
   bottom: 0; }
 
+.mejs-fullscreen #player .mejs-captions-position {
+  bottom: 30px; }
+
 #player .mejs-captions-text {
   padding: 10px;
   display: block;
   font-weight: lighter; }
+
+.mejs-fullscreen #player .mejs-captions-text {
+  font-size: 18px; }
 
 #player {
   /*border-left: 1px solid $player-edging-colour;*/
