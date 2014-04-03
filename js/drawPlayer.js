@@ -1,4 +1,31 @@
 job_player.drawPlayer = function(player_instance, autoplay){
+    
+    if(typeof player_instance.player == 'undefined') {
+        console.log('scroller attached');
+        $(".interviewee_scroller").carouFredSel({
+    		auto: { 
+    		    play: false
+    		},
+    		prev : { 
+    		    button: '.carousel_prev'
+    		},
+    		next : { 
+    		    button: '.carousel_next'
+    		}, 
+    		swipe: { 
+    		    onTouch: true
+    		},
+    		scroll: { 
+                items       : 3,
+                duration    : 1000, 
+    		},
+    		width:'100%', 
+    		align: 'left',
+    		height:'70px'		
+    	});
+    	
+    	$(".interviewee_scroller").trigger("slideTo", -2 );
+    }
 
     if(player_instance.player && !isIE()) { 
         player_instance.player.setSrc = 'a';
@@ -47,13 +74,15 @@ job_player.drawPlayer = function(player_instance, autoplay){
 
     }
     
+    
+    
        
 }
 
 job_player.newPlayer = function(player_instance) { 
 	console.log('job_player.newPlayer');
     //unbind any events we don't want firing until the player is ready
-    $('.interviewee_selector').unbind();
+   
     $('.question_selector').unbind();
     $('.previous_button, .next_button').unbind();
     
@@ -115,7 +144,7 @@ job_player.newPlayer = function(player_instance) {
             });
             
             media.addEventListener("loadeddata", function(arg1, arg2) {   
-                setTimeout(function(){job_player.attachTransportEvents(player_instance)}, 1500);
+                //setTimeout(function(){job_player.attachTransportEvents(player_instance)}, 1500);
             });
         
             

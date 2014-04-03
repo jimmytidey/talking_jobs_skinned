@@ -1,4 +1,6 @@
 job_player.attachEvents = function(player_instance) {
+    
+
 
     var local_player_instance = player_instance;    
     
@@ -43,6 +45,7 @@ job_player.attachEvents = function(player_instance) {
         }
     });
     
+    $('.interviewee_select select').unbind();
     $('.interviewee_select select', player_instance.elem).change(function(val){
         var interviewee_no = $(this).val();
         var question_no = $('.question_selector.selected').attr('data-id');
@@ -68,6 +71,7 @@ job_player.attachEvents = function(player_instance) {
     });
     
     //make the question type buttons work
+    $('.question_type').unbind();
     $('.question_type').click(function(){ 
         
         var current_item = player_instance.playlist[player_instance.playlist_position]; 
@@ -162,10 +166,10 @@ job_player.updateLowRes = function(local_player_instance) {
 
 job_player.attachTransportEvents = function(local_player_instance) { 
     console.log('job_player.attachTransportEvents');
-    //for clicks on the interviewee scroller 
+    
+   
     $('.interviewee_selector').unbind();
-    $('.interviewee_selector').click(function(){ 
-        
+    $('.interviewee_selector').click(function(){      
         var interviewee_no = $(this).attr('data-id');
         var question_no = $('.question_selector.selected').attr('data-id');
         job_player.setNormalMode(local_player_instance);
@@ -175,10 +179,7 @@ job_player.attachTransportEvents = function(local_player_instance) {
 
         
     //for clicks on the question scroller 
-    $('.question_selector').unbind();
-    
-    
-    
+    $('.question_selector').unbind();    
     $('.question_selector').click(function(){
         var question_no     = $(this).attr('data-id');
         var interviewee_no  = local_player_instance.playlist[local_player_instance.playlist_position].interviewee_id;

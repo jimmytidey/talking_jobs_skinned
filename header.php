@@ -13,7 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="stylesheets/main.css">
-
+        <!--<link rel="stylesheet" href="stylesheets/slick.css">-->
+            
         <script src="js/vendor/modernizr.custom.touch.js"></script>
 
     </head>

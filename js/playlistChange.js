@@ -44,9 +44,6 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     
     $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { 
 
-        easing          : "elastic",
-        duration        : 1000,                         
-        pauseOnHover    : true
 	}}] );
      
     //scroll to question  
@@ -70,28 +67,8 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     job_player.drawPlayer(player_instance, autoplay);
     
     //the carousel has to be triggered every time the playlist changes 
-    $(".interviewee_scroller").carouFredSel({
-		auto: { 
-		    play: false
-		},
-		prev : { 
-		    button: '.carousel_prev'
-		},
-		next : { 
-		    button: '.carousel_next'
-		}, 
-		swipe: { 
-		    onTouch: true
-		},
-		scroll: { 
-            //items           : 3,
-            easing          : "elastic",
-            duration        : 1000, 
-		},
-		width:'100%', 
-		align: 'left',
-		height:'70px'		
-	}); 
+    
+
     
     
 };

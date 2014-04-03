@@ -41,25 +41,8 @@ job_player.drawInterface = function(player_instance) {
         if (i == player_instance.interviewees.length -1) { 
         	//add tooltips
 			console.log('add tooltips')
-        	$('.interviewee_selector').tooltip();
-
-			$( '.interviewee_selector' ).hover( function(e) {
-				console.log("hi")
-			},function(e) {
-				console.log("by")
-			});
-			
-			
-        	$('.interviewee_selector').on({
 	
-			    'mouseenter': function (e) {
-			        console.log("hi")
-			
-			    },
-			        'mouseeleave': function (e) {
-			       console.log("by")
-			    }
-			});
+        	$('.interviewee_selector').tooltip();
 			
         }
 
@@ -119,6 +102,7 @@ job_player.drawInterface = function(player_instance) {
 	jQuery(window).resize(function() {
 		job_player.onResize(player_instance);
 	});
+
      
 };
 
