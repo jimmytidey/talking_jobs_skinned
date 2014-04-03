@@ -141,10 +141,12 @@ job_player.sendEmail = function(text, address, subject, alert_field, name) {
          toAddress: address,
          emailContent: text   
      }
-
+    
+    $(alert_field).html('<p class="email_error">Email has been sent to '  + address + '</p>');
+     
     $.post(url, data, function(arg1, arg2){ 
         $(alert_field).show();
-        $(alert_field).html('<p class="email_error">Email has been sent to '  + address + '</p>');
+        
 		
         setTimeout(function(){
                $(alert_field).fadeOut(400, function(){
