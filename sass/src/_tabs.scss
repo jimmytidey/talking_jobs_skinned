@@ -71,6 +71,7 @@ bootstrap, as they're not needed for these tabs
 	}
 	
 	
+	.tab_feedback,
 	.tab_activities,
 	.tab_about,
 	.tab_reflections,
@@ -111,6 +112,8 @@ bootstrap, as they're not needed for these tabs
 	width: 422px;
 	padding-top: 10px;
 }
+
+.tab_feedback .content-container,
 .tab_about .content-container,
 .tab_activities .content-container{
 	top: 54px;
