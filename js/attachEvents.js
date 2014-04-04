@@ -121,12 +121,10 @@ job_player.attachEvents = function(player_instance) {
     });
 
     $('.download_reflections').click(function(){ 
-        console.log('attach  reflections');
         job_player.downloadReflections(local_player_instance);
     });
     
     $('.print_reflections').click(function(){ 
-        console.log('print  reflections');
         job_player.printReflections(local_player_instance);
     });
     
@@ -165,9 +163,6 @@ job_player.updateLowRes = function(local_player_instance) {
 }
 
 job_player.attachTransportEvents = function(local_player_instance) { 
-    console.log('job_player.attachTransportEvents');
-    
-   
     $('.interviewee_selector').unbind();
     $('.interviewee_selector').click(function(){      
         var interviewee_no = $(this).attr('data-id');

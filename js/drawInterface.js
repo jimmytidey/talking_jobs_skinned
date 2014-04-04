@@ -36,13 +36,11 @@ job_player.drawInterface = function(player_instance) {
     
     for(var i = 0; i <player_instance.interviewees.length; i++){ 
         
-        $(scroller).append("<img rel='tooltip' src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"' data-placement='bottom' />");
+        $(scroller).append("<a href='#' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"'   data-placement='bottom' class='interviewee_tooltip'  data-toggle='tooltip'  > <img src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' /></a>");
 
         if (i == player_instance.interviewees.length -1) { 
         	//add tooltips
-			console.log('add tooltips')
-	
-        	$('.interviewee_selector').tooltip();
+        	$('.interviewee_tooltip').tooltip({container: 'body'});
 			
         }
 

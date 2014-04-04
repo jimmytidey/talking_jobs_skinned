@@ -1,7 +1,7 @@
 job_player.drawPlayer = function(player_instance, autoplay){
     
     if(typeof player_instance.player == 'undefined') {
-        console.log('scroller attached');
+        
         $(".interviewee_scroller").carouFredSel({
     		auto: { 
     		    play: false
@@ -80,7 +80,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
 }
 
 job_player.newPlayer = function(player_instance) { 
-	console.log('job_player.newPlayer');
+	
     //unbind any events we don't want firing until the player is ready
    
     $('.question_selector').unbind();
