@@ -161,6 +161,20 @@
 	                <div class='question_alert' ></div>
 				</div>
             </div>
+
+
+            <div class='tab tab_feedback'>
+                <h1>Feedback</h1>
+				<div class='content-container'>
+					<div id="surveyMonkeyInfo">
+						<div>
+							<script src="https://www.surveymonkey.com/jsEmbed.aspx?sm=LhTuecOlTe2M96wNN3HL2Q_3d_3d"> </script>
+						</div>
+						Create your free online surveys with <a href="https://www.surveymonkey.com">SurveyMonkey</a> , the world's leading questionnaire tool.
+					</div>
+				</div>
+            </div>
+
             
         </div>
         
@@ -172,7 +186,8 @@
                     <li><a href="#reflections">Reflections</a></li>
                     <li><a href="#have_a_quesiton">Ask a question</a></li> 
                     <li><a href="#activities">Activities</a></li> 
-					<li><a href="#about">About</a></li>                     
+					<li><a href="#about">About</a></li>
+					<li><a href="#feedback">Feedback</a></li>                     
                 </ul>
             </nav>
 
