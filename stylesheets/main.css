@@ -10483,7 +10483,8 @@ bootstrap, as they're not needed for these tabs
   margin-bottom: 15px;
 }
 
-/* line 78, ../sass/src/_tabs.scss */
+/* line 79, ../sass/src/_tabs.scss */
+.tab_feedback,
 .tab_activities,
 .tab_about,
 .tab_reflections,
@@ -10492,7 +10493,7 @@ bootstrap, as they're not needed for these tabs
   display: none;
 }
 
-/* line 83, ../sass/src/_tabs.scss */
+/* line 84, ../sass/src/_tabs.scss */
 .tab_reflections textarea {
   width: 90%;
   padding: 10px;
@@ -10502,23 +10503,23 @@ bootstrap, as they're not needed for these tabs
   margin-top: 10px;
 }
 
-/* line 92, ../sass/src/_tabs.scss */
+/* line 93, ../sass/src/_tabs.scss */
 .tab {
   width: 414px;
 }
 
-/* line 96, ../sass/src/_tabs.scss */
+/* line 97, ../sass/src/_tabs.scss */
 .tab h2 {
   color: #4A4A4A;
   font-size: 20px;
 }
 
-/* line 101, ../sass/src/_tabs.scss */
+/* line 102, ../sass/src/_tabs.scss */
 .tab form {
   margin-bottom: 0;
 }
 
-/* line 105, ../sass/src/_tabs.scss */
+/* line 106, ../sass/src/_tabs.scss */
 .tab .content-container {
   border-top: 1px solid #dad8db;
   position: absolute;
@@ -10529,28 +10530,29 @@ bootstrap, as they're not needed for these tabs
   padding-top: 10px;
 }
 
-/* line 115, ../sass/src/_tabs.scss */
+/* line 118, ../sass/src/_tabs.scss */
+.tab_feedback .content-container,
 .tab_about .content-container,
 .tab_activities .content-container {
   top: 54px;
   bottom: 31px;
 }
 
-/* line 120, ../sass/src/_tabs.scss */
+/* line 123, ../sass/src/_tabs.scss */
 .tab .identify {
   border-bottom: 1px solid #dad8db;
   padding: 10px;
   background: #F7D2D6;
 }
 
-/* line 126, ../sass/src/_tabs.scss */
+/* line 129, ../sass/src/_tabs.scss */
 .tab .identify .notice {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 10px;
 }
 
-/* line 133, ../sass/src/_tabs.scss */
+/* line 136, ../sass/src/_tabs.scss */
 .tab .export {
   position: absolute;
   bottom: 31px;
@@ -10561,56 +10563,56 @@ bootstrap, as they're not needed for these tabs
   padding: 8px;
 }
 
-/* line 143, ../sass/src/_tabs.scss */
+/* line 146, ../sass/src/_tabs.scss */
 .tab fieldset {
   width: 100%;
 }
 
-/* line 147, ../sass/src/_tabs.scss */
+/* line 150, ../sass/src/_tabs.scss */
 .tab fieldset input[type=button] {
   width: auto;
   display: inline-block;
 }
 
-/* line 152, ../sass/src/_tabs.scss */
+/* line 155, ../sass/src/_tabs.scss */
 .tab fieldset input {
   margin-bottom: 0;
 }
 
-/* line 157, ../sass/src/_tabs.scss */
+/* line 160, ../sass/src/_tabs.scss */
 .tab .export {
   min-height: 55px;
 }
 
-/* line 161, ../sass/src/_tabs.scss */
+/* line 164, ../sass/src/_tabs.scss */
 .tab .export button {
   clear: left;
 }
 
-/* line 167, ../sass/src/_tabs.scss */
+/* line 170, ../sass/src/_tabs.scss */
 .tab .export .button-set,
 .tab .export fieldset {
   position: absolute;
   bottom: 8px;
 }
 
-/* line 172, ../sass/src/_tabs.scss */
+/* line 175, ../sass/src/_tabs.scss */
 .tab .export fieldset {
   position: static;
   left: 8px;
 }
 
-/* line 177, ../sass/src/_tabs.scss */
+/* line 180, ../sass/src/_tabs.scss */
 .tab .export .button-set {
   right: 8px;
 }
 
-/* line 181, ../sass/src/_tabs.scss */
+/* line 184, ../sass/src/_tabs.scss */
 .tab_have_a_quesiton .content-container * {
   display: block;
 }
 
-/* line 185, ../sass/src/_tabs.scss */
+/* line 188, ../sass/src/_tabs.scss */
 .tab_have_a_quesiton .content-container textarea {
   width: 95%;
   max-width: 95%;
@@ -10618,7 +10620,7 @@ bootstrap, as they're not needed for these tabs
   min-height: 200px;
 }
 
-/* line 192, ../sass/src/_tabs.scss */
+/* line 195, ../sass/src/_tabs.scss */
 .tab h1 {
   font-size: 20px;
   color: #4A4A4A;
@@ -10626,23 +10628,23 @@ bootstrap, as they're not needed for these tabs
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 199, ../sass/src/_tabs.scss */
+  /* line 202, ../sass/src/_tabs.scss */
   .tab {
     width: auto;
   }
 
-  /* line 203, ../sass/src/_tabs.scss */
+  /* line 206, ../sass/src/_tabs.scss */
   .tab .content-container {
     position: relative;
   }
 
-  /* line 207, ../sass/src/_tabs.scss */
+  /* line 210, ../sass/src/_tabs.scss */
   #tabs {
     display: none;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* line 216, ../sass/src/_tabs.scss */
+  /* line 219, ../sass/src/_tabs.scss */
   #player,
   #tabs {
     float: left;
@@ -10652,17 +10654,17 @@ bootstrap, as they're not needed for these tabs
   .question_container .span5 {
   	width: 286px;
   }*/
-  /* line 226, ../sass/src/_tabs.scss */
+  /* line 229, ../sass/src/_tabs.scss */
   .question_container .span2 {
     float: left;
   }
 
-  /* line 230, ../sass/src/_tabs.scss */
+  /* line 233, ../sass/src/_tabs.scss */
   .question_container .span5 {
     float: right;
   }
 
-  /* line 234, ../sass/src/_tabs.scss */
+  /* line 237, ../sass/src/_tabs.scss */
   .tab .content-container {
     width: 405px;
   }
