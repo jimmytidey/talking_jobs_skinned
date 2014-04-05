@@ -18,7 +18,7 @@
 	<div class='row cf'>
 		<div class='span12'>
 			<div class="span6">
-				<h2>The Gloucestershire Module</h2>
+				<h2>The Gloucestershire YST Module</h2>
 			    <div class='modal_controls'>
 			        <input type="checkbox" id="israndom"  />
 					<label for="israndom">mix it up</label>
