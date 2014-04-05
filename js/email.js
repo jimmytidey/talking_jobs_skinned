@@ -133,7 +133,7 @@ job_player.sendEmail = function(text, address, subject, alert_field, name) {
         return 
     }
     
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    var url = 'playerFunctions.cfc'; 
     
     var data = { 
          method: 'sendEmail',
@@ -159,7 +159,7 @@ job_player.sendEmail = function(text, address, subject, alert_field, name) {
 
 job_player.makePDF = function(text, alert_field, button_field) { 
     
-    var url = 'http://dev.talkingjobs.net/yst/playerFunctions.cfc'; 
+    var url = 'playerFunctions.cfc'; 
     
     var data = { 
         method: 'html5PDF',
