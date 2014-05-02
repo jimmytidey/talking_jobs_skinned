@@ -181,6 +181,7 @@ job_player.attachTransportEvents = function(local_player_instance) {
         job_player.setNormalMode(local_player_instance);
         var playlist_no = job_player.findPlaylistID(interviewee_no, question_no, local_player_instance);
         job_player.playlistChange(playlist_no, local_player_instance, true);
+		$(window).scrollTo(0, 0);
     });
     
 

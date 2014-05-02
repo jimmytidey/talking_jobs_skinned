@@ -123,6 +123,9 @@ job_player.newPlayer = function(player_instance) {
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"><a style="display:block;" class="interviewee_tooltip" href="#" title="Add to favourites" data-toggle="tooltip" data-placement="top"> + </a></div>');
            	
+			 $('.mejs-overlay-play').click(function(){
+				media.play();
+		    });
 			
 			$('.interviewee_tooltip').tooltip({container: 'body'});
             

@@ -2,6 +2,8 @@
 Player. Left column
 -----------------------------------------*/
 
+
+
 #player .mejs-poster {
 	background-size: 100%;
 }
@@ -533,6 +535,16 @@ and full interview mode button
 	.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
 		left: 13px;
 	}
+	
+@media only screen and (max-width: 320px)  {
+	.touch .mejs-overlay-play {
+		display: block !important;
+	}
+	
+	.touch.android .mejs-overlay-loading {
+		display: none !important;
+	}
+}
 	
 @media only screen  and (max-width: 480px) {
 	.ios #player .mejs-controls .mejs-fullscreen-button {
