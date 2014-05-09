@@ -1,15 +1,15 @@
 
 
 job_player.buildDataStructure = function(player_instance) { 
-    
+
     var local_player_instance = player_instance;
 
-    //build the playlist stucture 
+    //build the playlist structure 
     $.each(player_instance.interviews_json.talking_jobs.interview_responses.interview, function(interview_key, interview_value){
 
         var player_instance = this.player_instance;
         $.each(interview_value.responses.response, function(response_key, response_value ) {
-        
+
             var playlist_object             = {};
             var subtitle_bodge              = response_value['_src'].split("/")[3];
             playlist_object.interviewee_id  = interview_value['_id']; 
@@ -18,7 +18,7 @@ job_player.buildDataStructure = function(player_instance) {
             playlist_object.job_prefix      = interview_value.job_prefix['__cdata']; 
             playlist_object.job_title       = interview_value.job_title['__cdata'];
             playlist_object.now_image       = interview_value.now_image['_src'];
-            playlist_object.then_image       = interview_value.then_image['_src'];
+            playlist_object.then_image      = interview_value.then_image['_src'];
             playlist_object.question        = local_player_instance.questions_json.talking_jobs.questions.question[response_key]['__cdata'];
             playlist_object.question_id     = response_value['_question_id'];
             playlist_object.subtitles_url   = local_player_instance.subtitles_folder + subtitle_bodge  + "_track0.xml";
@@ -28,17 +28,16 @@ job_player.buildDataStructure = function(player_instance) {
             local_player_instance.playlist.push(playlist_object);
             
         });
-        
     }); 
 
     //build a list of each interview  
     $.each(player_instance.interviews_json.talking_jobs.interview_responses.interview, function(interview_key, interview_value ){
-        
+
         local_player_instance.interviewees.push({interviewee: interview_value.job_title, 
-                                                id: interview_value['_id'], 
-                                                now_image: interview_value.now_image['_src'],
-                                                name: interview_value.contributor['__cdata']
-                                                });
+            id: interview_value['_id'], 
+            now_image: interview_value.now_image['_src'],
+            name: interview_value.contributor['__cdata']
+        });
     });
     
     //build a list of each question 

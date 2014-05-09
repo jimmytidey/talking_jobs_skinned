@@ -1,5 +1,6 @@
 job_player.drawPlayer = function(player_instance, autoplay){
     
+
     if(typeof player_instance.player == 'undefined') {
         
         $(".interviewee_scroller").carouFredSel({
@@ -27,11 +28,12 @@ job_player.drawPlayer = function(player_instance, autoplay){
     	$(".interviewee_scroller").trigger("slideTo", -2 );
     }
 
-    if(player_instance.player && !isIE()) { 
+    if(player_instance.player) {
+        //player_instance.player && !isIE() 
         player_instance.player.setSrc = 'a';
 		player_instance.player.load();
         player_instance.player.remove();
-        window.player_root = null; 
+        window.player_root = null;
         player_instance.media = null; 
     }
     
@@ -70,13 +72,7 @@ job_player.drawPlayer = function(player_instance, autoplay){
             player_instance.player.play();
             player_instance.playing_now = true;
         }
-        
-
     }
-    
-    
-    
-       
 }
 
 job_player.newPlayer = function(player_instance) { 
@@ -123,8 +119,8 @@ job_player.newPlayer = function(player_instance) {
             $('.mejs-time-rail').css('width', width -120);
             $('.mejs-time-rail').after('<div class="add_video_btn"><a style="display:block;" class="interviewee_tooltip" href="#" title="Add to favourites" data-toggle="tooltip" data-placement="top"> + </a></div>');
            	
-			 $('.mejs-overlay-play').click(function(){
-				media.play();
+			$('.mejs-overlay-play').click(function(){
+				//media.play();
 		    });
 			
 			$('.interviewee_tooltip').tooltip({container: 'body'});

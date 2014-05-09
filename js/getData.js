@@ -3,7 +3,7 @@ window.job_player = {};
 
 job_player.getData = function(player_instance) { 
     
-	
+    //Counter because we have to wait for two AJAX requests before sending anything to the server
     var counter = 0; 
     
     $.ajax({

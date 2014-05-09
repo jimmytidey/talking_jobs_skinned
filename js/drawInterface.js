@@ -2,23 +2,18 @@ job_player.drawInterface = function(player_instance) {
     
     var local_player_instance = player_instance;
     
-    //build the modal 
-    
     job_player.buildModal(player_instance);
-    
-    //init the tabs 
+     
     job_player.tabs(player_instance);
     
     //Draw any existing favs in 
     job_player.renderFavourites(player_instance);
       
-	if( job_player.isIOS() )
-	{
+	if(job_player.isIOS()) {
 		$('html').addClass('ios');
 	}
 	
-	if( job_player.isAndroid() )
-	{
+	if( job_player.isAndroid() ) {
 		$('html').addClass('android');
 	}
 	
@@ -41,15 +36,11 @@ job_player.drawInterface = function(player_instance) {
         if (i == player_instance.interviewees.length -1) { 
         	//add tooltips
         	$('.interviewee_tooltip').tooltip({container: 'body'});
-			
         }
-
-
     };
     
     //write the question scroller 
     var scroller = $('.question_scroller ul'); 
-    
     for(var i = 0; i <player_instance.questions.length; i++){ 
         var type = player_instance.questions[i]['_type'];
         var id   = player_instance.questions[i]['_id'];
@@ -73,13 +64,8 @@ job_player.drawInterface = function(player_instance) {
 	                interactiveScrollbars: true,
 					click:true
 	            });
-				// Disabled the line below because ti stoppeed the welcome screen from scrolling
-				// on a touch device.
-	            //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
 			}
-
         }
-        
     };    
 
     //now add the question type 
@@ -100,8 +86,6 @@ job_player.drawInterface = function(player_instance) {
 	jQuery(window).resize(function() {
 		job_player.onResize(player_instance);
 	});
-
-     
 };
 
 job_player.resizeTmr = null;
@@ -109,8 +93,7 @@ job_player.onResize = function(player_instance) {
 	
 	if( jQuery(window).width() < 481) {
 		jQuery("#question_list").removeClass("scroller_wrapper");
-	}else
-	{
+	} else {
 		jQuery("#question_list").addClass("scroller_wrapper");
 		if( !player_instance.myScroll )
 		{
@@ -119,15 +102,12 @@ job_player.onResize = function(player_instance) {
                 mouseWheel:true,
                 interactiveScrollbars: true
             });
-		}
-		else
-		{
+		}else {
 			setTimeout(function () {
 		       player_instance.myScroll.refresh();
 		    }, 0);
 		}
 	}
-	
 }
 
 job_player.clearModeButtons = function() { 

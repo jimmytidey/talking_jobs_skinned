@@ -53,6 +53,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     target_elem.addClass('selected');
 
     
+    
     var question_top_offset = 0 - job_player.questionPosition(current_item.question_id, player_instance);
     if( player_instance.myScroll )
 	{   
@@ -62,6 +63,11 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 	        $('.scroller_wrapper').scrollTo('.question_selector.selected .question', 300);
 	    }
 	}
+
+    var question_text = $('.question_selector[data-id="'+ current_item.question_id +'"]' ).text();
+    var interviewee_name =$('.interviewee_name', this.elem).text();
+    _trackEvent('Play', question_text, interviewee_name, 5, false);
+
 
     
     job_player.drawPlayer(player_instance, autoplay);

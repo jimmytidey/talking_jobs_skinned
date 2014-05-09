@@ -16,7 +16,6 @@ job_player.favourites = function(options){
             var number_of_favs =current_favs.length; 
         }
          
-     
         var playlist_item  = options.playlist[current_item];
         var question_no    = parseInt(playlist_item.question_id) +1;
         $('.favourites_tab_alert', options.elem).empty();

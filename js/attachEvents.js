@@ -1,7 +1,5 @@
 job_player.attachEvents = function(player_instance) {
     
-
-
     var local_player_instance = player_instance;    
     
     job_player.notes(local_player_instance);
@@ -10,6 +8,9 @@ job_player.attachEvents = function(player_instance) {
         job_player.triggerMoreInfoModal(local_player_instance); 
 		$(".more_info_modal").toggleClass("hide");
 		$(".tab_player").toggleClass("info_open");
+        if(local_player_instance.player) {
+            local_player_instance.player.pause();
+        }
     });
 
     $('.more_info_modal .close').click(function( event ){
@@ -28,8 +29,7 @@ job_player.attachEvents = function(player_instance) {
 		// iScroll doesn't work properly when elements are
 		// set to display none - it can't calculate the height.
 		// But we can trigger a refresh to get it to update itself
-		if( player_instance.myScroll )
-		{
+		if( player_instance.myScroll ) {
 		    setTimeout(function () {
 		       player_instance.myScroll.refresh();
 		    }, 100);
@@ -54,8 +54,6 @@ job_player.attachEvents = function(player_instance) {
         job_player.playlistChange(target_id, local_player_instance, true);
     });
     
-    
-
 
     //set modes 
     $('.whole_interview_order').click(function(){
@@ -104,42 +102,53 @@ job_player.attachEvents = function(player_instance) {
     //Favourites events 
     $('.email_favs').click(function(){
        job_player.emailFavs(local_player_instance); 
+       _trackEvent('Save', 'Favourites', 'Email', 5, false);
     });
     
     $('.print_favs').click(function(){
        job_player.printFavs(local_player_instance); 
+       _trackEvent('Save', 'Favourites', 'Print', 5, false);
     });
     
     $('.save_favs').click(function(){
        job_player.downloadFavs(local_player_instance); 
+       _trackEvent('Save', 'Favourites', 'Download', 5, false);
     });
     
     
      //Reflections events 
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
+        _trackEvent('Save', 'Reflections', 'Email', 5, false);
     });
 
     $('.download_reflections').click(function(){ 
         job_player.downloadReflections(local_player_instance);
+        _trackEvent('Save', 'Reflection', 'Download', 5, false);
     });
     
     $('.print_reflections').click(function(){ 
         job_player.printReflections(local_player_instance);
+        _trackEvent('Save', 'Reflection', 'Print', 5, false);
     });
     
    
     //Question events 
     $('.email_question').click(function(){ 
         job_player.emailQuestion(local_player_instance);
+        _trackEvent('Question', 'Question', 'Email', 5, false);
     }); 
     
     $('.download_question').click(function(){ 
         job_player.downloadQuestion(local_player_instance);
+        _trackEvent('Question', 'Question', 'Download', 5, false);
+
     });
     
     $('.print_question').click(function(){ 
         job_player.printQuestion(local_player_instance);
+        _trackEvent('Question', 'Question', 'Print', 5, false);
+
     });
     
     $('.tab_buttons li').click(function(){       
@@ -218,7 +227,4 @@ job_player.attachTransportEvents = function(local_player_instance) {
         }
         
     });
-    
-
- 
 }
