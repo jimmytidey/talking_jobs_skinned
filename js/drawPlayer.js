@@ -44,11 +44,8 @@ job_player.drawPlayer = function(player_instance, autoplay){
     //set subtitles 
     player_instance.subtitles_src = 'xml_converter.php?target='+current_item.subtitles_url;
     
-
-    //WHAAA?? Chrome has bug that causes video requests to fail unless you make them different every time 
-    // so you have to add the timestampt to the end
     var timestamp = new Date().getTime();
-    player_instance.video_src =  current_item.video + "?" + timestamp;
+    player_instance.video_src =  current_item.video;
     player_instance.poster_src = current_item.now_image;
         
     //do we need to draw the whole player?

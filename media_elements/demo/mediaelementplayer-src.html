@@ -32,8 +32,8 @@
 <h1>MediaElementPlayer.js</h1>
 
 <!-- simple single file method -->
-<video width="640" height="360" src="media/echo-hereweare.mp4" type="video/mp4" 
-	id="player1" poster="media/echo-hereweare.jpg" 
+<video width="640" height="360" src="../media/echo-hereweare.mp4" type="video/mp4" 
+	id="player1" poster="../media/echo-hereweare.jpg" 
 	controls="controls" preload="none"></video>
 	
 <span id="player1-mode"></span>
@@ -41,7 +41,11 @@
 <script>
 
 $('audio,video').mediaelementplayer({
-
+	pluginPath: '../build/',
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+		console.log(player, node);
+	}
 });
 
 </script>

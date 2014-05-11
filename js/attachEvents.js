@@ -6,17 +6,21 @@ job_player.attachEvents = function(player_instance) {
     
     $('.info_button').click(function(){
         job_player.triggerMoreInfoModal(local_player_instance); 
-		$(".more_info_modal").toggleClass("hide");
-		$(".tab_player").toggleClass("info_open");
+		
+		    $(".more_info_modal").toggleClass("hide");
+		
+		    $(".tab_player").toggleClass("info_open");
+        
         if(local_player_instance.player) {
             local_player_instance.player.pause();
         }
     });
 
     $('.more_info_modal .close').click(function( event ){
-		$(".more_info_modal").addClass("hide");
-		$(".tab_player").removeClass("info_open");
-		event.preventDefault();
+		  $(".more_info_modal").addClass("hide");
+		  $(".tab_player").removeClass("info_open");
+		  event.preventDefault();
+		  local_player_instance.player.play();
     });
 
     $('.modal_controls .start').click(function( event ){
@@ -102,52 +106,52 @@ job_player.attachEvents = function(player_instance) {
     //Favourites events 
     $('.email_favs').click(function(){
        job_player.emailFavs(local_player_instance); 
-       _trackEvent('Save', 'Favourites', 'Email', 5, false);
+       ga('send', 'event', 'Save', 'Favourites', 'Email', 5);
     });
     
     $('.print_favs').click(function(){
        job_player.printFavs(local_player_instance); 
-       _trackEvent('Save', 'Favourites', 'Print', 5, false);
+       ga('send', 'event', 'Save', 'Favourites', 'Print', 5);
     });
     
     $('.save_favs').click(function(){
        job_player.downloadFavs(local_player_instance); 
-       _trackEvent('Save', 'Favourites', 'Download', 5, false);
+       ga('send', 'event','Save', 'Favourites', 'Download', 5);
     });
     
     
      //Reflections events 
     $('.email_reflections').click(function(){ 
         job_player.emailReflections(local_player_instance);
-        _trackEvent('Save', 'Reflections', 'Email', 5, false);
+        ga('send', 'event','Save', 'Reflections', 'Email', 5);
     });
 
     $('.download_reflections').click(function(){ 
         job_player.downloadReflections(local_player_instance);
-        _trackEvent('Save', 'Reflection', 'Download', 5, false);
+        ga('send', 'event','Save', 'Reflection', 'Download', 5);
     });
     
     $('.print_reflections').click(function(){ 
         job_player.printReflections(local_player_instance);
-        _trackEvent('Save', 'Reflection', 'Print', 5, false);
+        ga('send', 'event','Save', 'Reflection', 'Print', 5);
     });
     
    
     //Question events 
     $('.email_question').click(function(){ 
         job_player.emailQuestion(local_player_instance);
-        _trackEvent('Question', 'Question', 'Email', 5, false);
+        ga('send', 'event','Question', 'Question', 'Email', 5);
     }); 
     
     $('.download_question').click(function(){ 
         job_player.downloadQuestion(local_player_instance);
-        _trackEvent('Question', 'Question', 'Download', 5, false);
+        ga('send', 'event','Question', 'Question', 'Download', 5);
 
     });
     
     $('.print_question').click(function(){ 
         job_player.printQuestion(local_player_instance);
-        _trackEvent('Question', 'Question', 'Print', 5, false);
+        ga('send', 'event','Question', 'Question', 'Print', 5);
 
     });
     

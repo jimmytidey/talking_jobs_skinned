@@ -41,10 +41,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
         var target_no = parseInt(current_item.interviewee_id) -2; 
     }
     
-    
-    $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { 
-
-	}}] );
+    $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { } }] );
      
     //scroll to question  
     $('.question_selector').removeClass('selected');
@@ -66,7 +63,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 
     var question_text = $('.question_selector[data-id="'+ current_item.question_id +'"]' ).text();
     var interviewee_name =$('.interviewee_name', this.elem).text();
-    _trackEvent('Play', question_text, interviewee_name, 5, false);
+    ga('send', 'event', 'Play',  interviewee_name, question_text, 5);
 
 
     
