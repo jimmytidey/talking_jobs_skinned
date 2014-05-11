@@ -183,7 +183,7 @@
         <div id="tabs" class='span3'>
             <nav>
                 <ul class="nav nav-pills nav-stacked tab_buttons ">
-                    <li class="active"><a href="#player">Player</a></li>
+                    <li class="active player_tab_indicator"><a href="#player">Player</a></li>
                     <li><a href="#favourites" >Favourites <span class='favourites_tab_alert'></span></a></li>
                     <li><a href="#reflections">Reflections</a></li>
                     <li><a href="#have_a_quesiton">Ask a question</a></li> 

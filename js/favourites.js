@@ -108,8 +108,9 @@ job_player.renderFavourites = function(options) {
         var item =options.playlist[val.playlist_id];
     
         var html = "<li data-id='" + i + "'  class='fav_wrapper'>";
-			//html    += "<a href ='' class='fav_play'>Play</a>";
+			html    += "<a  class='fav_play'>Play</a>";
 			html    += "<div class='fav_delete btn_red'>Delete</div>";
+		
 			html    += "<div class='content'>";
 	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
 	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
@@ -167,6 +168,21 @@ job_player.renderFavourites = function(options) {
             
             $(this).parent().remove();
         });
+        
+        $('.fav_play').unbind();
+        $('.fav_play').click(function(){
+            job_player.unsetActiveTab();
+             $('.tab').hide();
+             $('.tab_player').show();
+             $('.player_tab_indicator').addClass("active");
+            
+            job_player.setActiveTab();
+            job_player.setNormalMode();
+        });
+        
+        
+        
+        
         
     };    
 }
