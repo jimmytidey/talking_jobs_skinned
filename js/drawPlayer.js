@@ -107,6 +107,7 @@ job_player.newPlayer = function(player_instance) {
                 }
             }
             
+            $('.tooltip').remove();
             $('.mejs-playpause-button').after('<div class="next_track_btn transport_btn"><a style="display:block;" class="interviewee_tooltip" href="#" title="Next video" data-toggle="tooltip" data-placement="top"> &raquo;</a></div>');
             $('.mejs-playpause-button').after('<div class="prev_track_btn transport_btn"><a style="display:block;" class="interviewee_tooltip" href="#" title="Previous video" data-toggle="tooltip" data-placement="top"> &laquo;</a></div>');
             $('.mejs-playpause-button').after('<div class="restart_video_btn"><a style="display:block;" class="interviewee_tooltip" href="#" title="Restart video" data-toggle="tooltip" data-placement="top"> &lt;</a></div>');
