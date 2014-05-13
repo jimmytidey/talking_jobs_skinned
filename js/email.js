@@ -25,13 +25,11 @@ job_player.emailFavs = function(options){
 }
 
 job_player.downloadFavs = function(options){ 
-    console.log('dl favs');
     var text = job_player.generateFavsText(options);
     job_player.makePDF(text, '.favs_alert', '.save_favs');
 }
 
 job_player.printFavs = function(options){ 
-    console.log('dl favs');
     var text = job_player.generateFavsText(options);
     job_player.makePDF(text, '.favs_alert', '.print_favs');
 }

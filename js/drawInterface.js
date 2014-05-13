@@ -1,5 +1,4 @@
 job_player.drawInterface = function(player_instance) {
-    console.log('hi');
     var local_player_instance = player_instance;
     
     job_player.buildModal(player_instance);
