@@ -204,7 +204,7 @@
         
     </div>    
 	<div id="branding">
-        <a href="http://talkingjobs.net"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
+        <a href="http://www.talkingjobs.net/index.cfm/jobs/home.Landingpage1"><img class='' src='img/powered_by.png' alt='Powered by Talking jobs' /></a>
     </div>
 </div> <!-- /container -->        
 
