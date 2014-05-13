@@ -123,14 +123,22 @@
             <div class='tab tab_activities'>
                 <h1>Activities</h1>
 				<div class='content-container'>
-					<p>The Activities can be used with any of the Talking Jobs Modules. Students will need independent access to a computer at school, college or home. Each activity closes with a self-evaluation where students are asked to reflect on how what they have seen applies to them. We recommend this is followed up with plenary sessions to discuss shared findings.</p>
-					<p><a href="/assets/TalkingJobsMapping_ACEG_KS3_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS3 learning outcomes</span></a><br>
-					<a href="/assets/TalkingJobsMapping_ACEG_KS4_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS4 learning outcomes</span></a><br>
-					<a href="/assets/TalkingJobsMapping_ACEG_Post16_LearningOutcomes.pdf" target="_blank"><span class="boldRed">Post 16 learning outcomes</span></a><br>
-					<a href="/assets/TalkingJobsMapping_ACEG_ElementsCareerWorkLearning.pdf" target="_blank"><span class="boldRed">Elements of career and work related learning</span></a></p>
-				</div>
-            </div>
-            
+
+<p>Students will need headphones and access to a computer or tablet. Please Use the 'Feedback' tab to provide an evaluation of each session you run. This should only take a couple of minutes.</p>
+<p><a href="/assets/How_to_useTalkingJobs_YST Version_DRAFT.pdf" target="_blank"><span class="boldRed">How to use Talking Jobs</span></a><br>
+<a href="/assets/GloucestershireModuleOverview_V2_DRAFT.pdf" target="_blank"><span class="boldRed">The Gloucestershire YST Module</span></a><br><br>
+<a href="/assets/BA10_Who'sWho_V03_DRAFT.pdf" target="_blank"><span class="boldRed">BA10 Who's who - an easy starter </span></a><br>
+<a href="/assets/BA11_FindFiveClips_V01_DRAFT.pdf" target="_blank"><span class="boldRed">BA11 Find five clips - an introductory activity</span></a><br>
+<a href="/assets/BA12_FindThreeClips_V01_DRAFT.pdf" target="_blank"><span class="boldRed">BA12 Find three clips - a follow on activity</span></a><br>
+<a href="/assets/BA13_ChooseOneQuestion_V01_DRAFT.pdf" target="_blank"><span class="boldRed">BA13 Choose one question - targeted and repeatable</span></a></p>
+<p>These activities build on the Talking Jobs Bite Size Series adapted for the Gloucestershire YST Team. Below are the learning outcomes from the ACEG framework that may also be helpful. </p>
+<p><a href="/assets/TalkingJobsMapping_ACEG_KS3_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS3 learning outcomes</span></a><br>
+<a href="/assets/TalkingJobsMapping_ACEG_KS4_LearningOutcomes.pdf" target="_blank"><span class="boldRed">KS4 learning outcomes</span></a><br>
+<a href="/assets/TalkingJobsMapping_ACEG_Post16_LearningOutcomes.pdf" target="_blank"><span class="boldRed">Post 16 learning outcomes</span></a><br>
+<a href="/assets/TalkingJobsMapping_ACEG_ElementsCareerWorkLearning.pdf" target="_blank"><span class="boldRed">Elements of career and work related learning</span></a><br>
+      </div>
+          </div>
+          
             <div class='tab tab_have_a_quesiton'>
                 <h1>Ask a question</h1>
 				<div class="export question_export">
@@ -168,9 +176,7 @@
 				<div class='content-container'>
 					<div id="surveyMonkeyInfo">
 						<div>
-						    
 							<script src="https://www.surveymonkey.com/jsEmbed.aspx?sm=LhTuecOlTe2M96wNN3HL2Q_3d_3d"> </script>
-						    
 						</div>
 						Create your free online surveys with <a href="https://www.surveymonkey.com">SurveyMonkey</a> , the world's leading questionnaire tool.
 					</div>
@@ -183,7 +189,7 @@
         <div id="tabs" class='span3'>
             <nav>
                 <ul class="nav nav-pills nav-stacked tab_buttons ">
-                    <li class="active player_tab_indicator"><a href="#player">Player</a></li>
+                    <li class="active"><a href="#player">Player</a></li>
                     <li><a href="#favourites" >Favourites <span class='favourites_tab_alert'></span></a></li>
                     <li><a href="#reflections">Reflections</a></li>
                     <li><a href="#have_a_quesiton">Ask a question</a></li> 

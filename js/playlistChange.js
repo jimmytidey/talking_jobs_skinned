@@ -40,6 +40,7 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     else { 
         var target_no = parseInt(current_item.interviewee_id) -2; 
     }
+
     
     $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { } }] );
      
@@ -49,8 +50,6 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
     var target_elem = $('.question_selector[data-id="'+ current_item.question_id +'"]' );
     target_elem.addClass('selected');
 
-    
-    
     var question_top_offset = 0 - job_player.questionPosition(current_item.question_id, player_instance);
     if( player_instance.myScroll )
 	{   
@@ -68,8 +67,6 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
 
     
     job_player.drawPlayer(player_instance, autoplay);
-    
-    //the carousel has to be triggered every time the playlist changes 
     
 
     

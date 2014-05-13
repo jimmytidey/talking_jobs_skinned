@@ -51,7 +51,7 @@ job_player.buildDataStructure = function(player_instance) {
         local_player_instance.question_types.push(question_type_value);
     });
     
-    //build the resources for the drop down 
+    //build the resources for the modal
     local_player_instance.welcome_modal_header = local_player_instance.questions_json.talking_jobs.intro_copy.heading['__cdata'];
     local_player_instance.welcome_modal_text   = local_player_instance.questions_json.talking_jobs.intro_copy.copy['__cdata'];
     local_player_instance.welcome_modal_image  =  local_player_instance.questions_json.talking_jobs.intro_copy.welcome_image;

@@ -1,5 +1,5 @@
 job_player.drawInterface = function(player_instance) {
-    
+    console.log('hi');
     var local_player_instance = player_instance;
     
     job_player.buildModal(player_instance);
@@ -7,7 +7,7 @@ job_player.drawInterface = function(player_instance) {
     job_player.tabs(player_instance);
     
     //Draw any existing favs in 
-    job_player.renderFavourites(player_instance);
+    job_player.renderFavourites(local_player_instance);
       
 	if(job_player.isIOS()) {
 		$('html').addClass('ios');
@@ -28,16 +28,20 @@ job_player.drawInterface = function(player_instance) {
     
     //write the interviewee scroller  
     var scroller = $('.interviewee_scroller'); 
-    
+  
     for(var i = 0; i <player_instance.interviewees.length; i++){ 
         
         $(scroller).append("<a href='#' title='"+ player_instance.interviewees[i].name + ": "+player_instance.interviewees[i].interviewee+"'   data-placement='bottom' class='interviewee_tooltip'  data-toggle='tooltip'  > <img src='" + player_instance.interviewees[i].now_image + "' class='interviewee_selector' data-id='"+ player_instance.interviewees[i].id + "' /></a>");
-
+        
         if (i == player_instance.interviewees.length -1) { 
         	//add tooltips
         	$('.interviewee_tooltip').tooltip({container: 'body'});
         }
     };
+
+        
+
+    
     
     //write the question scroller 
     var scroller = $('.question_scroller ul'); 
@@ -67,6 +71,10 @@ job_player.drawInterface = function(player_instance) {
 			}
         }
     };    
+    
+    
+    
+    
 
     //now add the question type 
     var element = $('.question_types'); 

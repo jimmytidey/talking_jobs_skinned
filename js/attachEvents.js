@@ -217,7 +217,7 @@ job_player.attachTransportEvents = function(local_player_instance) {
         local_player_instance.player.setCurrentTime(0);
     });
     
-    //subitles
+    //subtitles
     $('.mejs-captions-button button').unbind();
     $('.mejs-captions-button button').click(function(){
         
