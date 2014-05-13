@@ -35,7 +35,7 @@ job_player.drawInterface = function(player_instance) {
         
         if (i == player_instance.interviewees.length -1) { 
         	//add tooltips
-        	$('.interviewee_tooltip').tooltip({container: 'body'});
+        	$('.no-touch .interviewee_tooltip').tooltip({container: 'body'});
         }
     };
 
