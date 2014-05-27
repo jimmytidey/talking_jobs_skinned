@@ -20,7 +20,7 @@
 
 		<div class='modes span6  btn-group'>
 	        <p class='btn whole_interview_order'>Play whole interview</p>
-	        <p class='btn whole_question_order'>Play all answers to this question</p>
+	        <p class='btn whole_question_order'>Play all answers to Q<span class='whole_question_order_no'></span>.</p>
 			<p class='btn random_order'>Mix it up</p>
 	    </div>
 	

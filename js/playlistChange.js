@@ -41,6 +41,8 @@ job_player.playlistChange = function(val, player_instance, autoplay) {
         var target_no = parseInt(current_item.interviewee_id) -2; 
     }
 
+
+    $('.whole_question_order_no').html(parseInt(current_item.question_id) + 1);
     
     $(".interviewee_scroller").trigger("slideTo", [target_no, null, null, {scroll: { } }] );
      
