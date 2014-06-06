@@ -95,7 +95,7 @@ job_player.attachEvents = function(player_instance) {
     
     $('.camera_button').click(function(){
         var current_item = local_player_instance.playlist[local_player_instance.playlist_position]; 
-        if($('.then_image').length === 0){
+        if($('.then_image').length === 0){pla
             $('.mejs-container').prepend('<div class="then_image"><img src="'+current_item.then_image+'" /></div>');
         } else { 
             $('.then_image').remove();

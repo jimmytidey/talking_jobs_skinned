@@ -173,10 +173,12 @@ job_player.renderFavourites = function(options) {
              $('.player_tab_indicator').addClass("active");
             
             job_player.setNormalMode(options);
-            var playlist_id = $(this).parent().attr('data-playlist-id'); 
-            
+            var playlist_id = parseInt($(this).parent().attr('data-playlist-id')); 
+           
             job_player.playlistChange(playlist_id, options, true);
-            window.player_root.play();
+
+            setTimeout(function(){window.player_root.play()}, 100);
+            
         });
         
         
