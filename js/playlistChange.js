@@ -1,7 +1,7 @@
  job_player.playlistChange = function(val, player_instance, autoplay) {
 
     var local_player_instance = player_instance;
-    console.log(val);    
+        
     player_instance.playlist_position = val;
     
     var current_item = player_instance.playlist[player_instance.playlist_position]; 
