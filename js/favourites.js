@@ -180,6 +180,15 @@ job_player.renderFavourites = function(options) {
             setTimeout(function(){window.player_root.play()}, 100);
             
         });
+
+        $('.clear_favs').unbind();
+        $('.clear_favs').click(function(){
+ 
+             $.cookie('tj_favourites',[]);
+             $('.fav_container ul').html('');
+        });
+
+        
         
         
         

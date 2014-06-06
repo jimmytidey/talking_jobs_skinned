@@ -63,6 +63,7 @@
 					<fieldset>
 						<label>Your name</label>
 						<input type="text" class='favs_name' />
+						<input type="button" class="btn clear_favs" value="Clear all Favourites">
 					</fieldset>
 					</form>
 				</div>
