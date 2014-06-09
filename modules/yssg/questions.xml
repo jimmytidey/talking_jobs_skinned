@@ -4,37 +4,51 @@
 		<select_title><![CDATA[Select a contributor]]></select_title>
 	</dropdown>
 	<intro_copy>
-		<heading><![CDATA[The Gloucestershire YST Module]]></heading>
-		<copy><![CDATA[This module holds 14 interviews with people living and working in Gloucestershire all asked the same questions about work, learning and life.<br><Br>The Gloucestershire Module is part of a pilot project between Youth Services Team Gloucester and the producer of the Talking Jobs resource.]]></copy>
-		<welcome_image><![CDATA[https://s3-eu-west-1.amazonaws.com/gloucestershire/Grabs/GYSS_Front_2.jpg]]></welcome_image>
+		<heading><![CDATA[The Health Module]]></heading>
+		<copy><![CDATA[The Health Module was supported by Aimhigher Sussex and included 10 interviews with staff from Brighton and Sussex University Hospitals and NHS Sussex. It was produced as a careers education tool for schools to help young people make informed decisions about life, learning and work.]]></copy>
+		<welcome_image><![CDATA[https://s3-eu-west-1.amazonaws.com/tj-health/Grabs/hospital.jpg]]></welcome_image>
 	</intro_copy>
 	<question_types>
-		<type id="0" label="LIFE" colour="0xd5e9ce" style="WorkButton_skin">
+		<type id="0" label="WORK" colour="0xd5e9ce" style="WorkButton_skin">
 			<tip><![CDATA[Jump to questions about work]]></tip>
 		</type>
 		<type id="1" label="LEARNING" colour="0xfcfbe6" style="LearningButton_skin">
 			<tip><![CDATA[Jump to questions about learning]]></tip>
 		</type>
-		<type id="2" label="WORK" colour="0xe2eaf5" style="LifeButton_skin">
+		<type id="2" label="LIFE" colour="0xe2eaf5" style="LifeButton_skin">
 			<tip><![CDATA[Jump to questions about life]]></tip>
 		</type>
 	</question_types>
 	<questions>
-		<question id="0" type="0"><![CDATA[Have you experienced any difficulties in your past?]]></question>		
-		<question id="1" type="0"><![CDATA[Can you tell us something about your family background? ]]></question>
-		<question id="2" type="0"><![CDATA[Tell us something about your current life outside of work? ]]></question>
-	    <question id="3" type="0"><![CDATA[what have been your most significant turning points?]]></question>	
-   		<question id="4" type="1"><![CDATA[As a child, what did you want to be when you grew up?]]></question>
-		<question id="5" type="1"><![CDATA[Can you tell us about your time at school?]]></question>
-		<question id="6" type="1"><![CDATA[After school what kind of training have you been through?]]></question>
-		<question id="7" type="1"><![CDATA[What didn't they tell you during your training? ]]></question>		
-		<question id="8" type="2"><![CDATA[What do you think employers are looking for?]]></question> 
-		<question id="9" type="2"><![CDATA[Can you describe a normal working day?]]></question>		
-		<question id="10" type="2"><![CDATA[What made you want to do this kind of work?]]></question>
-		<question id="11" type="2"><![CDATA[what's the hardest thing about your work?]]></question>
-		<question id="12" type="2"><![CDATA[How does your job impact in your life outside of work?]]></question>
-		<question id="13" type="2"><![CDATA[What are your next steps?]]></question>
-		<question id="14" type="2"><![CDATA[Who are you and what do you do for a living?]]></question>
-        </questions>
+		<question id="0" type="0"><![CDATA[Please tell us your name, and what you do for a living.]]></question>
+		<question id="1" type="0"><![CDATA[Please describe a normal working day...]]></question>
+		<question id="2" type="0"><![CDATA[What made you want to become {please select a job}?]]></question>
+		<question id="3" type="0"><![CDATA[What do you most enjoy about your job and why?]]></question>
+		<question id="4" type="0"><![CDATA[Describe the importance of teamwork in your job.]]></question>
+		<question id="5" type="0"><![CDATA[What is the hardest thing about your job and why?]]></question>
+		<question id="6" type="0"><![CDATA[What do you least like about your job and why?]]></question>
+		<question id="7" type="0"><![CDATA[What working hours do you keep?]]></question>
+		<question id="8" type="0"><![CDATA[If you had not become {please select a job} what else might you have done?]]></question>
+		<question id="9" type="0"><![CDATA[Before becoming {please select a job} did you have any other careers?]]></question>
+		<question id="10" type="0"><![CDATA[How does your job affect your life outside work?]]></question>
+		<question id="11" type="0"><![CDATA[What are the next steps you would like to take to get on in your career?]]></question>
+		<question id="12" type="0"><![CDATA[How would you describe your standard of living?]]></question>
+		<question id="13" type="0"><![CDATA[How has your health impacted on your ability to work?]]></question>
+		<question id="14" type="1"><![CDATA[As a child what did you want to be when you grew up?]]></question>
+		<question id="15" type="1"><![CDATA[Tell us about your time at school, what did you think of it?]]></question>
+		<question id="16" type="1"><![CDATA[What, did you enjoy most, and least, about school?]]></question>
+		<question id="17" type="1"><![CDATA[what qualifications did you have when you left school and how old were you at the time?]]></question>
+		<question id="18" type="1"><![CDATA[What kind of training did you do to become {please select a job} and how long did it take?]]></question>
+		<question id="19" type="1"><![CDATA[What did you enjoy most about your training?]]></question>
+		<question id="20" type="1"><![CDATA[What was the hardest thing about your training?]]></question>
+		<question id="21" type="1"><![CDATA[What didn't they tell you about being {please select a job} during your training?]]></question>
+		<question id="22" type="2"><![CDATA[Tell us about your family background including the work did your parents, or carers, do?]]></question>
+		<question id="23" type="2"><![CDATA[How important were education or getting qualifications considered to be by your family (carers)?]]></question>
+		<question id="24" type="2"><![CDATA[Who gave you the most encouragement about your schoolwork?]]></question>
+		<question id="25" type="2"><![CDATA[Please tell us something about your personal circumstances?]]></question>
+		<question id="26" type="2"><![CDATA[What do you do in your spare time?]]></question>
+		<question id="27" type="2"><![CDATA[Do you have any personal goals (outside work) that you are working towards?]]></question>
+		<question id="28" type="2"><![CDATA[What do you think makes for a happy working life?]]></question>
+		<question id="29" type="2"><![CDATA[What would you say to young people just starting to explore the world of work?]]></question>
+	</questions>
 </talking_jobs>
-

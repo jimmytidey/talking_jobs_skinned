@@ -1,384 +1,578 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <talking_jobs>
 	<interview_responses>
 		<interview id="0">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 1: Dale]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>
+		<panel_title><![CDATA[Becoming an accident & emergency consultant]]></panel_title>
+		<job_title><![CDATA[Accident & Emergency Consultant]]></job_title>
+		<job_prefix><![CDATA[an]]></job_prefix>
+			<contributor><![CDATA[Steve]]></contributor>
+			<about_training><![CDATA[<p>To get on to a five-year degree in medicine you will usually need at least five GCSEs (A-C) including English, maths and science, plus three A levels at grades AAB in subjects such as chemistry, biology and either physics or maths. If you do not have qualifications in science, you may be able to join a six-year degree course in medicine which includes a one-year pre-medical or foundation year.
+When you apply for a course in medicine, you may be asked to take the UK Clinical Aptitude Test UKCAT). This is used to assess your suitability for a career in medicine by testing your mental abilities and behavioural characteristics, rather than your academic achievements.
+<b>Skills and Personal Qualities</b>
+- 	a keen interest in science and medicine
+- 	an ability to work with and understand people
+- 	the ability to make sound judgements in your personal and professional life
+- 	a genuine desire to help people and an ability to learn from your patients
+- 	good communication skills and the ability to explain patient choices
+- 	the ability to put people at ease and inspire their trust and confidence
+- 	the ability to keep your skills and knowledge up to date
+- 	strong analytical skills 
+- 	the ability to absorb scientific and technical information
+- 	practical skills for examining patients and performing clinical procedures
+- 	the ability to work under pressure and make quick clear decisions
+- 	a sense of humour
+- 	the potential to train, teach and supervise staff
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
 			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Dale.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Dale.jpg" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/AE_Consultant.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_steve01.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Dale_01" />    
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/AE_Consultant_30" />       
 			</responses>
 		</interview>
-		<interview id="1">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 2: Obi]]></job_title>
+				<interview id="1">
+		<panel_title><![CDATA[Becoming a biomedical scientist]]></panel_title>
+		<job_title><![CDATA[Biomedical Scientist]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Obi.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Obi.jpg" />
+			<contributor><![CDATA[Ewan]]></contributor>
+			<about_training><![CDATA[<p>To get on to a biomedical science degree, you will usually need five GCSEs (A-C) including maths and English, plus three A levels preferably including biology and chemistry. Entry Requirements may vary and alternative qualifications may be accepted, so it is important to check with course providers for exact details.
+<b>Skills and Personal Qualities</b>
+- 	a high level of ability and interest in science and computing
+- 	an interest in medicine and developing new treatments
+- 	the ability to concentrate for long periods
+- 	good accuracy and attention to detail
+- 	high ethical standards
+- 	the ability to take responsibility for making decisions
+- 	an enquiring mind and good problem solving skills
+- 	the ability to lead a research and development team
+- 	strong spoken and written communication skills
+- 	empathy and understanding when working directly with patients
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/biomedical_scientist.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/holder.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Obi_01" />    
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/biomedical_scientist_30" />       
 			</responses>
 		</interview>
-		<interview id="2">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 3: Simon]]></job_title>
+				<interview id="2">
+		<panel_title><![CDATA[Becoming a cardiac nurse]]></panel_title>
+		<job_title><![CDATA[Cardiac Nurse]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Simon.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Simon.jpg" />
+			<contributor><![CDATA[Jo]]></contributor>
+			<about_training><![CDATA[<p>To get on to an approved course, you need:
+- 	proof of your English and maths skills, good health and good character
+- 	evidence of recent successful study experience (especially if you have been out of education for a number of years)
+- 	Criminal Records Bureau clearance.
+Course providers can also set their own academic Entry Requirements, which can include:
+- 	nursing diploma – five GCSEs (A-C) preferably in English, maths and/or a science-based subject
+- 	nursing degree – the same GCSEs as the diploma, plus two or three A levels, possibly including a biological science.
+Some institutions offer Advanced Diplomas in Adult Nursing. This qualification and the Entry Requirements for it lie between diploma and degree level.
+Check with universities for exact entry details because alternative qualifications, such as an Access to Higher Education course, may also be accepted 
+The Nursing and Midwifery Council are raising the minimum level of pre-registration nurse education from diploma to degree. The first degree programmes following the new standards are expected to begin September 2011. The final opportunity to start the nursing diploma will be Spring 2013. From September 2013, students will ONLY be able to qualify as a nurse by studying for a degree.
+<b>Skills and Personal Qualities</b>
+- 	strong communication and listening skills
+- 	a genuine desire to help people
+- 	a non-judgemental attitude to care
+- 	good teamworking skills and the ability to work on your own initiative
+- 	physical and mental stamina
+- 	a mature, compassionate and sensitive manner
+- 	good practical skills
+- 	patience and empathy
+- 	the ability to inspire confidence and trust
+- 	the ability to remain calm under pressure
+- 	good organisational and time management skills
+- 	a flexible approach to work.
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/cardiac_nurse.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_jo_01.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Simon_01" />     
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/cardiac_nurse_30" />       
 			</responses>
-		</interview>		
-		<interview id="3">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 4: Syreeta]]></job_title>
+		</interview>
+			<interview id="3">
+		<panel_title><![CDATA[Becoming a chief executive]]></panel_title>
+		<job_title><![CDATA[Chief Executive]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Syreeta.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Syreeta.jpg" />
+			<contributor><![CDATA[Duncan]]></contributor>
+			<about_training><![CDATA[<p>It is usual to be educated to higher degree level or equivalent level of experience within their own profession or sphere of activity.  There would need to be evidence of continued personal and professional development and further professional or management qualification. CEO's will tend to have a solid track record managing sizeable resources and budgets along with evidence of building and leading effective teams. They will have experienced of dealing with complex issues, such as promoting equality and diversity in a large organisation. Overall they need to be Inspirational, innovative, entrepreneurial and politically astute with strong commercial acumen, exceptional communication, interpersonal, negotiating and influencing skills. The list of skills and knowledge below is not definitive, but do represent common characteristics amongst CEOs in many sectors as well as Health. 
+
+<b>Skills and Personal Qualities</b>
+- Excellent communication skills 
+- Excellent problem solving skills
+- Ability to think and act strategically 
+- Ability to build effective relationships 
+- Committed to respecting, valuing and developing people
+- Energetic about their work and ability to enthuse others
+- Intellectual flexibility so they can easily move from detail to the bigger picture
+- Innovative thinking with the confidence to encourage creativity in others
+- Willingness to be held to account for both success and failure
+- Committed to respecting, valuing and developing people
+- Emotional resilience and strength of mind
+- Strong desire to produce results
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>  
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/chief_executive.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_duncan01.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Syreeta_01" />     
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/chief_executive_30" />       
 			</responses>
-		</interview>		
-		<interview id="4">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 5: Chris]]></job_title>
+		</interview>
+				<interview id="4">
+		<panel_title><![CDATA[Becoming a healthcare assistant]]></panel_title>
+		<job_title><![CDATA[Healthcare Assistant]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Chris.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Chris.jpg" />
+			<contributor><![CDATA[Danny]]></contributor>
+			<about_training><![CDATA[<p>You may not need any qualifications to start work as a healthcare assistant. However, you may need previous experience (paid or voluntary) in a caring role, especially if you plan to work with people who have mental health issues or learning disabilities. Once you apply for a job, you will need to pass a medical check and gain CRB (Criminal Records Bureau) clearance, to make sure that you are a suitable person to work with children or vulnerable adults. Many employers will also want you to be prepared to work toward a relevant NVQ qualification.
+<b>Skills and Personal Qualities</b>
+- 	a friendly and caring personality
+- 	the ability to relate to people from a wide variety of backgrounds
+- 	tact and sensitivity, particularly when helping patients with personal care
+- 	empathy and a respectful approach to patients
+- 	the ability to work on your own initiative and as part of a team
+- 	patience and a sense of humour
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/HCA.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_danny01.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Chris_01" />     
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/HCA_30" />       
 			</responses>
-		</interview>		
-		<interview id="5">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 6: Darren]]></job_title>
+		</interview>
+				<interview id="5">
+		<panel_title><![CDATA[Becoming a paediatrician]]></panel_title>
+		<job_title><![CDATA[Paediatrician]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Darren.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Darren.jpg" />
+			<contributor><![CDATA[Oli]]></contributor>
+			<about_training><![CDATA[<p>To get on to a five-year degree in medicine you will usually need at least five GCSEs (A-C) including English, maths and science, plus three A levels at grades AAB in subjects such as chemistry, biology and either physics or maths. If you do not have qualifications in science, you may be able to join a six-year degree course in medicine which includes a one-year pre-medical or foundation year.
+When you apply for a course in medicine, you may be asked to take the UK Clinical Aptitude Test UKCAT). This is used to assess your suitability for a career in medicine by testing your mental abilities and behavioural characteristics, rather than your academic achievements.
+<b>Skills and Personal Qualities</b>
+- 	a keen interest in science and medicine
+- 	an ability to work with and understand children and their families
+- 	the ability to make sound judgements in your personal and professional life
+- 	a genuine desire to help people and an ability to learn from your patients
+- 	good communication skills and the ability to explain patient choices
+- 	the ability to put people at ease and inspire their trust and confidence
+- 	the ability to keep your skills and knowledge up to date
+- 	strong analytical skills 
+- 	the ability to absorb scientific and technical information
+- 	practical skills for examining patients and performing clinical procedures
+- 	the ability to work under pressure and make quick clear decisions
+- 	the potential to train, teach and supervise staff
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/paediatrician.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/holder.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Darren_01" />     
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/paediatrician_30" />       
 			</responses>
-		</interview>		
+		</interview>
 		<interview id="6">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 7: Steve]]></job_title>
+		<panel_title><![CDATA[Becoming a physicist]]></panel_title>
+		<job_title><![CDATA[Physicist]]></job_title>
 		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Steve.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Steve.jpg" />
+			<contributor><![CDATA[Louise]]></contributor>
+			<about_training><![CDATA[<p>To become a qualified and registered clinical scientist, specialising in medical physics, you will usually need a first or upper second class honours degree in physics or engineering. To get on to a physical science or engineering related degree course, you will usually need:
+- 	five GCSEs (A-C) including English language, maths and at least two sciences
+- 	three A levels, including maths or physics (some universities offer a one-year foundation course for those without a science background).
+<b>Skills and Personal Qualities</b>
+- 	good knowledge of physical sciences
+- 	an interest in medicine and patient care
+- 	high levels of accuracy and attention to detail
+- 	the ability to concentrate for long periods
+- 	high ethical standards
+- 	the confidence to take responsibility for decisions
+- 	an enquiring mind and good problem solving skills
+- 	excellent spoken and written communication skills
+- 	good teamworking skills
+- 	the ability to put patients at ease
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/physicist.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_louise_01.jpg" />
 			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_00" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_02" />
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_03" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_04" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_05" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_06" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_07" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_08" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_09" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_10" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_11" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_12" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_13" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_14" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Steve_15" />     
-			</responses>
-		</interview>		
-		<interview id="7">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 8: Anna]]></job_title>
-			<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Anna.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Anna.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Anna_01" />     
-			</responses>
-		</interview>		
-		<interview id="8">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 9: Harry]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Harry.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Harry.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Harry_01" />    
-			</responses>
-		</interview>		
-		<interview id="9">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 10: Delroy]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Delroy.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Delroy.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Delroy_01" />    
-			</responses>
-		</interview>		
-		<interview id="10">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 11: Yolande]]></job_title>
-			<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Yolande.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Yolande.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Yolande_01" />    
-			</responses>
-		</interview>	
-		<interview id="11">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 12: Arun]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Arun.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Arun.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Arun_01" />    
-			</responses>
-		</interview>		
-		<interview id="12">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 13: Billy]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Billy.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Billy.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Billy_01" />     
-			</responses>
-		</interview>		
-		<interview id="13">
-		<panel_title><![CDATA[Additional Information]]></panel_title>
-		<job_title><![CDATA[IV 14: Gina]]></job_title>
-		<job_prefix><![CDATA[a]]></job_prefix>
-			<contributor><![CDATA[Dale]]></contributor>
-<about_training><![CDATA[Visit the Gloucestershire Youth Support Services website to find out about the local information and support: <a href="http://www.whatnowglos.co.uk/" target="_blank"><b>http://www.whatnowglos.co.uk</b></a><br>
-To find out more about the world of work try exploring the icould website: <a href="http://www.icould.com" target="_blank"><b>http://www.icould.com</b></a></p>]]></about_training>			<more_link url="http://www.periscopeprojects.com" />
-			<now_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Gina.jpg" />
-			<then_image src="http://d36yahjgtnwfjx.cloudfront.net/Grabs/YSSG_Gina.jpg" />
-			<responses>
-<response question_id="0" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_14" />
-<response question_id="1" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_12" /> 
-<response question_id="2" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_13" />
-<response question_id="3" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_15" />
-<response question_id="4" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_08" />
-<response question_id="5" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_09" />
-<response question_id="6" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_10" />
-<response question_id="7" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_11" />
-<response question_id="8" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_07" />
-<response question_id="9" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_02" />
-<response question_id="10" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_03" />
-<response question_id="11" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_04" />
-<response question_id="12" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_05" />
-<response question_id="13" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_06" />
-<response question_id="14" src="http://d36yahjgtnwfjx.cloudfront.net/YSSG_Gina_01" />     
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/physicist_30" />       
 			</responses>
 		</interview>
-	</interview_responses>
+		<interview id="7">
+		<panel_title><![CDATA[Becoming a programme manager]]></panel_title>
+		<job_title><![CDATA[Programme Manager]]></job_title>
+		<job_prefix><![CDATA[a]]></job_prefix>
+			<contributor><![CDATA[Anna]]></contributor>
+<about_training><![CDATA[<p>Programme Managers are very senior Project Managers, often responsible for running a portfolio of complex largescale projects. They will tend to be educated to degree level, as a mimiumum, with post graduate qualification increasingly likely. Programme Managers will have a track record of managing projects in the past, and may also have been involved in change management. Many will memebers of professionals organisaion that carry some form of accrediation, such as being a Certified Project Manager through the Association of Project Managers (APM). 
+<b>Skills and Personal Qualities</b>
+- Focus on project delivery
+- Experience with budgets
+- Good interpersonal skills
+- Excellent communicator
+- Negotiation skills
+- Highly organised
+- Team worker
+- Assertive
+- Good time manager
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Programme_manager.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_anna01.jpg" />
+			<responses>
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/Programme_manager_30" />       
+			</responses>
+		</interview>
+		<interview id="8">
+		<panel_title><![CDATA[Becoming a project manager]]></panel_title>
+		<job_title><![CDATA[Project Manager]]></job_title>
+		<job_prefix><![CDATA[a]]></job_prefix>
+			<contributor><![CDATA[Gemma]]></contributor>
+<about_training><![CDATA[<p>Project Managers tend to be educated to degree level or have equivalent experience in budgeting, planning and project coordination. Many will have qualifications in PRINCE2 and ITIL or some other form of accreditation, such as a Foundation Certificate in IS Project Management. Employers often look for a track record of project delivery or experience gained in a supporting role when appointing project managers.
+<b>Skills and Personal Qualities</b>
+- To be organised and disciplined 
+- Experience managing people
+- Excellent communication skills
+- Budgeting and planning experience
+- Ability to work under pressure
+- Good interpersonal and negotiation skills
+- To be able to manage your own and other people’s time
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/project_manager.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_gemma01.jpg" />
+			<responses>
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/sting08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/project_manager_30" />       
+			</responses>
+		</interview>
+				<interview id="9">
+		<panel_title><![CDATA[Becoming a therapeutic radiographer]]></panel_title>
+		<job_title><![CDATA[Therapeutic Radiographer]]></job_title>
+		<job_prefix><![CDATA[a]]></job_prefix>
+			<contributor><![CDATA[Simon]]></contributor>
+			<about_training><![CDATA[<p>To get on to a degree in diagnostic or therapeutic radiography you will usually need five GCSEs (A-C), plus three A levels (including a science). Check with course providers for exact entry details because alternative qualifications such as an Access to Higher Education course may also be accepted.
+<b>Skills and Personal Qualities</b>
+- 	an interest and ability in science, especially biology, anatomy, physiology and physics
+- 	accuracy and attention to detail
+- 	the ability to think quickly and make decisions independently
+- 	a willingness to keep up to date with new techniques and treatments
+- 	the ability to use highly technical, computerised equipment
+- 	excellent communication and interpersonal skills
+- 	empathy with the ability to understand the emotional needs of patients who are very ill
+- 	physical fitness and emotional resilience
+<b>More information</b>
+To find out more about this kind of work go to the job profiles page at the National Career Service webite: <a href="https://nationalcareersservice.direct.gov.uk" target="_blank"><b>https://nationalcareersservice.direct.gov.uk</b></a><br>
+To find out more about relevant opportunities in higher education go to the UCAS website: <a href="http://www.ucas.ac.uk" target="_blank"><b>http://www.ucas.ac.uk</b></a></p>]]></about_training>
+			<more_link url="http://www.periscopeprojects.com" />
+			<now_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/therapeutic_radiographer.jpg" />
+			<then_image src="http://dx1v9ebhf9ind.cloudfront.net/Grabs/Faces/health_simon01.jpg" />
+			<responses>
+<response question_id="0" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_01" />
+<response question_id="1" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_02" />
+<response question_id="2" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_03" />
+<response question_id="3" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_04" />
+<response question_id="4" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_05" />
+<response question_id="5" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_06" />
+<response question_id="6" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_07" />
+<response question_id="7" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_08" />
+<response question_id="8" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_09" />
+<response question_id="9" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_10" />
+<response question_id="10" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_11" />
+<response question_id="11" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_12" />
+<response question_id="12" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_13" />
+<response question_id="13" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_14" />
+<response question_id="14" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_15" />
+<response question_id="15" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_16" />
+<response question_id="16" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_17" />
+<response question_id="17" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_18" />
+<response question_id="18" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_19" />
+<response question_id="19" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_20" />
+<response question_id="20" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_21" />
+<response question_id="21" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_22" />
+<response question_id="22" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_23" />
+<response question_id="23" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_24" />
+<response question_id="24" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_25" />
+<response question_id="25" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_26" />
+<response question_id="26" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_27" />
+<response question_id="27" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_28" />
+<response question_id="28" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_29" />
+<response question_id="29" src="http://dx1v9ebhf9ind.cloudfront.net/therapeutic_radiographer_30" />       
+			</responses>
+		</interview>
+				</interview_responses>
 </talking_jobs>

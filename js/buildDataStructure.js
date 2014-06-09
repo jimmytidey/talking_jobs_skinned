@@ -43,6 +43,8 @@ job_player.buildDataStructure = function(player_instance) {
     //build a list of each question 
     
     $.each(local_player_instance.questions_json.talking_jobs.questions.question, function(question_key, question_value) {
+
+  
         local_player_instance.questions.push(question_value);
     });
     

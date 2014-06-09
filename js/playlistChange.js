@@ -63,7 +63,14 @@
 	    }
 	}
 
+    $('.question_selector .question').each(function() { 
+        var q_text = $(this).text();
+        q_text = q_text.replace('{please select a job}', current_item.job_prefix + " " + current_item.job_title);
+        $(this).text(q_text);
+    });
+
     var question_text = $('.question_selector[data-id="'+ current_item.question_id +'"]' ).text();
+    
     var interviewee_name =$('.interviewee_name', this.elem).text();
     ga('send', 'event', 'Play',  interviewee_name, question_text, 5);
 

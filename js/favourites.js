@@ -59,17 +59,13 @@ job_player.addFavourite = function(id, options) {
     
     if(!current_favs){
         current_favs = [];
-    }
-    
-    
+    } 
     
     cookie_obj = {
         playlist_id: id, 
         notes: '',
         transcript:''
     }
-    
-
     
     current_favs.push(cookie_obj);
     
@@ -104,14 +100,17 @@ job_player.renderFavourites = function(options) {
         var subtitles_url = options.playlist[val.playlist_id].subtitles_url;
         
         var item =options.playlist[val.playlist_id];
-    
+        
+        var question_with_job_replaced = item.question.replace('{please select a job}', item.job_prefix + " " + item.job_title);
+
+
         var html = "<li data-id='" + i + "' data-playlist-id="+ val.playlist_id +"  class='fav_wrapper'>";
 			html    += "<a  class='fav_play'>Play</a>";
 			html    += "<div class='fav_delete btn_red'>Delete</div>";
 		
 			html    += "<div class='content'>";
 	           html    += "<p><span class='fav_job_title'>"+item.job_title+"</span></p>";
-	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + item.question + "</span></p>";
+	           html    += "<p class='cf question_holder'> <span class='fav_question_number'>Q" + question_number_string + "</span><span class='fav_question'>" + question_with_job_replaced + "</span></p>";
 				html    += "<p class='view_transcript'>View transcript and notes</p>";
 	           html    += "<div class='notes_and_transcript hide cf'>";
 	               html    += "<p class='notes_title'><strong>Transcript</strong></p>";

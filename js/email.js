@@ -124,7 +124,7 @@ job_player.sendEmail = function(text, address, subject, alert_field, name) {
 		
          setTimeout(function(){
                 $(alert_field).fadeOut(400, function(){
-                    $(alert_field).html('');
+                    $(alert_field).html('');fg
                 });
             }, 2000);
 			
